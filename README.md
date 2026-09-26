@@ -77,6 +77,6 @@ The [modeling source index](docs/modeling/README.md) links the implementations f
 
 This snapshot contains the WorldBridge source and baseline adapters. Author metadata, original repository links, local account paths, development conversations, and migration logs are omitted for anonymous review. No original Git history is included. Third-party license notices are retained.
 
-The project page is in `demo/`. The selected media are qualitative examples, not a quantitative evaluation. Robot demonstrations use authored kinematic animation; dynamic effects use procedural animation. External assets, generated Blender scenes, learned weights, and baseline datasets must be configured separately as described above. Legacy configuration aliases and frozen experiment identifiers are retained for compatibility.
+The project page is in `docs/index.html`. GitHub Pages publishes `main:/docs`, allowing the source and website to be imported together by Anonymous GitHub. The selected media are qualitative examples, not a quantitative evaluation. Robot demonstrations use authored kinematic animation; dynamic effects use procedural animation. External assets, generated Blender scenes, learned weights, and baseline datasets must be configured separately as described above. Legacy configuration aliases and frozen experiment identifiers are retained for compatibility.
 
 Run the core tests with `PYTHONDONTWRITEBYTECODE=1 python -m pytest -q tests`. Baseline integration tests additionally require their external environments and data.
