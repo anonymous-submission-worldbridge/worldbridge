@@ -1,0 +1,28 @@
+{
+  "display_name": "HY-World 2.0 + fixed IO adapter",
+  "files": {
+    "baselines/annotations/table4/hyworld2/formal/EVIDENCE_PROVENANCE.json": "48dd02fdd1fa82f94f652d497044206c2e553262d0787bd03c02b38c40c73fcf",
+    "baselines/annotations/table4/hyworld2/formal/PRIVATE_blind_map.json": "3e25d2462d73294c2a970e88de904c86e4879499481f2c1f1742c20fc5601d89",
+    "baselines/hyworld2_runtime/manifests/qwen3_vl_8b_modelscope.json": "46c4dcd1dd3a02e89e319915223e817aa41bcabc9f5843a88f20493d01686081",
+    "baselines/methods/hyworld/protocol/unified/native/hyworld2.yaml": "d0f16d448a080b489d5b57495431bc61c12fac7052986263763e1381099765a7",
+    "baselines/methods/hyworld/protocol/unified/native/hyworld2_native_method.lock.json": "9dfc714fbee0f48355d95e99e62e880edb4b65c1133607f49e22f5e3d67c4e5c",
+    "baselines/protocol/unified/specs.jsonl": "b3fe8e3d45cacea8d2fb5ea339dfbf3ea87c5e78a421f37a6167798d903e6362",
+    "baselines/methods/hyworld/protocol/unified/fixed_adapter/protocol.yaml": "f9812bf9a53f5e19bc5d0f71b5632ef37c80fbd28ccd61cacd22601f7b874ab2",
+    "baselines/methods/hyworld/protocol/unified/fixed_adapter/spatial_aqs_prompt.txt": "062626490631ffed58669f69cac4ef3fdcf84c8301f2b8b6163e67c9c46ede90",
+    "baselines/results/table4/hyworld2/formal/matrix_audit.json": "4b035b7b99c16c20a74e8637df96a414720ffce79498239528d98a9fbfb40c62",
+    "baselines/results/table4/hyworld2/formal/per_run.jsonl": "f6eb75e9460c2ec7c5c47090b95b2da3f1f2145ca92376853591208f552e3313",
+    "baselines/results/table4/hyworld2/formal/summary.json": "7abac952a4c8744d05ad78a641e38931028a3d40862b25f39aeb832e5e14b7a6",
+    "baselines/evaluation/geometry/metrics/build_navmesh.py": "10578c6f18f0f9187b1813d08217740e093f8449d09ea39504694393f3db0fa6",
+    "baselines/methods/worldgen/geometry/runtime/recast_glibc231_clean2/recast.cpython-311-x86_64-linux-gnu.so": "5bf75563711bf63ab248e92a32d909f3a2a7ac3effb5d17d1e65528080a564d7",
+    "baselines/methods/hyworld/unified/fixed_adapter/hyworld_io_adapter.py": "acfc229270913caabe2585560bbf9afdfbcae3248a0c1a64b26d22c570d5d0eb",
+    "baselines/methods/worldgen/unified/fixed_adapter/worldgen_io_adapter.py": "923cbde03afc1e654cb2e5280386bff2ecd45b7392ed1df5fb0bd008d23c4880"
+  },
+  "frozen_at_utc": "2026-09-12T16:51:21.945505+00:00",
+  "method": "hyworld2_fixed_io_adapter",
+  "no_human_postprocessing": true,
+  "pilot_audit_sha256": "3a86d69f86a651ee7e22a8fc797419ef4514b40c24cb28e6f116aedbacfbbca1",
+  "pilot_summary_sha256": "36700503c62fd94021c05c6e681cc861d0277ea1320baf88aa9ee0e1615261e1",
+  "source_method": "hyworld2",
+  "source_outputs_regenerated": false,
+  "track": "fixed_io_adapter_system"
+}

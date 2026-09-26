@@ -1,0 +1,24 @@
+{
+  "bounds": [
+    [
+      -21.865001678466797,
+      7.152557373046875e-07,
+      0.0
+    ],
+    [
+      21.865001678466797,
+      29.10000228881836,
+      23.562501907348633
+    ]
+  ],
+  "dimensions": [
+    43.730003356933594,
+    29.10000228881836,
+    23.562501907348633
+  ],
+  "mesh_instances": 781,
+  "evaluated_vertices": 10880,
+  "key": "bank",
+  "collection": "ASSET_bank",
+  "source": "./infinigen/outputs/outdoor_part_demo/urban_v3_all46_5/urban_v3_all46_5.blend"
+}

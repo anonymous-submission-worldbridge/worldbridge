@@ -1,0 +1,70 @@
+{
+  "environment": {
+    "path": "external/envs/ll",
+    "python": "3.9.25",
+    "pyiqa": "0.1.14.1",
+    "torch": "2.6.0+cu118",
+    "torchvision": "0.21.0+cu118",
+    "transformers": "4.37.2"
+  },
+  "qalign": {
+    "implementation": "pyiqa-qalign",
+    "evaluator_sha256": "a64956092ed7eb5683f5caf4b6bc3055e750f12883db7873950c41c9c8f858fb",
+    "model_id": "q-future/one-align",
+    "revision": "dcc603b95aa0ebd82afa696d4a1e20d11fc80ddb",
+    "auxiliary_files": {
+      "generation_config.json": "2b4818acc825ace1ce4a9daed9838645d103990a451adba4bc90696e38d3fc1f",
+      "preprocessor_config.json": "7eeb54e111e0c96d1629ac07a798fd5a7782658ed6468bc018fb16c4410358d1",
+      "special_tokens_map.json": "719833ff26ac897a3ec8ed946028a135de2a351470af59b4008744ab1f0ee9b7",
+      "tokenizer.model": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+      "tokenizer_config.json": "cf01145c6de57f061991ff871e85d0402c38481f968daea8874c431cd0c7740f"
+    },
+    "weights": [
+      {
+        "file": "pytorch_model-00001-of-00002.bin",
+        "size_bytes": 9991591698,
+        "sha256": "ca4cdc96237832a9eb3486274de0b10fa7235d5007ee6cff49320c7250970fe3"
+      },
+      {
+        "file": "pytorch_model-00002-of-00002.bin",
+        "size_bytes": 6417830970,
+        "sha256": "d445a50608f025a39ac75c6da13cb9d12a4cc923f6e1b9abc4b767408eac0729"
+      }
+    ],
+    "weights_status": "ready"
+  },
+  "clipiqa_plus": {
+    "implementation": "pyiqa-clipiqa+",
+    "evaluator_sha256": "a64956092ed7eb5683f5caf4b6bc3055e750f12883db7873950c41c9c8f858fb",
+    "backbone": "RN50",
+    "backbone_weights_sha256": "afeb0e10f9e5a86da6080e35cf09123aca3b358a0c3e3b6c78a7b63bc04b6762",
+    "learned_prompts_weights_sha256": "603f3273b6e8a75b309297c85781170c067c6b474f66818c2f253a46a6534447",
+    "weights_status": "ready"
+  },
+  "appearance_diversity": {
+    "implementation": "pyiqa-lpips",
+    "evaluator_sha256": "b57582799d50f03554d077d43d475e1efb9cbfda76e53bd988405bb6894be303",
+    "network": "alex",
+    "version": "0.1",
+    "alexnet_weights_sha256": "7be5be791159472b1fbf3c69796f7cb30dca7ad8466c2df70058c37116cdee02",
+    "linear_weights_sha256": "df73285e35b22355a2df87cdb6b70b343713b667eddbda73e1977e0c860835c0"
+  },
+  "layout_diversity": {
+    "implementation": "transformers-segformer-ade20k",
+    "semantic_generator_sha256": "9e441d6c18da9e73f29655bbd89fe4ef88cc7dad8b59dc65da19ddf6bb145c59",
+    "evaluator_sha256": "b57582799d50f03554d077d43d475e1efb9cbfda76e53bd988405bb6894be303",
+    "model_id": "nvidia/segformer-b2-finetuned-ade-512-512",
+    "revision": "de01bae28967510f9ddd496c60a969357195400c",
+    "weights_sha256": "187ca07bea003a5717c63d04ea90b07f33cd033c0ebf44b4b89fce5070d6c8f3"
+  },
+  "consistency_3d": {
+    "implementation": "WorldScore static 3D consistency",
+    "evaluator_sha256": "0bd4feb1b117adcdd3a5fb2327517b4597a6c3e479d46d9ad0cdcb092f623933",
+    "worldscore_commit": "096c75fc4ada9c7d92e03140c3c1f0c8f383b61f",
+    "droid_slam_commit": "8016d2b9b72b101a3e9ac804ebf20b4c654dc291",
+    "droid_checkpoint_sha256": "46476ef64cde45a97504910d6f3de2eef7b398ec1c6e4e668815c29076024526",
+    "evaluation_seed": 0,
+    "normalization_error_min": 0.0,
+    "normalization_error_max": 1.0719
+  }
+}

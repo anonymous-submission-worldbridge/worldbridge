@@ -1,0 +1,28 @@
+{
+  "bounds": [
+    [
+      -6.440001010894775,
+      0.3099987506866455,
+      -1.4901161193847656e-08
+    ],
+    [
+      6.21999979019165,
+      9.205000877380371,
+      4.340000629425049
+    ]
+  ],
+  "dimensions": [
+    12.660000801086426,
+    8.895002365112305,
+    4.340000629425049
+  ],
+  "mesh_instances": 3233,
+  "evaluated_vertices": 226398,
+  "key": "delivery",
+  "collection": "ASSET_delivery",
+  "source": "./infinigen/outputs/outdoor_part_demo/urban_v3_delivery6/urban_v3_delivery6.blend",
+  "front_facing_corrected": true,
+  "facing_revision": 2,
+  "grounded": true,
+  "ground_shift": -0.699999988079071
+}

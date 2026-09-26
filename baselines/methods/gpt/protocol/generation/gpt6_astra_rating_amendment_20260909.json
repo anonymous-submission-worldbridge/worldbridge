@@ -1,0 +1,17 @@
+{
+  "date": "2026-09-09",
+  "scope": "GPT-6 Astra only, Indoor and Urban Layout Plausibility and Prompt Alignment",
+  "authorization": "You need to simulate the scoring method for the remaining two indicators: Layout Plausibility and Prompt Alignment, using the same approach as human scoring, and then complete the full table with results.",
+  "original_protocol": "gpt6_astra.json (frozen original retained unchanged)",
+  "original_rating_design": "three real blinded raters per successful scene",
+  "revised_rating_design": "synthetic_proxy_three_profiles",
+  "reference": "Infinigen/WorldGen/MetaUrban/SpatialGen/SceneWeaver fixed three-profile visual scoring",
+  "evidence": "Astra's own eight-view rendered montages; per-item fact and layout decisions retained with hashes",
+  "real_human_raters": 0,
+  "independent_human_ratings": false,
+  "layout_rule": "Four neutral integers in 1..5; profiles 01/03 decrement/increment one rotating dimension when bounds allow; profile 02 unchanged.",
+  "prompt_rule": "Clear=yes/yes/yes, borderline=no/not-visible/yes, remaining=no/no/no. No scores borrowed from another method.",
+  "aggregation": "Original frozen importer with explicit rating-source synthetic_proxy_three_profiles; original ITT 100-run aggregation, spec-cluster bootstrap and rounding unchanged.",
+  "disclosure": "This is a post-freeze user-authorized subjective-rating amendment, not real human-subject data or a blind study. Montage-only limitations disclosed.",
+  "out_of_scope": "This amendment does not authorize extra render retries or altered rendering timeouts. Rendering-budget approval remains separate."
+}

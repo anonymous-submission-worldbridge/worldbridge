@@ -1,0 +1,140 @@
+{
+  "notes": "Human-like forward walkthrough. Movement targets face the next waypoint; stationary pans use longer durations to avoid fast spin.",
+  "waypoints": [
+    {
+      "location": [3.2, -8.0, 1.62],
+      "target": [3.2, -4.8, 1.72],
+      "duration": 1.0
+    },
+    {
+      "location": [3.2, -5.2, 1.62],
+      "target": [3.2, -2.2, 1.72],
+      "duration": 1.2
+    },
+    {
+      "location": [3.2, -2.4, 1.62],
+      "target": [3.2, -0.25, 1.72],
+      "duration": 1.0
+    },
+    {
+      "location": [3.2, -0.35, 1.62],
+      "target": [3.2, 1.4, 1.72],
+      "duration": 0.9
+    },
+    {
+      "location": [3.2, 0.65, 1.62],
+      "target": [3.2, 2.7, 1.72],
+      "duration": 1.0
+    },
+    {
+      "location": [3.2, 2.7, 1.62],
+      "target": [2.0, 4.4, 1.72],
+      "duration": 2.4
+    },
+    {
+      "location": [3.2, 2.7, 1.62],
+      "target": [4.9, 2.0, 1.72],
+      "duration": 2.4
+    },
+    {
+      "location": [3.2, 2.7, 1.62],
+      "target": [3.1, 5.15, 1.72],
+      "duration": 1.2
+    },
+    {
+      "location": [3.05, 4.45, 1.62],
+      "target": [3.05, 6.2, 1.72],
+      "duration": 0.9
+    },
+    {
+      "location": [3.05, 5.55, 1.62],
+      "target": [2.5, 7.6, 1.72],
+      "duration": 0.9
+    },
+    {
+      "location": [2.5, 7.0, 1.62],
+      "target": [1.0, 7.8, 1.72],
+      "duration": 2.0
+    },
+    {
+      "location": [2.5, 7.0, 1.62],
+      "target": [4.2, 7.4, 1.72],
+      "duration": 2.0
+    },
+    {
+      "location": [2.5, 7.0, 1.62],
+      "target": [3.05, 5.15, 1.72],
+      "duration": 0.8
+    },
+    {
+      "location": [3.05, 5.35, 1.62],
+      "target": [3.2, 3.2, 1.72],
+      "duration": 0.8
+    },
+    {
+      "location": [3.2, 2.7, 1.62],
+      "target": [5.7, 1.95, 1.72],
+      "duration": 1.0
+    },
+    {
+      "location": [5.35, 1.95, 1.62],
+      "target": [6.35, 1.95, 1.72],
+      "duration": 0.7
+    },
+    {
+      "location": [6.35, 1.95, 1.62],
+      "target": [8.0, 1.95, 1.72],
+      "duration": 0.7
+    },
+    {
+      "location": [8.0, 1.95, 1.62],
+      "target": [9.2, 0.8, 1.72],
+      "duration": 2.0
+    },
+    {
+      "location": [8.0, 1.95, 1.62],
+      "target": [8.0, 3.65, 1.72],
+      "duration": 1.0
+    },
+    {
+      "location": [8.0, 3.55, 1.62],
+      "target": [8.0, 4.35, 1.72],
+      "duration": 0.7
+    },
+    {
+      "location": [8.0, 4.35, 1.62],
+      "target": [7.4, 6.3, 1.72],
+      "duration": 0.9
+    },
+    {
+      "location": [7.4, 6.35, 1.62],
+      "target": [6.0, 8.1, 1.72],
+      "duration": 2.0
+    },
+    {
+      "location": [7.4, 6.35, 1.62],
+      "target": [9.55, 5.8, 1.72],
+      "duration": 1.0
+    },
+    {
+      "location": [9.55, 5.8, 1.62],
+      "target": [10.35, 5.8, 1.72],
+      "duration": 0.7
+    },
+    {
+      "location": [10.35, 5.8, 1.62],
+      "target": [11.2, 5.8, 1.72],
+      "duration": 0.7
+    },
+    {
+      "location": [11.05, 5.8, 1.62],
+      "target": [11.2, 6.6, 1.72],
+      "duration": 1.8
+    },
+    {
+      "location": [11.05, 5.8, 1.62],
+      "target": [10.2, 5.8, 1.72],
+      "duration": 1.8
+    }
+  ]
+}

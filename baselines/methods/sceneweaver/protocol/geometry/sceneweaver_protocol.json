@@ -1,0 +1,43 @@
+{
+  "protocol_id": "worldbridge-table3-sceneweaver-indoor-v1",
+  "method": "sceneweaver",
+  "display_name": "SceneWeaver (Indoor; mixed MiniMax/Codex planner)",
+  "domain": "indoor",
+  "track": "structured_physics_ready",
+  "planned_specs": 25,
+  "seeds": [0, 1, 2, 3],
+  "planned_runs": 100,
+  "reuse": {
+    "source": "baselines/data/table2/indoor/sceneweaver",
+    "regenerate": false,
+    "table2_success_geometry": 47,
+    "table2_render_failure_geometry": 15,
+    "table2_generation_failure_itt": 38
+  },
+  "roi": {
+    "policy": "native target-room final floor",
+    "scale_source": "final scene/layout.json roomsize and evaluated floor mesh"
+  },
+  "spawn": {
+    "policy": "target-floor centroid registered on the empty-reference NavMesh",
+    "reason": "the retained SceneWeaver layout has no stable native door instance identity"
+  },
+  "geometry": {
+    "source": "final evaluated Blender unique_assets meshes",
+    "instance_identity": "final layout Factory class plus size/position assignment",
+    "uniform_face_cap_per_instance": 20000,
+    "narrow_phase": "BVH on uniformly decimated final mesh",
+    "canonical_formats": ["collision.glb", "collision.ply", "collision_geometry.npz"]
+  },
+  "aggregation": {
+    "order": "mean_over_spec(mean_over_seed(scene_metric))",
+    "failure_policy": "itt",
+    "bootstrap_repeats": 10000,
+    "bootstrap_seed": 20260909
+  },
+  "valid_scene_thresholds": {
+    "source": "baselines/protocol/geometry/reference_thresholds.json",
+    "navigable_area_ratio": 72.15721426255115,
+    "connected_area_ratio": 97.26265267349281
+  }
+}

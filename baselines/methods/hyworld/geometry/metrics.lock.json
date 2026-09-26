@@ -1,0 +1,19 @@
+{
+  "common_navmesh": "./baselines/evaluation/geometry/metrics/build_navmesh.py",
+  "common_navmesh_sha256": "78e605addef7a3ea73aa1f4de6e575c7d3b69e474c716a055cc9093368d0b9ba",
+  "created_at_utc": "2026-09-10T17:11:55.249656+00:00",
+  "cuda_arch": "8.9",
+  "cuda_toolkit": "/usr/local/cuda-12.4",
+  "evaluator": "./baselines/methods/hyworld/geometry/hyworld_geometry.py",
+  "evaluator_sha256": "9b61d89cae9ad2268d62529c11ca16a24ce9d8ab7b17fbc47e5595cff96af156",
+  "gsplat_cuda_extension": "./baselines/table3_hyworld2/cache/torch_extensions_glibc231/gsplat_cuda/gsplat_cuda.so",
+  "gsplat_cuda_extension_sha256": "602769c3b4840b79478a88f2ae54c96efefbf7cef21009e6c46ba69f9903c22a",
+  "gsplat_module": "./baselines/sources/HY-World-2.0/hyworld2/worldgen/third_party/gsplat_maskgaussian/gsplat/__init__.py",
+  "gsplat_module_sha256": "29de62a4e2de6223f65743ad8f53cdcf75069f523de868c555978ad521193192",
+  "method_lock_sha256": "a1c75a5dd919364983f930caec68795935bb8ce757e95f838ac1d7d4178c550e",
+  "native_navmesh_scored": false,
+  "protocol_id": "worldbridge-table3-hyworld2-surface-v1",
+  "protocol_sha256": "9130dd11c5e6c4a48019831e3e0f57ff7b0311c410e0a3e4bbc28106ecb75837",
+  "recast_binary": "./baselines/table3_worldgen/runtime/recast_glibc231_clean2/recast.cpython-311-x86_64-linux-gnu.so",
+  "recast_binary_sha256": "5bf75563711bf63ab248e92a32d909f3a2a7ac3effb5d17d1e65528080a564d7"
+}

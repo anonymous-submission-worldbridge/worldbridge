@@ -1,0 +1,21 @@
+Generate one polished, static, metrically scaled indoor-to-outdoor 3D demo scene using Blender 4.2 Python (bpy). Return a JSON object with exactly one field, code, containing executable Python source. Do not use tools, inspect files, browse, or run commands. This is one independent generation without feedback or revision.
+
+Implement build_scene(seed), plus any helpers it needs. The caller begins with an empty Blender file, seeds Python and NumPy, calls build_scene(seed), and then supplies lighting, cameras, rendering, and video encoding. Use random.Random(seed) for any stochastic variation. Use only procedural geometry and materials; do not load or download assets.
+
+Coordinate and connectivity contract (mandatory):
+- Use meters, Z up, ground/floor walking surfaces at Z=0, and keep visible content inside X=[-14,14], Y=[-18,9], Z=[-0.2,8].
+- The primary one-story building interior occupies approximately X=[-6,6], Y=[-4.5,8], with a ceiling/roof near Z=3.4. The outdoor environment occupies Y=[-18,-4.5].
+- The shared entrance is centered on the south/front wall at Y=-4.5. It must be visibly open from X=-1.1 to X=1.1 and from Z=0 to at least Z=2.35. Build the front wall as separate left, right, and header pieces; do not place a closed door slab in the opening.
+- Provide a continuous, step-free walking surface through that opening. Keep an unobstructed central camera corridor X=[-0.85,0.85], Y=[-14,5.8], Z=[0,2.2]. No furniture, planters, mullions, lamps, roof posts, curbs, or decorations may enter this corridor.
+- The exterior facade, outdoor ground, landscaping/street context, interior shell, ceiling, furniture, and decor must all be actual 3D geometry. Make the connection unmistakable when viewed from both sides.
+- Use the supplied scene description faithfully and add coherent small-scale detail. Favor a designed architectural visualization rather than primitive boxes alone: bevel visible edges, layer objects, use recognizable silhouettes, varied material roughness, frames/trim, and repeated details where appropriate.
+- Windows may use glass, but keep some solid framing. Ensure the roof and walls do not block ordinary eye-level views from the listed camera corridor.
+
+Technical restrictions:
+- Only import bpy, math, random, numpy, mathutils, or collections.
+- Do not read/write files, load libraries/images, invoke processes, access the network, use exec/eval, modify Blender preferences, save, render, create cameras, animate objects, add handlers, or change render/color-management settings.
+- Do not create LIGHT or CAMERA objects. Do not use text objects, labels, signs containing words, billboards, background images, or compositing.
+- Use Blender 4.2 material sockets (Base Color, Roughness, Metallic, Transmission Weight). Do not use emissive materials.
+- Geometry must be visible at ordinary eye level, with outward-facing surfaces and reasonable human scale. Give scene objects descriptive names.
+
+Return only schema-conforming JSON. The demo specification and logical seed follow:

@@ -1,0 +1,85 @@
+{
+  "protocol_id": "worldbridge-table3-gpt6-astra-xhigh-native-mesh-nav-v1",
+  "status": "frozen",
+  "created_at_utc": "2026-09-14T15:45:00Z",
+  "method": "gpt6_astra_xhigh",
+  "display_name": "GPT-6 Astra Extra High",
+  "model_id": "gpt-6-astra",
+  "reasoning_effort": "xhigh",
+  "official_reasoning_effort_label": "xhigh",
+  "source_method_lock": "baselines/methods/gpt/protocol/generation/gpt6_astra_xhigh.lock.json",
+  "method_definition": "GPT-6 Astra Extra High uses the frozen Codex CLI text-only interface with reasoning_effort=xhigh to generate Blender Python scene code. Table 3 evaluates persistent recovery builds after the completed Table-2 raw tree was lost from its disclosed ephemeral /tmp migration target.",
+  "comparison_to_high": "The prompt, output schema, Blender builder, Table-3 exporter, surface rules, Recast evaluator, specifications, logical seeds, failure policy, and aggregation are shared with GPT-6 Astra High; the intended model variable is reasoning_effort high versus xhigh.",
+  "domains": ["indoor", "urban"],
+  "track": "native_mesh_instance_incomplete",
+  "structural_metrics": {
+    "collision_rate": "N/A-I",
+    "floating_rate": "N/A-I",
+    "oob_rate": "N/A-I",
+    "support_validity": "N/A-I",
+    "valid_scene_rate": "N/A-I",
+    "reason": "The frozen final output has meshes and descriptive node names but no stable independent-instance graph, unified object roles, or native support edges."
+  },
+  "navigation_metrics": ["navigable_area_ratio", "connected_area_ratio", "navmesh_success_rate"],
+  "planned_specs_per_domain": 25,
+  "seeds": [0, 1, 2, 3],
+  "planned_runs_per_domain": 100,
+  "pilot": {
+    "spec_indices": [0, 5, 10, 15, 20],
+    "seeds": [0, 1],
+    "runs_per_domain": 10,
+    "reviewed_at_utc": "2026-09-15T05:20:00Z",
+    "terminal_runs": 20,
+    "evaluated_geometry_runs": 17,
+    "itt_runs": 3,
+    "new_failures": 0,
+    "visual_review": [
+      "/data2/outputs/worldbridge_table3_gpt6_astra_xhigh/table3_eval/indoor/indoor_bedroom_00/seed_0/navigation/debug_topdown.png",
+      "/data2/outputs/worldbridge_table3_gpt6_astra_xhigh/table3_eval/urban/urban_residential_four_way_00/seed_0/navigation/debug_topdown.png"
+    ]
+  },
+  "source_recovery": {
+    "amendment": "baselines/methods/gpt/protocol/geometry/gpt6_astra_xhigh_geometry_recovery_20260914.json",
+    "original_table2_audit": "baselines/results/gpt6_astra_xhigh/formal_audit.json",
+    "original_table2_storage_migration": "baselines/results/gpt6_astra_xhigh/formal_storage_migration.json",
+    "source_root": "/data2/outputs/worldbridge_table3_gpt6_astra_xhigh/source_recovery/{domain}/gpt6_astra_xhigh/{spec_id}/seed_{seed}",
+    "regenerate": true,
+    "exact_byte_recovery": false,
+    "reason": "The verified /tmp migration target no longer exists and the logical Table-2 links are broken.",
+    "eligible": "Only slots with scene_built=true in the frozen completed Table-2 formal audit",
+    "original_table2_unbuilt_policy": "ITT zero; never regenerate",
+    "expected_original_split": {"evaluated": 183, "itt": 17},
+    "expected_coverage": {
+      "indoor": {"evaluated": 84, "itt": 16},
+      "urban": {"evaluated": 91, "itt": 9}
+    },
+    "scientific_disclosure": "The remote model does not support deterministic seeds. Recovery builds are fresh samples at the same frozen logical indexes and are not claimed to be the original Table-2 bytes. Any recovery generation/build failure is retained as an additional ITT failure."
+  },
+  "output_root": "/data2/outputs/worldbridge_table3_gpt6_astra_xhigh/table3_eval/{domain}/{spec_id}/seed_{seed}",
+  "results_root": "baselines/results/gpt6_astra_xhigh_table3",
+  "coordinate_system": "Blender meters, Z up, evaluation region centered at X=Y=0",
+  "roi": {
+    "indoor": "full extent_m XY rectangle",
+    "urban": "fixed central [-30,30] x [-30,30] meter crop"
+  },
+  "navigation": {
+    "agent": "baselines/protocol/geometry/agent.yaml",
+    "walkable_rules": "baselines/methods/gpt/protocol/geometry/gpt6_astra_geometry_nav_rules.json",
+    "shared_high_exporter": "baselines/methods/gpt/tools/export_gpt_geometry.py",
+    "shared_high_evaluator": "baselines/methods/gpt/tools/evaluate_gpt_geometry_nav.py",
+    "method_native_navmesh_used": false,
+    "connect_islands": false,
+    "keep_largest_only": false,
+    "failure_policy": "ITT",
+    "aggregation": "mean over the four seeds inside each specification, then mean over 25 specifications",
+    "bootstrap_repeats": 10000,
+    "bootstrap_seed": 20260909
+  },
+  "blender": {
+    "path": "blender",
+    "version": "4.2.0",
+    "use_gpu": false,
+    "gpu_reason": "Canonical mesh export performs no rendering or neural inference; Blender dependency-graph and Recast operations are CPU-only"
+  },
+  "downloads_required": false
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "factory": "FruitFactoryApple",
+    "seed": 92231,
+    "height_m": 0.085
+  },
+  {
+    "factory": "FruitFactoryStrawberry",
+    "seed": 92232,
+    "height_m": 0.04
+  },
+  {
+    "factory": "FruitFactoryPineapple",
+    "seed": 92233,
+    "height_m": 0.28
+  }
+]

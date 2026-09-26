@@ -1,0 +1,35 @@
+{
+  "schema_version": "table2-gpt6-astra-xhigh-operational-amendment-v1",
+  "amendment_id": "gpt6-astra-xhigh-pre-formal-generation-timeout-20260913",
+  "created_at_utc": "2026-09-13T11:59:48Z",
+  "phase": "pre_formal_pilot",
+  "trigger_evidence": {
+    "pilot_data_root": "data/gpt6_astra_xhigh_pilot",
+    "observed_pattern": "Multiple valid xhigh responses completed near the 900-second boundary while urban_residential_four_way_00 seed 1 exhausted three attempts at 900 seconds. After the first pre-formal extension, urban_leisure_civic_four_way_20 seed 1 completed at about 26 minutes, while seed 0 exhausted two more attempts at the 1800-second boundary. All affected attempts had thread.started and no returned response.",
+    "classification": "infrastructure_timeout_not_quality_or_access"
+  },
+  "unchanged_registered_configuration": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "xhigh",
+    "prompt": "methods/gpt/protocol/generation/gpt6_astra_prompt.txt",
+    "output_schema": "methods/gpt/protocol/generation/gpt6_astra_output.schema.json",
+    "logical_seeds": [0, 1, 2, 3],
+    "quality_retry_policy": false,
+    "generation_timeout_s_recorded_for_high_parity": 900
+  },
+  "operational_changes": {
+    "effective_generation_timeout_s": 3600,
+    "recommended_generation_concurrency": 2,
+    "pilot_only_recovery_attempts_for_pre_amendment_exhaustion": 3
+  },
+  "revision_history": [
+    {
+      "prior_effective_generation_timeout_s": 1800,
+      "prior_file_sha256": "0d055e503837d3ab8d00f61fc1bc79caae15092be919455c427cdd00d557d620",
+      "reason": "The leisure/civic pilot supplied direct evidence that valid xhigh latency can approach 30 minutes and that 1800 seconds still censors an in-flight response."
+    }
+  ],
+  "recovery_eligibility": "Only a pilot run with exactly three preserved attempts, all marked timeout=true at a superseded 900- or 1800-second limit, may receive attempts 4-6. Successful or quality-failed runs are never regenerated.",
+  "formal_policy": "Fresh formal runs receive the original three-attempt total budget, using the effective 3600-second infrastructure timeout.",
+  "disclosure": "This is a frozen-resource amendment made before formal freeze. It changes no model, reasoning effort, prompt, schema, seed, scene contract, renderer, camera, validation, metric, ITT, or quality-retry rule."
+}

@@ -1,0 +1,104 @@
+protocol_id: worldbridge-table3-syncity3k-surface-v1
+method: syncity3k
+display_name: SynCity 3000
+track: surface_only
+domains: [indoor, urban]
+specs:
+  indoor: baselines/protocol/generation/indoor_specs.jsonl
+  urban: baselines/protocol/generation/urban_specs.jsonl
+seeds: [0, 1, 2, 3]
+pilot_spec_indices: [0, 5, 10, 15, 20]
+pilot_seeds: [0, 1]
+reuse:
+  source_root: baselines/data/table2
+  raw_output: scene/scene_color_adjusted.ply
+  regenerate: false
+  require_generation_success: true
+  table2_generation_failure_policy: intention_to_treat_zero
+  table2_render_failure_policy: evaluate_generated_geometry
+representation:
+  native: final_scene_scale_gaussian_splat
+  canonical: fixed_multiview_expected_depth_surface_mesh
+  native_instances: false
+  structured_metrics: N/A-I
+scale_calibration:
+  source: frozen_table2_adapter_grid_and_spec_extent
+  native_scene_grid_units: 3.0
+  meters_per_native_unit: min(spec_extent_x_m, spec_extent_y_m) / native_scene_grid_units
+  preserve_aspect_ratio: true
+  visible_opacity_threshold: 0.05
+  robust_horizontal_quantiles: [0.001, 0.999]
+  minimum_native_horizontal_span: 2.40
+  maximum_native_horizontal_span: 3.20
+  floor_source_y_quantile: 0.99
+  source_coordinate_system: right_handed_xz_ground_negative_y_up
+  target_coordinate_system: right_handed_z_up
+surface_extraction:
+  renderer: gsplat_expected_depth
+  execution_requires_cuda: true
+  gsplat_version: 1.5.3
+  render_mode: ED
+  render_width: 512
+  render_height: 512
+  orbit_views: 16
+  polar_views: 8
+  horizontal_fov_degrees: 70.0
+  normalized_orbit_radius: 2.30
+  normalized_orbit_height: -1.25
+  normalized_polar_radius: 1.55
+  normalized_polar_height: -2.10
+  normalization_quantiles: [0.01, 0.99]
+  opacity_threshold: 0.50
+  near_plane_normalized: 0.01
+  far_plane_normalized: 20.0
+  grid_stride: 2
+  maximum_triangle_edge_m:
+    indoor: 0.30
+    urban: 1.00
+  lower_height_margin_m: 0.30
+  upper_height_margin_above_agent_m: 0.30
+  crop_to_preregistered_walkable_mask: true
+  face_region_test: centroid
+  hole_filling: false
+  component_filtering: false
+  connect_components: false
+reference:
+  indoor:
+    type: centered_spec_extent_rectangle
+  urban:
+    type: deterministic_pedestrian_corridors_by_topology
+    sidewalk_width_m: 3.0
+    road_width_m: 12.0
+    main_road_width_m: 14.0
+    side_road_width_m: 8.0
+agent:
+  height_m: 1.70
+  radius_m: 0.30
+  max_climb_m: 0.20
+  max_slope_deg: 45.0
+recast:
+  cell_size_m: 0.05
+  cell_height_m: 0.05
+  partition: watershed
+  filter_low_hanging_obstacles: true
+  filter_ledge_spans: true
+  filter_low_height_spans: true
+postprocess:
+  connect_components: false
+  keep_largest_only: false
+  max_walkable_height_above_floor_m: 0.20
+spawn:
+  horizontal_tolerance_m: 0.30
+  vertical_tolerance_m: 0.50
+success:
+  minimum_reference_area_fraction: 0.01
+  failure_policy: all_three_navigation_metrics_zero_on_any_surface_or_navmesh_predicate_failure
+aggregation:
+  order: mean_over_spec_mean_over_seed
+  failure_policy: intention_to_treat
+  bootstrap_repeats: 10000
+  bootstrap_seed: 20260914
+display:
+  unit: percent
+  decimals: 1
+

@@ -1,0 +1,24 @@
+{
+  "bounds": [
+    [
+      -26.5,
+      0.0,
+      0.0
+    ],
+    [
+      26.5,
+      35.349998474121094,
+      12.110360145568848
+    ]
+  ],
+  "dimensions": [
+    53.0,
+    35.349998474121094,
+    12.110360145568848
+  ],
+  "mesh_instances": 540,
+  "evaluated_vertices": 31624,
+  "key": "factory",
+  "collection": "ASSET_factory",
+  "source": "./infinigen/outputs/outdoor_part_demo/urban_v3_factory3/urban_v3_factory.blend"
+}

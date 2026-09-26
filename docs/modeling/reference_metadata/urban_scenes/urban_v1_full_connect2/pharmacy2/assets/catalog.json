@@ -1,0 +1,162 @@
+[
+  {
+    "id": 0,
+    "kind": "bottle",
+    "name": "VITAMIN C",
+    "amount": "60 TABLETS",
+    "color": "#17655d",
+    "prefix": "sku_00"
+  },
+  {
+    "id": 1,
+    "kind": "bottle",
+    "name": "VITAMIN D3",
+    "amount": "90 SOFTGELS",
+    "color": "#234f80",
+    "prefix": "sku_01"
+  },
+  {
+    "id": 2,
+    "kind": "bottle",
+    "name": "VITAMIN B12",
+    "amount": "60 TABLETS",
+    "color": "#785277",
+    "prefix": "sku_02"
+  },
+  {
+    "id": 3,
+    "kind": "bottle",
+    "name": "MAGNESIUM",
+    "amount": "60 CAPSULES",
+    "color": "#b46835",
+    "prefix": "sku_03"
+  },
+  {
+    "id": 4,
+    "kind": "bottle",
+    "name": "ZINC",
+    "amount": "30 TABLETS",
+    "color": "#477344",
+    "prefix": "sku_04"
+  },
+  {
+    "id": 5,
+    "kind": "bottle",
+    "name": "OMEGA 3",
+    "amount": "60 SOFTGELS",
+    "color": "#397788",
+    "prefix": "sku_05"
+  },
+  {
+    "id": 6,
+    "kind": "carton",
+    "name": "ALLERGY CARE",
+    "amount": "30 TABLETS",
+    "color": "#a24c55",
+    "prefix": "sku_06"
+  },
+  {
+    "id": 7,
+    "kind": "carton",
+    "name": "DAILY SUPPORT",
+    "amount": "30 CAPSULES",
+    "color": "#536287",
+    "prefix": "sku_07"
+  },
+  {
+    "id": 8,
+    "kind": "carton",
+    "name": "ORAL REHYDRATION",
+    "amount": "12 SACHETS",
+    "color": "#17655d",
+    "prefix": "sku_08"
+  },
+  {
+    "id": 9,
+    "kind": "carton",
+    "name": "STERILE DRESSINGS",
+    "amount": "20 DRESSINGS",
+    "color": "#234f80",
+    "prefix": "sku_09"
+  },
+  {
+    "id": 10,
+    "kind": "carton",
+    "name": "ANTISEPTIC WIPES",
+    "amount": "24 WIPES",
+    "color": "#785277",
+    "prefix": "sku_10"
+  },
+  {
+    "id": 11,
+    "kind": "carton",
+    "name": "EYE CARE",
+    "amount": "10 mL",
+    "color": "#b46835",
+    "prefix": "sku_11"
+  },
+  {
+    "id": 12,
+    "kind": "carton",
+    "name": "PAIN RELIEF",
+    "amount": "20 TABLETS",
+    "color": "#477344",
+    "prefix": "sku_12"
+  },
+  {
+    "id": 13,
+    "kind": "carton",
+    "name": "NASAL CARE",
+    "amount": "20 mL",
+    "color": "#397788",
+    "prefix": "sku_13"
+  },
+  {
+    "id": 14,
+    "kind": "tube",
+    "name": "HAND CREAM",
+    "amount": "50 g",
+    "color": "#a24c55",
+    "prefix": "sku_14"
+  },
+  {
+    "id": 15,
+    "kind": "tube",
+    "name": "BARRIER CREAM",
+    "amount": "50 g",
+    "color": "#536287",
+    "prefix": "sku_15"
+  },
+  {
+    "id": 16,
+    "kind": "tube",
+    "name": "SKINCARE CREAM",
+    "amount": "75 g",
+    "color": "#17655d",
+    "prefix": "sku_16"
+  },
+  {
+    "id": 17,
+    "kind": "tube",
+    "name": "ALOE GEL",
+    "amount": "50 g",
+    "color": "#234f80",
+    "prefix": "sku_17"
+  },
+  {
+    "id": 18,
+    "kind": "tube",
+    "name": "SOOTHING BALM",
+    "amount": "40 g",
+    "color": "#785277",
+    "prefix": "sku_18"
+  },
+  {
+    "id": 19,
+    "kind": "tube",
+    "name": "MOISTURISING CREAM",
+    "amount": "50 g",
+    "color": "#b46835",
+    "prefix": "sku_19"
+  }
+]

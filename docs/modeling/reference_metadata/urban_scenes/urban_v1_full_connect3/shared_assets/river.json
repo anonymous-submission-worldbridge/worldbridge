@@ -1,0 +1,24 @@
+{
+  "bounds": [
+    [
+      -15.268802642822266,
+      0.0,
+      0.0
+    ],
+    [
+      15.268806457519531,
+      42.03675079345703,
+      3.3474998474121094
+    ]
+  ],
+  "dimensions": [
+    30.537609100341797,
+    42.03675079345703,
+    3.3474998474121094
+  ],
+  "mesh_instances": 118,
+  "evaluated_vertices": 19718,
+  "key": "river",
+  "collection": "ASSET_river",
+  "source": "./infinigen/outputs/outdoor_full_demo/urban_v1_full_07-river5/urban_v1_full_07-river5.blend"
+}

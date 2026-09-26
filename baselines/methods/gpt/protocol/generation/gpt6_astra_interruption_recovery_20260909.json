@@ -1,0 +1,15 @@
+{
+  "date": "2026-09-09",
+  "method": "gpt6_astra",
+  "domain": "urban",
+  "assistant_request": "The last 3 items were interrupted due to process termination and have exhausted the available retry budget. Are you allowed to add one more recovery attempt for each of these 3 items? Only rerun the original scene rendering, preserving all history, without modifying the model, code, or image quality parameters.",
+  "user_authorization": "Continue execution and complete the task. After completion, record the results in ./baselines/%E5%AF%B9%E6%AF%94%E5%AE%9E%E9%AA%8C-%E8%A1%A82.md (original external path, URL-encoded).",
+  "targets": ["urban_residential_main_side_02/seed_3", "urban_commercial_offset_08/seed_3", "urban_commercial_irregular_09/seed_2"],
+  "max_attempts_for_exact_targets": 5,
+  "additional_attempts_per_target": 1,
+  "timeout_s": 7200,
+  "parent_resource_amendment": "methods/gpt/protocol/generation/gpt6_astra_render_amendment_20260909.json",
+  "reason": "Attempt 4 was interrupted when the controller and workers disappeared; actual exit status unavailable. This amendment authorizes only one additional recovery for each exact target.",
+  "unchanged": ["generated source and Blender scene", "28 frozen sources", "renderer, samples, resolution and camera", "quality failure handling", "metric definitions and ITT", "all prior attempts and logs"],
+  "disclosure": "Explicit post-freeze resource-only amendment; not a claim that the original retry budget was unchanged. No retry of quality failures."
+}

@@ -1,0 +1,24 @@
+{
+  "bounds": [
+    [
+      -29.267501831054688,
+      -7.450580596923828e-08,
+      0.0
+    ],
+    [
+      29.267501831054688,
+      38.16749954223633,
+      9.940000534057617
+    ]
+  ],
+  "dimensions": [
+    58.535003662109375,
+    38.16749954223633,
+    9.940000534057617
+  ],
+  "mesh_instances": 2114,
+  "evaluated_vertices": 62322,
+  "key": "police",
+  "collection": "ASSET_police",
+  "source": "./infinigen/outputs/outdoor_part_demo/urban_v3_police3/urban_v3_police3.blend"
+}

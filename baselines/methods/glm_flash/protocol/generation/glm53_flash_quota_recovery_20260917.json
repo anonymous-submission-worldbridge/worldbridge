@@ -1,0 +1,39 @@
+{
+  "amendment_id": "glm53-flash-coding-plan-quota-recovery-20260917",
+  "created_at_utc": "2026-09-17T08:50:31Z",
+  "method": "glm53_flash",
+  "base_lock": "methods/glm_flash/protocol/generation/glm53_flash.lock.json",
+  "base_lock_sha256": "86d65706f75a33ed0f4f84c336b820e687ebe39b6e6721d21990e89011661cd9",
+  "recovery_runner": "methods/glm_flash/tools/recover_glm_flash_generation.py",
+  "recovery_runner_sha256": "bd0cf99a3651413805e928490d014e38c17fd8c9d877e0ddf3e56f0feab9ff65",
+  "trigger": {
+    "client_log_message": "The usage limit has been reached for 5 hours. The cap will reset at 2026-09-17 19:27:11.",
+    "reported_reset_timezone": "Asia/Shanghai",
+    "interpreted_reset_utc": "2026-09-17T11:27:11Z",
+    "first_affected_run": "indoor/glm53_flash/indoor_kitchen_01/seed_0",
+    "scheduler_issue": "The original ThreadPoolExecutor pre-submitted all tasks and waited for queued futures after detecting an infrastructure result, so it did not immediately pause new dispatch. The parent and two exact orphan OpenCode children were stopped after the explicit quota message was found."
+  },
+  "scope": {
+    "allowed": [
+      "close an attempt interrupted by the controlled quota pause as infrastructure",
+      "append a new attempt only when no assistant text was accepted for that run",
+      "resume unstarted formal runs after the provider reset",
+      "stop dispatching new runs on the first unresolved infrastructure or access result"
+    ],
+    "forbidden": [
+      "retry any schema, AST, Blender build, render validation, or other quality failure",
+      "replace an accepted model response",
+      "change prompt, model, provider, thinking request, schema, seed index, renderer, validator, or metric"
+    ],
+    "recovery_attempts_per_run_per_scheduler_pass": 1,
+    "generation_workers": 2
+  },
+  "pause_audit": {
+    "manifests": 47,
+    "valid": 21,
+    "quality": 23,
+    "infrastructure": 2,
+    "interrupted_in_progress": 1,
+    "accepted_outputs_retried": 0
+  }
+}

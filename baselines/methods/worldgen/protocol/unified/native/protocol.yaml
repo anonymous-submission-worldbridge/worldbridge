@@ -1,0 +1,161 @@
+{
+  "aggregation": {
+    "bootstrap_repeats": 10000,
+    "bootstrap_seed": 20260909,
+    "confidence": 0.95,
+    "order": "mean_over_spec(mean_over_seed(mean_over_vlm_pass))"
+  },
+  "aqs": {
+    "dimensions": [
+      "functional",
+      "visual"
+    ],
+    "evidence": "four deterministic exterior anchors plus four deterministic interior anchors",
+    "failure_value": 1,
+    "label": "AQS-VLM",
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "model_source": "local_modelscope_snapshot",
+    "passes": 3,
+    "score_range": [
+      1,
+      10
+    ],
+    "seeds": [
+      102,
+      203,
+      304
+    ],
+    "temperature": 0.2,
+    "top_p": 0.9
+  },
+  "capability": {
+    "cross_boundary_reachability": "N/A-U",
+    "entrance_alignment": "N/A-U",
+    "entrance_passability": "N/A-U",
+    "functional_aqs": "numeric",
+    "io_connectivity_rate": "N/A-U",
+    "native_building_to_interior_identity": false,
+    "native_shared_portal": false,
+    "native_shared_world_frame": false,
+    "shape_iou": "N/A-U",
+    "spatial_aqs": "N/A-U",
+    "transition_collision": "N/A-U",
+    "visual_aqs": "numeric"
+  },
+  "display_name": "WorldGen (ZiYang-xie)",
+  "formal": {
+    "planned_pairs": 100,
+    "seeds": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "spec_indices": "all"
+  },
+  "frozen_after_pilot_at_utc": "2026-09-10T15:35:06.159309+00:00",
+  "functions": [
+    "residence",
+    "food_service",
+    "retail",
+    "office",
+    "civic_community"
+  ],
+  "generation": {
+    "blend_extend": 6,
+    "guidance_scale": 7.0,
+    "inference_steps": 50,
+    "inpaint_bg": false,
+    "low_vram": false,
+    "mode": "text_to_scene",
+    "offline_only": true,
+    "outputs": [
+      "gaussian_splat",
+      "official_triangle_mesh"
+    ],
+    "resolution": [
+      1600,
+      800
+    ],
+    "use_sharp": false
+  },
+  "method": "worldgen",
+  "paths": {
+    "formal_annotations": "baselines/annotations/table4_worldgen",
+    "formal_data": "baselines/data/table4_worldgen",
+    "formal_results": "baselines/results/table4_worldgen",
+    "pilot_annotations": "baselines/work/table4_worldgen/pilot/annotations/worldgen",
+    "pilot_data": "baselines/work/table4_worldgen/pilot/data/table4/worldgen",
+    "pilot_results": "baselines/work/table4_worldgen/pilot/results/worldgen"
+  },
+  "pilot": {
+    "planned_pairs": 10,
+    "seeds": [
+      0,
+      1
+    ],
+    "spec_indices": [
+      0,
+      5,
+      10,
+      15,
+      20
+    ]
+  },
+  "protocol_version": "worldbridge-table4-v1",
+  "render": {
+    "anchor_calibration": "baselines/results/table4_worldgen/table2_anchor_calibration.json",
+    "anchor_resolution": [
+      1280,
+      720
+    ],
+    "anchors_per_side": 8,
+    "aqs_anchor_indices_per_side": {
+      "exterior": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "interior": [
+        0,
+        2,
+        5,
+        7
+      ]
+    },
+    "horizontal_fov_degrees": 70.0,
+    "renderer": "gsplat-1.5.3",
+    "sequence_frames_per_side": 50,
+    "sequence_resolution": [
+      512,
+      512
+    ],
+    "success_contract": "both sides have splat+official mesh and all four preregistered AQS anchors pass mean/std validation",
+    "table2_sequence_validation": "retained as a diagnostic but not used as the Table 4 pair-success criterion"
+  },
+  "resources": {
+    "allowed_physical_gpus": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "cuda_arch_list": "8.9",
+    "large_downloads_required": false,
+    "maximum_start_utilization_percent": 10,
+    "minimum_free_memory_mib": 40000
+  },
+  "spec_file": "baselines/methods/worldgen/protocol/unified/native/specs.jsonl",
+  "status": "formal_frozen",
+  "track": "matched_text_independent",
+  "visual_themes": [
+    "contemporary",
+    "brick_industrial",
+    "timber_traditional",
+    "tropical",
+    "futuristic_stylized"
+  ]
+}

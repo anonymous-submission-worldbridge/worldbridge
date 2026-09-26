@@ -1,0 +1,33 @@
+{
+  "recorded_at_utc": "2026-09-13T16:40:00Z",
+  "method": "gpt6_astra_xhigh",
+  "reason": "The previously launched two-worker controller lost its supervising terminal. It remained alive in the host process namespace, completed three more slots, then was deliberately stopped to switch to the user-authorized accelerated controller. Two child requests without model responses were left incomplete.",
+  "scope": "Controller-interruption bookkeeping only",
+  "eligibility": {
+    "generation_success": false,
+    "response_json_exists": false,
+    "agent_message_event_exists": false,
+    "turn_completed_event_exists": false,
+    "attempt_manifest_has_ended_at_utc": false
+  },
+  "action": "Archive the incomplete log directory with its byte-exact evidence and remove only the incomplete attempt record so the same frozen retry index can resume.",
+  "scientific_configuration_changed": false,
+  "model_response_reused_or_selected": false,
+  "completed_attempts_removed": false,
+  "targets": [
+    {
+      "domain": "indoor",
+      "spec_id": "indoor_bedroom_01",
+      "seed": 2,
+      "attempt_index": 1,
+      "thread_id": "01a09b8a-b10c-7f10-9fe0-169f104925d5"
+    },
+    {
+      "domain": "indoor",
+      "spec_id": "indoor_bedroom_01",
+      "seed": 3,
+      "attempt_index": 1,
+      "thread_id": "01a09b97-b984-7ab1-a131-c1fbee1a0447"
+    }
+  ]
+}

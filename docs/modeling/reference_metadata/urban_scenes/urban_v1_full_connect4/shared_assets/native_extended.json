@@ -1,0 +1,392 @@
+[
+  {
+    "collection": "NATIVE_CupFactory_0",
+    "source_object": "CupFactory(2427617).spawn_asset(380481)",
+    "dimensions": [
+      0.10107177495956421,
+      0.10107176005840302,
+      0.11822596937417984
+    ],
+    "vertices": 63086
+  },
+  {
+    "collection": "NATIVE_CupFactory_1",
+    "source_object": "CupFactory(2794958).spawn_asset(8547822)",
+    "dimensions": [
+      0.12492381036281586,
+      0.12492382526397705,
+      0.12691575288772583
+    ],
+    "vertices": 82853
+  },
+  {
+    "collection": "NATIVE_CupFactory_2",
+    "source_object": "CupFactory(3985953).spawn_asset(9775977)",
+    "dimensions": [
+      0.12584370374679565,
+      0.12584371864795685,
+      0.1579747498035431
+    ],
+    "vertices": 94242
+  },
+  {
+    "collection": "NATIVE_BottleFactory_0",
+    "source_object": "BottleFactory(1989585).spawn_asset(2984703)",
+    "dimensions": [
+      0.07296711206436157,
+      0.07296711206436157,
+      0.2254847139120102
+    ],
+    "vertices": 16006
+  },
+  {
+    "collection": "NATIVE_BottleFactory_1",
+    "source_object": "BottleFactory(7467073).spawn_asset(9159065)",
+    "dimensions": [
+      0.06689313799142838,
+      0.06689313799142838,
+      0.19201436638832092
+    ],
+    "vertices": 13758
+  },
+  {
+    "collection": "NATIVE_BottleFactory_2",
+    "source_object": "BottleFactory(8086374).spawn_asset(9501538)",
+    "dimensions": [
+      0.11890048533678055,
+      0.11890048533678055,
+      0.24154511094093323
+    ],
+    "vertices": 27366
+  },
+  {
+    "collection": "NATIVE_JarFactory_0",
+    "source_object": "JarFactory(1345449).spawn_asset(5843629)",
+    "dimensions": [
+      0.05761905387043953,
+      0.06360173225402832,
+      0.24446767568588257
+    ],
+    "vertices": 61314
+  },
+  {
+    "collection": "NATIVE_JarFactory_1",
+    "source_object": "JarFactory(2782962).spawn_asset(1639396)",
+    "dimensions": [
+      0.09904841333627701,
+      0.09904840588569641,
+      0.20392107963562012
+    ],
+    "vertices": 50306
+  },
+  {
+    "collection": "NATIVE_FoodBoxFactory_0",
+    "source_object": "FoodBoxFactory(4338968).spawn_asset(7886885)",
+    "dimensions": [
+      0.12646399438381195,
+      0.11020483076572418,
+      0.2012471854686737
+    ],
+    "vertices": 24
+  },
+  {
+    "collection": "NATIVE_FoodBoxFactory_1",
+    "source_object": "FoodBoxFactory(884427).spawn_asset(359582)",
+    "dimensions": [
+      0.12833823263645172,
+      0.051454268395900726,
+      0.1362389475107193
+    ],
+    "vertices": 24
+  },
+  {
+    "collection": "NATIVE_FoodBagFactory_0",
+    "source_object": "FoodBagFactory(758184).spawn_asset(1198803)",
+    "dimensions": [
+      0.2024696320295334,
+      0.17458680272102356,
+      0.27833712100982666
+    ],
+    "vertices": 33282
+  },
+  {
+    "collection": "NATIVE_FoodBagFactory_1",
+    "source_object": "FoodBagFactory(9553820).spawn_asset(4851977)",
+    "dimensions": [
+      0.08655492216348648,
+      0.05382572114467621,
+      0.1210232600569725
+    ],
+    "vertices": 33058
+  },
+  {
+    "collection": "NATIVE_WineglassFactory_0",
+    "source_object": "WineglassFactory(4429621).spawn_asset(198280)",
+    "dimensions": [
+      0.11584466695785522,
+      0.11584467440843582,
+      0.1789420247077942
+    ],
+    "vertices": 43170
+  },
+  {
+    "collection": "NATIVE_WineglassFactory_1",
+    "source_object": "WineglassFactory(4429621).spawn_asset(2073322)",
+    "dimensions": [
+      0.11584466695785522,
+      0.11584467440843582,
+      0.17894980311393738
+    ],
+    "vertices": 43170
+  },
+  {
+    "collection": "NATIVE_PotFactory_0",
+    "source_object": "PotFactory(5714739).spawn_asset(203372)",
+    "dimensions": [
+      0.23250579833984375,
+      0.23250579833984375,
+      0.09322480112314224
+    ],
+    "vertices": 58370
+  },
+  {
+    "collection": "NATIVE_PotFactory_1",
+    "source_object": "PotFactory(5714739).spawn_asset(2152814)",
+    "dimensions": [
+      0.23162484169006348,
+      0.23162484169006348,
+      0.09322480112314224
+    ],
+    "vertices": 44802
+  },
+  {
+    "collection": "NATIVE_PanFactory_0",
+    "source_object": "PanFactory(8634529).spawn_asset(1459000)",
+    "dimensions": [
+      0.4477129578590393,
+      0.2906340956687927,
+      0.1211802065372467
+    ],
+    "vertices": 36926
+  },
+  {
+    "collection": "NATIVE_PanFactory_1",
+    "source_object": "PanFactory(8634529).spawn_asset(2142962)",
+    "dimensions": [
+      0.44971227645874023,
+      0.29267972707748413,
+      0.12117788940668106
+    ],
+    "vertices": 48954
+  },
+  {
+    "collection": "NATIVE_SpoonFactory_0",
+    "source_object": "SpoonFactory(2471606).spawn_asset(7117304)",
+    "dimensions": [
+      0.1297226995229721,
+      0.030899878591299057,
+      0.019275132566690445
+    ],
+    "vertices": 2562
+  },
+  {
+    "collection": "NATIVE_ChopsticksFactory_0",
+    "source_object": "ChopsticksFactory(2986664).spawn_asset(9571068)",
+    "dimensions": [
+      0.33592700958251953,
+      0.12209199368953705,
+      0.006817271467298269
+    ],
+    "vertices": 12100
+  },
+  {
+    "collection": "NATIVE_OvenFactory_0",
+    "source_object": "OvenFactory(49480).spawn_asset(5961287)",
+    "dimensions": [
+      1.3705302476882935,
+      0.8971994519233704,
+      1.325829029083252
+    ],
+    "vertices": 64787
+  },
+  {
+    "collection": "NATIVE_KitchenCabinetFactory_0",
+    "source_object": "KitchenCabinetFactory(6395201).spawn_asset(5415155)",
+    "dimensions": [
+      0.35692936182022095,
+      3.830988883972168,
+      0.5550888180732727
+    ],
+    "vertices": 69248
+  },
+  {
+    "collection": "NATIVE_PlantContainerFactory_0",
+    "source_object": "PlantContainerFactory(3925623).spawn_asset(1587403)",
+    "dimensions": [
+      0.27501997351646423,
+      0.27501997351646423,
+      0.5203380584716797
+    ],
+    "vertices": 1179160
+  },
+  {
+    "collection": "NATIVE_PlantContainerFactory_1",
+    "source_object": "PlantContainerFactory(5924813).spawn_asset(1635766)",
+    "dimensions": [
+      0.2535102963447571,
+      0.2535102963447571,
+      0.5678173899650574
+    ],
+    "vertices": 228037
+  },
+  {
+    "collection": "NATIVE_DeskLampFactory_0",
+    "source_object": "DeskLampFactory(1706013).spawn_asset(3612005)",
+    "dimensions": [
+      0.2389373630285263,
+      0.2389373630285263,
+      0.5507165193557739
+    ],
+    "vertices": 31700
+  },
+  {
+    "collection": "NATIVE_DeskLampFactory_1",
+    "source_object": "DeskLampFactory(3773049).spawn_asset(3244486)",
+    "dimensions": [
+      0.2937786877155304,
+      0.2937786877155304,
+      0.4688677191734314
+    ],
+    "vertices": 31700
+  },
+  {
+    "collection": "NATIVE_BookStackFactory_0",
+    "source_object": "BookStackFactory(1573213).spawn_asset(9116813)",
+    "dimensions": [
+      0.2159000039100647,
+      0.2793999910354614,
+      0.09334342181682587
+    ],
+    "vertices": 80
+  },
+  {
+    "collection": "NATIVE_BookStackFactory_1",
+    "source_object": "BookStackFactory(2003655).spawn_asset(8418325)",
+    "dimensions": [
+      0.20695531368255615,
+      0.2546004354953766,
+      0.14384320378303528
+    ],
+    "vertices": 144
+  },
+  {
+    "collection": "NATIVE_BookStackFactory_2",
+    "source_object": "BookStackFactory(2027302).spawn_asset(3846428)",
+    "dimensions": [
+      0.1396999955177307,
+      0.20319999754428864,
+      0.22802965342998505
+    ],
+    "vertices": 224
+  },
+  {
+    "collection": "NATIVE_BookColumnFactory_0",
+    "source_object": "BookColumnFactory(259356).spawn_asset(8427726)",
+    "dimensions": [
+      0.26778215169906616,
+      0.1482563614845276,
+      0.20127445459365845
+    ],
+    "vertices": 884
+  },
+  {
+    "collection": "NATIVE_BookColumnFactory_1",
+    "source_object": "BookColumnFactory(323400).spawn_asset(8351355)",
+    "dimensions": [
+      0.17201709747314453,
+      0.12700000405311584,
+      0.19050000607967377
+    ],
+    "vertices": 160
+  },
+  {
+    "collection": "NATIVE_SimpleBookcaseFactory_0",
+    "source_object": "SimpleBookcaseFactory(3078449).spawn_asset(6269667)",
+    "dimensions": [
+      0.39338812232017517,
+      0.5407955646514893,
+      0.801231861114502
+    ],
+    "vertices": 2344
+  },
+  {
+    "collection": "NATIVE_SimpleBookcaseFactory_1",
+    "source_object": "SimpleBookcaseFactory(4162714).spawn_asset(2567194)",
+    "dimensions": [
+      0.30701085925102234,
+      0.5642971992492676,
+      0.7744205594062805
+    ],
+    "vertices": 2344
+  },
+  {
+    "collection": "NATIVE_SimpleDeskFactory_0",
+    "source_object": "SimpleDeskFactory(5295939).spawn_asset(597829)",
+    "dimensions": [
+      0.5715460181236267,
+      1.7114436626434326,
+      0.7367392182350159
+    ],
+    "vertices": 1032
+  },
+  {
+    "collection": "NATIVE_SofaFactory_0",
+    "source_object": "SofaFactory(5882162).spawn_asset(8589917)",
+    "dimensions": [
+      1.540134072303772,
+      1.252498745918274,
+      0.8329159021377563
+    ],
+    "vertices": 132806
+  },
+  {
+    "collection": "NATIVE_MonitorFactory_0",
+    "source_object": "MonitorFactory(1329715).spawn_asset(4854162)",
+    "dimensions": [
+      0.12833952903747559,
+      0.4668581187725067,
+      0.4579748213291168
+    ],
+    "vertices": 1472
+  },
+  {
+    "collection": "NATIVE_PillowFactory_0",
+    "source_object": "PillowFactory(3315833).spawn_asset(2868254)",
+    "dimensions": [
+      0.572908878326416,
+      0.3762412965297699,
+      0.15176483988761902
+    ],
+    "vertices": 38914
+  },
+  {
+    "collection": "NATIVE_PillowFactory_1",
+    "source_object": "PillowFactory(3315833).spawn_asset(2868254).001",
+    "dimensions": [
+      0.572908878326416,
+      0.3762412965297699,
+      0.15176483988761902
+    ],
+    "vertices": 38914
+  },
+  {
+    "collection": "NATIVE_BlanketFactory_0",
+    "source_object": "BlanketFactory(3315833).spawn_asset(2868254)",
+    "dimensions": [
+      1.7751476764678955,
+      2.597466468811035,
+      1.1691808700561523
+    ],
+    "vertices": 42613
+  }
+]

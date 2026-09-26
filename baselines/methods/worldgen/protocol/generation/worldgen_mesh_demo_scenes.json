@@ -1,0 +1,32 @@
+[
+  {
+    "scene_id": "scene_01_residence_contemporary",
+    "seed": 100,
+    "prompt": "A single physically connected contemporary residence threshold scene, with the camera standing just inside one open street-facing front door; the forward hemisphere looks through the real doorway onto a sunny landscaped front courtyard and quiet neighborhood street, while the rear hemisphere shows the connected living room, dining area, and kitchen with pale concrete, broad glazing, light wood, neutral furniture, and continuous floor geometry; one coherent building, one open entrance, realistic architectural scale and unobstructed indoor-to-outdoor circulation"
+  },
+  {
+    "scene_id": "scene_02_food_service_tropical",
+    "seed": 101,
+    "prompt": "A single physically connected tropical restaurant threshold scene, with the camera standing at one wide open entrance; the forward hemisphere looks from the dining room through the real doorway to a shaded veranda, lush garden, pedestrian path, and sunny street, while the rear hemisphere shows the connected host area, dining tables, service counter, and kitchen access with timber rafters, pale stucco, woven furniture, and continuous tiled flooring; one coherent restaurant, realistic scale and clear indoor-to-outdoor circulation"
+  },
+  {
+    "scene_id": "scene_03_retail_brick_industrial",
+    "seed": 102,
+    "prompt": "A single physically connected brick-industrial retail shop threshold scene, with the camera standing just inside one open storefront door; the forward hemisphere looks through the real entrance to the sidewalk, parked bicycles, street trees, and brick commercial block, while the rear hemisphere shows the connected sales floor, display shelves, checkout counter, exposed red brick, black steel frames, warm timber, and continuous concrete floor; one coherent shop, realistic scale and passable indoor-to-outdoor route"
+  },
+  {
+    "scene_id": "scene_04_office_timber_traditional",
+    "seed": 103,
+    "prompt": "A single physically connected timber-traditional office threshold scene, with the camera standing at one open main entrance; the forward hemisphere looks through the real doorway to a covered timber porch, planted approach, walkway, and quiet civic street, while the rear hemisphere shows the connected reception, meeting room, open work area, exposed timber structure, crafted joinery, and continuous stone-and-wood floor; one coherent office building, realistic scale and unobstructed indoor-to-outdoor circulation"
+  },
+  {
+    "scene_id": "scene_05_civic_futuristic",
+    "seed": 104,
+    "prompt": "A single physically connected futuristic civic community center threshold scene, with the camera standing inside one large open public entrance; the forward hemisphere looks through the real portal to a public plaza, geometric planting, pedestrian paths, and transit street, while the rear hemisphere shows the connected lobby, information desk, multipurpose hall, curved composite panels, metallic surfaces, geometric glazing, integrated lighting, and continuous floor; one coherent public building, realistic scale and accessible indoor-to-outdoor circulation"
+  },
+  {
+    "scene_id": "scene_06_residence_tropical",
+    "seed": 105,
+    "prompt": "A single physically connected tropical courtyard residence threshold scene, with the camera standing at one fully open sliding entrance; the forward hemisphere looks through the real opening to a planted courtyard, pool terrace, garden path, and sunlit residential lane, while the rear hemisphere shows the connected living lounge, dining area, kitchen, natural timber, pale stucco, woven accents, and the same continuous stone floor; one coherent home, realistic scale and a clear indoor-to-outdoor route"
+  }
+]

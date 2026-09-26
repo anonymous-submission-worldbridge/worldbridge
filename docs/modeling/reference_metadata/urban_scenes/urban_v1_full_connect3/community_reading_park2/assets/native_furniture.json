@@ -1,0 +1,135 @@
+[
+  {
+    "role": "table",
+    "collection": "PARK2_NATIVE_table",
+    "factory": "TableDiningFactory",
+    "seed": 932020,
+    "parameters": {},
+    "dimensions": [
+      1.5698888301849365,
+      1.0699634552001953,
+      0.7716459035873413
+    ],
+    "vertices": 35840,
+    "source_module": "infinigen.assets.objects.tables.dining_table"
+  },
+  {
+    "role": "chair",
+    "collection": "PARK2_NATIVE_chair",
+    "factory": "ChairFactory",
+    "seed": 932021,
+    "parameters": {
+      "width": 0.46,
+      "size": 0.46,
+      "leg_height": 0.45,
+      "back_height": 0.44,
+      "has_arm": true,
+      "back_type": "horizontal-bar",
+      "is_seat_round": false,
+      "leg_type": "vertical",
+      "has_leg_x_bar": true,
+      "has_leg_y_bar": true
+    },
+    "dimensions": [
+      0.5429885983467102,
+      0.46864989399909973,
+      0.8992540836334229
+    ],
+    "vertices": 114724,
+    "source_module": "infinigen.assets.objects.seating.chairs.chair"
+  },
+  {
+    "role": "bench",
+    "collection": "PARK2_NATIVE_bench",
+    "factory": "ChairFactory",
+    "seed": 932022,
+    "parameters": {
+      "width": 1.7,
+      "size": 0.46,
+      "leg_height": 0.45,
+      "back_height": 0.44,
+      "has_arm": true,
+      "back_type": "horizontal-bar",
+      "is_seat_round": false,
+      "leg_type": "vertical",
+      "has_leg_x_bar": true,
+      "has_leg_y_bar": true
+    },
+    "dimensions": [
+      1.7245395183563232,
+      0.47527626156806946,
+      0.8917525410652161
+    ],
+    "vertices": 181602,
+    "source_module": "infinigen.assets.objects.seating.chairs.chair"
+  },
+  {
+    "role": "cup",
+    "collection": "PARK2_NATIVE_cup",
+    "factory": "CupFactory",
+    "seed": 932023,
+    "parameters": {
+      "is_short": true,
+      "is_profile_straight": true,
+      "depth": 0.43,
+      "scale": 0.22,
+      "has_wrap": false,
+      "has_inside": true,
+      "has_guard": true,
+      "handle_location": 0.6,
+      "handle_radius": 0.14,
+      "handle_inner_radius": 0.027,
+      "handle_taper_x": 0.2,
+      "handle_taper_y": 0.2
+    },
+    "dimensions": [
+      0.15187785029411316,
+      0.12358595430850983,
+      0.10135409235954285
+    ],
+    "vertices": 62202,
+    "source_module": "infinigen.assets.objects.tableware.cup"
+  },
+  {
+    "role": "plate",
+    "collection": "PARK2_NATIVE_plate",
+    "factory": "PlateFactory",
+    "seed": 932024,
+    "parameters": {},
+    "dimensions": [
+      0.2387957125902176,
+      0.2387956976890564,
+      0.021042484790086746
+    ],
+    "vertices": 64322,
+    "source_module": "infinigen.assets.objects.tableware.plate"
+  },
+  {
+    "role": "spoon",
+    "collection": "PARK2_NATIVE_spoon",
+    "factory": "SpoonFactory",
+    "seed": 932025,
+    "parameters": {},
+    "dimensions": [
+      0.1201944425702095,
+      0.022534305229783058,
+      0.018052157014608383
+    ],
+    "vertices": 2562,
+    "source_module": "infinigen.assets.objects.tableware.spoon"
+  },
+  {
+    "role": "fork",
+    "collection": "PARK2_NATIVE_fork",
+    "factory": "ForkFactory",
+    "seed": 932026,
+    "parameters": {},
+    "dimensions": [
+      0.1755942553281784,
+      0.02189994975924492,
+      0.009276566095650196
+    ],
+    "vertices": 1762,
+    "source_module": "infinigen.assets.objects.tableware.fork"
+  }
+]

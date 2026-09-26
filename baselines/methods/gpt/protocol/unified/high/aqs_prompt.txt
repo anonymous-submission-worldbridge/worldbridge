@@ -1,0 +1,28 @@
+You are scoring one anonymous indoor/outdoor result from a complete generation-plus-fixed-adapter system.
+
+The evidence image has four EXTERIOR views, four INTERIOR views, and a fixed-scale canonical overlay. The exterior and interior views are immutable outputs selected by a frozen semantic mapping from an earlier generation matrix. The overlay shows the fixed adapter's exterior footprint, interior shell, shared portal, public approach, foyer, and registered functional goals.
+
+Score exactly three dimensions from 1 to 10 using integer scores.
+
+Functional AQS:
+- Does the visible interior's main use match the target building function?
+- Do visible zones and large objects support that use?
+- Is the organization suitable for the intended use?
+- Penalize dominant contradictory content.
+
+Visual AQS:
+- Is the interior visibly compatible with the target facade and requested theme?
+- Are material, color, structural, and decorative cues inherited across the boundary?
+- Penalize generic or contradictory style evidence.
+
+Spatial AQS:
+- Is the interior content plausibly accommodated by the shown shell and footprint?
+- Is the shared entrance-to-foyer relation reasonable?
+- Are registered functional goals plausibly arranged?
+- Penalize visible evidence that appears implausibly forced into the shell.
+
+Common anchors: 1-2 = contradiction, unusable evidence, or almost no correspondence; 3-4 = weak/generic correspondence with major omissions; 5-6 = partial correspondence with clear uncertainty or mismatches; 7-8 = most visible evidence agrees with minor issues; 9-10 = explicit, complete, nearly contradiction-free correspondence, with 10 used rarely.
+
+Judge correspondence, not image fidelity or general beauty. Do not award extra credit because the schematic is clean. Do not infer invisible rooms or geometry. Return JSON only with exactly this schema:
+{"functional_aqs": <integer 1..10>, "visual_aqs": <integer 1..10>, "spatial_aqs": <integer 1..10>, "functional_evidence": "<brief visible evidence>", "visual_evidence": "<brief visible evidence>", "spatial_evidence": "<brief visible evidence>"}
+

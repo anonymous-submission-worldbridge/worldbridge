@@ -1,0 +1,24 @@
+{
+  "bounds": [
+    [
+      -0.1899999976158142,
+      0.0,
+      0.0
+    ],
+    [
+      0.1899999976158142,
+      0.3799999952316284,
+      0.16750000417232513
+    ]
+  ],
+  "dimensions": [
+    0.3799999952316284,
+    0.3799999952316284,
+    0.16750000417232513
+  ],
+  "mesh_instances": 10,
+  "evaluated_vertices": 960,
+  "key": "pastry",
+  "collection": "ASSET_pastry",
+  "source": "./infinigen/outputs/outdoor_part_demo/urban_v3_all43_25/urban_v3_all43_25.blend"
+}

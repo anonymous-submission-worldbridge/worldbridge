@@ -1,0 +1,24 @@
+{
+  "bounds": [
+    [
+      -0.9130930304527283,
+      1.04721999168396,
+      0.5024999976158142
+    ],
+    [
+      0.9661285281181335,
+      2.0176961421966553,
+      1.4323673248291016
+    ]
+  ],
+  "dimensions": [
+    1.8792215585708618,
+    0.9704761505126953,
+    0.9298673272132874
+  ],
+  "mesh_instances": 37,
+  "evaluated_vertices": 4472,
+  "key": "bench",
+  "collection": "ASSET_bench",
+  "source": "./infinigen/outputs/outdoor_part_demo/urban_v3_lake3/urban_v3_lake3.blend"
+}

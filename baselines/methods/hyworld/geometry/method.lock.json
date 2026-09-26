@@ -1,0 +1,21 @@
+{
+  "method": "hyworld2",
+  "display_name": "HY-World 2.0",
+  "repository": "https://github.com/Tencent-Hunyuan/HY-World-2.0",
+  "source_commit": "df9988efb87bfc0f4947eb3889411cf957478b06",
+  "table2_protocol": "baselines/methods/hyworld/protocol/generation/hyworld2.yaml",
+  "table2_protocol_id": "table2-v1-hyworld2",
+  "domains": ["indoor", "urban"],
+  "final_output": "latest compatible trained 3D Gaussian PLY below scene/gs/ply",
+  "native_instances": false,
+  "table3_track": "surface_only",
+  "structured_metrics": "N/A-I",
+  "generation_reused": true,
+  "native_planning_navmesh_scored": false,
+  "build_dependency": {
+    "name": "glm",
+    "repository": "https://github.com/g-truc/glm.git",
+    "commit": "6f14f4792a0cde5d0cf2c910506724d61cb95834",
+    "usage": "header-only gsplat CUDA build dependency"
+  }
+}

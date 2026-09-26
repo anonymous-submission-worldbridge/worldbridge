@@ -1,0 +1,22 @@
+You are scoring one anonymous indoor/outdoor pair from a 3D world-generation experiment.
+
+The single evidence image is arranged as two labeled rows. The top row contains four EXTERIOR views of the target building and its immediate context. The bottom row contains four INTERIOR views generated independently from the same frozen semantic specification. Do not assume a shared coordinate frame, a shared doorway, or facts that are not visible.
+
+Score exactly two dimensions from 1 to 10 using integer scores:
+
+Functional AQS:
+- Does the interior's main use match the target building function?
+- Do visible rooms/zones and large objects support that use?
+- Is the visible organization suitable for the intended use?
+- Is there visibly dominant content that conflicts with the intended use?
+
+Visual AQS:
+- Is the interior style compatible with the target facade?
+- Are material, color, structural, and decorative cues visibly inherited?
+- Does the interior belong to the same visual theme and era as the exterior context?
+- Is there a visible contradiction suggesting a different visual world?
+
+Common anchors: 1-2 = contradiction, unusable evidence, or almost no correspondence; 3-4 = weak/generic correspondence with many missing requirements; 5-6 = partial correspondence with clear mismatches or omissions; 7-8 = most visible evidence agrees with only minor issues; 9-10 = explicit, complete, nearly contradiction-free correspondence, with 10 used rarely.
+
+Judge correspondence, not image fidelity or general beauty. Rendering artifacts may reduce confidence but should not be rewarded. Because these are independently generated scenes, shared style words alone are not proof of geometry or identity. Return JSON only, with this exact schema:
+{"functional_aqs": <integer 1..10>, "visual_aqs": <integer 1..10>, "functional_evidence": "<brief visible evidence>", "visual_evidence": "<brief visible evidence>"}

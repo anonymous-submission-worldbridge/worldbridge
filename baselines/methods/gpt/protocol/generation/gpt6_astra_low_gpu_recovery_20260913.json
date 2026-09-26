@@ -1,0 +1,48 @@
+{
+  "amendment_id": "gpt6-astra-low-formal-gpu-recovery-20260913",
+  "method": "gpt6_astra_low",
+  "scope": "Infrastructure-only render admission and matrix resume",
+  "trigger": {
+    "run": "indoor/gpt6_astra_low/indoor_bedroom_00/seed_0",
+    "attempt": 1,
+    "gpu": 1,
+    "gpu_admitted_free_mib": 13250,
+    "failure": "Cycles denoising-kernel allocation reported System is out of GPU memory"
+  },
+  "change": {
+    "minimum_render_free_mib": 24576,
+    "previous_minimum_render_free_mib": 8192,
+    "allowed_gpus": [0, 1, 2, 3],
+    "retry_budget": "unchanged: at most three infrastructure attempts total",
+    "classification_compatibility": "Normalize Blender's 'out of GPU memory' wording to the frozen classifier's 'out of memory' token so the existing infrastructure retry loop is used.",
+    "matrix_lock_isolation": {
+      "reason": "Shared metric paths were changed by another experiment during the long matrix run; matrix execution does not import or execute them.",
+      "allowed_frozen_entries": {
+        "evaluation/visual/eval_iqa.py": "a64956092ed7eb5683f5caf4b6bc3055e750f12883db7873950c41c9c8f858fb",
+        "evaluation/visual/eval_diversity.py": "b57582799d50f03554d077d43d475e1efb9cbfda76e53bd988405bb6894be303",
+        "evaluation/visual/generate_semantics.py": "9e441d6c18da9e73f29655bbd89fe4ef88cc7dad8b59dc65da19ddf6bb145c59"
+      },
+      "guard": "All other frozen entries must match exactly; the frozen metric implementations must be restored or isolated before scoring."
+    },
+    "disk_admission_recovery": {
+      "trigger": "Shared volume free space fell from approximately 133 GiB to 33 GiB because of concurrent external writes, tripping the frozen 50-GiB conservative gate.",
+      "observed_low_footprint_gib": 3.7,
+      "remaining_low_upper_bound_gib": 3.0,
+      "minimum_free_gib": 20,
+      "behavior": "Continue above 20 GiB and retain an automatic hard stop below 20 GiB; no other experiment data is deleted.",
+      "scientific_configuration_changed": false
+    }
+  },
+  "unchanged": [
+    "model and low reasoning effort",
+    "generated code and scene construction",
+    "renderer source and render settings",
+    "camera paths and validation thresholds",
+    "quality-failure policy and metric sources"
+  ],
+  "precedent": "GPT-6 Astra High used at least 24 GiB remaining memory for OOM recovery; this applies that same infrastructure policy prospectively to the Low resume.",
+  "observed_after_amendment": [
+    "indoor_living_room_03/seed_2 admitted at 25482 MiB then lost a race with a shared GPU allocation",
+    "indoor_kitchen_02/seed_1 admitted at 28161 MiB then lost a race with a shared GPU allocation"
+  ]
+}

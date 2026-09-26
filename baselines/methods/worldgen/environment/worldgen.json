@@ -1,0 +1,61 @@
+{
+  "method": "worldgen",
+  "implementation": "ZiYang-xie/WorldGen",
+  "source": {
+    "repository": "https://github.com/ZiYang-xie/WorldGen",
+    "commit": "7ce7b2767fdf31e2727b69a2e61e2e950e3a017f",
+    "da2_submodule_commit": "d659838585f2bc9967c7e9367af573795271dbbb",
+    "pytorch3d_repository": "https://github.com/facebookresearch/pytorch3d",
+    "pytorch3d_commit": "0a7d4c1a171e8b768c63f15b17564f9ad495f49b"
+  },
+  "environment_path": "baselines/environments/worldgen",
+  "python": "3.11.4",
+  "torch": "2.7.0+cu126",
+  "torchvision": "0.22.0",
+  "cuda_runtime": "12.6",
+  "cuda_compiler": {
+    "path": "/usr/local/cuda-12.8/bin/nvcc",
+    "version": "12.8.93",
+    "architecture": "8.9"
+  },
+  "gpus": {
+    "allowed_physical_indices": [0, 1],
+    "model": "NVIDIA L40S",
+    "memory_mib": 46068,
+    "driver": "570.133.20"
+  },
+  "key_packages": {
+    "diffusers": "0.33.1",
+    "transformers": "4.48.3",
+    "xformers": "0.0.30",
+    "nunchaku": "0.2.0+torch2.7",
+    "open3d": "0.19.0",
+    "pytorch3d": "0.7.9",
+    "gsplat": "1.5.3",
+    "da2": "0.1.0"
+  },
+  "pip_freeze": "baselines/methods/worldgen/environment/worldgen-pip-freeze.txt",
+  "pip_freeze_sha256": "9cf135be947ca637d1cdfb08580c098ecd61062ede2e0fc70a09869da2939b7c",
+  "cache_roots": {
+    "huggingface": "baselines/checkpoints/WorldGen/huggingface",
+    "torch": "baselines/checkpoints/WorldGen/torch",
+    "uv": "baselines/cache/uv",
+    "runtime": "baselines/cache/worldgen",
+    "temporary": "baselines/tmp/worldgen"
+  },
+  "weights_status": {
+    "worldgen_text2scene_lora": "ready",
+    "da2": "ready",
+    "flux_1_dev": "blocked_pending_huggingface_authentication_and_license_acceptance"
+  },
+  "preflight": {
+    "cuda_visible_device_count": 1,
+    "cuda_device": "NVIDIA L40S",
+    "core_imports": "passed",
+    "gsplat_cuda_smoke": "passed",
+    "adapter_unit_tests": "6 passed",
+    "repository_tests": "32 passed",
+    "spec_validation": "25 indoor and 25 urban specs passed",
+    "pilot_input_compilation": "20 runs passed"
+  }
+}

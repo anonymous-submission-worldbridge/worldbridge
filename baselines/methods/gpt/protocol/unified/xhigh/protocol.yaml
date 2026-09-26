@@ -1,0 +1,50 @@
+{
+  "adapter": {
+    "allowed_inputs": [
+      "frozen Table-4 pair specification",
+      "frozen Table-2 GPT-6 Astra Extra High terminal audits and maps",
+      "immutable retained Table-2 anonymous 8-view montages and videos"
+    ],
+    "native_geometry_policy": "the original xhigh Blender directories were lost with their prior ephemeral /tmp storage; consume hashed retained Table-2 visual montages/videos only and exclude all source imagery from explicitly synthetic adapter collision"
+  },
+  "aqs": {
+    "minimum_free_mib": 18800,
+    "physical_gpus": [6, 7],
+    "model_root": "models/Qwen/Qwen3-VL-8B-Instruct",
+    "runtime_root": "baselines/runtime/gpt6_astra_extra_high_table4",
+    "short_socket_root": "baselines/.m4",
+    "vllm_max_model_len": 8192,
+    "vllm_gpu_memory_utilization": 0.70,
+    "request_workers": 1,
+    "tensor_parallel_size": 2,
+    "resource_sharing_note": "pre-pilot operational setting for two 24 GiB RTX 4090 GPUs with about 19 GiB free each while unrelated training holds about 5 GiB; tensor parallel 2 and 70% per-GPU reservation avoid the observed single-GPU visual-encoder profile OOM; same local weights, prompt, seeds and decoding parameters",
+    "vllm_startup_timeout_s": 900
+  },
+  "display_name": "GPT-6 Astra Extra High + fixed IO adapter",
+  "frozen_after_pilot_at_utc": null,
+  "method": "gpt6_astra_xhigh_fixed_io_adapter",
+  "paths": {
+    "formal_annotations": "baselines/annotations/table4_gpt6_astra_extra_high_io_adapter",
+    "formal_data": "baselines/data/table4_gpt6_astra_extra_high_io_adapter",
+    "formal_results": "baselines/results/table4_gpt6_astra_extra_high_io_adapter",
+    "pilot_annotations": "baselines/work/table4_gpt6_astra_extra_high_io_adapter/pilot/annotations",
+    "pilot_data": "baselines/work/table4_gpt6_astra_extra_high_io_adapter/pilot/data",
+    "pilot_results": "baselines/work/table4_gpt6_astra_extra_high_io_adapter/pilot/results"
+  },
+  "protocol_version": "worldbridge-table4-gpt6-astra-extra-high-fixed-io-adapter-v1",
+  "source": {
+    "artifact_root": "baselines/annotations/gpt6_astra_xhigh",
+    "data_root": "baselines/data/table2",
+    "evidence_inventory": "baselines/results/table4_gpt6_astra_extra_high_io_adapter/source_evidence_inventory.json",
+    "evidence_mode": "retained_table2_montage_and_video",
+    "generation_policy": "reuse completed Table-2 GPT-6 Astra Extra High evidence; never regenerate",
+    "method_dir": "gpt6_astra_xhigh",
+    "method_lock": "baselines/methods/gpt/protocol/generation/gpt6_astra_xhigh.lock.json",
+    "original_scene_status": "unavailable_after_ephemeral_tmp_cleanup",
+    "required_files_per_successful_side": []
+  },
+  "source_method": "gpt6_astra_xhigh",
+  "source_model": "gpt-6-astra",
+  "source_reasoning_effort": "xhigh",
+  "status": "pilot_running"
+}

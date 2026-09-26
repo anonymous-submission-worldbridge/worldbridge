@@ -1,0 +1,24 @@
+{
+  "bounds": [
+    [
+      -0.10375000536441803,
+      -1.3969838619232178e-09,
+      0.0
+    ],
+    [
+      0.10374999791383743,
+      0.10500000417232513,
+      0.3765000104904175
+    ]
+  ],
+  "dimensions": [
+    0.20750001072883606,
+    0.10500000417232513,
+    0.3765000104904175
+  ],
+  "mesh_instances": 5,
+  "evaluated_vertices": 480,
+  "key": "carton",
+  "collection": "ASSET_carton",
+  "source": "./infinigen/outputs/outdoor_part_demo/urban_v3_all43_25/urban_v3_all43_25.blend"
+}

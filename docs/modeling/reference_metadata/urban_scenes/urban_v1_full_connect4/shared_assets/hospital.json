@@ -1,0 +1,350 @@
+{
+  "bounds": [
+    [
+      -10.380006790161133,
+      -6.390000820159912,
+      -0.029999971389770508
+    ],
+    [
+      28.779996871948242,
+      28.572500228881836,
+      22.0
+    ]
+  ],
+  "dimensions": [
+    39.160003662109375,
+    34.962501525878906,
+    22.030000686645508
+  ],
+  "mesh_instances": 1969,
+  "evaluated_vertices": 3634978,
+  "key": "hospital",
+  "collection": "ASSET_hospital",
+  "source": "./infinigen/outputs/outdoor_full_demo/urban_v1_full_connect3/medical_court/scene.blend",
+  "enterable": true,
+  "door": [
+    0,
+    0
+  ],
+  "floor_z": 0.41,
+  "room_center": [
+    9.2,
+    4.5
+  ],
+  "inside_y": 3.0,
+  "source_shots": {
+    "exterior_wide": {
+      "position": [
+        33.9,
+        -36.36,
+        13
+      ],
+      "target": [
+        9.2,
+        3,
+        7
+      ],
+      "lens": 32
+    },
+    "exterior_street_left": {
+      "position": [
+        -16.26,
+        -13,
+        3.0
+      ],
+      "target": [
+        9.2,
+        1,
+        2.4
+      ],
+      "lens": 28
+    },
+    "exterior_street_right": {
+      "position": [
+        33.9,
+        -10,
+        2.7
+      ],
+      "target": [
+        9.2,
+        2,
+        2.0
+      ],
+      "lens": 28
+    },
+    "garden_overview": {
+      "position": [
+        -12.080000000000002,
+        -14,
+        9
+      ],
+      "target": [
+        9.2,
+        -3,
+        1.0
+      ],
+      "lens": 30
+    },
+    "entrance_context": {
+      "position": [
+        2,
+        -8,
+        2.3
+      ],
+      "target": [
+        2.024,
+        2,
+        1.6
+      ],
+      "lens": 27
+    },
+    "outdoor_furniture": {
+      "position": [
+        4.199999999999999,
+        -9,
+        2.0
+      ],
+      "target": [
+        7.199999999999999,
+        -4.4,
+        1.0
+      ],
+      "lens": 35
+    },
+    "inside_to_outside_near_axial": {
+      "position": [
+        0,
+        1.4,
+        2.0100000000000002
+      ],
+      "target": [
+        0.0,
+        -7,
+        1.6
+      ],
+      "lens": 28
+    },
+    "inside_to_outside_near_oblique": {
+      "position": [
+        0.4,
+        1.4,
+        2.0100000000000002
+      ],
+      "target": [
+        -0.16000000000000003,
+        -7,
+        1.6
+      ],
+      "lens": 28
+    },
+    "inside_to_outside_middle_axial": {
+      "position": [
+        0,
+        3.2,
+        2.0100000000000002
+      ],
+      "target": [
+        0.0,
+        -7,
+        1.6
+      ],
+      "lens": 24
+    },
+    "inside_to_outside_middle_oblique": {
+      "position": [
+        0.4,
+        3.2,
+        2.0100000000000002
+      ],
+      "target": [
+        -0.16000000000000003,
+        -7,
+        1.6
+      ],
+      "lens": 24
+    },
+    "inside_to_outside_far_axial": {
+      "position": [
+        0,
+        5.3,
+        2.0100000000000002
+      ],
+      "target": [
+        0.0,
+        -7,
+        1.6
+      ],
+      "lens": 24
+    },
+    "inside_to_outside_far_oblique": {
+      "position": [
+        -0.9,
+        5.3,
+        2.0100000000000002
+      ],
+      "target": [
+        0.36000000000000004,
+        -7,
+        1.6
+      ],
+      "lens": 24
+    },
+    "outside_to_inside_near_axial": {
+      "position": [
+        0,
+        -1.8,
+        2.0100000000000002
+      ],
+      "target": [
+        0,
+        4,
+        1.6
+      ],
+      "lens": 25
+    },
+    "outside_to_inside_near_oblique": {
+      "position": [
+        0.55,
+        -1.8,
+        2.0100000000000002
+      ],
+      "target": [
+        0,
+        4,
+        1.6
+      ],
+      "lens": 25
+    },
+    "outside_to_inside_middle_axial": {
+      "position": [
+        0,
+        -4.7,
+        2.0100000000000002
+      ],
+      "target": [
+        0,
+        4,
+        1.6
+      ],
+      "lens": 25
+    },
+    "outside_to_inside_middle_oblique": {
+      "position": [
+        0.55,
+        -4.7,
+        2.0100000000000002
+      ],
+      "target": [
+        0,
+        4,
+        1.6
+      ],
+      "lens": 25
+    },
+    "outside_to_inside_far_axial": {
+      "position": [
+        0,
+        -8.8,
+        2.0100000000000002
+      ],
+      "target": [
+        0,
+        4,
+        1.6
+      ],
+      "lens": 28
+    },
+    "outside_to_inside_far_oblique": {
+      "position": [
+        1.8,
+        -8.8,
+        2.0100000000000002
+      ],
+      "target": [
+        0,
+        4,
+        1.6
+      ],
+      "lens": 28
+    },
+    "interior_wide": {
+      "position": [
+        0,
+        2.2,
+        2.0100000000000002
+      ],
+      "target": [
+        -2.4,
+        7.0,
+        1.4
+      ],
+      "lens": 24
+    },
+    "interior_reverse": {
+      "position": [
+        3.6,
+        9.8,
+        2.0100000000000002
+      ],
+      "target": [
+        -2,
+        4,
+        1.35
+      ],
+      "lens": 24
+    },
+    "interior_diagonal": {
+      "position": [
+        -3.8,
+        4.2,
+        2.0100000000000002
+      ],
+      "target": [
+        1,
+        8.7,
+        1.5
+      ],
+      "lens": 25
+    },
+    "detail_primary": {
+      "position": [
+        2,
+        5,
+        2
+      ],
+      "target": [
+        0,
+        7.7,
+        1.5
+      ],
+      "lens": 42
+    },
+    "detail_secondary": {
+      "position": [
+        -0.7,
+        9.2,
+        2.05
+      ],
+      "target": [
+        2.7,
+        10.55,
+        1.13
+      ],
+      "lens": 39
+    },
+    "interior_activity": {
+      "position": [
+        0,
+        3.0,
+        2.0100000000000002
+      ],
+      "target": [
+        3.2,
+        8.7,
+        1.2
+      ],
+      "lens": 26
+    }
+  },
+  "preparation": "retained corrected full interior from final connect3 asset"
+}

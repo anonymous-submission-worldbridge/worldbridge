@@ -1,0 +1,18 @@
+{
+  "text_files": 1841,
+  "binary_files": [
+    "baselines/methods/hyworld/protocol/unified/native/hyworld2_methods.lock.json",
+    "docs/migration/baseline_files.nul",
+    "docs/migration/infinigen_overlay_files.nul",
+    "docs/migration/main_files.nul",
+    "docs/migration/runtime_files.nul",
+    "extensions/infinigen/infinigen_examples/phonebooth2_render.py",
+    "extensions/infinigen/infinigen_examples/vehicle_demo_v10.py",
+    "scripts/__pycache__/robot1_model.cpython-313.pyc",
+    "scripts/generate_urban_v3_all2.py",
+    "scripts/refine_urban_v3_all32.py",
+    "scripts/refine_urban_v3_all34.py"
+  ],
+  "findings": [],
+  "passed": true
+}

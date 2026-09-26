@@ -1,0 +1,24 @@
+{
+  "bounds": [
+    [
+      -1.7091190814971924,
+      -2.9253146749397274e-07,
+      0.36686691641807556
+    ],
+    [
+      1.7091190814971924,
+      11.830560684204102,
+      4.472904205322266
+    ]
+  ],
+  "dimensions": [
+    3.4182381629943848,
+    11.830560684204102,
+    4.106037139892578
+  ],
+  "mesh_instances": 1520,
+  "evaluated_vertices": 416900,
+  "key": "fire_engine",
+  "collection": "ASSET_fire_engine",
+  "source": "./infinigen/outputs/outdoor_part_demo/urban_v3_fire7/urban_v3_fire7.blend"
+}

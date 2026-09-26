@@ -1,0 +1,289 @@
+[
+  {
+    "source_relative_uri": "scripts/sync_connect4_refined_inventory.py",
+    "destination": "scripts/sync_connect4_refined_inventory.py",
+    "present": false,
+    "bytes": 1086,
+    "source_sha256": "e9a2b941428f8d1a71c6d0138c66acb8a0fe3a0ed3457542095ec05255ed9aea",
+    "original_copy_sha256": null,
+    "current_sha256": "d6207a98e7e4380559f8cfd643d5f91b9b5dfbc2e3f954e52932a9ca2152725d"
+  },
+  {
+    "source_relative_uri": "scripts/robot1_production.py",
+    "destination": "scripts/robot1_production.py",
+    "present": false,
+    "bytes": 1740,
+    "source_sha256": "ae236a2e1edda7d57faad42ed7bb6fa274281c8ad6b98d25e2849c51e56210b1",
+    "original_copy_sha256": null,
+    "current_sha256": "2010c8997d13cb39d06fd377567699234c36a691f8909725cdddbcdecab80c70"
+  },
+  {
+    "source_relative_uri": "scripts/robot1_camera.py",
+    "destination": "scripts/robot1_camera.py",
+    "present": false,
+    "bytes": 987,
+    "source_sha256": "bae072ae61f07b0d2152707c06ca3696bd296ae0bdf737db399f2fd3efa3df13",
+    "original_copy_sha256": null,
+    "current_sha256": "27b1c85884cf5b46a1e4b8a5f31b875374b5bd955497fec2c8c3902fc7f9e82d"
+  },
+  {
+    "source_relative_uri": "scripts/build_render_robot1.py",
+    "destination": "scripts/build_render_robot1.py",
+    "present": false,
+    "bytes": 26287,
+    "source_sha256": "44476dee02121bc870df40118ae2972c17b7ef6483bec1140b21ef96104241ad",
+    "original_copy_sha256": null,
+    "current_sha256": "1688ce4af9b6557bd668f90a85b9ed2df9e00db7034ef9a29fe04759747bbedc"
+  },
+  {
+    "source_relative_uri": "scripts/validate_robot1.py",
+    "destination": "scripts/validate_robot1.py",
+    "present": false,
+    "bytes": 2018,
+    "source_sha256": "8250e81ff7ab56ceb171b6e1aef91ce01da1da4ebd54f73d40af1706c28dc10b",
+    "original_copy_sha256": null,
+    "current_sha256": "3c9f3333a92408c15a9f35e9d52e6ca6206b13ad8c86694bce793e9d43b0bd6b"
+  },
+  {
+    "source_relative_uri": "scripts/robot1_captions.py",
+    "destination": "scripts/robot1_captions.py",
+    "present": false,
+    "bytes": 2189,
+    "source_sha256": "26bdbb75a584742903231e448d35f1db78fb938f0e4594aa3dae08122964fa8a",
+    "original_copy_sha256": null,
+    "current_sha256": "87004eb0db38d8c61970a479438a593ebbd09b508354e7ece4c617940d09f56d"
+  },
+  {
+    "source_relative_uri": "scripts/robot1_gallery.py",
+    "destination": "scripts/robot1_gallery.py",
+    "present": false,
+    "bytes": 10958,
+    "source_sha256": "360630d0c70cdfb0c14a7b17cdb94fe8a9807041ae640c57248f76675a18816f",
+    "original_copy_sha256": null,
+    "current_sha256": "edc3849ad71b32e3d8114639ce4bfc328600a9bee10b1d47224712ba68039c18"
+  },
+  {
+    "source_relative_uri": "scripts/repair_robot1_pharmacy_camera.py",
+    "destination": "scripts/repair_robot1_pharmacy_camera.py",
+    "present": false,
+    "bytes": 3192,
+    "source_sha256": "82cad46b83c9e6d6c19aac06053c212e542b1ea6d989c406e0b25154b488b861",
+    "original_copy_sha256": null,
+    "current_sha256": "7b8893d5b29d27ed52125d9a10c65caef3be26fd9d5b89744eb7571618345166"
+  },
+  {
+    "source_relative_uri": "scripts/run_robot1.py",
+    "destination": "scripts/run_robot1.py",
+    "present": false,
+    "bytes": 4659,
+    "source_sha256": "ab1d5e267e216676b9487b86a8d37e56ef1bf0e1afdaf755d8f8c23e499cce46",
+    "original_copy_sha256": null,
+    "current_sha256": "b616b7c20a0fc7869a249ce386b44efac0317427262e0f21102c9ab8107c5572"
+  },
+  {
+    "source_relative_uri": "scripts/robot1_sample_parallel.py",
+    "destination": "scripts/robot1_sample_parallel.py",
+    "present": false,
+    "bytes": 2008,
+    "source_sha256": "6fda5f0522a7225d98d53af116f16ba0f499d083e9a468b2a9942b94b2dda719",
+    "original_copy_sha256": null,
+    "current_sha256": "c19e18ad7a3564a99c5a31c0e58f01c45558ae83d7fd7cf04d71f2d1d01bc218"
+  },
+  {
+    "source_relative_uri": "scripts/robot1_sample_watch.py",
+    "destination": "scripts/robot1_sample_watch.py",
+    "present": false,
+    "bytes": 1444,
+    "source_sha256": "d3c7a897de1862b5db9bb69993d2f5b133b730c68d4ad238ba320a8ced4c9de9",
+    "original_copy_sha256": null,
+    "current_sha256": "0911501a922aa53013f1dff8d232e0372885f76f42176529bf24ff8f75ec6497"
+  },
+  {
+    "source_relative_uri": "scripts/robot1_tasks.py",
+    "destination": "scripts/robot1_tasks.py",
+    "present": false,
+    "bytes": 3949,
+    "source_sha256": "3e9b723d961cbea5bc8168f84ea20a06f55e058ebba7ef54ea03a9715e55c961",
+    "original_copy_sha256": null,
+    "current_sha256": "4298d7a18294b6f32cd4d07706cdf350b1020148dd1f37893c3cfee35bc354ac"
+  },
+  {
+    "source_relative_uri": "scripts/robot1_finish.py",
+    "destination": "scripts/robot1_finish.py",
+    "present": false,
+    "bytes": 7632,
+    "source_sha256": "564c8daf87fdc3e91e7151f9deb8a3bf5948b75ad9b4efed151ffcc778ab2c6d",
+    "original_copy_sha256": null,
+    "current_sha256": "4334792437a2bbe71d659108cd9919014511c011d919c228160d9d40101db8ad"
+  },
+  {
+    "source_relative_uri": "scripts/refresh_connect4_building.py",
+    "destination": "scripts/refresh_connect4_building.py",
+    "present": false,
+    "bytes": 1528,
+    "source_sha256": "e41e66eed3f763e1fac413d5bd4de1d75d9aebc9c80075adbc5fcdacd1e2a587",
+    "original_copy_sha256": null,
+    "current_sha256": "ba91b1906c6da4673e4529bd9565f41302e0c8318383eae10c811a7053b65187"
+  },
+  {
+    "source_relative_uri": "scripts/robot1_asset.py",
+    "destination": "scripts/robot1_asset.py",
+    "present": false,
+    "bytes": 1955,
+    "source_sha256": "bcfd2aab0b7193592e7c1f218b72816231a8b6020176cd60a59517a8f39c488c",
+    "original_copy_sha256": null,
+    "current_sha256": "e9d78b2a5e580813f931dc3461ef15321c1384dac2d289cbd0364f1a7a746aa5"
+  },
+  {
+    "source_relative_uri": "scripts/robot1_integrity_watch.py",
+    "destination": "scripts/robot1_integrity_watch.py",
+    "present": false,
+    "bytes": 3098,
+    "source_sha256": "3d0ae6049fcdd8cdfc4da70cefafe788940968ea30c60c655020c18d212e7a96",
+    "original_copy_sha256": null,
+    "current_sha256": "f00a075e8aab250d0aca7634435c97d2aedff175a97973b97fa1abe7ccfc6e6a"
+  },
+  {
+    "source_relative_uri": "scripts/robot1_manifest.py",
+    "destination": "scripts/robot1_manifest.py",
+    "present": false,
+    "bytes": 1364,
+    "source_sha256": "c8524d211653e2842b7b05503a6ec5fb06e257b3a7147e11e22669a6c50e31c8",
+    "original_copy_sha256": null,
+    "current_sha256": "d9d6bc89bf15c7742e2b1ff30bbaee1935ece2df7466a6a88c9e6c28b9c98e0b"
+  },
+  {
+    "source_relative_uri": "scripts/robot1_parallel_tail.py",
+    "destination": "scripts/robot1_parallel_tail.py",
+    "present": false,
+    "bytes": 6682,
+    "source_sha256": "601bfd213f590a88ceaf883b7a9ea951e9c3b8c4e0bfe46e39fb66e076475284",
+    "original_copy_sha256": null,
+    "current_sha256": "cfffabe78d7559328aa3046b960132e9e4af3a5b38825a5f5466b3865afa89a1"
+  },
+  {
+    "source_relative_uri": "scripts/robot1_model.py",
+    "destination": "scripts/robot1_model.py",
+    "present": false,
+    "bytes": 5208,
+    "source_sha256": "c03f5811c4121916f53da49220483e305763d71ec05a0a743989aa53b354dc95",
+    "original_copy_sha256": null,
+    "current_sha256": "c7d425ee0f9cb31fdc2196d279749cde790f297557c50d8d6e31a07c74d0c938"
+  },
+  {
+    "source_relative_uri": "scripts/robot1_repair_corner.py",
+    "destination": "scripts/robot1_repair_corner.py",
+    "present": false,
+    "bytes": 1811,
+    "source_sha256": "dd71e50640cdd8189868e434d38875612e2748608cab99f882de8ada8586a6e9",
+    "original_copy_sha256": null,
+    "current_sha256": "e5828bf6fa0a3dc9635322797243a41c51378555f085e899ff4599905a323868"
+  },
+  {
+    "source_relative_uri": "infinigen/outputs/outdoor_part_demo/urban_v3_fitness4/backup_urban_v3_fitness3/source/run_urban_v3_fitness.sh",
+    "destination": "scripts/modeling_history/output_scripts/outdoor_part_demo/urban_v3_fitness4/backup_urban_v3_fitness3/source/run_urban_v3_fitness.sh",
+    "present": false,
+    "bytes": 344,
+    "source_sha256": "90b0337bea90885ea5eced35d604c6d9eb8d78e9d06d289b75db1d3a4c4ef9d1",
+    "original_copy_sha256": null,
+    "current_sha256": "1f50905d7e84e66a70e9169ad4159c9b0f95d2d4882253efcbe36ba1f2060008"
+  },
+  {
+    "source_relative_uri": "infinigen/outputs/outdoor_part_demo/urban_v3_delivery5/modeling_scheme_backup_20260902/run_urban_v3_delivery.sh",
+    "destination": "scripts/modeling_history/output_scripts/outdoor_part_demo/urban_v3_delivery5/modeling_scheme_backup_20260902/run_urban_v3_delivery.sh",
+    "present": false,
+    "bytes": 1689,
+    "source_sha256": "e3311de8f407156ba0f31d6cde590ebfb3e74f746a7802a60b304317cff80b3f",
+    "original_copy_sha256": null,
+    "current_sha256": "e98d2df50c7144632f7f285584029758e2979e28dec8b45162e28412644d1958"
+  },
+  {
+    "source_relative_uri": "infinigen/outputs/indoor_outdoor_villa_demo2/run_indoor_outdoor_villa_demo2.sh",
+    "destination": "scripts/modeling_history/output_scripts/indoor_outdoor_villa_demo2/run_indoor_outdoor_villa_demo2.sh",
+    "present": false,
+    "bytes": 3837,
+    "source_sha256": "e49101b0e9a8399a7e887868542f5af7f63e5e765bcb18b4dcce4a5761b6e2ef",
+    "original_copy_sha256": null,
+    "current_sha256": "4a8ede53d24c5e16ba4ecab4491319f61452c2e3f58bd4c4661b5a774d59abe1"
+  },
+  {
+    "source_relative_uri": "infinigen/outputs/indoor_outdoor_villa_demo/render_v4_first_person.sh",
+    "destination": "scripts/modeling_history/output_scripts/indoor_outdoor_villa_demo/render_v4_first_person.sh",
+    "present": false,
+    "bytes": 846,
+    "source_sha256": "172542ce76466935036123a89782c7c108374c6b159567176dc87aa89aae450b",
+    "original_copy_sha256": null,
+    "current_sha256": "f7600529b02ab42911114005e5996f281293dc42f2a281721ad3cc79af93c59d"
+  },
+  {
+    "source_relative_uri": "infinigen/outputs/indoor_outdoor_villa_demo/run_gpu_limited_demo.sh",
+    "destination": "scripts/modeling_history/output_scripts/indoor_outdoor_villa_demo/run_gpu_limited_demo.sh",
+    "present": false,
+    "bytes": 2117,
+    "source_sha256": "d2264516f6a84a44d2ffb690e49291b0b4e4b8cc651c4f5fcc3eb961ddb8b73b",
+    "original_copy_sha256": null,
+    "current_sha256": "2d89821c2be98a031980e3132595e3913440e36c793afc6acfd0211a5294bdc9"
+  },
+  {
+    "source_relative_uri": "scripts/prepare_connect4_assets.py",
+    "destination": "scripts/modeling_history/source_updates/scripts/prepare_connect4_assets.py",
+    "present": true,
+    "bytes": 14149,
+    "source_sha256": "1716dca30eb97583045be1cf409df4f725312d39a7f4bc115415738743a808ce",
+    "original_copy_sha256": "f468e72f595a64992e4638f833e805b70cb896bc8f38e2f8261353633a4e035b",
+    "purpose": "Later source revision; existing refactored entry point retained.",
+    "current_sha256": "f363b9b21e5e7d97a6e896c3e7041a428bd82b7f6a0e7a6ac0374635d90b6d65"
+  },
+  {
+    "source_relative_uri": "scripts/finalize_connect4.py",
+    "destination": "scripts/modeling_history/source_updates/scripts/finalize_connect4.py",
+    "present": true,
+    "bytes": 7281,
+    "source_sha256": "d866d836c89f9f989b3464884e4343ae8b530b5542463e1633bb76de4beb6c0d",
+    "original_copy_sha256": "8619852350dce29a6178bc68f8b1c7056a255393a9e90a75de9e2210a1f7fd58",
+    "purpose": "Later source revision; existing refactored entry point retained.",
+    "current_sha256": "d122d3667b939dd65f43804998bc5ccfe461edc14c2baab13d4135dd9be3a105"
+  },
+  {
+    "source_relative_uri": "scripts/run_connect4.py",
+    "destination": "scripts/modeling_history/source_updates/scripts/run_connect4.py",
+    "present": true,
+    "bytes": 7649,
+    "source_sha256": "f9f366e1bef4b073b63edbc1912645c1734709402507f8184315a22864efd1ad",
+    "original_copy_sha256": "56b3d68d41bea9222c28ac28e75370cef27b713a77321cdc387656b8b997eb7e",
+    "purpose": "Later source revision; existing refactored entry point retained.",
+    "current_sha256": "856c506514edc6b36f93267ae364c76e18d6f01c25f2a5ab3a8d649e4e01b356"
+  },
+  {
+    "source_relative_uri": "infinigen/outputs/indoor_outdoor_villa_demo/config/villa_first_person_route_v4_human_forward.json",
+    "destination": "configs/modeling/indoor_outdoor_villa_demo/villa_first_person_route_v4_human_forward.json",
+    "source_sha256": "804f38f64524ee490c4a64001dc88fdc932594908a7ac6ab18fdc077820a1698",
+    "current_sha256": "804f38f64524ee490c4a64001dc88fdc932594908a7ac6ab18fdc077820a1698",
+    "bytes": 3052,
+    "purpose": "Authored floor plan or camera route configuration."
+  },
+  {
+    "source_relative_uri": "infinigen/outputs/indoor_outdoor_villa_demo/config/villa_first_person_route.json",
+    "destination": "configs/modeling/indoor_outdoor_villa_demo/villa_first_person_route.json",
+    "source_sha256": "a8b07f38f1c5373797a6b848fec25a4223b4ce215982aa3be9686701e2b96d7d",
+    "current_sha256": "a8b07f38f1c5373797a6b848fec25a4223b4ce215982aa3be9686701e2b96d7d",
+    "bytes": 6457,
+    "purpose": "Authored floor plan or camera route configuration."
+  },
+  {
+    "source_relative_uri": "infinigen/outputs/indoor_outdoor_villa_demo/config/country_villa_floor_plan.json",
+    "destination": "configs/modeling/indoor_outdoor_villa_demo/country_villa_floor_plan.json",
+    "source_sha256": "51af91b034c4d3c2088b395bc21476275a1a84979be33c10ecb6b3a6641069f1",
+    "current_sha256": "51af91b034c4d3c2088b395bc21476275a1a84979be33c10ecb6b3a6641069f1",
+    "bytes": 1421,
+    "purpose": "Authored floor plan or camera route configuration."
+  },
+  {
+    "source_relative_uri": "infinigen/outputs/indoor_outdoor_villa_demo2/config/connection_floor_plan.json",
+    "destination": "configs/modeling/indoor_outdoor_villa_demo2/connection_floor_plan.json",
+    "source_sha256": "76b00676204afe24e0576d6630a8afed03babd20bbf6b2b43bf3b092781f1aeb",
+    "current_sha256": "76b00676204afe24e0576d6630a8afed03babd20bbf6b2b43bf3b092781f1aeb",
+    "bytes": 1424,
+    "purpose": "Authored floor plan or camera route configuration."
+  }
+]

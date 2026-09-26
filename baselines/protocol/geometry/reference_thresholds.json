@@ -1,0 +1,9 @@
+{
+  "domain": "indoor",
+  "reference_count": 50,
+  "percentile": 5,
+  "navigable_area_ratio": 72.15721426255115,
+  "connected_area_ratio": 97.26265267349281,
+  "reference_definitions_sha256": "267066088abd56ca88e7aa48159a8bb849eda62dcad81e01841e51f0581233a0",
+  "agent_sha256": "4ee9433562c18e43aa1443f6aa7c511095a52292d136d83a3cfdaf9902f5750d"
+}

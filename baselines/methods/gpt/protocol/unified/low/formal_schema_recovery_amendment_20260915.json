@@ -1,0 +1,22 @@
+{
+  "scope": "formal Qwen AQS response evidence schema only; frozen fixed-IO geometry, GPT-6 Astra Low Table-2 scene sources, prompt, model, seeds, original numeric scores and sampling settings remain unchanged",
+  "reason": "Two formal seeded responses repeated the spatial_aqs JSON key for a string-valued spatial_evidence despite three original answers and three evidence-only schema-repair answers. The shared scorer's initial-attempt duplicate-key recovery did not inspect the subsequently saved first repair answer.",
+  "post_pilot_amendment": true,
+  "no_new_vlm_calls": true,
+  "no_cross_response_evidence_stitching": true,
+  "no_score_change": true,
+  "deterministic_rule": "Require 3/3 original attempts and 3/3 frozen evidence-only repair attempts with identical first-occurrence integer scores for all three metrics, identical source input signatures and unchanged local images. Within the FIRST repair response alone, relabel a nonempty string-valued duplicate spatial_aqs key to spatial_evidence using the existing shared recover_duplicate_key_evidence function. Reject any changed score or missing evidence. Leave all six original replies unchanged and record their exact SHA-256 hashes.",
+  "recovered_passes": [
+    {"blind_id": "G-1B8CCCF2202C", "pass_index": 2, "frozen_scores": {"functional_aqs": 3, "visual_aqs": 4, "spatial_aqs": 3}},
+    {"blind_id": "G-801A25B18631", "pass_index": 3, "frozen_scores": {"functional_aqs": 7, "visual_aqs": 8, "spatial_aqs": 7}}
+  ],
+  "source_method": "gpt6_astra_low",
+  "source_reasoning_effort": "low",
+  "requested_display_label": "GPT-6 Astra Extra High + fixed IO adapter",
+  "recovery_script": "baselines/methods/gpt/unified/low/recover_schema.py",
+  "source_hash_journal": "baselines/results/table4_gpt6_astra_xhigh_io_adapter/formal_schema_recovery.json",
+  "formal_rating_responses": 285,
+  "formal_rating_expected": 285,
+  "formal_geometry_nav_pairs": 95,
+  "formal_planned_pairs": 100
+}

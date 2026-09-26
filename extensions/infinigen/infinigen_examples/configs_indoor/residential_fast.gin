@@ -1,0 +1,11 @@
+# Native Indoor solve budget for residential-zone integration validation.
+# The same factories and constraints run; only annealing iteration counts are
+# reduced so two independently furnished houses are practical on CPU.
+compose_indoors.solve_steps_large = 22
+compose_indoors.solve_steps_medium = 0
+compose_indoors.solve_steps_small = 0
+compose_indoors.terrain_enabled = False
+# A two-centimetre minimum face size preserves furniture silhouettes and
+# upholstery while avoiding multi-minute sub-millimetre remeshing of indoor
+# houseplants that will be viewed through residential windows.
+target_face_size.global_clip_min = 0.02

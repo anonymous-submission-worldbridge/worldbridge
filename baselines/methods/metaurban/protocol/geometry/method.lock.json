@@ -1,0 +1,48 @@
+{
+  "adapter": {
+    "path": "methods/metaurban/adapter.py",
+    "sha256": "5d64c93be10550fda0f5d924e94bc80470d985ba700e085c29e41778575cf64e"
+  },
+  "display_name": "MetaUrban",
+  "domain": "urban",
+  "environment_lock": {
+    "path": "methods/metaurban/environment/metaurban.json",
+    "sha256": "17dbf7621376e97717d4628e335f27fdd5eb8e6383c9136a5df18308b19bd5e1"
+  },
+  "final_representation": "native AssetManager instances, Bullet OBB colliders, Panda3D final visual bounds",
+  "frozen_at_utc": "2026-09-09T16:24:36.861129+00:00",
+  "full_asset_archive": {
+    "building_glb_count": 31,
+    "metadata_json_count": 417,
+    "path": "baselines/checkpoints/metaurban/assets-full.zip",
+    "sha256": "7275217fdff216f7b458d97316f9743e0f3929923e901162572f3fc504002386",
+    "size_bytes": 2437771429,
+    "static_glb_count": 484
+  },
+  "full_asset_manifest": {
+    "path": "methods/metaurban/environment/metaurban_full_assets.json",
+    "sha256": "cfe5200fbbeed12651ed64abe706e65009cad4eb4b2f7083eb84ff55e4eb26a5"
+  },
+  "installed_version": "0.0.1",
+  "license": {
+    "path": "sources/metaurban/LICENSE.txt",
+    "sha256": "b30c485d9776dca79819c1e5e18ebbce98ddbeb6cf07e6df808b55df0a23ab0e",
+    "spdx": "Apache-2.0"
+  },
+  "method": "metaurban",
+  "official_repository": "https://github.com/metadriverse/metaurban",
+  "scale_source": "native MetaUrban meters",
+  "source_commit": "6b8ff9aa48dd27d5c57fa1c712db520732f11fa9",
+  "source_table2_audit": {
+    "path": "results/metaurban/matrix_audit.json",
+    "sha256": "922357e4f59b03d28fe8126f475896131784491c5b8849297faa5d92689d8881"
+  },
+  "source_table2_runs": "baselines/data/table2/urban/metaurban",
+  "table2_protocol": {
+    "path": "methods/metaurban/protocol/generation/metaurban_protocol.yaml",
+    "sha256": "330f9ff21d144383249f2d589c36bf7f26e0ed24730fb6054283a06e5bb24a88"
+  },
+  "table2_reused_runs": 100,
+  "table3_generation_policy": "deterministic_geometry_reconstruction_only_no_rgb_or_metric_regeneration",
+  "track": "structured_physics_ready"
+}

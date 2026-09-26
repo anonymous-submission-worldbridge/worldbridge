@@ -1,0 +1,36 @@
+{
+  "nonphysical_visual": [],
+  "placed_object": [
+    "Tree",
+    "Lamp_post",
+    "TrashCan",
+    "Mailbox",
+    "Telephone_booth",
+    "FireHydrant",
+    "Chair",
+    "Advertising_board",
+    "Bench",
+    "Traffic_sign",
+    "Bollard",
+    "dog",
+    "Vending_machine",
+    "Bag",
+    "Table",
+    "Bonsai",
+    "Cone",
+    "FoodTruck",
+    "Bicycle",
+    "Bike",
+    "Motorcycle",
+    "Scooter",
+    "Wheelchair",
+    "Traffic_light"
+  ],
+  "structural": [
+    "Building"
+  ],
+  "thin_or_flexible": [
+    "Vegetation"
+  ],
+  "unknown_policy": "placed_object_and_reported"
+}

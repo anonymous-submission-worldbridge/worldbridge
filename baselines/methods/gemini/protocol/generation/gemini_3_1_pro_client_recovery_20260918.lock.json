@@ -1,0 +1,14 @@
+{
+  "status": "frozen_infrastructure_recovery",
+  "method": "gemini_3_1_pro",
+  "effective_after_terminal_slots": 97,
+  "original_formal_lock_sha256": "5ac02dcfaf08956862fa95672f184f7eb334f16603ae0873286b34ed80300d4a",
+  "files_sha256": {
+    "methods/gemini/protocol/generation/gemini_3_1_pro_client_recovery_20260918.json": "de67b80ae7248ea37f430154daa0f60eac8aef727a02bdb7b4ce3e9a91c90399",
+    "methods/gemini/run_client_recovery.py": "5a7139ba365d28888f4f47c7ff9d16b06ca826b40aa45ae414564c20814a863a",
+    "runtime/gemini_3_1_pro_client_1_2_6/agy": "312eb057d8b8155383e74242e948333c6556adc779e9398b121a863390691fe9"
+  },
+  "model": "gemini-3.1-pro-high",
+  "transport": "antigravity_cli_google_ai_pro_account",
+  "api_key_billing_forbidden": true
+}

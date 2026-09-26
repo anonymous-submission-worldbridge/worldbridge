@@ -1,0 +1,42 @@
+{
+  "protocol_id": "worldbridge-table3-sceneweaver-indoor-v1",
+  "frozen_at_utc": "2026-09-09T12:08:00Z",
+  "inputs": {
+    "indoor_specs.jsonl": "103b2b130b09b70e545998b63fb7c725f38f531dd88abf7940698601a965fb4e",
+    "agent.yaml": "4ee9433562c18e43aa1443f6aa7c511095a52292d136d83a3cfdaf9902f5750d",
+    "reference_thresholds.json": "f5d03aab3f9bca45865d89ce89e3279d5dff6f2f2f79e1017ed918760bb8a91e",
+    "reference_indoor.jsonl": "267066088abd56ca88e7aa48159a8bb849eda62dcad81e01841e51f0581233a0",
+    "reference_indoor_calibration.json": "4e6e7bce1211d314c4244f0ccd3ecb3adf46ea2f6b4330d9a1bd1d9508699b7b",
+    "sceneweaver_protocol.json": "5dc77ad7d5f65876de366078f8c39c451731fa5a3563f61a9cd00717daacf938",
+    "sceneweaver_object_roles.json": "59af435cb9bf2d1695b63d1224cc25f0fe351e04fb734f87bab236fb2333eb1f",
+    "sceneweaver_support_rules.json": "905a28cfdef588be36cdcb66f15941b14c69d01d7261f7c0f8bd413cbbcfafd2",
+    "sceneweaver_collision_exceptions.json": "89971f931f052fefa185e50b70ac4afde1b21c1e64e77fa7ac25a8d2b0ab58c4"
+  },
+  "implementations": {
+    "export_sceneweaver_canonical.py": "1d799b7905bb6ad67dded35d279d1bf98958a10c2b31db58fa9c3541c89dc5df",
+    "build_navmesh.py": "10578c6f18f0f9187b1813d08217740e093f8449d09ea39504694393f3db0fa6",
+    "common.py": "0537842bafcea8ddfd8d6130da471b24286b4954ce8807e9d94a33d9713be440",
+    "run_sceneweaver.py": "c62cef1867e9185044f867d3058576fd52012d486216affbc0ca06ffbb0839d6",
+    "aggregate_sceneweaver.py": "a3e8ed5d895427ad9f4448a08347747464ddb8d33cf7b50d8f3ede9ca571b0e7",
+    "audit_sceneweaver_table3.py": "3846216ee122e23fe7831f02ac7928fe6cacf4284f1cd71d82a6940e65e9549a",
+    "calibrate_indoor_reference.py": "875fc44421c79f1029d8ea35e8c89df76f47d9876efeaa290d8e3e8b05a393ba"
+  },
+  "runtime": {
+    "blender": "4.5.4 LTS",
+    "blender_binary_sha256": "7a305b41d339958f0b94d1549c5576763a67c316353282cd58a102bc83d8538e",
+    "recast_binding_version": "0.1.0",
+    "recast_binding_sha256": "c4aab7bc62c0731dd3e6e976156a3d3dd0c077541c9a723f7e86bc29bea786c8"
+  },
+  "valid_scene_thresholds": {
+    "navigable_area_ratio": 72.15721426255115,
+    "connected_area_ratio": 97.26265267349281,
+    "source": "5th percentile of the independent deterministic 50-scene indoor reference suite"
+  },
+  "aggregation": {
+    "order": "mean_over_spec(mean_over_seed(scene_metric))",
+    "failure_policy": "itt",
+    "cluster_bootstrap_repeats": 10000,
+    "cluster_bootstrap_seed": 20260909,
+    "display_decimals": 1
+  }
+}

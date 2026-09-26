@@ -1,0 +1,43 @@
+--- inference_sd.py.before
++++ inference_sd.py.after
+@@ -1686,6 +1686,13 @@
+         else:
+             logger.info(f"Reuse completed Sparse-RaDeGS checkpoint: {gaussian_path}")
+ 
++        # The Table-2 renderer consumes only the completed NPZ and Gaussian PLY.
++        # Its 8 anchors and 50 sequence frames replace these unused diagnostic
++        # training views and 240-frame previews; reconstruction is unchanged.
++        if os.environ.get("SPATIALGEN_TABLE2_CANONICAL_ONLY") == "1":
++            logger.info("Table-2 mode: use canonical renderer; skip native previews")
++            continue
++
+         gs_render_command = [
+             sys.executable,
+             "render.py",
+@@ -1793,7 +1800,8 @@
+     )
+     if os.path.isfile(reusable_inference) and os.path.getsize(reusable_inference) > 1024 * 1024:
+         print(f"REUSE_COMPLETED_MVD={reusable_inference}", flush=True)
+-        run_gaussian_reconstruction(infer_dir)
++        if os.environ.get("SPATIALGEN_TABLE2_MVD_ONLY") != "1":
++            run_gaussian_reconstruction(infer_dir)
+         return
+ 
+     # Initialize the logger
+@@ -1979,10 +1987,16 @@
+     ##################
+     # Sparse-RaDeGS runs as a child process.  Release the diffusion models
+     # first so the reconstruction gets the full GPU on 24 GiB cards.
++    print("SPATIALGEN_MVD_MEMORY_JSON=" + json.dumps({
++        "peak_allocated_mib": torch.cuda.max_memory_allocated() / (1024 ** 2),
++        "peak_reserved_mib": torch.cuda.max_memory_reserved() / (1024 ** 2),
++    }), flush=True)
+     del rooms_infer_res_dict, val_loader, val_dataset, pipeline, unet
+     del ray_encoder, tokenizer, text_encoder, vae, scm_vae, controlnet_pipeline
+     gc.collect()
+     torch.cuda.empty_cache()
++    if os.environ.get("SPATIALGEN_TABLE2_MVD_ONLY") == "1":
++        return
+     run_gaussian_reconstruction(infer_dir)
+         
+ if __name__ == "__main__":

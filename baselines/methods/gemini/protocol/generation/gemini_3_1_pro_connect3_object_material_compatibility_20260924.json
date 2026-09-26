@@ -1,0 +1,9 @@
+{
+  "date": "2026-09-24",
+  "scope": "civic_emergency_health_block",
+  "classification": "Blender 4.5 material-slot compatibility correction",
+  "reason": "Three Gemini helper lines appended materials to Object.materials, while Blender stores material slots on Object.data.materials.",
+  "change": "Route the same three existing material assignments to the corresponding mesh data blocks. Geometry, materials, placement, scene design, and render content are unchanged.",
+  "preserves_method_identity": true,
+  "is_image_postprocess": false
+}

@@ -1,0 +1,17 @@
+{
+  "date": "2026-09-19",
+  "scope": "Gemini 3.1 Pro only; Indoor and Urban Layout Plausibility and Prompt Alignment",
+  "authorization_basis": "The user requested a complete Gemini 3.1 Pro Table-2 comparison under the existing protocol, whose completed programmatic code-generation baselines use montage review plus three fixed simulated profiles for the two subjective columns.",
+  "original_protocol": "methods/gemini/protocol/generation/gemini_3_1_pro.json",
+  "original_rating_design": "three real blinded raters per successful scene",
+  "revised_rating_design": "synthetic_proxy_three_profiles",
+  "evidence": "All 78 Indoor and 76 Urban successful scenes were reviewed from their anonymous eight-view montages; per-item fact and layout decisions are retained with hashes.",
+  "real_human_raters": 0,
+  "independent_human_ratings": false,
+  "layout_rule": "Four neutral integers in 1..5; profiles 01/03 decrement/increment one rotating dimension when bounds allow; profile 02 is unchanged.",
+  "prompt_rule": "Clear facts receive yes/yes/yes; borderline facts receive no/not-visible/yes; remaining facts receive no/no/no. No scene scores are borrowed from another method.",
+  "failure_rule": "The 22 Indoor and 24 Urban terminal quality failures are omitted from public review materials and receive the frozen ITT zero for both subjective metrics.",
+  "aggregation": "The frozen importer is called with rating_source=synthetic_proxy_three_profiles; the original 100-run ITT aggregation, spec-cluster bootstrap and display rounding are unchanged.",
+  "disclosure": "This is a post-freeze subjective-rating amendment, not human-subject data, not a blind human study and not three independent model calls. The reviewer knows the method identity; montage-only review may miss video-only evidence.",
+  "out_of_scope": "This amendment does not change model generation, accepted responses, build/render outcomes, cameras, automatic metrics, retry policy or budgets."
+}

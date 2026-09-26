@@ -1,0 +1,50 @@
+{
+  "date": "2026-09-15",
+  "method": "gpt6_astra_low",
+  "domain": "urban",
+  "scope": "IQA GPU admission only",
+  "trigger": "All six GPUs remained occupied by unrelated long-running jobs; no card met the conservative 18432 MiB IQA admission gate.",
+  "initially_observed_best_gpu": 2,
+  "initially_observed_free_mib": 12128,
+  "execution_gpu": 4,
+  "execution_gpu_free_mib_at_admission": 10725,
+  "original_iqa_admission_free_mib": 18432,
+  "recovery_iqa_admission_free_mib": 10240,
+  "batch_size": 1,
+  "failure_handling": "A CUDA allocation failure remains infrastructure-only and must be retried; it is never an ITT quality zero.",
+  "unchanged": [
+    "Q-Align and CLIP-IQA+ implementations, revisions and weights",
+    "anchor images and per-scene eight-view averaging",
+    "IQA batch size",
+    "all score lower bounds and ITT aggregation",
+    "generation, Blender construction, rendering and all other metrics"
+  ],
+  "scientific_configuration_changed": false,
+  "outcome": {
+    "status": "failed_before_scoring",
+    "failure": "Q-Align model allocation exhausted GPU 4 after an unrelated process claimed additional memory during the load.",
+    "per_scene_scores_written": 0,
+    "formal_results_affected": false,
+    "next_action": "Revert to the original 18432 MiB admission gate before measuring a less aggressive runtime-only admission threshold."
+  },
+  "subsequent_runtime_only_recovery": {
+    "gpu": 2,
+    "observed_free_mib": 17443,
+    "admission_free_mib": 16384,
+    "change": "Admission buffer adjusted by 2048 MiB relative to the conservative original gate; identical Q-Align and CLIP-IQA+ frozen scoring executable and eight-view averaging.",
+    "model_load_observation": "The earlier failed trial reported approximately 10.12 GiB PyTorch allocation during an incomplete model load. In the completed run the metric process used 16742 MiB after its first eight-view score, leaving 696 MiB free on GPU 2; the earlier incomplete-load observation was not a valid estimate of final memory use.",
+    "failure_handling": "If unrelated jobs allocate more memory and this metric fails, no failed score becomes a quality-zero; resume identical evaluator on an available GPU."
+  },
+  "formal_iqa_outcome": {
+    "status": "complete",
+    "metric_executor": "baselines/evaluation/visual/eval_iqa.py",
+    "recorded_stage_exit_code": 0,
+    "ended_at_utc": "2026-09-15T06:08:26.996746+00:00",
+    "records": 100,
+    "valid_render_scores": 98,
+    "quality_failure_itt_lower_bounds": 2,
+    "iqa_per_scene_sha256": "738ed083e9f06844e63034eef9bbc7a35b62e317ecc4b6cfe9e8c7b7504023af",
+    "formal_results_affected_by_initial_failed_trial": false
+  },
+  "disclosure": "Post-freeze admission-threshold probes affect only GPU scheduling; the 10240 MiB trial failed before scoring and is excluded from final metric results. The 16384 MiB admission completed all 100 scenes using the identical frozen High evaluator and local weights, with the original metric lower bounds."
+}

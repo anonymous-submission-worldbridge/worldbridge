@@ -1,0 +1,54 @@
+{
+  "bounds": [
+    [
+      -6.031620502471924,
+      -0.9616646766662598,
+      0.0
+    ],
+    [
+      5.253803253173828,
+      9.94192123413086,
+      11.479000091552734
+    ]
+  ],
+  "dimensions": [
+    11.285423278808594,
+    10.903585433959961,
+    11.479000091552734
+  ],
+  "mesh_instances": 2639,
+  "evaluated_vertices": 26475006,
+  "key": "corner_store",
+  "collection": "ASSET_corner_store",
+  "source": "./infinigen/outputs/outdoor_full_demo/urban_v1_full_connect3/shared_assets/corner_store.blend",
+  "enterable": true,
+  "door": [
+    0,
+    0
+  ],
+  "floor_z": 0.26,
+  "inside_y": 2.2,
+  "room_center": [
+    0.6593768000602722,
+    4.732312202453613
+  ],
+  "preparation": [
+    {
+      "double_entry_articulation": 100
+    },
+    {
+      "retail_inventory": "full stocked native-asset shelves from existing market"
+    },
+    {
+      "coffee_equipment": "full existing refined espresso assembly"
+    },
+    {
+      "checkout_shift_normalized_m": [
+        1,
+        1,
+        0
+      ],
+      "reason": "0.7 m clear entrance approach"
+    }
+  ]
+}

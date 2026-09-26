@@ -1,0 +1,79 @@
+{
+  "lock_id": "worldbridge-table3-spatialgen-metrics-v1",
+  "status": "formal_complete",
+  "frozen_at_utc": "2026-09-09T17:47:00Z",
+  "method": "spatialgen",
+  "domain": "indoor",
+  "track": "surface_only",
+  "method_lock": {
+    "path": "baselines/methods/spatialgen/protocol/geometry/spatialgen_method.lock.json",
+    "sha256": "2b3cfd5dfa9dd5a15bffaf337cc3e59f94e09d3cb2983e437865ae625f1461ee"
+  },
+  "protocol": {
+    "path": "baselines/methods/spatialgen/protocol/geometry/spatialgen_protocol.json",
+    "sha256": "a585cb199c43527bfa5e751bf79549aab668128398b1ef89904d5272db97e0e6",
+    "specs_path": "baselines/protocol/generation/indoor_specs.jsonl",
+    "specs_sha256": "38ba6b4eb2b65142b9a8223cb656720cd18904ca16d8e73075d5ba12a93ea657",
+    "expanded_table3_specs_path": "baselines/protocol/geometry/indoor_specs.jsonl",
+    "expanded_table3_specs_sha256": "103b2b130b09b70e545998b63fb7c725f38f531dd88abf7940698601a965fb4e",
+    "agent_path": "baselines/protocol/geometry/agent.yaml",
+    "agent_sha256": "4ee9433562c18e43aa1443f6aa7c511095a52292d136d83a3cfdaf9902f5750d"
+  },
+  "surface_reconstruction": {
+    "final_iteration": 7000,
+    "views": 16,
+    "render_resolution": [512, 512],
+    "coordinate_output": "median_coord at accumulated transmittance 0.5",
+    "effective_opacity_prune_threshold": 0.1,
+    "alpha_threshold": 0.5,
+    "minimum_distinct_view_observations": 2,
+    "voxel_size_m": 0.05,
+    "morphological_closing_iterations": 0,
+    "connect_components": false,
+    "keep_largest_only": false,
+    "meter_scale": "rotation-matched camera similarity",
+    "maximum_camera_position_rmse_m": 0.0001
+  },
+  "navigation": {
+    "empty_reference": "frozen extent_m rectangle",
+    "spawn": "entrance-door center inset 0.45 m toward ROI center; center fallback",
+    "success_minimum_reference_area_fraction": 0.01,
+    "spawn_horizontal_tolerance_m": 0.3,
+    "spawn_vertical_tolerance_m": 0.5,
+    "failure_policy": "all three navigation metrics are zero when the NavMesh success predicate fails"
+  },
+  "aggregation": {
+    "order": "mean_over_spec(mean_over_seed(scene_metric))",
+    "bootstrap_repeats": 10000,
+    "bootstrap_seed": 20260909,
+    "display_decimals": 1
+  },
+  "implementation_sha256": {
+    "adapter": "70bcd4349425044f9e35869147f336e25983a98d48a43d19836ea8fa4f34e048",
+    "reconstructor": "64571428731785234735e3cef6fc2ed3b27a4d08332fc6b185c736656b28584c",
+    "navigation_evaluator": "2f7b0e846b8c7049823bddffed3d845b582471ee1189e3bce80ff91bdd4a3071",
+    "aggregator": "6f5e3d9092f43b0efd026ee19be2a158732c2117635db8a1d34f05e36c6d1f9d",
+    "runner": "3dfb14fcbc161ce931acea7d674780d273269a39c156986abfb1ab77f844bbcb",
+    "formal_auditor": "a4fed7c7c9edec44a3459c5d6b84e48750d3ff683628eee0b5746a8b93d41e68",
+    "pilot_auditor": "bdc4e4d8e4736d1e2bf3276f4348cb2317f108a6ee64de19d8ec6b6aea301991",
+    "rasterizer_build_script": "84c0d8b0c64af10362d875780c4b93a1f679abbf7dcc39031309589b154577d9",
+    "rasterizer_binary": "dc68eb5eb6d080c77c7b014bc5930ca0548435c356d94d9c38de4911306de0fa",
+    "recast_binding": "c4aab7bc62c0731dd3e6e976156a3d3dd0c077541c9a723f7e86bc29bea786c8"
+  },
+  "formal_outputs_sha256": {
+    "table3_full.json": "302763643ff275c427cc5b80a47a585cf3abca56c4956d09f63f61814d8c97d2",
+    "table3.csv": "bf15d4e45dbce7daec7222148ef36e63206da1fd6ae1886baa394b6664fbb691",
+    "completion.json": "4e230c07f1c6cdaae830e0946115cbf9ae6bb4d13ab388aa17eb1eb828b1ed2d",
+    "audit.json": "53dd16ea4cf02ab7f15a71c2c83bc6fb4f81cccab1af1d2b20364c1ae444b0ac",
+    "matrix.json": "9fbe14868d4a3c9c3ced7b2507d33b75cba89ac9095993e95670edc5ae6d0ba7"
+  },
+  "verification": {
+    "pilot_runs": 10,
+    "pilot_audit_passed": true,
+    "formal_runs": 100,
+    "formal_audit_passed": true,
+    "formal_audit_errors": 0,
+    "raw_source_spotchecks": "5/5",
+    "targeted_tests": "9 passed"
+  }
+}

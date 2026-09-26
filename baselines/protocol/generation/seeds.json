@@ -1,0 +1,7 @@
+{
+  "pilot": [0, 1],
+  "final": [0, 1, 2, 3],
+  "seed_mapping": "method_seed = spec_index * 4 + logical_seed",
+  "bootstrap_seed": 20260827,
+  "annotation_shuffle_seed": 20260827
+}

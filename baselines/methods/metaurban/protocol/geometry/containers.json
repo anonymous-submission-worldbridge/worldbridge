@@ -1,0 +1,100 @@
+{
+  "Advertising_board": [
+    "farfromroad_sidewalk",
+    "farfromroad_buffer_sidewalk"
+  ],
+  "Bag": [
+    "main_sidewalk"
+  ],
+  "Bench": [
+    "farfromroad_sidewalk",
+    "farfromroad_buffer_sidewalk"
+  ],
+  "Bicycle": [
+    "valid_region"
+  ],
+  "Bike": [
+    "valid_region"
+  ],
+  "Bollard": [
+    "nearroad_sidewalk",
+    "nearroad_buffer_sidewalk"
+  ],
+  "Bonsai": [
+    "farfromroad_sidewalk",
+    "farfromroad_buffer_sidewalk"
+  ],
+  "Building": [
+    "valid_region"
+  ],
+  "Chair": [
+    "farfromroad_sidewalk",
+    "farfromroad_buffer_sidewalk"
+  ],
+  "Cone": [
+    "main_sidewalk"
+  ],
+  "FireHydrant": [
+    "nearroad_sidewalk",
+    "nearroad_buffer_sidewalk"
+  ],
+  "FoodTruck": [
+    "valid_region"
+  ],
+  "Lamp_post": [
+    "nearroad_sidewalk",
+    "nearroad_buffer_sidewalk"
+  ],
+  "Mailbox": [
+    "main_sidewalk"
+  ],
+  "Motorcycle": [
+    "valid_region"
+  ],
+  "Scooter": [
+    "valid_region"
+  ],
+  "Table": [
+    "main_sidewalk"
+  ],
+  "Telephone_booth": [
+    "main_sidewalk"
+  ],
+  "Traffic_light": [
+    "main_sidewalk"
+  ],
+  "Traffic_sign": [
+    "nearroad_sidewalk",
+    "nearroad_buffer_sidewalk"
+  ],
+  "TrashCan": [
+    "nearroad_sidewalk",
+    "nearroad_buffer_sidewalk"
+  ],
+  "Tree": [
+    "nearroad_sidewalk",
+    "nearroad_buffer_sidewalk",
+    "valid_region"
+  ],
+  "Vegetation": [
+    "farfromroad_sidewalk",
+    "farfromroad_buffer_sidewalk"
+  ],
+  "Vending_machine": [
+    "main_sidewalk"
+  ],
+  "Wheelchair": [
+    "valid_region"
+  ],
+  "dog": [
+    "main_sidewalk"
+  ],
+  "fallback": [
+    "main_sidewalk",
+    "nearroad_sidewalk",
+    "nearroad_buffer_sidewalk",
+    "farfromroad_sidewalk",
+    "farfromroad_buffer_sidewalk",
+    "valid_region"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "assets_manifest_sha256": "8bde509f3134b9f5d043199a53af250b4923882971f2d4a6156e8ba8799198e7",
+  "environment_pip_freeze_sha256": "602b54d719c9b4d3c1a384b08ca7c9abfc97740c6700c3bb3fbaaafbc074d2d0",
+  "frozen_at_utc": "2026-09-05T14:37:57.114360+00:00",
+  "method": "spatialgen",
+  "native_seed_limitation": "FLUX and MVD receive method_seed. Official Sparse-RaDeGS safe_state hardcodes seed 0; that native reconstruction behavior is retained and explicitly reported.",
+  "pilot_runs": [
+    {
+      "manifest_sha256": "39a271eeb9ef97270e9edfd8693d8d6d0ac6652be38a19d893598062726af259",
+      "run_dir": "./baselines/work/spatialgen/pilot_generated/table2/indoor/spatialgen/indoor_bathroom_00/seed_0",
+      "validation_sha256": "66b31a360898d9d19a65b285564d1e2e5beb39d442299df3e89c9deb0a98c1ce"
+    },
+    {
+      "manifest_sha256": "68e5d0024e5a2434f807fc488761e10e5b0d340f05319af77cea4c9051e0fc1f",
+      "run_dir": "./baselines/work/spatialgen/pilot_generated/table2/indoor/spatialgen/indoor_bathroom_00/seed_1",
+      "validation_sha256": "c249e1ad7ee6c1ad8ac74ed9c60cf7999de05b1cc461865386ed9319b937ef55"
+    },
+    {
+      "manifest_sha256": "1c9b2454feff2ba7f8ed9a1e35715b4556e6c25f6c1e91ec0a7f3f51a9afe8a8",
+      "run_dir": "./baselines/work/spatialgen/pilot_generated/table2/indoor/spatialgen/indoor_bedroom_00/seed_0",
+      "validation_sha256": "3031126e738401fe7e457cbfa79514aa7acbb458132b1582361950e725ea239a"
+    },
+    {
+      "manifest_sha256": "64fc5ec08cb7156b11d29e421d135fe2cc83cabd8755b891f86bfea775fdf02a",
+      "run_dir": "./baselines/work/spatialgen/pilot_generated/table2/indoor/spatialgen/indoor_bedroom_00/seed_1",
+      "validation_sha256": "5577c692d1a683dab1af1a458a6f81b23d053a178f158568963716402f3c6e1c"
+    },
+    {
+      "manifest_sha256": "9774f27f310f1c7fd67c7314606609718f44a561f15cb27daaa56c124ab2c029",
+      "run_dir": "./baselines/work/spatialgen/pilot_generated/table2/indoor/spatialgen/indoor_dining_room_00/seed_0",
+      "validation_sha256": "a3acd8be243f426e340756308b05c2aa8f329451fb10356c8ad4a6ff3feed117"
+    },
+    {
+      "manifest_sha256": "062cd53f323adfa145a633ab9967593bf8bd5005772d306172cacbd1ee46e653",
+      "run_dir": "./baselines/work/spatialgen/pilot_generated/table2/indoor/spatialgen/indoor_dining_room_00/seed_1",
+      "validation_sha256": "5f5bb957b64bc307c016bea9c91f825be38ef92a4ab4001e5443e820c81f1c12"
+    },
+    {
+      "manifest_sha256": "562c1d05d378c75cecc05897e343172e605c04500934b881484a47851b04fcb4",
+      "run_dir": "./baselines/work/spatialgen/pilot_generated/table2/indoor/spatialgen/indoor_kitchen_00/seed_0",
+      "validation_sha256": "149dfc2215a2d6a9ff7dd0a7cbcab75135a97e94df6f253436fffa9c678b8b52"
+    },
+    {
+      "manifest_sha256": "e208586f75646778853527072d2f576965fa7f5742ae16ad1c918eee9dec77e4",
+      "run_dir": "./baselines/work/spatialgen/pilot_generated/table2/indoor/spatialgen/indoor_kitchen_00/seed_1",
+      "validation_sha256": "b551a6b5d88fac5d14e6ff29ea460250e781275ae322099b7bac40865c03b62c"
+    },
+    {
+      "manifest_sha256": "649ec95eff12beb7f2d09d27e3dee377d618d332c64658cc0134e3782debdb66",
+      "run_dir": "./baselines/work/spatialgen/pilot_generated/table2/indoor/spatialgen/indoor_living_room_00/seed_0",
+      "validation_sha256": "cf972c809bca0e5e8b988914179cf93b7c97d88ac64e01e32eaf675b9260e803"
+    },
+    {
+      "manifest_sha256": "604b3657a51140e9638b8731713681c8cdddf96d4eb1a706eac1ca3c098e8eb0",
+      "run_dir": "./baselines/work/spatialgen/pilot_generated/table2/indoor/spatialgen/indoor_living_room_00/seed_1",
+      "validation_sha256": "5387d20359895433823e313a0135796e27988112e24cc56f48aab49963b5e430"
+    }
+  ],
+  "reproducibility_report_sha256": "6000656066f3fdc21959240050e8c9c8af9588ffde49e8fc2fc319c1a6a80412",
+  "retry_policy": "one same-seed retry per failed infrastructure stage; no quality retry",
+  "reuse_policy": "Prepared inputs and FLUX reference artifacts may be reused only after exact specification, source and file hash validation. Pilot Gaussian scenes do not enter formal results.",
+  "sources": {
+    "methods/spatialgen/adapter.py": "f772801f2ff84941750c1ee549322f03be490c8f9f9208e5cf774cd6d244eaa4",
+    "protocol/generation/indoor_specs.jsonl": "38ba6b4eb2b65142b9a8223cb656720cd18904ca16d8e73075d5ba12a93ea657",
+    "methods/spatialgen/protocol/generation/spatialgen_protocol.yaml": "754cc910ea483c2046f6f0eeed2f2b68c4a1a6adee7a6ebd284652e5e1c14e66",
+    "methods/spatialgen/tools/prepare_spatialgen_inputs.py": "f436cc37029bcc5f9c856363db33de9879c45594a4e75f6651aa4dbe057d8d65",
+    "methods/spatialgen/tools/render_spatialgen_generation.py": "583119541976ef48287cff7cf2ca81cc5ce87dff4af5707b1eb0ff3f32c983aa",
+    "methods/spatialgen/tools/spatialgen_generate_reference.py": "122c2311178fe4b2997f19fc9055bebabd227dc428a3c5b49a4a305a5317f830",
+    "vendor/SpatialGen/src/inference_sd.py": "0ec3414237f946a96aba806f618372b901cf4f377096096247a78e2699fcc5be",
+    "vendor/SpatialGen/src/recons/Sparse-RaDeGS/train.py": "5ee9ce713207e57c178f9725216d7949fedce05bf28fbb3948e75be0c7c31fdf",
+    "vendor/SpatialGen/src/recons/Sparse-RaDeGS/utils/general_utils.py": "474688715e2010eadcf6c5798ded382e4534d99d9344ca07c858bf544e9de753"
+  },
+  "status": "formal_frozen"
+}

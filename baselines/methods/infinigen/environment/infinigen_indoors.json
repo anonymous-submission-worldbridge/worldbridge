@@ -1,0 +1,28 @@
+{
+  "captured_at_utc": "2026-08-29T08:08:00Z",
+  "method": "infinigen_indoors",
+  "python": {
+    "path": "python",
+    "version": "3.11.15",
+    "binary_sha256": "d2907912289da8cb483defed3a3abbc106bba162ec1287c37032673d762910f6",
+    "pip_freeze": "baselines/methods/infinigen/environment/infinigen_indoors-pip-freeze.txt"
+  },
+  "blender": {
+    "path": "blender",
+    "version": "4.2.0",
+    "build_hash": "a51f293548ad",
+    "binary_sha256": "5a19f2f1f81810acb06ec01a9899fc17ac0b5319b84ddddcfcf0c04bdfbc390f"
+  },
+  "gpu": {
+    "count": 6,
+    "model": "NVIDIA RTX A6000",
+    "memory_mib_each": 49140,
+    "driver_version": "590.48.01"
+  },
+  "source": {
+    "infinigen_version": "1.19.1",
+    "upstream_reference_commit": "05a09759fe9478595a3323ec2d6e26ce3513223f",
+    "local_source_snapshot_sha256": "a33d7cc0a70b87c66d3702a0b775f0cc50027edc2432a848f29a17495fdae1eb"
+  },
+  "note": "The editable path printed by pip freeze is the environment's historical install path; runtime PYTHONPATH is pinned to the workspace snapshot recorded above."
+}

@@ -1,0 +1,89 @@
+protocol_id: table4-v1-hyworld2-independent
+status: frozen_before_pilot
+method: hyworld2
+display_name: HY-World 2.0
+track: matched_text_independent
+native_unified_indoor_outdoor: false
+source:
+  repository: https://github.com/Tencent-Hunyuan/HY-World-2.0
+  upstream_commit: df9988efb87bfc0f4947eb3889411cf957478b06
+specs:
+  file: baselines/protocol/unified/specs.jsonl
+  sha256: b3fe8e3d45cacea8d2fb5ea339dfbf3ea87c5e78a421f37a6167798d903e6362
+  functions: [residence, food_service, retail, office, civic_community]
+  styles: [contemporary, brick_industrial, timber_traditional, tropical, futuristic_stylized]
+  count: 25
+seeds:
+  pilot: [0, 1]
+  formal: [0, 1, 2, 3]
+  pilot_spec_indices: [0, 6, 12, 18, 24]
+  method_seed: "2 * (spec_index * 4 + logical_seed) + side_offset; exterior=0, interior=1"
+paths:
+  formal_root: baselines/data/table4/hyworld2
+  pilot_root: baselines/data/table4_pilot/hyworld2
+  cache_and_weights: baselines/hyworld2_runtime
+pipeline:
+  representation: 3d_gaussian_splatting
+  panorama:
+    input_mode: text
+    resolution: [1920, 960]
+    diffusion_steps: 6
+    bot_task: image
+    taylor_cache: false
+    attention_implementation: sdpa
+    resource_dispatch: adaptive_3_or_4_a6000_with_cpu_offload
+  trajectory_planning:
+    worldnav: true
+    qwen_vlm: Qwen3-VL-8B-Instruct
+    frames_per_trajectory: 21
+  world_expansion:
+    model: worldstereo-memory-dmd
+    dmd_steps: 1
+    fast_nframe: 3
+    fast_num_frames: 9
+    align_nframe: 2
+    max_reference: 4
+    downsampled_points: 250000
+    max_trajectories: 1
+  gs_data:
+    fast_density: true
+    save_normals: true
+    split_sky: true
+  gs_training:
+    fitting_steps: 50
+    save_ply: true
+    export_mesh: false
+rendering:
+  reused_implementation: baselines/methods/hyworld/tools/render_hyworld_generation.py
+  sequence_frames: 50
+  anchor_views_per_side: 8
+  aqs_selected_anchor_indices: [0, 2, 5, 7]
+  aqs_views_per_pair: 8
+aqs:
+  type: AQS-VLM
+  model: Qwen3-VL-8B-Instruct
+  model_root: baselines/hyworld2_runtime/checkpoints/Qwen3-VL-8B-Instruct
+  prompt: baselines/methods/hyworld/protocol/unified/native/hyworld2_aqs_prompt.txt
+  temperature: 0
+  passes_per_pair: 3
+  valid_range: [1, 10]
+  failure_value: 1
+  dimensions: [functional_aqs, visual_aqs]
+not_applicable:
+  spatial_aqs: N/A-U
+  shape_iou: N/A-U
+  entrance_alignment: N/A-U
+  entrance_passability: N/A-U
+  transition_collision: N/A-U
+  io_connectivity_rate: N/A-U
+  cross_boundary_reachability: N/A-U
+aggregation:
+  estimand: intention_to_treat
+  order: mean_over_four_seeds_then_equal_weight_mean_over_25_specs
+  bootstrap_unit: spec_id
+  bootstrap_replicates: 10000
+  bootstrap_seed: 20260909
+retry_policy:
+  infrastructure_retries: 2
+  quality_failures_are_terminal: true
+  no_seed_replacement: true

@@ -1,0 +1,15 @@
+{
+  "protocol_id": "worldbridge-table3-infinigen-indoor-v1",
+  "method": "infinigen_indoors",
+  "domain": "indoor",
+  "track": "structured_physics_ready",
+  "planned_specs": 25,
+  "seeds": [0, 1, 2, 3],
+  "planned_runs": 100,
+  "reuse": {"source": "baselines/data/table2/indoor/infinigen_indoors", "regenerate": false, "table2_non_success_policy": "itt"},
+  "roi": {"policy": "native target-room floor", "selection": "matching room semantic with the most directly supported native generated instances"},
+  "spawn": {"policy": "first lexicographically named target-room door, inset toward floor centroid; floor centroid fallback", "depends_only_on": "structural shell"},
+  "aggregation": {"order": "mean_over_spec(mean_over_seed(scene_metric))", "failure_policy": "itt", "bootstrap_repeats": 10000, "bootstrap_seed": 20260909},
+  "valid_scene_thresholds": {"source": "independent 50-scene synthetic valid indoor reference suite", "navigable_area_ratio": 72.15721426255115, "connected_area_ratio": 97.26265267349281},
+  "display": {"unit": "percent", "decimals": 1}
+}

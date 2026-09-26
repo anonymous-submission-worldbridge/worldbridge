@@ -1,0 +1,50 @@
+{
+  "display_name": "GPT-6 Astra Extra High + fixed IO adapter",
+  "files": {
+    "baselines/annotations/gpt6_astra_xhigh/indoor/PRIVATE_blind_map.json": "21ede2ed55e05d45f951cb8cf490f9b0a9b1d2780a4d057601116fcc0bc552ab",
+    "baselines/annotations/gpt6_astra_xhigh/indoor/items.csv": "0ed2daac996804bb705822ed7778341d8eab68d257e9957f8b1b29cef17c2eff",
+    "baselines/annotations/gpt6_astra_xhigh/urban/PRIVATE_blind_map.json": "28ea7f20bac3c5fcc20b265b6ade214acb1aeb6fa652d979e63254932e92c5cf",
+    "baselines/annotations/gpt6_astra_xhigh/urban/items.csv": "27bbe0e6a0a7cae9065aa83e02bb5494bda9aedecd539fb502cca1757f14fc40",
+    "baselines/hyworld2_runtime/manifests/qwen3_vl_8b_modelscope.json": "46c4dcd1dd3a02e89e319915223e817aa41bcabc9f5843a88f20493d01686081",
+    "baselines/methods/gpt/protocol/generation/gpt6_astra_xhigh.lock.json": "a5f285fa434a243b4a83e57bae3264af2ff6609f6b6e278e2c49496b1929507f",
+    "baselines/protocol/generation/indoor_specs.jsonl": "38ba6b4eb2b65142b9a8223cb656720cd18904ca16d8e73075d5ba12a93ea657",
+    "baselines/protocol/unified/specs.jsonl": "b3fe8e3d45cacea8d2fb5ea339dfbf3ea87c5e78a421f37a6167798d903e6362",
+    "baselines/methods/gpt/protocol/unified/xhigh/formal_schema_recovery_amendment_20260915.json": "f35fac42d9e7a1558f6dc37a0baae4cf57d3843669d0ee4c051f54cf8c0afaf1",
+    "baselines/methods/gpt/protocol/unified/xhigh/protocol.yaml": "bab1827c1771c88763675fcf8c264ca7585cad1032269b0da7856a18d34e9aa7",
+    "baselines/methods/gpt/protocol/unified/high/aqs_prompt.txt": "2e72ae0867d06b3a3ac5129d5a99230e7fcc8bf57893ad6b7d66244704efdcf7",
+    "baselines/methods/gpt/protocol/unified/high/protocol.yaml": "3844a70dcf2d1326064b0e3b4756ae53d53c84880214e34046f707ec4efc9886",
+    "baselines/protocol/generation/urban_specs.jsonl": "3c1fde2ec5725145ead3afc8bbf2d110ec78624183de988c1a51570e0f21d79b",
+    "baselines/results/gpt6_astra_xhigh/chain_audit_indoor.json": "2cf04ed4e4960b20b7817640b09dda1c3215e7f8b211358486b6241061bfa049",
+    "baselines/results/gpt6_astra_xhigh/chain_audit_urban.json": "7155226907ddd0a2413f5ee169887317bb6949acb0996d93a04a28ae92596594",
+    "baselines/results/gpt6_astra_xhigh/formal_audit.json": "c99aaade2f75779d375221710551a21f08c7238a39d54f55ef8e680ede1eb9f6",
+    "baselines/results/table4_gpt6_astra_extra_high_io_adapter/source_evidence_inventory.json": "59711284b4a14cdbe0aeeb6e2e3668e3e3da15c87b7452b9f8e94211c268987e",
+    "baselines/evaluation/geometry/metrics/build_navmesh.py": "10578c6f18f0f9187b1813d08217740e093f8449d09ea39504694393f3db0fa6",
+    "baselines/methods/worldgen/geometry/runtime/recast_glibc231_clean2/recast.cpython-311-x86_64-linux-gnu.so": "5bf75563711bf63ab248e92a32d909f3a2a7ac3effb5d17d1e65528080a564d7",
+    "baselines/methods/gpt/unified/xhigh/gpt_xhigh_io_adapter.py": "560d45a7608052b52023e25ce233c2d04debe8082382983b09eb93d774d05cd8",
+    "baselines/methods/gpt/unified/xhigh/recover_formal_schema.py": "e356c72dcd7fec599983a587a4c7fc07d3733db6903ab6be7e81060a5a6fb5ff",
+    "baselines/methods/gpt/unified/high/gpt_io_adapter.py": "b0eb7f9cabd84ffe38bd1558f7dc7e21fdadd59768966ea0f8944237c8eb7cbc",
+    "baselines/methods/worldgen/unified/fixed_adapter/worldgen_io_adapter.py": "923cbde03afc1e654cb2e5280386bff2ecd45b7392ed1df5fb0bd008d23c4880"
+  },
+  "formal_amendments": [
+    {
+      "amendment": "baselines/methods/gpt/protocol/unified/xhigh/formal_schema_recovery_amendment_20260915.json",
+      "scientific_configuration_changed": false,
+      "sha256": "f35fac42d9e7a1558f6dc37a0baae4cf57d3843669d0ee4c051f54cf8c0afaf1"
+    }
+  ],
+  "frozen_at_utc": "2026-09-15T03:09:59.985652+00:00",
+  "method": "gpt6_astra_xhigh_fixed_io_adapter",
+  "no_human_postprocessing": true,
+  "no_scene_regeneration": true,
+  "pilot_audit_sha256": "06387ee4f6d8cb0cd6ea4e9fd4c453df313634416e8175cfcadab8c4a1af3ca4",
+  "pilot_summary_sha256": "79039db130d8baf2203c9de7a3e89b720e74dec472b93420f11f147bf570e88f",
+  "shared_fixed_adapter_implementation": "baselines/methods/gpt/unified/high/gpt_io_adapter.py",
+  "source_evidence_inventory_sha256": "59711284b4a14cdbe0aeeb6e2e3668e3e3da15c87b7452b9f8e94211c268987e",
+  "source_model": "gpt-6-astra",
+  "source_original_scene_directories_available_at_freeze": false,
+  "source_reasoning_effort": "xhigh",
+  "source_scene_generation_reused": true,
+  "source_table2_method_lock_sha256": "a5f285fa434a243b4a83e57bae3264af2ff6609f6b6e278e2c49496b1929507f",
+  "source_visual_evidence_mode": "retained_table2_montage_and_video",
+  "track": "fixed_io_adapter_system"
+}

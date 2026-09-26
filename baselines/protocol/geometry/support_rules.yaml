@@ -1,0 +1,8 @@
+{
+  "version": "table3-infinigen-v1",
+  "support_gap_m": 0.02,
+  "embedding_tolerance_m": 0.01,
+  "minimum_support_projection_fraction": 0.05,
+  "primary_edge_policy": "fixture: ceiling then wall then gravity; placed object: gravity then wall then ceiling",
+  "notes": "One primary native StableAgainst edge per eligible instance is revalidated against final evaluated geometry."
+}

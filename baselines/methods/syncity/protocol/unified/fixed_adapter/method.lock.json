@@ -1,0 +1,33 @@
+{
+  "display_name": "syncity-3k + fixed IO adapter",
+  "files": {
+    "baselines/hyworld2_runtime/manifests/qwen3_vl_8b_modelscope.json": "46c4dcd1dd3a02e89e319915223e817aa41bcabc9f5843a88f20493d01686081",
+    "baselines/protocol/generation/indoor_specs.jsonl": "38ba6b4eb2b65142b9a8223cb656720cd18904ca16d8e73075d5ba12a93ea657",
+    "baselines/protocol/generation/methods.lock.json": "8c909dc9b70a86279290a5b07b7be12517e233904d63cb4eaa6d1a9c8c4e92da",
+    "baselines/methods/syncity/protocol/generation/syncity3k_protocol.yaml": "302816e509a1c06b7b605bc602e30104d4a3257f242c91feb5aecbf3831b495c",
+    "baselines/protocol/unified/specs.jsonl": "b3fe8e3d45cacea8d2fb5ea339dfbf3ea87c5e78a421f37a6167798d903e6362",
+    "baselines/methods/gpt/protocol/unified/high/protocol.yaml": "3844a70dcf2d1326064b0e3b4756ae53d53c84880214e34046f707ec4efc9886",
+    "baselines/methods/syncity/protocol/unified/fixed_adapter/aqs_prompt.txt": "76e2d3e8a8a5141df27259b6812be593197d6fd86dab738af6c48008009c4f93",
+    "baselines/methods/syncity/protocol/unified/fixed_adapter/protocol.yaml": "56d11d0d8f095626fcd92b9735535b9edc067e9ff1481cb513fbb54263793db0",
+    "baselines/protocol/generation/urban_specs.jsonl": "3c1fde2ec5725145ead3afc8bbf2d110ec78624183de988c1a51570e0f21d79b",
+    "baselines/results/syncity3k/indoor/table2_full.json": "ceb2974b8d48b4bd71f3b1a5cbea833daab2f23912968f16037f19027ba9583c",
+    "baselines/results/syncity3k/matrix_audit.json": "6897cab12d941e5f2baa7932d1d0b4aab825d2a9092d3d7e9c0aeb938c73b4ef",
+    "baselines/results/syncity3k/urban/table2_full.json": "8ad8d697ce87dedcb2a3b5869da16b9283bb85e71e17c9bcf5b2f0a7fadd08b2",
+    "baselines/evaluation/geometry/metrics/build_navmesh.py": "10578c6f18f0f9187b1813d08217740e093f8449d09ea39504694393f3db0fa6",
+    "baselines/methods/worldgen/geometry/runtime/recast_glibc231_clean2/recast.cpython-311-x86_64-linux-gnu.so": "5bf75563711bf63ab248e92a32d909f3a2a7ac3effb5d17d1e65528080a564d7",
+    "baselines/methods/gpt/unified/high/gpt_io_adapter.py": "b0eb7f9cabd84ffe38bd1558f7dc7e21fdadd59768966ea0f8944237c8eb7cbc",
+    "baselines/methods/syncity/unified/fixed_adapter/syncity_io_adapter.py": "5b225662b666239f0b1058adf6e1941a89e93968ab390bb94b3c1771f37e0af4",
+    "baselines/tools/audit_weight_manifest.py": "9b90cd1f5e15c9889c3eb03bd651f590f08127d0a5e84ec0b367f995ded91517"
+  },
+  "frozen_at_utc": "2026-09-14T14:14:11.583732+00:00",
+  "large_files_downloaded": false,
+  "method": "syncity3k_fixed_io_adapter",
+  "no_human_postprocessing": true,
+  "no_scene_regeneration": true,
+  "pilot_audit_sha256": "7fdbf3f9db36393152ba0b80d3b530ab0376b38bc631bfe7ed87216d15c60845",
+  "pilot_summary_sha256": "f8a6b5cc97de2f61e58fe8e49e61eadba0582ee4fda885948991b67de1f6e7ba",
+  "source_method": "syncity3k",
+  "source_outputs_regenerated": false,
+  "source_scene_generation_reused": true,
+  "track": "fixed_io_adapter_system"
+}

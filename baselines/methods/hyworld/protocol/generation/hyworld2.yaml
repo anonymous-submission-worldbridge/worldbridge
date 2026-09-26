@@ -1,0 +1,171 @@
+protocol_id: table2-v1-hyworld2
+status: pilot_accelerated_frozen
+method: hyworld2
+display_name: HY-World 2.0
+source:
+  repository: https://github.com/Tencent-Hunyuan/HY-World-2.0
+  commit: df9988efb87bfc0f4947eb3889411cf957478b06
+  recastnavigation_commit: 9f4ce64458dfae86e1239c525ddc219c4e9e06f1
+domains:
+  indoor:
+    spec_file: baselines/protocol/generation/indoor_specs.jsonl
+    spec_sha256: 38ba6b4eb2b65142b9a8223cb656720cd18904ca16d8e73075d5ba12a93ea657
+    scene_type: indoor
+  urban:
+    spec_file: baselines/protocol/generation/urban_specs.jsonl
+    spec_sha256: 3c1fde2ec5725145ead3afc8bbf2d110ec78624183de988c1a51570e0f21d79b
+    scene_type: outdoor
+seeds:
+  file: baselines/protocol/generation/seeds.json
+  sha256: af531f72fc11957e7a41f657bda2ffef1b2cc2805fb3406490c701475cd72a46
+  mapping: method_seed = spec_index * 4 + logical_seed
+  pilot_logical_seeds: [0, 1]
+  formal_logical_seeds: [0, 1, 2, 3]
+  pilot_spec_indices: [0, 6, 12, 18, 24]
+  formal_spec_indices: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]
+paths:
+  baselines_root: baselines
+  source: baselines/sources/HY-World-2.0
+  python: baselines/envs/hyworld2/bin/python
+  pano_python: baselines/envs/hyworld2/bin/python
+  vllm_python: baselines/envs/hyworld2-vllm-runtime/bin/python
+  checkpoint_root: baselines/hyworld2_runtime/checkpoints
+  output_root: baselines/hyworld2_runtime/data/table2
+  workset_root: baselines/hyworld2_runtime/worksets
+  cache_root: baselines/hyworld2_runtime/cache
+models:
+  pano:
+    repo: tencent/HY-World-2.0
+    revision: d78a16c91c7a56488894a1c8de4f5c7cc28aa8b0
+    subfolder: HY-Pano-2.0
+    backend: hunyuan_image_3_core_text_to_image
+  worldstereo:
+    repo: hanshanxue/WorldStereo
+    revision: ac2ad97ecb043fe80c2f19cd1898006becb9d66e
+    subfolder: worldstereo-memory-dmd
+  worldmirror:
+    repo: tencent/HY-World-2.0
+    revision: d78a16c91c7a56488894a1c8de4f5c7cc28aa8b0
+    subfolder: HY-WorldMirror-2.0
+  trajectory_vlm:
+    repo: Qwen/Qwen3-VL-8B-Instruct
+pipeline:
+  panorama:
+    input_mode: text
+    gpu_count_range: [6, 8]
+    gpu_scheduling: all_genuinely_idle_up_to_maximum
+    stable_idle_seconds: 180
+    device_map: auto
+    cpu_offload: automatic
+    gpu_checkpoint_memory_limit_gib: 19
+    cpu_checkpoint_memory_limit_gib: 300
+    activation_headroom_per_gpu_gib: 4.5
+    transformers: 4.57.6_reused_package_overlay
+    huggingface_hub: 0.36.2_reused_package_overlay
+    height_before_blend: 960
+    width_before_blend: 1952
+    output_resolution: [1920, 960]
+    circular_blend_width: 32
+    system_prompt: en_unified
+    bot_task: image
+    diffusion_steps: 6
+    attention_implementation: sdpa
+    moe_implementation: eager
+    taylor_cache: false
+    taylor_cache_interval: 4
+    taylor_cache_order: 2
+    taylor_cache_enable_first_enhance: false
+    taylor_cache_first_enhance_steps: 3
+    taylor_cache_enable_tailing_enhance: false
+    taylor_cache_tailing_enhance_steps: 1
+    taylor_cache_low_freqs_order: 2
+    taylor_cache_high_freqs_order: 2
+    acceleration_note: throughput-first user-authorized direct-image six-step sampler; Taylor Cache disabled for four-GPU device-map compatibility
+    deterministic_algorithms: true
+  trajectory_planning:
+    split_view_num: 3
+    split_resolution: 480
+    frames_per_trajectory: 21
+    apply_nav_trajectory: true
+    apply_up_route: true
+    apply_reconstruction_iteration: true
+    force_vlm: true
+  trajectory_rendering:
+    point_radius: 0.008
+    points_per_pixel: 20
+    fps: 16
+  world_expansion:
+    model_type: worldstereo-memory-dmd
+    fsdp: true
+    alignment_frames: 8
+    maximum_references: 8
+    downsampled_points: 2000000
+  gs_data:
+    save_normals: true
+    split_sky: true
+    panorama_density_multiplier: 2
+    polar_up_density_multiplier: 4
+    polar_down_density_multiplier: 1
+  gs_training:
+    gpu_count: 4
+    max_steps: 500
+    save_step: 500
+    evaluation_step: 500
+    ply_step: 500
+    save_ply: true
+    convert_to_spz: true
+    disable_video: true
+    use_scale_regularization: true
+    antialiased: true
+    depth_loss: true
+    normal_loss: true
+    sky_depth_from_pcd: true
+    use_mask_gaussian: true
+    mask_export_stochastic: true
+    mask_export_anchor_protection: false
+    use_anchor_protection: true
+    export_mesh: true
+    # The official 8-GPU recipe uses 150/750/100 at 1500 steps.  The README
+    # requires strategy steps to scale proportionally when using four GPUs.
+    refine_start_iteration: 50
+    refine_stop_iteration: 250
+    refine_every: 33
+    refine_scale2d_stop_iteration: 250
+    acceleration_note: throughput-first user-authorized 500-step reconstruction
+    reset_every: 99990
+    grow_gradient_2d: 0.0001
+    prune_scale_3d: 0.1
+rendering:
+  implementation: baselines/methods/hyworld/tools/render_hyworld_generation.py
+  trajectory_source: longest_non_aerial_native_trajectory
+  pose_normalization: gs_training_similarity_transform
+  sequence_frames: 50
+  sequence_fps: 10
+  sequence_resolution: [512, 512]
+  anchors: [0, 7, 14, 21, 28, 35, 42, 49]
+  anchor_resolution: [1280, 720]
+  horizontal_fov_degrees: 70.0
+  color_space: sRGB
+  format: png
+  background: black
+validation:
+  required_anchor_count: 8
+  required_sequence_count: 50
+  minimum_image_mean: 0.01
+  maximum_image_mean: 0.99
+  minimum_image_standard_deviation: 0.02
+  minimum_trajectory_path_length_normalized: 1.0
+  minimum_trajectory_max_displacement_normalized: 0.5
+  minimum_mean_adjacent_frame_difference: 0.005
+  maximum_near_plane_fraction: 0.30
+  near_plane_depth_normalized: 0.02
+metrics:
+  qalign: pyiqa-qalign
+  clipiqa_plus: pyiqa-clipiqa+
+  layout_plausibility: three-rater-blind-likert
+  prompt_alignment: three-rater-fact-checklist
+  consistency_3d: worldscore-static-3d-consistency
+  appearance_diversity: lpips-alex-v0.1
+  layout_diversity: segformer-ade20k-semantic-1-miou
+failure_policy: intention-to-treat
+infrastructure_retries: 2

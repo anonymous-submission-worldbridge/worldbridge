@@ -1,0 +1,146 @@
+{
+  "ChairFactory_0": {
+    "dimensions": [
+      0.48751989006996155,
+      0.4918321967124939,
+      0.9267857074737549
+    ],
+    "source_object": "ChairFactory(6400606).spawn_asset(1371945)"
+  },
+  "ChairFactory_1": {
+    "dimensions": [
+      0.48751989006996155,
+      0.4918321967124939,
+      0.9251118898391724
+    ],
+    "source_object": "ChairFactory(6400606).spawn_asset(5581648)"
+  },
+  "ChairFactory_2": {
+    "dimensions": [
+      0.48751989006996155,
+      0.4918321967124939,
+      0.9234299063682556
+    ],
+    "source_object": "ChairFactory(6400606).spawn_asset(6250860)"
+  },
+  "ChairFactory_3": {
+    "dimensions": [
+      0.48751989006996155,
+      0.4918321967124939,
+      0.9240150451660156
+    ],
+    "source_object": "ChairFactory(6400606).spawn_asset(6474178)"
+  },
+  "ChairFactory_4": {
+    "dimensions": [
+      0.48751989006996155,
+      0.4918321967124939,
+      0.9294546842575073
+    ],
+    "source_object": "ChairFactory(6400606).spawn_asset(869287)"
+  },
+  "ChairFactory_5": {
+    "dimensions": [
+      0.48751989006996155,
+      0.4918321967124939,
+      0.9265660047531128
+    ],
+    "source_object": "ChairFactory(6400606).spawn_asset(988724)"
+  },
+  "CeilingLightFactory_0": {
+    "dimensions": [
+      0.2821485102176666,
+      0.2821485102176666,
+      0.05415765941143036
+    ],
+    "source_object": "CeilingLightFactory(4459949).spawn_asset(3767038)"
+  },
+  "CeilingLightFactory_1": {
+    "dimensions": [
+      0.2821485102176666,
+      0.2821485102176666,
+      0.05415765941143036
+    ],
+    "source_object": "CeilingLightFactory(4459949).spawn_asset(5175259)"
+  },
+  "CeilingLightFactory_2": {
+    "dimensions": [
+      0.2821485102176666,
+      0.2821485102176666,
+      0.05415765941143036
+    ],
+    "source_object": "CeilingLightFactory(4459949).spawn_asset(5302393)"
+  },
+  "WallArtFactory_0": {
+    "dimensions": [
+      0.010943201370537281,
+      0.49880725145339966,
+      1.4536280632019043
+    ],
+    "source_object": "WallArtFactory(6417292).spawn_asset(3386650)"
+  },
+  "WallArtFactory_1": {
+    "dimensions": [
+      0.01390279270708561,
+      0.6488500237464905,
+      0.7087319493293762
+    ],
+    "source_object": "WallArtFactory(7840406).spawn_asset(6040109)"
+  },
+  "TableDiningFactory_0": {
+    "dimensions": [
+      1.7032328844070435,
+      1.038554072380066,
+      0.8457464575767517
+    ],
+    "source_object": "TableDiningFactory(3514142).spawn_asset(341483)"
+  },
+  "PlantContainerFactory_0": {
+    "dimensions": [
+      0.27501997351646423,
+      0.27501997351646423,
+      0.5203380584716797
+    ],
+    "source_object": "PlantContainerFactory(3925623).spawn_asset(1587403)"
+  },
+  "PlantContainerFactory_1": {
+    "dimensions": [
+      0.2535102963447571,
+      0.2535102963447571,
+      0.5678173899650574
+    ],
+    "source_object": "PlantContainerFactory(5924813).spawn_asset(1635766)"
+  },
+  "PlantContainerFactory_2": {
+    "dimensions": [
+      0.32354971766471863,
+      0.32354971766471863,
+      0.40732261538505554
+    ],
+    "source_object": "PlantContainerFactory(6798580).spawn_asset(4032132)"
+  },
+  "PlantContainerFactory_3": {
+    "dimensions": [
+      0.2478284239768982,
+      0.2478284239768982,
+      0.4801184833049774
+    ],
+    "source_object": "PlantContainerFactory(8271736).spawn_asset(4636076)"
+  },
+  "FloorLampFactory_0": {
+    "dimensions": [
+      0.2918737232685089,
+      0.2918737232685089,
+      1.388174057006836
+    ],
+    "source_object": "FloorLampFactory(6371443).spawn_asset(4044804)"
+  },
+  "FloorLampFactory_1": {
+    "dimensions": [
+      0.2898048460483551,
+      0.2898048460483551,
+      1.381818175315857
+    ],
+    "source_object": "FloorLampFactory(9674834).spawn_asset(9943129)"
+  }
+}

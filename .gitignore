@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.env.*
+.venv/
+node_modules/
+/output/
+/external/
+/models/
+/infinigen/
+/baselines/data/
+/baselines/results/

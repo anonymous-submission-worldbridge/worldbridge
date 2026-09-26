@@ -1,0 +1,91 @@
+{
+  "protocol_id": "table2-gpt6-astra-xhigh-v1",
+  "status": "formal_frozen",
+  "method": "gpt6_astra_xhigh",
+  "display_name": "GPT-6 Astra Extra High",
+  "official_documentation": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+  "model": "gpt-6-astra",
+  "base_url": "https://api.openai.com/v1",
+  "api_key_env": "OPENAI_API_KEY",
+  "api_key_file_env": "GPT6_ASTRA_API_KEY_FILE",
+  "method_definition": "GPT-6 Astra with xhigh reasoning effort via the same frozen Codex CLI text-only interface generates Blender Python scene code; the GPT-6 Astra High prompt, output schema, fixed Blender construction, renderer, cameras, and metrics are reused byte-for-byte",
+  "transport": "codex_exec_saved_chatgpt_login",
+  "codex_version": "0.153.4",
+  "generation_timeout_s": 900,
+  "build_timeout_s": 21600,
+  "build_workers": 16,
+  "proposed_method_definition": "GPT-6 Astra generates Blender scene code; a fixed renderer produces Table-2 views",
+  "domains": [
+    "indoor",
+    "urban"
+  ],
+  "spec_files": {
+    "indoor": "protocol/generation/indoor_specs.jsonl",
+    "urban": "protocol/generation/urban_specs.jsonl"
+  },
+  "seeds_file": "protocol/generation/seeds.json",
+  "pilot_specs_per_domain": 5,
+  "pilot_seeds": [
+    0,
+    1
+  ],
+  "formal_specs_per_domain": 25,
+  "formal_seeds": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "api_seed_supported": false,
+  "api_seed_note": "Logical seeds index fresh independent Codex CLI sessions; no deterministic model seed is supported. Preserve the returned code for deterministic local reconstruction. CLI JSONL does not return a model snapshot identifier.",
+  "reasoning_effort": "xhigh",
+  "max_output_tokens": null,
+  "max_retries_infrastructure": 2,
+  "gpu_policy": "remaining_memory_sharing_user_confirmed_20260908",
+  "min_render_free_mib": 8192,
+  "retry_quality_failures": false,
+  "generation_weights": "remote_codex_model_no_local_weights",
+  "pilot_data_root": "data/gpt6_astra_xhigh_pilot",
+  "formal_data_root": "data/table2",
+  "results_root": "results/gpt6_astra_xhigh",
+  "metrics_lock": "protocol/generation/metrics.lock.json",
+  "human_metrics": "synthetic_proxy_three_profiles_same_policy_as_completed_high",
+  "blender_executable": "blender",
+  "metrics_python": "envs/worldscore/bin/python",
+  "camera": {
+    "anchors": 8,
+    "anchor_resolution": [
+      1280,
+      720
+    ],
+    "sequence_frames": 50,
+    "sequence_resolution": [
+      512,
+      512
+    ],
+    "horizontal_fov_degrees": 70,
+    "indoor_height_m": 1.55,
+    "urban_height_m": 1.65
+  },
+  "notes": [
+    "Extra High is the user-facing label; the official GPT-6 Astra reasoning.effort value is xhigh.",
+    "No prior xhigh artifacts were present on this host or in /tmp at the 2026-09-13 resume audit; do not reuse High/Medium/Low scene outputs.",
+    "Use the frozen local Codex CLI 0.153.4 binary so the only intended scientific change from formal High is reasoning_effort.",
+    "Reuse the exact High prompt, output schema, procedural scene contract, Blender renderer, camera protocol, validation thresholds, metrics, seeds, and ITT policy.",
+    "Unstarted runs are missing data, not observed failures; never synthesize ITT scores for them.",
+    "Do not retry quality failures or substitute another model, another effort level, or another method's scenes.",
+    "Subjective columns follow the completed High experiment's explicitly disclosed synthetic_proxy_three_profiles policy; human_raters=0."
+  ],
+  "render_timeout_s": 1800,
+  "build_threads": 8,
+  "render_threads": 8,
+  "iqa_batch_size": 1,
+  "disk_stop_free_gib": 25,
+  "codex_executable": "tools/codex-gpt6-astra-xhigh-frozen",
+  "only_intended_scientific_difference": "reasoning_effort: high -> xhigh",
+  "frozen_at_utc": "2026-09-13T14:38:31.285311+00:00",
+  "pilot_terminal_counts": {
+    "valid": 17,
+    "quality": 3
+  }
+}

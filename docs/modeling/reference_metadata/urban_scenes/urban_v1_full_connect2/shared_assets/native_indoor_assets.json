@@ -1,0 +1,46 @@
+[
+  {
+    "name": "ChairFactory(6400606).spawn_asset(1371945)",
+    "collection": "NATIVE_ChairFactory",
+    "dimensions": [
+      0.48751989006996155,
+      0.4918321967124939,
+      0.9267857074737549
+    ],
+    "vertices": 99670,
+    "modifiers": []
+  },
+  {
+    "name": "PlateFactory(8042783).spawn_asset(7476702)",
+    "collection": "NATIVE_PlateFactory",
+    "dimensions": [
+      0.35420745611190796,
+      0.3542073965072632,
+      0.046173423528671265
+    ],
+    "vertices": 160722,
+    "modifiers": []
+  },
+  {
+    "name": "BowlFactory(3977967).spawn_asset(1356349)",
+    "collection": "NATIVE_BowlFactory",
+    "dimensions": [
+      0.16455432772636414,
+      0.16450916230678558,
+      0.11125066876411438
+    ],
+    "vertices": 21288,
+    "modifiers": []
+  },
+  {
+    "name": "VaseFactory(5114783).spawn_asset(4243158)",
+    "collection": "NATIVE_VaseFactory",
+    "dimensions": [
+      0.2535434663295746,
+      0.253543496131897,
+      0.24512885510921478
+    ],
+    "vertices": 128514,
+    "modifiers": []
+  }
+]

@@ -1,0 +1,80 @@
+protocol_id: worldbridge-table3-worldgen-surface-v1
+method: worldgen
+implementation: ZiYang-xie/WorldGen
+track: surface_only
+domains: [indoor, urban]
+specs:
+  indoor: baselines/protocol/generation/indoor_specs.jsonl
+  urban: baselines/protocol/generation/urban_specs.jsonl
+seeds: [0, 1, 2, 3]
+pilot_spec_indices: [0, 5, 10, 15, 20]
+reuse:
+  source_root: baselines/data/table2
+  raw_output: scene/splat.ply
+  regenerate: false
+  require_generation_success: true
+  table2_render_failure_policy: evaluate_generated_geometry
+representation:
+  input: ordered_worldgen_gaussian_splat
+  canonical: fused_surface_mesh
+  native_instances: false
+  structural_na_reason: N/A-I
+scale_calibration:
+  source: preregistered_table2_camera_height_and_nadir_floor
+  coordinate_system: right-handed-opencv-x-right-y-down-z-forward
+  floor_cap_bottom_fraction: 0.05
+  estimator: median
+  maximum_relative_mad: 0.25
+  minimum_native_floor_distance: 0.0001
+  nominal_camera_height_m:
+    indoor: 1.55
+    urban: 1.65
+surface_extraction:
+  expected_panorama_height: 800
+  expected_panorama_width: 1600
+  grid_stride: 4
+  connect_equirectangular_seam: false
+  maximum_triangle_edge_m: 1.0
+  lower_height_margin_m: 0.50
+  upper_height_margin_above_agent_m: 0.50
+  face_region_test: centroid
+  hole_filling: false
+  component_filtering: false
+reference:
+  indoor:
+    type: centered_spec_extent_rectangle
+  urban:
+    type: deterministic_pedestrian_corridors_by_topology
+    sidewalk_width_m: 3.0
+    road_width_m: 12.0
+    main_road_width_m: 14.0
+    side_road_width_m: 8.0
+agent:
+  height_m: 1.70
+  radius_m: 0.30
+  max_climb_m: 0.20
+  max_slope_deg: 45.0
+recast:
+  cell_size_m: 0.05
+  cell_height_m: 0.05
+  partition: watershed
+  filter_low_hanging_obstacles: true
+  filter_ledge_spans: true
+  filter_low_height_spans: true
+postprocess:
+  connect_components: false
+  keep_largest_only: false
+  max_walkable_height_above_floor_m: 0.20
+spawn:
+  horizontal_tolerance_m: 0.30
+  vertical_tolerance_m: 0.50
+success:
+  minimum_reference_area_fraction: 0.01
+aggregation:
+  order: mean_over_spec_mean_over_seed
+  failure_policy: itt
+  bootstrap_repeats: 10000
+  bootstrap_seed: 20260909
+display:
+  unit: percent
+  decimals: 1

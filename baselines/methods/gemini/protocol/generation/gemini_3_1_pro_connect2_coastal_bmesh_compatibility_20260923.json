@@ -1,0 +1,9 @@
+{
+  "scope": "coastal_culinary_pavilion_refined generation attempt 4",
+  "reason": "Blender 4.5 bmesh inset returns mixed geometry while bmesh.ops.scale requires vertices only",
+  "old_call": "verts=geom['geom']",
+  "new_call": "verts=[element for element in geom['geom'] if isinstance(element, bmesh.types.BMVert)]",
+  "occurrences": 1,
+  "semantic_change": false,
+  "provenance_policy": "Preserve the raw Gemini response and record the pre- and post-correction source hashes."
+}

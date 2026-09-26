@@ -1,0 +1,297 @@
+{
+  "adapter": {
+    "allowed_inputs": [
+      "frozen Table-4 pair specification",
+      "frozen Table-2 GLM-5.3 Flash manifests",
+      "immutable Table-2 GLM scene and anchor references"
+    ],
+    "anchors": {
+      "foyer": [
+        0.0,
+        -3.35,
+        0.0
+      ],
+      "goal_slots": [
+        [
+          -3.0,
+          1.5,
+          0.0
+        ],
+        [
+          0.0,
+          0.5,
+          0.0
+        ],
+        [
+          3.0,
+          1.5,
+          0.0
+        ]
+      ],
+      "outdoor": [
+        [
+          -0.75,
+          -7.0,
+          0.0
+        ],
+        [
+          0.75,
+          -7.0,
+          0.0
+        ]
+      ]
+    },
+    "building_shell": {
+      "floor_z_m": 0.0,
+      "footprint_depth_m": 10.0,
+      "footprint_width_m": 12.0,
+      "wall_height_m": 3.0,
+      "wall_thickness_m": 0.3
+    },
+    "coordinate_system": "right-handed Z-up",
+    "forbidden_operations": [
+      "per-sample ICP",
+      "IoU-maximizing transform search",
+      "per-sample scaling",
+      "metric-aware repair",
+      "human visual adjustment",
+      "source scene deletion or overwrite"
+    ],
+    "native_geometry_policy": "retain immutable GLM-5.3 Flash source Blender scenes by path and SHA-256 for provenance and visual evidence only; exclude them from explicitly synthetic adapter collision",
+    "portal": {
+      "bottom_z_m": 0.0,
+      "center_xyz_m": [
+        0.0,
+        -4.85,
+        1.05
+      ],
+      "height_m": 2.1,
+      "outward_normal_xyz": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "rule": "single shared record centered on the south wall for every pair",
+      "state": "open",
+      "width_m": 1.2
+    },
+    "unit": "meter",
+    "walkway": {
+      "outside_y_range_m": [
+        -8.0,
+        -5.0
+      ],
+      "threshold_y_range_m": [
+        -5.0,
+        -4.7
+      ],
+      "x_range_m": [
+        -1.5,
+        1.5
+      ]
+    }
+  },
+  "agent": {
+    "height_m": 1.7,
+    "max_climb_m": 0.2,
+    "max_slope_deg": 45.0,
+    "radius_m": 0.3
+  },
+  "aggregation": {
+    "bootstrap_repeats": 10000,
+    "bootstrap_seed": 20260909,
+    "confidence": 0.95,
+    "failure_policy": "planned-run ITT",
+    "order": "mean_over_spec(mean_over_seed(metric))"
+  },
+  "aqs": {
+    "dimensions": [
+      "functional",
+      "visual",
+      "spatial"
+    ],
+    "gpu_scheduling_note": "Use one genuinely idle A6000 with at least 32000 MiB free, at most 10% existing utilization, 55% vLLM GPU reservation, no CPU weight offload, eager mode and one request worker. Reuse only the local Qwen checkpoint; no download.",
+    "human_raters": 0,
+    "label": "AQS-VLM",
+    "maximum_existing_utilization_percent": 10,
+    "minimum_free_mib": 32000,
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "model_manifest": "baselines/hyworld2_runtime/manifests/qwen3_vl_8b_modelscope.json",
+    "model_root": "models/Qwen/Qwen3-VL-8B-Instruct",
+    "parse_attempts": 3,
+    "passes": 3,
+    "runtime_root": "baselines/runtime/glm53_flash_table4",
+    "schema_repair": "after three parse failures, inspect the retained responses from that same seeded pass in attempt order, recover the first valid integer occurrence of each score from one response and preserve it exactly; deterministically relabel a later non-empty string under the same duplicate score key as that dimension's evidence when this yields the exact six-key schema, otherwise request only missing or mislabeled evidence fields; never combine fields across responses, retain every raw attempt, and mark the repair mode and source attempt",
+    "schema_repair_attempts": 3,
+    "score_range": [
+      1,
+      10
+    ],
+    "seeds": [
+      102,
+      203,
+      304
+    ],
+    "short_socket_root": "baselines/.g4",
+    "temperature": 0.2,
+    "top_p": 0.9,
+    "vllm_cpu_offload_gb": 0,
+    "vllm_enforce_eager": true,
+    "vllm_gpu_memory_utilization": 0.55,
+    "vllm_max_model_len": 8192,
+    "vllm_python": "baselines/envs/hyworld2-vllm-runtime/bin/python",
+    "vllm_startup_timeout_s": 3600
+  },
+  "base_protocol": "baselines/methods/gpt/protocol/unified/high/protocol.yaml",
+  "display_name": "GLM-5.3 Flash + fixed IO adapter",
+  "failure_values": {
+    "cross_boundary_reachability": 0.0,
+    "entrance_alignment": 0.0,
+    "entrance_passability": 0.0,
+    "functional_aqs": 1.0,
+    "io_connectivity_rate": 0.0,
+    "shape_iou": 0.0,
+    "spatial_aqs": 1.0,
+    "transition_collision": 100.0,
+    "visual_aqs": 1.0
+  },
+  "formal": {
+    "planned_pairs": 100,
+    "seeds": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "spec_indices": "all"
+  },
+  "frozen_after_pilot_at_utc": "2026-09-18T04:31:40.028665+00:00",
+  "method": "glm53_flash_fixed_io_adapter",
+  "metrics": {
+    "cross_boundary_reachability": {
+      "rule": "all ordered registered outdoor-anchor by functional-goal pairs"
+    },
+    "entrance_alignment": {
+      "max_bottom_delta_m": 0.05,
+      "max_normal_angle_deg": 15.0,
+      "max_normal_distance_m": 0.1,
+      "max_tangent_offset_m": 0.2,
+      "min_aperture_iou": 0.8
+    },
+    "entrance_passability": {
+      "inside_probe_m": 1.5,
+      "outside_probe_m": 1.5
+    },
+    "io_connectivity": {
+      "rule": "at least one registered outdoor anchor and foyer share a Recast component"
+    },
+    "shape_iou": {
+      "polygon": "first-floor exterior footprint versus adapter interior shell outer envelope"
+    },
+    "transition_collision": {
+      "sample_step_m": 0.05
+    }
+  },
+  "paths": {
+    "formal_annotations": "baselines/annotations/table4_glm53_flash_io_adapter",
+    "formal_data": "baselines/data/table4_glm53_flash_io_adapter",
+    "formal_results": "baselines/results/table4_glm53_flash_io_adapter",
+    "pilot_annotations": "baselines/work/table4_glm53_flash_io_adapter/pilot/annotations",
+    "pilot_data": "baselines/work/table4_glm53_flash_io_adapter/pilot/data",
+    "pilot_results": "baselines/work/table4_glm53_flash_io_adapter/pilot/results"
+  },
+  "pilot": {
+    "planned_pairs": 10,
+    "seeds": [
+      0,
+      1
+    ],
+    "spec_indices": [
+      0,
+      6,
+      12,
+      18,
+      24
+    ]
+  },
+  "postprocess": {
+    "connect_components": false,
+    "keep_largest_only": false,
+    "max_walkable_height_above_floor_m": 0.2
+  },
+  "protocol_version": "worldbridge-table4-glm53-flash-fixed-io-adapter-v1",
+  "recast": {
+    "cell_height_m": 0.05,
+    "cell_size_m": 0.05,
+    "filter_ledge_spans": true,
+    "filter_low_hanging_obstacles": true,
+    "filter_low_height_spans": true,
+    "partition": "watershed"
+  },
+  "source": {
+    "data_root": "baselines/data/table2",
+    "generation_policy": "reuse completed and audited Table-2 GLM-5.3 Flash scenes; never regenerate and never call the Coding Plan endpoint",
+    "indoor_category_by_function": {
+      "civic_community": "dining_room",
+      "food_service": "dining_room",
+      "office": "living_room",
+      "residence": "bedroom",
+      "retail": "kitchen"
+    },
+    "method_dir": "glm53_flash",
+    "method_lock": "baselines/methods/glm_flash/protocol/generation/glm53_flash.lock.json",
+    "required_files_per_successful_side": [
+      "SUCCESS",
+      "run_manifest.json",
+      "scene/scene.blend",
+      "renders/anchors/rgb_000.png",
+      "renders/anchors/rgb_001.png",
+      "renders/anchors/rgb_002.png",
+      "renders/anchors/rgb_003.png",
+      "renders/anchors/rgb_004.png",
+      "renders/anchors/rgb_005.png",
+      "renders/anchors/rgb_006.png",
+      "renders/anchors/rgb_007.png"
+    ],
+    "selected_anchor_indices": {
+      "exterior": [
+        0,
+        2,
+        5,
+        7
+      ],
+      "interior": [
+        0,
+        2,
+        5,
+        7
+      ]
+    },
+    "urban_category_by_function": {
+      "civic_community": "leisure_civic",
+      "food_service": "commercial",
+      "office": "mixed_use",
+      "residence": "residential",
+      "retail": "commercial"
+    },
+    "variant_rule": "visual-theme ordinal 0..4 maps to the same ordinal within the frozen Table-2 category; mappings are semantic and never inspect success or metric values"
+  },
+  "source_method": "glm53_flash",
+  "source_model": "glm-5.3-flash",
+  "source_provider": "glm-coding-plan",
+  "source_requested_reasoning_effort": "none",
+  "source_requested_thinking": {
+    "type": "disabled"
+  },
+  "source_transport": "opencode_openai_chat_completions_coding_plan",
+  "spawn": {
+    "horizontal_tolerance_m": 0.3,
+    "vertical_tolerance_m": 0.5
+  },
+  "spec_file": "baselines/protocol/unified/specs.jsonl",
+  "status": "formal_frozen",
+  "success": {
+    "minimum_reference_area_fraction": 0.01
+  },
+  "track": "fixed_io_adapter_system"
+}

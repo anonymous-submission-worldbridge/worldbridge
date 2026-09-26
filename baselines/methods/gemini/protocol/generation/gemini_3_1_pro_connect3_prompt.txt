@@ -1,0 +1,33 @@
+Generate one exceptionally detailed, static, metrically scaled compact urban neighborhood using Blender Python (bpy). Return a JSON object with exactly one field, code, containing executable Python source. Do not use tools, inspect files, browse, or run commands. This is an independent Gemini 3.1 Pro generation.
+
+Implement build_scene(seed), plus helpers. The caller starts with an empty Blender file, seeds Python and NumPy, calls build_scene(seed), then supplies lights, cameras, rendering, and video encoding. Use random.Random(seed) for stochastic variation. Use only procedural geometry and materials; never load or download assets.
+
+This must be a presentation-quality native 3D neighborhood, not a blockout and not one oversized functional building:
+- Put at least four clearly separate, nearby buildings or pavilions in the compact site. Their masses, roof forms, facade rhythms, heights, setbacks, and materials must visibly vary while remaining a coherent district.
+- Every required facility in the specification must be recognizable from its architecture and modeled equipment, without any text, fonts, signs, logos, numbers, or readable labels.
+- Make the public realm dense and believable: proper road or shared-street layers, sidewalks, curbs or flush edges, crossings made as geometry, drainage, paving joints, planting beds, streetlights, benches, bollards, bins, parked or service vehicles assembled from many pieces, bicycles, cabinets, utilities, and site-specific props.
+- Model facade depth: wall courses or panels, recessed windows with frames and mullions, sills, lintels, parapets, cornices, canopies, doors, handles, roof edges, gutters, downpipes, vents and rooftop plant. Never use featureless boxes as finished buildings.
+- The anchor interior must be genuinely furnished and visually dense. Major furniture and equipment must be recognizable multipart assemblies, not single cubes. Include floor patterns, wall trim, ceiling construction, joinery, shelving and many context-specific props.
+- Use bevelled geometry or bevel modifiers on visible hard edges. Use cylinders, curves converted to mesh, bmesh, profiles, and joined repeated components where they improve silhouettes. Use 20–48 segments on prominent round forms and smooth shading where appropriate.
+- Target at least 450 separately inspectable visible mesh objects and at least 90,000 evaluated-looking polygons. Detail must be meaningful; do not inflate counts with hidden objects, coincident geometry, or meaningless identical tiny cubes.
+- Use a rich, location-appropriate palette with distinct base colors, roughness, and metallic values. Avoid a mostly white or gray scene.
+
+Coordinate, site, and connection contract:
+- Use meters, Z up. Keep all visible content inside X=[-30,30], Y=[-31,27], Z=[-1.8,17]. Walking surfaces are near Z=0.
+- Place the anchor building approximately within X=[-7,7], Y=[-1,12], with roof below Z=9. Its furnished ground-floor interior must be visible.
+- The anchor building's primary shared entrance is centered on its south facade at Y=-1.0. It must be visibly open across at least X=[-1.4,1.4], Z=[0,2.8], with modeled jambs, head, tracks or folded-open leaves, hardware, and a flush threshold. Never close it with glass or a door slab.
+- Provide a continuous step-free surface. Keep the camera route X=[-0.9,0.9], Y=[-25,8.5], Z=[0,2.35] completely free of geometry, including furniture, mullions, posts, lights, branches, cables and decor.
+- Place several other distinct buildings mostly in side and rear zones: X=[-29,-9] or [9,29], and/or Y=[14,26]. Preserve useful streets and gaps between them; do not form a sealed wall around the anchor.
+- Put the main shared street, court, or public space in Y=[-22,-2]. A cross street or landscape route may vary by scene. Create convincing foreground, middle ground, and background layers within this compact site.
+- The central connection must read clearly from interior center (0,8), entrance interior (0,2.5), threshold, public space (0,-10), and far street (0,-24), in both directions. Keep those sightlines open.
+- Design the full district for oblique and elevated cameras near X/Y: (-27,-27), (27,-27), (-28,-11), (28,-11), (-27,20), (27,24), all aimed toward the site center. Avoid large foreground walls that would obscure the neighborhood.
+- Interior shell, all buildings, furnishings, vehicles, vegetation, water if specified, streets, hardscape, context, and transition details must be real geometry in one Blender scene.
+
+Technical restrictions:
+- Only import bpy, bmesh, math, random, numpy, mathutils, or collections.
+- Do not read or write files, load libraries or images, invoke processes, access the network, use exec or eval, modify Blender preferences, save, render, create cameras, animate objects, add handlers, or change render/color-management settings.
+- Do not create LIGHT, CAMERA, FONT, text, labels, signs, billboards, background images, compositing, volume shaders, or emissive materials.
+- Use Blender 4.x material sockets including Base Color, Roughness, Metallic, and Transmission Weight where useful.
+- Give collections and objects descriptive names. build_scene(seed) must return normally and require no add-ons.
+
+Return only schema-conforming JSON. The scene specification and logical seed follow:

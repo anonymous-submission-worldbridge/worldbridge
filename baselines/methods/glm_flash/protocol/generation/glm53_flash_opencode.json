@@ -1,0 +1,63 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "share": "disabled",
+  "enabled_providers": ["glm-coding-plan"],
+  "model": "glm-coding-plan/glm-5.3-flash",
+  "small_model": "glm-coding-plan/glm-5.3-flash",
+  "provider": {
+    "glm-coding-plan": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "GLM Coding Plan",
+      "options": {
+        "baseURL": "https://open.bigmodel.cn/api/coding/paas/v4",
+        "apiKey": "{env:GLM53_API_KEY}",
+        "timeout": 1200000
+      },
+      "models": {
+        "glm-5.3-flash": {
+          "name": "GLM-5.3 Flash",
+          "reasoning": true,
+          "limit": {
+            "context": 200000,
+            "output": 65536
+          }
+        }
+      }
+    }
+  },
+  "agent": {
+    "scene": {
+      "description": "Text-only structured scene source generator",
+      "mode": "primary",
+      "model": "glm-coding-plan/glm-5.3-flash",
+      "steps": 2,
+      "reasoningEffort": "none",
+      "thinking": {
+        "type": "disabled"
+      },
+      "tools": {
+        "read": false,
+        "write": false,
+        "edit": false,
+        "apply_patch": false,
+        "glob": false,
+        "grep": false,
+        "list": false,
+        "bash": false,
+        "task": false,
+        "webfetch": false,
+        "websearch": false,
+        "skill": false,
+        "question": false,
+        "todowrite": false,
+        "todoread": false
+      },
+      "permission": {
+        "*": "deny"
+      }
+    },
+    "title": {
+      "disable": true
+    }
+  }
+}

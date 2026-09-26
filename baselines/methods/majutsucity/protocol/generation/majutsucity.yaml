@@ -1,0 +1,147 @@
+protocol_id: table2-majutsucity-v1
+status: pilot_configuration
+method: majutsucity
+display_name: MajutsuCity
+domain: urban
+paper: https://arxiv.org/abs/2511.20415
+upstream_repository: https://github.com/LongHZ140516/MajutsuCity
+source_commit: 8cd8c9847f901f087f16e7993c869e1077bad5f5
+spec_file: baselines/protocol/generation/urban_specs.jsonl
+seeds_file: baselines/protocol/generation/seeds.json
+pilot_spec_indices: [0, 6, 12, 18, 24]
+pilot_seeds: [0, 1]
+formal_spec_count: 25
+formal_seeds: [0, 1, 2, 3]
+method_seed: spec_index_times_4_plus_logical_seed
+input_adapter:
+  mode: deterministic_shared_spec_to_official_scene_plan
+  note: >-
+    The public pipeline accepts a validated Scene Plan without an API call. The
+    adapter maps the frozen shared prompt into all nine official plan fields by
+    a fixed template. It does not inspect generated outputs or tune prompts per
+    result.
+generation:
+  style: european
+  style_reason: >-
+    European is the repository's non-fantasy architectural style closest to the
+    protocol's ordinary residential, commercial, park-edge and civic scenes.
+    It is fixed before any MajutsuCity output is viewed.
+  layout_resolution: [512, 512]
+  layout_steps: 50
+  layout_guidance_scale: 9.0
+  height_steps: 50
+  height_guidance_scale: 9.0
+  layout_palette: auto
+  edit_profile: constrained
+  execution_order: phase
+  shape_backend: omni
+  point_samples: 50
+  building_scale_mode: depth
+  vlm_review: false
+  vlm_review_note: >-
+    The released recommended command makes review optional. It is disabled
+    uniformly because the release does not supply a frozen review endpoint or
+    model and the experiment must not introduce output-dependent retries.
+  allow_missing_buildings: false
+runtime:
+  python: 3.10.21
+  pytorch_lightning: 1.9.5
+  basicsr: 1.4.2
+  open3d: 0.18.0
+  basicsr_torchvision_compatibility_note: >-
+    BasicSR 1.4.2 imports rgb_to_grayscale from the removed torchvision
+    functional_tensor module. The baselines-local environment patch first
+    imports the identical public helper from torchvision.transforms.functional
+    and retains the legacy path as a fallback; no image-processing behavior or
+    model parameter changes.
+  setuptools: 80.9.0
+  setuptools_note: >-
+    Setuptools is pinned below 81 because the released layout stack imports
+    pkg_resources through pytorch-lightning 1.9.5. Setuptools 83 passed the
+    metadata-only preflight but failed before the first model load.
+  layout_cuda_gate_mib: 47000
+  layout_cuda_gate_note: >-
+    A baselines-local source patch rechecks free memory after the CPU checkpoint
+    load and immediately before model.cuda(). It only waits on shared-host races;
+    it does not alter model weights, seeds, sampling, prompts, or outputs.
+  qwen_placement: model_cpu_offload
+  qwen_placement_note: >-
+    Qwen-Image-Edit-2509 produced non-finite latents at denoising step 2 with
+    pipeline-level device_map=balanced on the two A6000 devices. A preregistration
+    diagnostic reproduced the failure with official model hashes and both
+    diffusers 0.36.0 and 0.37.1. The official model_cpu_offload path on the first
+    remapped device kept all 40 BF16/CFG=4 denoising steps finite and produced a
+    valid semantic edit. This placement-only compatibility patch preserves the
+    weights, prompts, seeds, scheduler, precision, CFG and step count.
+    Two disjoint one-GPU workers shard building IDs deterministically; their
+    model loads are staggered by 90 seconds to bound host-memory peaks. Worker
+    count and placement affect throughput only, while each building retains its
+    original building-specific seed and frozen prompt. Because CPU-offloaded
+    model loading takes several minutes without occupying the target GPU, each
+    worker also rechecks the same 47000 MiB threshold immediately before its
+    first inference and waits with the already-loaded CPU model if another
+    shared-host job claimed the device in that interval.
+  layout_gpu_physical: 1
+  qwen_gpu_groups_physical: [[1], [4]]
+  qwen_worker_startup_stagger_seconds: 90
+  controller_gpu_gate_continuous_idle_seconds: 300
+  gpu_gate_poll_seconds: 10
+  hunyuan_initial_min_free_mib: 47000
+  hunyuan_worker_gpus_physical: [1, 4]
+  note: >-
+    Physical device selection and worker count are execution resource mappings,
+    not model parameters. Two workers fit the 251 GiB host-memory envelope and
+    use the presently available physical GPUs 1 and 4. The controller requires
+    those two GPUs to
+    remain continuously above 47000 MiB free for 300 seconds, covering the
+    observed 180-second retry gaps between other multi-stage jobs; Qwen's first
+    CUDA inference and each Hunyuan shape/paint model allocation additionally
+    wait until their own remapped GPU has at least 47000 MiB free. Per-building
+    prompts and seeds are invariant to sharding.
+    Per-stage subprocesses remap only their declared GPU.
+camera:
+  trajectory_frames: 50
+  trajectory_fps: 10
+  trajectory_length_m: 42.0
+  trajectory_planner: largest_road_skeleton_diameter_centered_42m_v1
+  look_rotation_degrees: 75.0
+  route_note: >-
+    The path is deterministically derived from the exact quantized road class
+    in each generated layout. The selected 42 m segment is centered on the
+    point of the largest-component skeleton diameter nearest the layout center;
+    no rendered image or quality score is inspected.
+  height_m: 1.65
+  horizontal_fov_degrees: 70.0
+  anchors_zero_based: [0, 7, 14, 21, 28, 35, 42, 49]
+  anchor_resolution: [1280, 720]
+  sequence_resolution: [512, 512]
+render:
+  engine: cycles
+  device: optix
+  anchor_samples: 256
+  sequence_samples: 64
+  denoise: true
+failure_policy:
+  aggregation: intention_to_treat
+  retry_quality_failures: false
+  infrastructure_attempts: 3
+storage:
+  pilot_data_root: baselines/data/pilot
+  formal_data_root: baselines/data/table2
+  native_output_root: baselines/data/majutsucity_native
+  results_root: baselines/results/majutsucity
+  minimum_free_gib: 200
+weights:
+  primary_transport: direct_huggingface_or_hf_mirror_without_proxy
+  rmbg_transport: modelscope_official_mirror_without_proxy
+  rmbg_model_sha256: 566ed80c3d95f87ada6864d4cbe2290a1c5eb1c7bb0b123e984f60f76b02c3a7
+  rmbg_note: >-
+    The upstream Hugging Face RMBG-2.0 repository requires click-through
+    access. The byte-identical 884878856-byte safetensors object was obtained
+    from the public AI-ModelScope/RMBG-2.0 mirror and verified against its
+    published SHA-256 manifest.
+metrics_lock: baselines/protocol/generation/metrics.lock.json
+notes:
+  - Only MajutsuCity Urban is enabled by this protocol.
+  - Pilot values and incomplete matrices are never eligible for Table 2.
+  - Formal configuration is frozen only after all ten pilot slots pass the generation, canonical rendering, validator and metric sanity gates.

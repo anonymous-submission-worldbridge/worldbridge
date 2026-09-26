@@ -1,0 +1,25 @@
+{
+  "file_count": 3,
+  "files": [
+    {
+      "path": "HY-WorldMirror-2.0/README.md",
+      "sha256": "ec40d6b5978fe1ed22e92abe5f9033b5147fc474209dc245df3b4fb8d4dfbf4c",
+      "size": 352
+    },
+    {
+      "path": "HY-WorldMirror-2.0/config.json",
+      "sha256": "5e40150577ef7d38e24d8d079a7126568a0ec9816dbfc61ebc99c67faf430ed9",
+      "size": 842
+    },
+    {
+      "path": "HY-WorldMirror-2.0/model.safetensors",
+      "sha256": "9fff06539d3d9e85338d7de1ffb5afffb7739fa5bf4d62b4b7c319b5ecdde54f",
+      "size": 5053553272
+    }
+  ],
+  "prefix": "HY-WorldMirror-2.0/",
+  "repo": "Tencent-Hunyuan/HY-World-2.0",
+  "revision": "master",
+  "total_bytes": 5053554466,
+  "transport": "ModelScope official mirror"
+}

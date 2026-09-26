@@ -1,0 +1,9 @@
+{
+  "amendment_id": "gemini-3.1-pro-connect2-mathutils-compatibility-20260923",
+  "recorded_at_utc": "2026-09-23T19:00:00Z",
+  "scope": "mediterranean_music_villa_refined generated source",
+  "change": "Replace four Mathutils Vector normalize() calls used as expressions with normalized(), which returns the normalized vector.",
+  "rationale": "Mathutils normalize() mutates in place and returns None; normalized() is its value-returning equivalent. Geometry values and design intent are unchanged.",
+  "raw_response_retained": true,
+  "other_source_changes": false
+}

@@ -1,0 +1,87 @@
+{
+  "schema_version": "table4-hyworld2-node-local-runtime-v1",
+  "created_at_utc": "2026-09-11T13:59:02Z",
+  "finalized_at_utc": "2026-09-12T14:31:00Z",
+  "purpose": "Record the node-local I/O staging used by the formal run; no model, sampler, seed, prompt, evaluator, or aggregation change.",
+  "entries": {
+    ".cache/hyworld2_env_uid2002": {
+      "canonical_source": "baselines/envs/hyworld2",
+      "copy_policy": "recursive copy excluding regenerable __pycache__; symbolic links preserved",
+      "stable_regular_file_count": 56895,
+      "stable_size_manifest_sha256": "3920c3683f6dea6c7813cd01621375bee60ac1db901ef9eeb8b64cfd0ef25493",
+      "symlink_count": 4,
+      "symlink_manifest_sha256": "60fec08c0d7bdff8c467374460651fe128d852cb31bd50fe3dde4a5986c87410",
+      "verified_versions": {
+        "python": "3.11.4",
+        "torch": "2.7.1+cu128",
+        "numpy": "1.26.4",
+        "transformers_default": "5.2.0",
+        "pillow": "12.3.0",
+        "accelerate": "1.14.0"
+      }
+    },
+    ".cache/hyworld2_source_code_uid2002": {
+      "canonical_source": "baselines/sources/HY-World-2.0",
+      "copy_policy": "recursive copy excluding .git, assets, examples and regenerable __pycache__",
+      "stable_regular_file_count": 427,
+      "stable_size_manifest_sha256": "8a62af6601f9b7d577828d7fad158d33806ac35dead51f29ff60c217fef591bc",
+      "symlink_count": 0,
+      "symlink_manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".cache/hyworld2_runtime_code_uid2002": {
+      "canonical_sources": [
+        "baselines/hyworld2_runtime/src",
+        "baselines/hyworld2_runtime/python",
+        "baselines/hyworld2_runtime/python_sm86",
+        "baselines/sources/pytorch3d-worldgen"
+      ],
+      "copy_policy": "recursive copy excluding .git and regenerable __pycache__",
+      "stable_regular_file_count": 1170,
+      "stable_size_manifest_sha256": "76db54f21adcc0f6f6acfb351ef39d55ddca59a617d03db74b5257622e7e68da",
+      "symlink_count": 56,
+      "symlink_manifest_sha256": "541ad0c03cbef6c444f01cbeb9d3d690c8fdd29dbce67e101689b298129cdd25"
+    },
+    ".cache/hyworld2_pano_compat_uid2002": {
+      "canonical_source": "baselines/hyworld2_runtime/pano_python_compat targets",
+      "copy_policy": "materialized package copy excluding regenerable __pycache__",
+      "stable_regular_file_count": 2421,
+      "stable_size_manifest_sha256": "de88b4add3e1cc9233a68a8c7b5b95c08cc4727ac98beb47e96d241798de41b8",
+      "symlink_count": 0,
+      "symlink_manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "verified_versions": {
+        "transformers": "4.57.6",
+        "huggingface_hub": "0.36.2"
+      }
+    },
+    ".cache/hyworld2_runtime_overlay_uid2002": {
+      "canonical_sources": [
+        "baselines/hyworld2_runtime/python_sm86",
+        "baselines/hyworld2_runtime/python"
+      ],
+      "copy_policy": "materialized runtime overlay; regenerable __pycache__ and *.pyc excluded from the stable manifest",
+      "stable_regular_file_count": 982,
+      "stable_regular_total_bytes": 62457561,
+      "stable_size_manifest_sha256": "edcc4c8c799359fbc4b36bac2318eaa73879612ba9127302ea91e21834a3da10",
+      "symlink_count": 0,
+      "symlink_manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".cache/hyworld2_runtime_cache_uid2002": {
+      "canonical_source": "baselines/hyworld2_runtime/cache",
+      "copy_policy": "uid-private mutable runtime-cache staging; regenerable __pycache__ and *.pyc excluded from the final stable manifest",
+      "stable_regular_file_count": 1095,
+      "stable_regular_total_bytes": 248823442,
+      "stable_size_manifest_sha256": "6269f354df1a2d93e0463f3f75bb79a92f31ae915226eba5d5762a1522e0f996",
+      "symlink_count": 0,
+      "symlink_manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".cache/hyworld2_runtime_cache_replay_uid2002": {
+      "canonical_source": "baselines/hyworld2_runtime/cache",
+      "copy_policy": "fresh uid-private replay cache copied before the successful 31-side WorldStereo recovery; regenerable __pycache__ and *.pyc excluded from the final stable manifest",
+      "stable_regular_file_count": 982,
+      "stable_regular_total_bytes": 245929045,
+      "stable_size_manifest_sha256": "515e571274d3f20bdd8727ad981a7ba850ddd3b6071f2ba45ae880d153bf0df1",
+      "symlink_count": 0,
+      "symlink_manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

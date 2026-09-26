@@ -1,0 +1,28 @@
+{
+  "agent": {
+    "height_m": 1.7,
+    "max_climb_m": 0.2,
+    "max_slope_deg": 45.0,
+    "radius_m": 0.3
+  },
+  "postprocess": {
+    "connect_components": false,
+    "keep_largest_only": false,
+    "keep_target_height_band_only": true
+  },
+  "recast": {
+    "cell_height_m": 0.05,
+    "cell_size_m": 0.05,
+    "filter_ledge_spans": true,
+    "filter_low_hanging_obstacles": true,
+    "filter_low_height_spans": true,
+    "partition": "watershed"
+  },
+  "spawn": {
+    "horizontal_tolerance_m": 0.3,
+    "vertical_tolerance_m": 0.5
+  },
+  "success": {
+    "minimum_reference_area_fraction": 0.01
+  }
+}

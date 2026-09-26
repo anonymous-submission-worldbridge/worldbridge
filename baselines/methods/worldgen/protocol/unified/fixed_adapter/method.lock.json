@@ -1,0 +1,20 @@
+{
+  "display_name": "WorldGen (ZiYang-xie) + fixed IO adapter",
+  "files": {
+    "baselines/hyworld2_runtime/manifests/qwen3_vl_8b_modelscope.json": "46c4dcd1dd3a02e89e319915223e817aa41bcabc9f5843a88f20493d01686081",
+    "baselines/methods/worldgen/protocol/unified/native/worldgen_method.lock.json": "593a75a18685fb93833a9d30d6c3eed6a1bf30780bc7942d025a4af849cbb4c7",
+    "baselines/methods/worldgen/protocol/unified/fixed_adapter/protocol.yaml": "231b592ebe72ef36010e9c04936d2414fa9acc2bead9fbc48b9e662694e07865",
+    "baselines/methods/worldgen/protocol/unified/fixed_adapter/spatial_aqs_prompt.txt": "062626490631ffed58669f69cac4ef3fdcf84c8301f2b8b6163e67c9c46ede90",
+    "baselines/results/table4_worldgen/audit.json": "4e50b3678dcd05dc2085b1b6456fee5d821e1c0d09bea3d7066a1e02915c0aa1",
+    "baselines/results/table4_worldgen/summary.json": "f02593fc20c8ea664484d1daf057492d3de94269d39b90334eb919e92d6e97bb",
+    "baselines/evaluation/geometry/metrics/build_navmesh.py": "10578c6f18f0f9187b1813d08217740e093f8449d09ea39504694393f3db0fa6",
+    "baselines/methods/worldgen/geometry/runtime/recast_glibc231_clean2/recast.cpython-311-x86_64-linux-gnu.so": "5bf75563711bf63ab248e92a32d909f3a2a7ac3effb5d17d1e65528080a564d7",
+    "baselines/methods/worldgen/unified/fixed_adapter/worldgen_io_adapter.py": "923cbde03afc1e654cb2e5280386bff2ecd45b7392ed1df5fb0bd008d23c4880"
+  },
+  "frozen_at_utc": "2026-09-11T11:41:28.614564+00:00",
+  "method": "worldgen_fixed_io_adapter",
+  "no_human_postprocessing": true,
+  "pilot_audit_sha256": "82715cb610a2ea119e83bda2476cf24feb4acbf6505ed4191a46906c47cb53ea",
+  "pilot_summary_sha256": "414944bea1a87e7ab494b29bb575da11008417d9ca43b1ea20ee4421b25525b8",
+  "track": "fixed_io_adapter_system"
+}

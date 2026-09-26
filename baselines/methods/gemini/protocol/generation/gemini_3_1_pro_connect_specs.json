@@ -1,0 +1,56 @@
+[
+  {
+    "demo_id": "coastal_kitchen_deck",
+    "logical_seed": 311,
+    "title": "Coastal Kitchen and Dune Deck",
+    "style": "bright coastal contemporary architecture with limewashed walls, pale oak, sea-glass blue accents, woven details, and brushed steel",
+    "interior_program": "an open kitchen and breakfast room with a detailed island, stools, cabinetry, shelves, pendant-like non-emissive fixtures, dining nook, tableware silhouettes, and a generous central circulation route",
+    "exterior_program": "a timber deck leading into a dune garden with grasses, sculptural wind-pruned trees, low stone walls, lounge seating, and a distant boardwalk-like path",
+    "transition": "a wide open framed sliding-door bay with a flush timber-and-stone threshold directly joining the kitchen floor and deck"
+  },
+  {
+    "demo_id": "japanese_library_courtyard",
+    "logical_seed": 427,
+    "title": "Japanese Library and Rain Courtyard",
+    "style": "quiet Japanese-modern architecture with dark timber frames, warm plaster, tatami tones, indigo upholstery, stone, and restrained joinery",
+    "interior_program": "a reading library with full-height book shelving, low reading platforms, lounge chairs, side tables, pottery, a writing desk, and a clear axial passage",
+    "exterior_program": "a contemplative rain courtyard with stepping zones outside the protected central path, gravel, moss-like ground cover, a stone basin, layered maples, timber screens, and a sheltered bench",
+    "transition": "a fully open shoji-inspired framed portal with a level stone threshold that visually aligns the library aisle and courtyard path"
+  },
+  {
+    "demo_id": "desert_ceramics_patio",
+    "logical_seed": 563,
+    "title": "Desert Ceramics Studio and Patio",
+    "style": "Sonoran desert modernism with sand-colored rammed-earth forms, terracotta, turquoise glaze, dark steel, canvas, and sun-washed timber",
+    "interior_program": "a working ceramics studio with sturdy worktables, stools, shelving full of varied vessel forms, a pottery wheel silhouette, drying racks, storage, and a clean central aisle",
+    "exterior_program": "a shaded desert patio with a slatted canopy away from the centerline, clay display plinths, gravel beds, agave and columnar cactus forms, boulders, benches, and a path into the landscape",
+    "transition": "a broad open steel-framed workshop doorway with a flush threshold and continuous hardscape from studio to patio"
+  },
+  {
+    "demo_id": "bicycle_cafe_pocket_park",
+    "logical_seed": 659,
+    "title": "Bicycle Cafe and Pocket Park",
+    "style": "lively urban adaptive reuse with red brick, cream tile, blackened steel, walnut, olive green upholstery, and small brass accents",
+    "interior_program": "a neighborhood cafe with service counter, pastry display geometry, espresso-machine silhouette, mixed tables and chairs, bicycle wall racks outside the clear aisle, banquette seating, and ceiling detail",
+    "exterior_program": "a compact streetside pocket park with brick paving, cafe tables, bike stands, planters, shade trees, benches, curb-free crossing detail, and neighboring facade fragments",
+    "transition": "folded-open glazed storefront panels forming a generous level opening between the cafe aisle and park promenade"
+  },
+  {
+    "demo_id": "nordic_dining_orchard",
+    "logical_seed": 773,
+    "title": "Nordic Dining Hall and Orchard",
+    "style": "soft Nordic rural contemporary design with white-oiled timber, muted green, warm gray stone, linen colors, black metal, and precise craft details",
+    "interior_program": "a double-purpose dining and gathering room with a long communal table, varied chairs, sideboard, open shelving, fireplace mass away from the opening, window seats, ceramics, and a clear central route",
+    "exterior_program": "a small orchard terrace with gravel and stone paving, espalier frames, fruit trees, herb beds, a long bench, lantern-like non-emissive objects, and field-edge fencing",
+    "transition": "an open timber portal with recessed glazed panels and a seamless floor-to-terrace threshold aligned with the orchard walk"
+  },
+  {
+    "demo_id": "mediterranean_music_terrace",
+    "logical_seed": 881,
+    "title": "Mediterranean Music Salon and Terrace",
+    "style": "layered Mediterranean contemporary architecture with warm white stucco, travertine, walnut, dusty rose textiles, aged bronze, and deep green planting",
+    "interior_program": "an intimate music salon with a stylized grand-piano silhouette outside the center route, upholstered seating, record shelving, console, acoustic wall panels, side tables, sculptural decor, and a clear passage",
+    "exterior_program": "a stepped-looking but actually level central terrace with side planting beds, pergola structure clear of the route, dining furniture, olive and citrus trees, water-basin geometry, low walls, and a descending landscape view beyond",
+    "transition": "a tall open arched rectangular hybrid portal with a level travertine threshold connecting the salon directly to the terrace axis"
+  }
+]

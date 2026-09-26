@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-19",
+  "scope": "Gemini 3.1 Pro formal Indoor and Urban matrix completion after shared-storage resume",
+  "pre_completion_lock_sha256": "3f0054cf435940334a7fd29c62f75ac1425063b4e3143a70a680b26806ad1b60",
+  "checkpoint_observed_on_current_host": {
+    "terminal": 86,
+    "success": 68,
+    "quality_failure": 18
+  },
+  "final_matrix": {
+    "expected": 200,
+    "terminal": 200,
+    "success": 154,
+    "quality_failure": 46,
+    "indoor": {
+      "expected": 100,
+      "success": 78,
+      "quality_failure": 22,
+      "first_started_at_utc": "2026-09-17T16:17:28.253218+00:00",
+      "last_finished_at_utc": "2026-09-18T07:33:16.629372+00:00"
+    },
+    "urban": {
+      "expected": 100,
+      "success": 76,
+      "quality_failure": 24,
+      "first_started_at_utc": "2026-09-18T07:29:16.300357+00:00",
+      "last_finished_at_utc": "2026-09-18T10:03:50.834263+00:00"
+    }
+  },
+  "resume_statement": "After the current host observed the 86-terminal checkpoint, the shared experiment directory received the remaining completed formal outputs from the prior execution environment. Existing terminal slots were not regenerated and the current host made no additional Gemini generation call.",
+  "manifest_client_identity": {
+    "legacy_helper_path": "/home/anonymous/.codex/skills/gemini-3-1-pro/scripts/ask_gemini.sh",
+    "legacy_helper_sha256": "415d6a4dd86aa951199915a257048cbf485cd63a9501a16f9aa0f7215da63519",
+    "manifests_with_legacy_identity": 200,
+    "manifests_with_recovery_helper_identity": 0,
+    "recovery_helper_generation_calls_on_current_host": 0
+  },
+  "billing": {
+    "auth_mode": "account_subscription_no_api_key",
+    "api_key_billing_used": false,
+    "cleared_environment": [
+      "GEMINI_API_KEY",
+      "GOOGLE_API_KEY",
+      "GOOGLE_GEMINI_BASE_URL"
+    ]
+  },
+  "interpretation": "The frozen 1.2.5 recovery binary and helper remain available for reproducibility, but no formal generation result was produced with that recovery helper. All 200 formal manifests retain the exact legacy frozen helper identity."
+}

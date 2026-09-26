@@ -1,0 +1,48 @@
+{
+  "protocol_id": "worldbridge-table3-metaurban-collision-sensitivity-supplement-v1",
+  "status": "post_hoc_supplementary_sensitivity_not_primary_table3",
+  "method": "metaurban",
+  "domain": "urban",
+  "base_result": "baselines/methods/metaurban/geometry/results/table3_full.json",
+  "base_result_sha256": "3116a350dd2988ba91ee1d745970ee48b3bed3019d33424fd712269b204ae06e",
+  "frozen_primary_collision_unchanged": true,
+  "ground_embedding_pair_endpoint": "native_pedestrian_surface",
+  "tree_tree_semantics": [
+    "Tree",
+    "Tree"
+  ],
+  "vegetation_like_semantics": [
+    "Tree",
+    "Vegetation",
+    "Bonsai"
+  ],
+  "tiers": [
+    {
+      "id": "all_collision_primary",
+      "label_zh": "All collisions (main protocol)",
+      "definition": "All eligible objects participating in at least one frozen-protocol significant collision pair, including excessive ground embedding."
+    },
+    {
+      "id": "exclude_ground_embedding",
+      "label_zh": "exclude ground embedding",
+      "definition": "Exclude synthetic native_pedestrian_surface embedding pairs; retain all other frozen-protocol significant pairs."
+    },
+    {
+      "id": "exclude_ground_and_tree_tree",
+      "label_zh": "Excluding Tree-Tree",
+      "definition": "Starting from the no-ground tier, additionally exclude pairs whose two endpoint semantics are both Tree."
+    },
+    {
+      "id": "hard_object_collision",
+      "label_zh": "Hard objects collision",
+      "definition": "Starting from the no-ground tier, retain only significant pairs for which neither endpoint semantic is Tree, Vegetation, or Bonsai."
+    }
+  ],
+  "aggregation": {
+    "metric": "100 * unique eligible objects implicated by retained pairs / eligible objects in the run",
+    "order": "mean_over_spec(mean_over_seed(scene_collision_rate))",
+    "cluster_bootstrap_repeats": 10000,
+    "cluster_bootstrap_seed": 20260909,
+    "display_decimals": 1
+  }
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "demo_id": "demo_01_glass_garden_living",
+    "logical_seed": 101,
+    "title": "Glass Garden Living Room",
+    "style": "warm contemporary residential architecture with pale limestone, oak, sage upholstery, and black metal details",
+    "interior_program": "a furnished living room with an L-shaped sofa, coffee table, reading chair, media wall, shelving, rug, indoor plants, and a clear central circulation route",
+    "exterior_program": "a lush private garden courtyard with a stone path connected to the doorway, a timber pergola, bench, layered planters, small trees, and low garden walls",
+    "transition": "a wide open glazed garden door with a flush threshold connecting the living-room floor directly to the garden path",
+    "palette": ["warm white", "oak", "sage green", "terracotta", "charcoal"]
+  },
+  {
+    "demo_id": "demo_02_brick_corner_cafe",
+    "logical_seed": 202,
+    "title": "Brick Corner Cafe",
+    "style": "brick-industrial neighborhood cafe with dark steel, walnut, cream plaster, and muted red accents",
+    "interior_program": "a cafe with service counter, pastry display, back bar, espresso equipment represented as detailed geometry, small dining tables, chairs, banquette, pendant-like ceiling details, and clear circulation",
+    "exterior_program": "a pedestrian street corner with continuous paving, curb and road, outdoor cafe tables, planters, bollards, street trees, neighboring facade fragments, and a fabric awning",
+    "transition": "an open double entrance centered in the storefront, with aligned interior tile and exterior pavement and no step",
+    "palette": ["brick red", "walnut", "cream", "dark steel", "olive green"]
+  },
+  {
+    "demo_id": "demo_03_timber_bookshop_plaza",
+    "logical_seed": 303,
+    "title": "Timber Bookshop and Civic Plaza",
+    "style": "crafted timber-traditional bookshop with deep blue-green joinery, warm wood, brass details, and stone paving",
+    "interior_program": "a bookshop with perimeter bookcases containing visible book geometry, central display tables, checkout desk, reading chairs, rugs, plants, and an unobstructed entrance aisle",
+    "exterior_program": "a compact civic plaza with connected stone paving, circular planter, shade tree, benches, lamp posts, bicycle rack, and restrained neighboring shopfronts",
+    "transition": "an open recessed timber doorway and short covered entry apron that visibly connects the shop aisle to the plaza",
+    "palette": ["warm timber", "deep teal", "brass", "sandstone", "burgundy"]
+  },
+  {
+    "demo_id": "demo_04_tropical_cowork_courtyard",
+    "logical_seed": 404,
+    "title": "Tropical Co-work Courtyard",
+    "style": "airy tropical-modern coworking lounge with terrazzo, light timber, woven textures expressed geometrically, white plaster, and rich greenery",
+    "interior_program": "a coworking lounge with communal worktable, chairs, two soft seating clusters, low storage, shelving, acoustic ceiling baffles, plants, and a wide clear route to the exit",
+    "exterior_program": "a shaded tropical courtyard with flush decking and paving, a narrow reflecting pool away from the walking route, palms, broad-leaf plants, pergola, lounge benches, and a garden wall",
+    "transition": "a fully open wide sliding-door bay with matching floor levels and a continuous central walkway",
+    "palette": ["white", "light oak", "turquoise", "leaf green", "coral"]
+  },
+  {
+    "demo_id": "demo_05_industrial_gallery_lane",
+    "logical_seed": 505,
+    "title": "Industrial Gallery and Arts Lane",
+    "style": "converted industrial gallery with concrete, weathered brick, black steel, warm plywood, and saturated sculptural accents",
+    "interior_program": "an art gallery with freestanding sculptural objects, framed abstract wall reliefs without text, display plinths, reception desk, track-light housings, benches, and a clear axial path",
+    "exterior_program": "an urban arts lane with continuous concrete paving, road edge, graphic color-block wall panels without words, planters, bicycle, utility details, benches, and warehouse facade fragments",
+    "transition": "a tall open steel-framed loading-bay entrance converted into a public doorway with a flush interior-to-lane threshold",
+    "palette": ["concrete gray", "weathered red", "black", "plywood", "cobalt and orange accents"]
+  },
+  {
+    "demo_id": "demo_06_alpine_lodge_terrace",
+    "logical_seed": 606,
+    "title": "Alpine Lodge Terrace",
+    "style": "refined alpine lodge using stacked stone, dark timber, wool-like soft forms, aged bronze, and muted forest colors",
+    "interior_program": "a lodge lounge with stone fireplace, sectional seating, armchairs, low tables, dining nook, shelving, rugs, ceiling beams, and an open central route",
+    "exterior_program": "a mountain terrace and arrival garden with connected stone paving, timber deck, firewood rack, conifers, boulders, benches, lantern fixtures, low walls, and distant stylized mountain forms",
+    "transition": "an open timber-and-glass terrace doorway with a covered porch and step-free stone path continuing outward",
+    "palette": ["dark timber", "granite", "forest green", "rust", "warm beige"]
+  }
+]

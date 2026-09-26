@@ -1,0 +1,19 @@
+{
+  "amendment_id": "gpt6-astra-medium-table4-formal-schema-recovery-20260913",
+  "applies_to": {
+    "blind_id": "G-EA5FF31B983D",
+    "pass_index": 2
+  },
+  "reason": "All three preregistered schema-repair responses preserved the frozen integer scores but emitted the spatial evidence string under a duplicate spatial_aqs key.",
+  "recovery_rule": "Use the first preregistered schema-repair response that contains the frozen integer occurrence of every score and a later non-empty string occurrence of the same score key; relabel only that later string as the matching evidence key.",
+  "numeric_scores_may_change": false,
+  "new_vlm_request_allowed_for_recovered_pass": false,
+  "scientific_configuration_changed": false,
+  "required_audit_fields": [
+    "source_attempt",
+    "source_sha256",
+    "frozen_scores",
+    "canonical_scores",
+    "recovery_mode"
+  ]
+}

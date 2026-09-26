@@ -1,0 +1,8 @@
+# Moderate native Indoor solve for the two all45_09 companion residences.
+# It keeps a reduced medium furnishing pass and skips the expensive tabletop
+# display pass, while retaining a full native Indoor large-furniture solve.
+compose_indoors.solve_steps_large = 34
+compose_indoors.solve_steps_medium = 8
+compose_indoors.solve_steps_small = 0
+compose_indoors.terrain_enabled = False
+target_face_size.global_clip_min = 0.02

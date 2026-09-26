@@ -1,0 +1,54 @@
+{
+  "amended_at_utc": "2026-09-13T13:36:03Z",
+  "method": "gpt6_astra_medium",
+  "scope": "evaluation_only",
+  "reason": "Three shared metric files gained optional artifact/semantic output paths while the Medium experiment was running. Their default paths and all metric algorithms remain unchanged.",
+  "changes": {
+    "evaluation/visual/eval_iqa.py": {
+      "previous_sha256": "a64956092ed7eb5683f5caf4b6bc3055e750f12883db7873950c41c9c8f858fb",
+      "amended_sha256": "370ac7ba9533c93fc87d570732c53eb914e14a543c4890f75d4893618e927452",
+      "behavioral_delta": "Adds optional --artifact-root for per-scene iqa.json mirrors. GPT-6 Astra Medium did not pass this option; both formal domain IQA outputs were completed under the previous frozen source before this shared-file edit."
+    },
+    "evaluation/visual/eval_diversity.py": {
+      "previous_sha256": "b57582799d50f03554d077d43d475e1efb9cbfda76e53bd988405bb6894be303",
+      "amended_sha256": "c1fcb7a0b4e899b0f86b2f76dd874f67ba2314114697fe4504bdeb14c40a065a",
+      "behavioral_delta": "Adds optional --semantic-root lookup. GPT-6 Astra Medium does not pass this option, so the original in-run semantic path is used."
+    },
+    "evaluation/visual/generate_semantics.py": {
+      "previous_sha256": "9e441d6c18da9e73f29655bbd89fe4ef88cc7dad8b59dc65da19ddf6bb145c59",
+      "amended_sha256": "e29bdb5e50d1801e9b2c8acdfab1c63d189de0317ff1bb6442afd91c8856c8ae",
+      "behavioral_delta": "Adds optional --semantic-root output mirroring. GPT-6 Astra Medium does not pass this option, so semantic maps retain their original locations."
+    }
+  },
+  "equivalence_checks": {
+    "iqa": {
+      "formal_outputs_completed_before_amendment": true,
+      "indoor_output": "results/gpt6_astra_medium/formal/indoor/iqa_per_scene.jsonl",
+      "indoor_output_sha256": "7080d9dd70f048f3635dec06c945ac8354e0ba82e4a88509f0babd1cb97af91e",
+      "urban_output": "results/gpt6_astra_medium/formal/urban/iqa_per_scene.jsonl",
+      "urban_output_sha256": "d1928fd7db9ba373e115fc106469caa2f5e4476cd8f1c006f05a8c5f04bf7a2f",
+      "default_artifact_path_unchanged": true,
+      "metric_models_and_scoring_unchanged": true
+    },
+    "diversity": {
+      "domain": "indoor",
+      "specs": 25,
+      "recomputed_output": "/tmp/gpt6_astra_medium_diversity_equivalence.jsonl",
+      "recomputed_sha256": "b0446e1643bbabf5a4803b12a7dba55950545cdb176f1a232b6112f074353576",
+      "formal_output": "results/gpt6_astra_medium/formal/indoor/diversity_per_spec.jsonl",
+      "formal_sha256": "b0446e1643bbabf5a4803b12a7dba55950545cdb176f1a232b6112f074353576",
+      "byte_identical": true
+    },
+    "semantics": {
+      "domain": "indoor",
+      "spec_id": "indoor_bedroom_00",
+      "logical_seed": 0,
+      "maps_compared": 8,
+      "all_map_sha256_equal": true,
+      "recomputed_smoke_metadata_sha256": "731b5cb0804d292d3ce3651c37fbcad4b82882affdc3f54a523d7fdbddd6ab84",
+      "original_frozen_smoke_metadata_sha256": "731b5cb0804d292d3ce3651c37fbcad4b82882affdc3f54a523d7fdbddd6ab84"
+    }
+  },
+  "scientific_configuration_changed": false,
+  "reasoning_effort_changed": false
+}

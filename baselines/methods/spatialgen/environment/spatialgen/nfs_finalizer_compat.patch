@@ -1,0 +1,28 @@
+--- inference_sd.py.before
++++ inference_sd.py.after
+@@ -46,6 +46,16 @@
+ os.environ["TRITON_CACHE_DIR"] = "/tmp/triton_autotune"
+ 
+ logger = logging.getLogger(__name__)
++
++
++def nfs_safe_worker_init_fn(worker_id):
++    # Preserve the official RNG initialization exactly. Close descriptor-sharing
++    # sockets before multiprocessing unlinks them: open sockets on NFS otherwise
++    # leave .nfs files that make temporary-directory finalization fail.
++    worker_init_fn(worker_id)
++    import multiprocessing.resource_sharer as resource_sharer
++    import multiprocessing.util as multiprocessing_util
++    multiprocessing_util.Finalize(None, resource_sharer.stop, exitpriority=10)
+ 
+ 
+ def compose_fixed_view_indices(opt: Options, device: torch.device, num_in_views: int = 1, num_sample_views: int = 2):
+@@ -1936,7 +1946,7 @@
+         num_workers=1,
+         drop_last=False,
+         pin_memory=True,
+-        worker_init_fn=worker_init_fn,
++        worker_init_fn=nfs_safe_worker_init_fn,
+         persistent_workers=True,
+     )
+ 

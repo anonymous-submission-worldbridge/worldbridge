@@ -1,0 +1,33 @@
+execute_tasks.frame_range = [1, 1]
+execute_tasks.camera_id = [0, 0]
+execute_tasks.generate_resolution = (1920, 1080)
+execute_tasks.output_blend_name = "scene.blend"
+
+camera.spawn_camera_rigs.n_camera_rigs = 1
+camera.spawn_camera_rigs.camera_rig_config = [
+    {'loc': (0, 0, 0), 'rot_euler': (0, 0, 0)}
+]
+
+group_collections.config = [
+    {'name': 'assets', 'hide_viewport': True, 'hide_render': True},
+    {'name': 'placeholders', 'hide_viewport': True, 'hide_render': True},
+    {'name': 'unique_assets', 'hide_viewport': False, 'hide_render': False},
+    {'name': 'urban', 'hide_viewport': False, 'hide_render': False},
+]
+
+# GPU: use all available GPUs (RTX 4090 x4), prefer OptiX over CUDA
+configure_cycles_devices.use_gpu = True
+
+configure_render_cycles.exposure = 1.2
+configure_render_cycles.num_samples = 1024
+configure_render_cycles.min_samples = 64
+configure_render_cycles.adaptive_threshold = 0.005
+configure_render_cycles.denoise = True
+configure_render_cycles.time_limit = 0
+
+compose_urban.block_extent = 64.0
+compose_urban.road_width = 8.0
+compose_urban.sidewalk_width = 3.0
+compose_urban.curb_height = 0.16
+compose_urban.min_building_height = 7.0
+compose_urban.max_building_height = 14.0

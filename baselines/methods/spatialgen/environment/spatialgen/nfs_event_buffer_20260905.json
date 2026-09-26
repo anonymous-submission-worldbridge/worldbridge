@@ -1,0 +1,22 @@
+{
+  "activation": "Only official train.py with SPATIALGEN_TABLE2_CANONICAL_ONLY=1; all files remain under baselines.",
+  "installed_at_utc": "2026-09-05T14:58:41.768470+00:00",
+  "log_format_validation": "All 64 fixed protobuf records produce byte-identical TFRecord files; only file open/flush batching changes. Close at interpreter exit drains the writer queue.",
+  "module_sha256": "aa5809fdb08fa1b8ca49867898ea8ee6687fec6a775063a5c49cd98181bbde8c",
+  "probe": [
+    {
+      "bytes": 3198,
+      "mode": "original",
+      "sha256": "8029d2c0e2a378ad0b91c59ad96fe51583a94d98a488301c9c94f704c5a60184",
+      "wall_s": 9.286094529001275
+    },
+    {
+      "bytes": 3198,
+      "mode": "buffered",
+      "sha256": "8029d2c0e2a378ad0b91c59ad96fe51583a94d98a488301c9c94f704c5a60184",
+      "wall_s": 0.20374262999393977
+    }
+  ],
+  "pth_sha256": "63176fe7baf25fd291297cd38c735689d73151842aacc5a9e4bba9fb42be7edf",
+  "purpose": "Host NFS event-log buffering only; no RNG, model, training, iteration, checkpoint or render changes. Existing processes retain their original logger."
+}

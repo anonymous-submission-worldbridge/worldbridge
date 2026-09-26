@@ -1,0 +1,24 @@
+{
+  "bounds": [
+    [
+      -24.219999313354492,
+      -2.6000001430511475,
+      -0.29000020027160645
+    ],
+    [
+      24.219999313354492,
+      33.04999923706055,
+      31.4010009765625
+    ]
+  ],
+  "dimensions": [
+    48.439998626708984,
+    35.64999771118164,
+    31.691001892089844
+  ],
+  "mesh_instances": 6560,
+  "evaluated_vertices": 2800944,
+  "key": "library",
+  "collection": "ASSET_library",
+  "source": "./infinigen/outputs/outdoor_full_demo/urban_v1_full_connect3/source_snapshots/library/scene.blend"
+}

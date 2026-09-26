@@ -1,0 +1,9 @@
+{
+  "amendment_id": "gemini-3.1-pro-connect-blender-compatibility-20260923",
+  "recorded_at_utc": "2026-09-23T16:15:00Z",
+  "scope": "japanese_library_courtyard generated source",
+  "change": "Replace bpy.ops.mesh.primitive_icosphere_add with Blender's registered operator name bpy.ops.mesh.primitive_ico_sphere_add.",
+  "rationale": "The generated name is not registered in Blender 4.5.4. This one-token compatibility correction preserves all Gemini-generated geometry parameters and scene design.",
+  "raw_response_retained": true,
+  "other_source_changes": false
+}

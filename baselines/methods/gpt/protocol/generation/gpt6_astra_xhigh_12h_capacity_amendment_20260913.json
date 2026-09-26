@@ -1,0 +1,50 @@
+{
+  "recorded_at_utc": "2026-09-13T15:52:00Z",
+  "method": "gpt6_astra_xhigh",
+  "authorization": "The user explicitly requested acceleration while preserving all model and comparison settings, with a target of complete results within 12 hours.",
+  "progress_at_authorization": {"valid": 3, "expected": 200},
+  "execution_capacity": {
+    "generation_workers_before": 2,
+    "generation_workers_after": 16,
+    "build_workers": 16,
+    "render_gpus": [0, 1, 2, 5],
+    "gpu_policy": "remaining_memory_sharing",
+    "minimum_render_free_mib": 8192
+  },
+  "capacity_escalation_after_storage_migration": {
+    "recorded_at_utc": "2026-09-14T04:04:00Z",
+    "generation_workers_before": 8,
+    "generation_workers_after": 16,
+    "render_gpu_added": 5,
+    "reason": "Recover elapsed time after the shared data volume twice crossed its operational stop guard; scientific inputs and per-slot execution remain unchanged."
+  },
+  "storage_safety": {
+    "registered_disk_stop_free_gib": 25,
+    "effective_disk_stop_free_gib": 10,
+    "free_gib_when_registered_guard_paused": 21,
+    "formal_method_size_gib_when_paused": 1.6,
+    "pilot_method_size_gib_when_paused": 1.3,
+    "estimated_additional_formal_storage_gib": "5-7",
+    "reason": "Shared data-volume free space fell below the registered operational guard because of concurrent external writes. The method itself does not contain enough bytes to restore 25 GiB by compression, while the observed per-run footprint leaves a 10 GiB stop guard adequate for the remaining matrix.",
+    "pre_resume_action": "Losslessly gzip this method's completed text stdout/stderr logs; do not remove renders, scenes, responses, manifests, or any other method's files.",
+    "formal_storage_root": ".cache/worldbridge_gpt6_astra_xhigh_uid2002/table2",
+    "logical_method_links": "baselines/data/table2/{indoor,urban}/gpt6_astra_xhigh",
+    "disk_guard_volume": "the active /tmp storage volume",
+    "render_sandbox_mount": "./baselines/tmp/gpt6_astra_xhigh_sandbox_mount",
+    "migration_rule": "Copy and SHA-256 verify every method file before removing the original method directory; retain a method-level symbolic link at the registered logical path.",
+    "scientific_configuration_changed": false
+  },
+  "unchanged_scientific_configuration": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "xhigh",
+    "codex_version": "0.153.4",
+    "prompt_schema_protocol_and_specs": "verified byte-for-byte by methods/gpt/protocol/generation/gpt6_astra_xhigh.lock.json before every formal task",
+    "logical_seeds": [0, 1, 2, 3],
+    "generation_attempt_limit": 3,
+    "effective_generation_timeout_s": 3600,
+    "render_camera_and_metric_implementations": "unchanged and lock-verified",
+    "result_selection": "none; every frozen matrix slot is processed exactly once to a terminal state"
+  },
+  "classification": "Operational throughput and storage-safety amendment; concurrency and disk admission are not model or comparison parameters.",
+  "deadline_note": "The 12-hour completion time is a target because remote model latency and transient network service are external dependencies, not a guarantee."
+}

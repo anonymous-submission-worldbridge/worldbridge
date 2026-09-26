@@ -1,0 +1,24 @@
+{
+  "bounds": [
+    [
+      -21.610000610351562,
+      7.152557373046875e-07,
+      0.0
+    ],
+    [
+      21.610000610351562,
+      18.489999771118164,
+      17.860401153564453
+    ]
+  ],
+  "dimensions": [
+    43.220001220703125,
+    18.489999771118164,
+    17.860401153564453
+  ],
+  "mesh_instances": 1208,
+  "evaluated_vertices": 14976,
+  "key": "school",
+  "collection": "ASSET_school",
+  "source": "./infinigen/outputs/outdoor_part_demo/urban_v3_school5/urban_v3_school5.blend"
+}

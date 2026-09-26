@@ -1,0 +1,112 @@
+{
+  "active_backend": {
+    "auth": "saved_codex_chatgpt_login",
+    "codex_cli_version": "0.153.2",
+    "model": "gpt-6-astra",
+    "reasoning_effort": "medium",
+    "seed_supported": false,
+    "temperature": null,
+    "transport": "codex_exec_ephemeral_strict_json"
+  },
+  "accepted_implementation_sha256": {
+    "adapter_sha256": [
+      "5a4a44fda7976f8db032840b09a8b1073e123bcd6d893b29d88342715109d3c2",
+      "3fef74be5ce36ef74aa7bc86d20c9c2340d502a0ad42f4bbc7e69d5c2eafe666",
+      "6e576a512d197948e1a725a616e26fc0284cdd4b82cd4a7026343bd25efdf4b2",
+      "8bd73e52250c8bb9a6980d3901b7f60d3c7022a7e04e46b5cfd8fdbd78b7c002",
+      "924396359d39bf8c2a24eb5e4508de51a47ab2bab49a6416de9f60377a668e8b",
+      "ad0dfb6262c072158453212d82c8b79d8bcf494c55f62be775b730aa28f17f98",
+      "b22248e254c905fcc97b43bf25f841995901cc602684c63086775e349983d7a0",
+      "cfbe8b4f738a75fc5311f84e36e4de079f5cae6928b4c67e8ac36591a184a71e"
+    ],
+    "renderer_sha256": [
+      "74889d09cedc6de0fa81380385200d698a03d4e5dcff9c5a18b211d495084d61"
+    ],
+    "patched_source_sha256": {
+      "baselines/methods/sceneweaver/runtime/sceneweaver_pipeline/main.py": [
+        "e89cd4febe95602797e02d2b9eaf4e58659111f47dcd7892e0422ea5d8f3f262",
+        "416ac5165e4cb485d58233282d6c548a3b7d2e3e4cfe72381cff110901ee8432",
+        "a33074c82882b3f872a7c1c70b0f838d6d417b6efa80940a8059d3042fbac846",
+        "b5c5eb8d4cc7cf3a91af1b25614bbf3bbbab8440c2f7be6798285fec1dad57d7",
+        "ce9bddfbc2aca8116728da6cd7769ab87a65eee6686094672363e146c8096043",
+        "da303dfd095a83f7dca90be45199faff6b73af487e3788b796adccdce8869fdb"
+      ],
+      "baselines/methods/sceneweaver/runtime/sceneweaver_executor/generate_indoors_compat.py": [
+        "0654de59100f33e1d718ab8d4437b5cba409222cda366f73bfe62c40943e1a6e",
+        "c103dadd415e8daedc5281ed27d1fb5b5d93ebbc7d788cc3102b10e19437b30e",
+        "d8098e7b41330e0c5fee43c540c0e7c67bd56f368e5bda7ba9a3f711a3b4d65e"
+      ],
+      "baselines/methods/sceneweaver/runtime/sceneweaver_executor_resume_compat.py": [
+        "40539b07cce467416ac59856704a25f25ddedd37644f873ac6bb16cf6d1ac32c"
+      ],
+      "baselines/runtime/sceneweaver_executor_launcher": [
+        "056ccc993ad4ab1b03bab7c358a69548d7103e7a3a76526cc881a215d1046a3d"
+      ]
+    }
+  },
+  "authorized_at": "2026-09-07T13:42:40+08:00",
+  "planner_rollback_fix_at": "2026-09-08T20:54:05+08:00",
+  "geometry_topology_fix_at": "2026-09-08T21:16:16+08:00",
+  "method_label": "SceneWeaver (mixed MiniMax/Codex planner)",
+  "policy": {
+    "aggregate_all_terminal_slots_together": true,
+    "new_runs": "codex_for_all_sceneweaver_llm_calls",
+    "nonterminal_minimax_checkpoints": "resume_in_place_then_codex_for_all_remaining_llm_calls",
+    "retained_terminal_runs": "do_not_rerun"
+  },
+  "remaining_run_planner_control": {
+    "accepted_scene_step_limit": 15,
+    "attempt_limit_including_quality_gate_rollbacks": 45,
+    "cutover_terminal_count": 48,
+    "cutover_terminal_summary": {
+      "planner_budget_exhausted": 27,
+      "render_validation_failed": 1,
+      "success": 20
+    },
+    "rollback_feedback": "name the rejected tool, prohibit repeating the same edit/transforms, and prefer terminating an already adequate accepted scene"
+  },
+  "remaining_run_geometry_compatibility": {
+    "cutover_terminal_count": 66,
+    "cutover_terminal_summary": {
+      "planner_budget_exhausted": 36,
+      "render_validation_failed": 6,
+      "success": 24
+    },
+    "policy": "map tagged Blender polygons to the current loop-triangle topology and treat empty or degenerate relation surfaces as an invalid proposal instead of crashing the run"
+  },
+  "post_cutover_exceptions": [
+    {
+      "provenance": "resumed MiniMax checkpoint; top-level tool selection used Codex; auxiliary evaluation and tool-specific JSON still used MiniMax before the residual channel was discovered and fixed",
+      "run": "indoor_bedroom_02/seed_0",
+      "terminal": "SUCCESS"
+    }
+  ],
+  "retained_terminal_runs": [
+    "indoor_bedroom_00/seed_0",
+    "indoor_bedroom_00/seed_1",
+    "indoor_bedroom_00/seed_2",
+    "indoor_bedroom_00/seed_3",
+    "indoor_bedroom_01/seed_0",
+    "indoor_bedroom_01/seed_1",
+    "indoor_bedroom_01/seed_2",
+    "indoor_bedroom_01/seed_3",
+    "indoor_bedroom_02/seed_1",
+    "indoor_bedroom_02/seed_2",
+    "indoor_bedroom_02/seed_3"
+  ],
+  "retained_terminal_summary": {
+    "planner_budget_exhausted": 3,
+    "render_validation_failed": 1,
+    "success": 7,
+    "total": 11
+  },
+  "statistical_interpretation": "User-authorized hybrid execution. The aggregate is not a single-LLM frozen SceneWeaver estimate; per-run and per-call planner provenance must remain visible.",
+  "supersedes_for_remaining_slots": "OpenRouter minimax/minimax-m3:free",
+  "terminal_matrix_summary": {
+    "success": 47,
+    "planner_budget_exhausted": 38,
+    "render_validation_failed": 15,
+    "total": 100
+  },
+  "version": 5
+}

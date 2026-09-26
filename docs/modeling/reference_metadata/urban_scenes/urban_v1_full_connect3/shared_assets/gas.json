@@ -1,0 +1,24 @@
+{
+  "bounds": [
+    [
+      -17.5,
+      0.0,
+      2.9802322387695312e-08
+    ],
+    [
+      17.5,
+      31.200000762939453,
+      8.579999923706055
+    ]
+  ],
+  "dimensions": [
+    35.0,
+    31.200000762939453,
+    8.579999923706055
+  ],
+  "mesh_instances": 4258,
+  "evaluated_vertices": 698584,
+  "key": "gas",
+  "collection": "ASSET_gas",
+  "source": "./infinigen/outputs/outdoor_part_demo/urban_v3_gass4/urban_v3_gass4.blend"
+}

@@ -1,0 +1,20 @@
+{
+  "method": "sceneweaver",
+  "display_name": "SceneWeaver (Indoor; mixed MiniMax/Codex planner)",
+  "domain": "indoor",
+  "track": "structured_physics_ready",
+  "source_repository": "baselines/vendor/SceneWeaver",
+  "source_commit": "7ae54b2ec3fc66147704faa7daf7b017ba8b1bd9",
+  "table2_planner_protocol": "baselines/methods/sceneweaver/protocol/generation/sceneweaver_mixed_codex.json",
+  "table2_planner_protocol_sha256": "15e1458504daf24e079a110e4a12fde7d75d183a5d2ce2aa47a1b07766d0487c",
+  "planner_provenance": "mixed retained MiniMax terminals and Codex-completed terminals; per-run provenance remains in the Table-2 manifests",
+  "native_final_output": "final scene/scene.blend plus scene/layout.json",
+  "model_weights": "none added for Table 3; retained procedural final geometry is evaluated read-only",
+  "regeneration": false,
+  "planned_runs": 100,
+  "reusable_table2_success_geometry": 47,
+  "reusable_generation_geometry_table2_render_failed": 15,
+  "table2_generation_failure_itt": 38,
+  "reuse_inventory": "baselines/evaluation/geometry/results/sceneweaver_reuse_inventory.json",
+  "reuse_inventory_sha256": "44c0e2607a6cbe31e387a199c0f3b49d71709d878da18da506325d835f462a87"
+}

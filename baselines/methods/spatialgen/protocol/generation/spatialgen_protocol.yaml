@@ -1,0 +1,109 @@
+protocol_id: table2-v1-spatialgen
+status: formal_frozen
+base_protocol: baselines/protocol/generation/protocol.yaml
+base_protocol_sha256: 91edc6f0d746cc6de074453a21adab52e418e4aefec24e0900fe30fae525ede6
+domain: indoor
+phase: pilot_then_formal
+spec_file: baselines/protocol/generation/indoor_specs.jsonl
+seeds_file: baselines/protocol/generation/seeds.json
+methods:
+  - spatialgen
+worldbridge_enabled: false
+output_root: baselines/data/table2
+seed_mapping: method_seed = spec_index * 4 + logical_seed
+camera:
+  trajectory_frames: 50
+  trajectory_fps: 10
+  height_m: 1.55
+  horizontal_fov_degrees: 70.0
+  anchors: [1, 8, 15, 22, 29, 36, 43, 50]
+  anchor_resolution: [1280, 720]
+  sequence_resolution: [512, 512]
+generation:
+  source_commit: 677c1168b359b00ae4a64a58783bc71048aabcdd
+  reconstruction_commit: ee7b413d2089322dd140f644d597957aca257c09
+  reference_model: black-forest-labs/FLUX.1-dev
+  reference_model_revision: 3de623fc3c33e44ffbe2bad470d0f45bccf2eb21
+  reference_lora: manycore-research/FLUX.1-Wireframe-dev-lora
+  reference_lora_revision: c10a28639d1bb554966bde3e8e9706f544bec558
+  multiview_model: manycore-research/SpatialGen-1.0
+  multiview_model_revision: 6c8c2d1c72ad6bf3c5a3440697c9767f4dceaec0
+  optional_testset_revision: ccd2531318107e233b66fde986904d55cda4c950
+  layout_compiler: table2-spatialgen-box-layout-v1
+  layout_seed_dependent: false
+  layout_semantic_aliases:
+    dining_or_breakfast_table: coffee table
+    dining_or_desk_chair: seat
+    entrance_door: screen door, screen
+    vanity_or_sideboard: buffet, counter, sideboard
+    laundry_hamper: other
+  reference:
+    inference_steps: 20
+    conditioning_mode: native_flux_control_latent_concatenation
+    conditioning_scale: not_applicable_in_diffusers_0.32.0
+    guidance_scale: 3.5
+    native_resolution: [1024, 1024]
+    resize_for_multiview: [512, 512]
+  multiview:
+    views: 16
+    input_views: 1
+    inference_steps: 20
+    prediction_type: v_prediction
+    use_layout_prior: true
+    use_scene_coord_map: true
+    use_metric_depth: false
+    input_concat_binary_mask: true
+    input_concat_warpped_image: true
+  reconstruction:
+    implementation: Sparse-RaDeGS
+    iterations: 7000
+    seed: 0
+    seed_policy: official_hardcoded_safe_state_seed
+    native_diagnostic_previews_in_formal: false
+    canonical_table2_renders_in_formal: true
+    beta: 5.0
+    lambda_warp_reg: 0.4
+    warp_reg_start_iteration: 3000
+  process_isolation:
+    enabled: true
+    reason: release FLUX before loading SpatialGen multiview diffusion
+    stage_seed_policy: initialize each isolated official stage with method_seed
+  runtime_compatibility:
+    unet_loading: direct cuda:0 safetensors dispatch in native float16
+    unet_loading_semantics: weights and inference arithmetic unchanged; avoids duplicate CPU initialization
+    gaussian_resume: reuse integrity-checked inference_results.npz after reconstruction-only failure
+    gaussian_process_policy: release diffusion models before Sparse-RaDeGS on 24-GiB GPUs
+    optional_guidance_policy: absent upstream guidance package is ignored only when diffusion guidance is disabled
+    child_failure_policy: propagate Sparse-RaDeGS train/render nonzero exits
+renderer:
+  representation: trained Gaussian splat
+  implementation: SpatialGen Sparse-RaDeGS rasterizer
+  background: black
+  horizontal_fov_degrees: 70.0
+  near_m: 0.01
+  far_m: 100.0
+  native_semantic_output: renders/aux/native_semantic
+  canonical_semantic_output: renders/semantic_pred
+  canonical_semantic_policy: fixed method-independent ADE20K SegFormer
+success_contract:
+  require_scene: true
+  require_anchor_count: 8
+  require_sequence_count: 50
+  require_cameras_json: true
+  reject_traceback_in_logs: true
+  image_mean_range: [0.01, 0.99]
+  image_std_min: 0.01
+  min_trajectory_path_length_m: 1.0
+  min_trajectory_max_displacement_m: 0.5
+metrics:
+  qalign: pyiqa-qalign
+  clipiqa_plus: pyiqa-clipiqa+
+  layout_plausibility: three-rater-blind-likert
+  prompt_alignment: three-rater-fact-checklist
+  consistency_3d: worldscore-static-3d-consistency
+  appearance_diversity: lpips-alex-v0.1
+  layout_diversity: segformer-ade20k-semantic-1-miou
+failure_policy: intention-to-treat
+resource_guards:
+  minimum_free_filesystem_gib: 100
+  minimum_free_gpu_memory_mib: 40000

@@ -1,0 +1,36 @@
+{
+  "amended_at_utc": "2026-09-13T15:55:00Z",
+  "method": "gpt6_astra_low",
+  "scope": "evaluation_only",
+  "reason": "Shared evaluator paths gained optional mirror-output arguments after the Low pilot lock was frozen.",
+  "admitted_exact_sources": {
+    "methods/gpt/run_low_metrics.py": {
+      "frozen_sha256": "d72aa06d69e3f7d8a3d1a0357ba36e449568f7ae76b3c8113ec05e81946c82f2",
+      "admitted_sha256": "3ba5414b77cb6ebd92c72664a4f924a9b3344188bbb6bea2934bb96de5b8ff44",
+      "optional_delta": "Strict audited-equivalence verification and removal of an unsupported annotation-worker option; evaluator commands and scoring remain unchanged."
+    },
+    "evaluation/visual/eval_iqa.py": {
+      "frozen_sha256": "a64956092ed7eb5683f5caf4b6bc3055e750f12883db7873950c41c9c8f858fb",
+      "admitted_sha256": "370ac7ba9533c93fc87d570732c53eb914e14a543c4890f75d4893618e927452",
+      "optional_delta": "--artifact-root"
+    },
+    "evaluation/visual/eval_diversity.py": {
+      "frozen_sha256": "b57582799d50f03554d077d43d475e1efb9cbfda76e53bd988405bb6894be303",
+      "admitted_sha256": "c1fcb7a0b4e899b0f86b2f76dd874f67ba2314114697fe4504bdeb14c40a065a",
+      "optional_delta": "--semantic-root"
+    },
+    "evaluation/visual/generate_semantics.py": {
+      "frozen_sha256": "9e441d6c18da9e73f29655bbd89fe4ef88cc7dad8b59dc65da19ddf6bb145c59",
+      "admitted_sha256": "e29bdb5e50d1801e9b2c8acdfab1c63d189de0317ff1bb6442afd91c8856c8ae",
+      "optional_delta": "--semantic-root"
+    }
+  },
+  "low_invocation": {
+    "passes_artifact_root": false,
+    "passes_semantic_root": false
+  },
+  "equivalence_evidence": "methods/gpt/protocol/generation/gpt6_astra_medium_evaluator_amendment_20260913.json",
+  "evidence_summary": "Default-path diversity output was byte-identical, semantic maps were hash-identical, and IQA formal outputs predated the optional-argument edit; metric models and scoring code are unchanged.",
+  "scientific_configuration_changed": false,
+  "reasoning_effort_changed": false
+}

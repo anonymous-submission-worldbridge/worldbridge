@@ -1,0 +1,32 @@
+{
+  "schema_version": "worldbridge-table3-gpt6-astra-xhigh-source-recovery-v1",
+  "created_at_utc": "2026-09-14T15:25:00Z",
+  "method": "gpt6_astra_xhigh",
+  "display_name": "GPT-6 Astra Extra High",
+  "reason": "The completed Table-2 raw trees were copy-verified into .cache/worldbridge_gpt6_astra_xhigh_uid2002 and replaced by logical symlinks, but that temporary sandbox tree was later removed. The small frozen Table-2 aggregates and audits remain; the original generated.py and scene.blend files do not.",
+  "evidence": {
+    "table2_formal_audit": "baselines/results/gpt6_astra_xhigh/formal_audit.json",
+    "table2_storage_migration": "baselines/results/gpt6_astra_xhigh/formal_storage_migration.json",
+    "missing_tmp_root": ".cache/worldbridge_gpt6_astra_xhigh_uid2002/table2",
+    "original_planned_runs": 200,
+    "original_scene_built_runs": 183,
+    "original_unbuilt_runs": 17
+  },
+  "recovery_policy": {
+    "eligible": "Only the 183 slots recorded with scene_built=true in the frozen Table-2 formal audit",
+    "ineligible": "The 17 original generation/build failures remain frozen ITT failures and are not requested again",
+    "model": "gpt-6-astra",
+    "reasoning_effort": "xhigh",
+    "prompt_schema_specs_seeds": "byte-identical frozen Extra High inputs",
+    "model_seed_supported": false,
+    "scientific_disclosure": "Because the remote model has no deterministic seed, rebuilt slots are fresh recovery samples at the same logical indexes, not byte recovery of the Table-2 scenes.",
+    "render_table2_again": false,
+    "build_blend_only": true,
+    "quality_retry": false,
+    "infrastructure_attempt_limit": 3,
+    "generation_workers": 16,
+    "build_workers": 16,
+    "persistent_root": "/data2/outputs/worldbridge_table3_gpt6_astra_xhigh/source_recovery"
+  },
+  "scope": "Exceptional source recovery required by the Table-3 plan when retained final geometry has been cleaned; no other comparison method is changed."
+}

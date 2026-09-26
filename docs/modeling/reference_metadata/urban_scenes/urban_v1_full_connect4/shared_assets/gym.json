@@ -1,0 +1,24 @@
+{
+  "bounds": [
+    [
+      -16.34000015258789,
+      0.0,
+      0.0
+    ],
+    [
+      16.34000015258789,
+      27.400001525878906,
+      14.194999694824219
+    ]
+  ],
+  "dimensions": [
+    32.68000030517578,
+    27.400001525878906,
+    14.194999694824219
+  ],
+  "mesh_instances": 461,
+  "evaluated_vertices": 4072,
+  "key": "gym",
+  "collection": "ASSET_gym",
+  "source": "./infinigen/outputs/outdoor_part_demo/urban_v3_school5/urban_v3_school5.blend"
+}

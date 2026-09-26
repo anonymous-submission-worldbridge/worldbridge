@@ -1,0 +1,24 @@
+{
+  "bounds": [
+    [
+      -0.3020917773246765,
+      0.8412162065505981,
+      0.9679999947547913
+    ],
+    [
+      0.3071684241294861,
+      2.6187798976898193,
+      2.22979998588562
+    ]
+  ],
+  "dimensions": [
+    0.6092602014541626,
+    1.7775636911392212,
+    1.2618000507354736
+  ],
+  "mesh_instances": 99,
+  "evaluated_vertices": 14910,
+  "key": "bike",
+  "collection": "ASSET_bike",
+  "source": "./infinigen/outputs/outdoor_part_demo/urban_v3_all43_25/urban_v3_all43_25.blend"
+}

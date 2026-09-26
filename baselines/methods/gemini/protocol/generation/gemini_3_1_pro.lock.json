@@ -1,0 +1,86 @@
+{
+  "status": "formal_complete_with_documented_client_recovery",
+  "method": "gemini_3_1_pro",
+  "model": "gemini-3.1-pro-high",
+  "frozen_at_utc": "2026-09-17T16:16:58.748538+00:00",
+  "transport": "antigravity_cli_google_ai_pro_account",
+  "auth_mode": "account_subscription_no_api_key",
+  "api_key_billing_forbidden": true,
+  "client_helper": "./baselines/methods/gemini/tools/ask_gemini_3_1_pro.sh",
+  "client_helper_sha256": "fc6c661f4f2e8d38058e598bd845435830d2f5196eb43504309d7cd4419ee4eb",
+  "legacy_client_helper_sha256": "415d6a4dd86aa951199915a257048cbf485cd63a9501a16f9aa0f7215da63519",
+  "antigravity_version": "1.2.5",
+  "antigravity_binary_sha256": "84808e105f643f135d9b347b36005d5bbe6cfe09c5ffc61e3311700adb5a3286",
+  "client_recovery": {
+    "amendment": "methods/gemini/protocol/generation/gemini_3_1_pro_client_recovery_amendment_20260918.json",
+    "stage": "formal_after_86_terminal_before_remaining_114",
+    "frozen_binary": "tools/antigravity_cli_1_2_5_frozen/agy",
+    "pre_recovery_terminal": 86,
+    "pre_recovery_success": 68,
+    "pre_recovery_quality_failure": 18
+  },
+  "formal_completion": {
+    "amendment": "methods/gemini/protocol/generation/gemini_3_1_pro_formal_completion_20260919.json",
+    "expected": 200,
+    "terminal": 200,
+    "success": 154,
+    "quality_failure": 46,
+    "all_manifests_use_legacy_helper_identity": true,
+    "recovery_helper_generation_calls": 0
+  },
+  "subjective_rating_source": "synthetic_proxy_three_profiles",
+  "real_human_raters": 0,
+  "pilot_summary": {
+    "expected": 20,
+    "terminal": 20,
+    "success": 15,
+    "quality_failure": 5,
+    "per_domain": {
+      "indoor": {
+        "expected": 10,
+        "terminal": 10,
+        "success": 7,
+        "quality_failure": 3
+      },
+      "urban": {
+        "expected": 10,
+        "terminal": 10,
+        "success": 8,
+        "quality_failure": 2
+      }
+    }
+  },
+  "files_sha256": {
+    "methods/gemini/protocol/generation/gemini_3_1_pro.json": "5f9442bc9a417a0819367dafb2bea98b5eeb8dcdf8244d261f734061cf64d753",
+    "methods/gemini/protocol/generation/gemini_3_1_pro_client_recovery_amendment_20260918.json": "fe8042691b9719448fdb64e81bfa20b852b2e522484b99acafd60dbd776d20bc",
+    "methods/gemini/protocol/generation/gemini_3_1_pro_pilot_infrastructure_amendment_20260917.json": "69e749b097a7f662e2fc6db7e8b384f09490bff12f304efe10ffcdcb008996b3",
+    "methods/gpt/protocol/generation/gpt6_astra_prompt.txt": "80a163c283bebec21641856882df33321c66a3020ed839d05a22a69fb59fbc0e",
+    "methods/gpt/protocol/generation/gpt6_astra_output.schema.json": "ff375ee28f3751d4c36ba57081673ae020c0c711b2248dc1aca2d78608249db0",
+    "protocol/generation/indoor_specs.jsonl": "38ba6b4eb2b65142b9a8223cb656720cd18904ca16d8e73075d5ba12a93ea657",
+    "protocol/generation/urban_specs.jsonl": "3c1fde2ec5725145ead3afc8bbf2d110ec78624183de988c1a51570e0f21d79b",
+    "protocol/generation/seeds.json": "af531f72fc11957e7a41f657bda2ffef1b2cc2805fb3406490c701475cd72a46",
+    "protocol/generation/metrics.lock.json": "84f0d82c2315a041c9da42d8dce4f6dd5f9ae82146c69ad18ff3d0b94e60df19",
+    "methods/gemini/adapter.py": "f185bb68e3807d5f5c814260c3138af709f830664db38c72e214971992e48f5e",
+    "methods/gemini/tools/ask_gemini_3_1_pro.sh": "fc6c661f4f2e8d38058e598bd845435830d2f5196eb43504309d7cd4419ee4eb",
+    "methods/gemini/run.py": "3575b51b3017977795e1999aaf409c4d69582928fcad7c482397aa3531c4c859",
+    "methods/gemini/evaluate.py": "73425e629b91c39990c665b1024342b50fb3335d3e420033b7da85035cbd4b74",
+    "methods/gemini/tools/audit_gemini.py": "96c2ea1de0cf1af96f88e60a91080f4e55c4d7d2294fcb29465c5cfd36d6e14f",
+    "methods/gemini/tools/freeze_gemini.py": "9d20fa577d85ec86434ea558b7da90673c91612e4449eb8916fe4261ee07c5e1",
+    "methods/gpt/tools/blender_render_gpt.py": "962947b31310f597148176d080a86f662e4ddab4da4432dbf8f164fd50b7bed4",
+    "methods/sceneweaver/tools/blender_render_sceneweaver.py": "74889d09cedc6de0fa81380385200d698a03d4e5dcff9c5a18b211d495084d61",
+    "methods/gpt/tools/gpt_camera.py": "3d4eb1c4d0d6717c6ac76a4cd644060c004effe76676508fa27172af3580169a",
+    "methods/gpt/tools/make_annotation_package_gpt_high_frozen.py": "5cac2ecbf615a0f8f6cfa22253b986cb4ff282bc38f259a9107f353dbe67d6cc",
+    "evaluation/visual/eval_iqa.py": "370ac7ba9533c93fc87d570732c53eb914e14a543c4890f75d4893618e927452",
+    "evaluation/visual/generate_semantics.py": "e29bdb5e50d1801e9b2c8acdfab1c63d189de0317ff1bb6442afd91c8856c8ae",
+    "evaluation/visual/eval_worldscore_gpt_high_frozen.py": "0bd4feb1b117adcdd3a5fb2327517b4597a6c3e479d46d9ad0cdcb092f623933",
+    "evaluation/visual/eval_diversity.py": "c1fcb7a0b4e899b0f86b2f76dd874f67ba2314114697fe4504bdeb14c40a065a",
+    "evaluation/visual/import_human_ratings.py": "211489503dd126307489046e15363122e5830757a1cff148d212827334d7ffaf",
+    "evaluation/visual/aggregate_generation.py": "cac981d1abac4afd22fe7e5592f8c36700df36c3efaf22889d18cc2919fc885f",
+    "methods/gemini/protocol/generation/gemini_3_1_pro_formal_completion_20260919.json": "7aaaf3cc2038dfdef9504cd43e7738e2953cc9de1eabcfaf2b99b07360cfeec1",
+    "methods/gemini/protocol/generation/gemini_3_1_pro_rating_amendment_20260919.json": "b30e173c7adaef4f4cb3dc42fd84da6829973ae60c5d6833690dae123b06a48c",
+    "methods/gemini/tools/make_gemini_review_sheets.py": "8bd4b7fbebf4b8986ca2d7e7bc3f9bdeffa7a740343729218d8c740f2c96376b",
+    "methods/gemini/tools/fill_simulated_gemini_ratings.py": "c053dc6cd374310939bfe575800bb5706165813a5396834c0b8bf0ffa18e9c00",
+    "methods/gemini/tools/display_gemini_success_only.py": "3653e0f63a23ece6d3d9af3b84509ef8884bc6a73d48aa9e9d9a820e7b963b49",
+    "methods/gemini/tools/audit_gemini_final.py": "18bc2bcdb7cecc2fa914da75dfafd0a06ef560ddecdcf66b222965c74532e45b"
+  }
+}

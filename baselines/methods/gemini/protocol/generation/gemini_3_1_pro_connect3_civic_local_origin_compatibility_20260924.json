@@ -1,0 +1,9 @@
+{
+  "date": "2026-09-24",
+  "scope": "civic_emergency_health_block",
+  "classification": "Blender transform-origin compatibility correction",
+  "reason": "Visual audit showed vehicle wheels and other rotated parts orbiting the world origin because Gemini baked helper positions into vertices while leaving object origins at zero.",
+  "change": "Keep helper primitives local and assign the unchanged requested position to Object.location, so each existing rotation occurs around the intended part center. Geometry dimensions, requested locations, materials, and design are unchanged.",
+  "preserves_method_identity": true,
+  "is_image_postprocess": false
+}

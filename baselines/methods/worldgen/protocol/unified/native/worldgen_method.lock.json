@@ -1,0 +1,56 @@
+{
+  "capability_audit_sha256": "f9b9c14e55ec0443cff386dd90ac072046e6cf876a396445cc1b573303674bc7",
+  "display_name": "WorldGen (ZiYang-xie)",
+  "door_open_state_supported": false,
+  "frozen_at_utc": "2026-09-10T15:35:06.167992+00:00",
+  "geometry_and_navigation_metrics": "N/A-U",
+  "input_track": "matched_text_independent",
+  "method": "worldgen",
+  "output_representation": "gaussian_splat+official_triangle_mesh",
+  "pilot_audit_sha256": "4a774f0bb7752b39febba0f5b0332ea324ab032f15bde7257c1eb4fe452b1407",
+  "pilot_summary_sha256": "fda31704887d3241939a0129788e85b888534f23ca1a7ecb65506248fb588da8",
+  "pip_freeze_sha256": "33f58fb0060bc54ebb97a0375bfe691df791d644aa402a64e67a1c82bdcff0b0",
+  "preflight_sha256": "cd6a03dc883d6fa5bdb834d0a68de6d3f20481f8d1af767670161275ca8946ed",
+  "protocol_sha256": "dbee5ee5a1c3b3698d49a11e7019398252a1ef69e6a9cc1ffdc9f9b3ef707ae8",
+  "python_environment": "baselines/environments/worldgen",
+  "qwen_model_manifest_sha256": "46c4dcd1dd3a02e89e319915223e817aa41bcabc9f5843a88f20493d01686081",
+  "qwen_model_total_bytes": 17545916886,
+  "runner_sha256": "edeeb004f61b25a0da2a373e8c62420771b61ce1b4fb3951f531c0e15370d2ea",
+  "shared_world_frame": false,
+  "source_commit": "7ce7b2767fdf31e2727b69a2e61e2e950e3a017f",
+  "spec_sha256": "b3fe8e3d45cacea8d2fb5ea339dfbf3ea87c5e78a421f37a6167798d903e6362",
+  "submodules": {
+    "DA-2": "d659838585f2bc9967c7e9367af573795271dbbb"
+  },
+  "table2_adapter_sha256": "b3113e6c11968a8af4f372a4740ecb11738f4813b5f2abf4c314e411d2fcbf89",
+  "table2_anchor_calibration_sha256": "d4f25ae84f6c31ce73ca497a9acb7acb622df12a0387be20f7f3a9e32253ce67",
+  "table2_renderer_sha256": "040a9c2d693db31eba20ba24e0064e2bc914b542983edd069372b48e6538c465",
+  "track": "matched_text_independent",
+  "weights": {
+    "LeoXie/WorldGen:text2scene_lora": {
+      "revision": "2e2b2cb4dc3144a65481f0ca26b892584436868c",
+      "sha256": "5349c785650892914b32e74d88d16baa5863981a63a8747b70332e67e0feb10b",
+      "size_bytes": 34647632
+    },
+    "black-forest-labs/FLUX.1-dev": {
+      "core_weights": {
+        "text_encoder/model.safetensors": "893d67a23f4693ed42cdab4cbad7fe3e727cf59609c40da28a46b5470f9ed082",
+        "text_encoder_2/model-00001-of-00002.safetensors": "ec87bffd1923e8b2774a6d240c922a41f6143081d52cf83b8fe39e9d838c893e",
+        "text_encoder_2/model-00002-of-00002.safetensors": "a5640855b301fcdbceddfa90ae8066cd9414aff020552a201a255ecf2059da00",
+        "transformer/diffusion_pytorch_model-00001-of-00003.safetensors": "d86a3038eacaa720682cb9b1da3c49fecf8a3ded605af4def6061eaa18903eb8",
+        "transformer/diffusion_pytorch_model-00002-of-00003.safetensors": "5e830704a83aa938dfaf23da308100a1c44b83fa084283abf1d163ea727e5f7a",
+        "transformer/diffusion_pytorch_model-00003-of-00003.safetensors": "0d9c7c663217d1c3d44a6deed4e1cf1ac09fbc2c4137c47de1e3d74c959833de",
+        "vae/diffusion_pytorch_model.safetensors": "f5b59a26851551b67ae1fe58d32e76486e1e812def4696a4bea97f16604d40a3"
+      },
+      "revision": "3de623fc3c33e44ffbe2bad470d0f45bccf2eb21",
+      "snapshot_file_count": 23,
+      "snapshot_size_bytes": 33746383552,
+      "verification": "all_core_weights_sha256_verified"
+    },
+    "haodongli/DA-2": {
+      "revision": "0d55ccb5e46b8ed4715fae3a4c04fc897f1689f3",
+      "sha256": "d8ea568fc3dfb7d7432e5b763de499dd03fb6dc1c2020d84639f35e2dfa4f78e",
+      "size_bytes": 1378513064
+    }
+  }
+}

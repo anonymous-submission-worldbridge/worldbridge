@@ -1,0 +1,24 @@
+{
+  "bounds": [
+    [
+      -3.802500009536743,
+      0.0,
+      0.0
+    ],
+    [
+      3.8025002479553223,
+      8.689000129699707,
+      11.479000091552734
+    ]
+  ],
+  "dimensions": [
+    7.6050004959106445,
+    8.689000129699707,
+    11.479000091552734
+  ],
+  "mesh_instances": 1454,
+  "evaluated_vertices": 107622,
+  "key": "corner_store",
+  "collection": "ASSET_corner_store",
+  "source": "./infinigen/outputs/outdoor_part_demo/urban_v3_all43_25/urban_v3_all43_25.blend"
+}

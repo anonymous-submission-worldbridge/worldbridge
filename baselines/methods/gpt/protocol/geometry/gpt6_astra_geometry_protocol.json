@@ -1,0 +1,64 @@
+{
+  "protocol_id": "worldbridge-table3-gpt6-astra-native-mesh-nav-v1",
+  "status": "frozen",
+  "method": "gpt6_astra",
+  "display_name": "GPT-6 Astra",
+  "official_model_documentation": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+  "source_method_lock": "baselines/results/gpt6_astra/method.lock.json",
+  "method_definition": "GPT-6 Astra via frozen Codex CLI sessions generated Blender Python scene code; the retained final Blender meshes are reused without another model call",
+  "model_id": "gpt-6-astra",
+  "domains": ["indoor", "urban"],
+  "track": "native_mesh_instance_incomplete",
+  "structural_metrics": {
+    "collision_rate": "N/A-I",
+    "floating_rate": "N/A-I",
+    "oob_rate": "N/A-I",
+    "support_validity": "N/A-I",
+    "valid_scene_rate": "N/A-I",
+    "reason": "The frozen Table-2 output has final meshes and descriptive node names but no stable independent-instance graph, object roles, or native support edges."
+  },
+  "navigation_metrics": [
+    "navigable_area_ratio",
+    "connected_area_ratio",
+    "navmesh_success_rate"
+  ],
+  "planned_specs_per_domain": 25,
+  "seeds": [0, 1, 2, 3],
+  "planned_runs_per_domain": 100,
+  "pilot": {
+    "spec_indices": [0, 5, 10, 15, 20],
+    "seeds": [0, 1],
+    "runs_per_domain": 10
+  },
+  "reuse": {
+    "source": "baselines/data/table2/{domain}/gpt6_astra",
+    "regenerate": false,
+    "required_files": ["run_manifest.json", "scene/scene.blend"],
+    "eligible": "generation_success=true, build_success=true, and retained scene.blend",
+    "table2_quality_failure_policy": "ITT zero; never regenerate"
+  },
+  "output_root": "baselines/data/table3_gpt6_astra/{domain}/{spec_id}/seed_{seed}",
+  "coordinate_system": "Blender meters, Z up, evaluation region centered at X=Y=0",
+  "roi": {
+    "indoor": "full extent_m XY rectangle",
+    "urban": "fixed central [-30,30] x [-30,30] meter crop"
+  },
+  "navigation": {
+    "agent": "baselines/protocol/geometry/agent.yaml",
+    "walkable_rules": "baselines/methods/gpt/protocol/geometry/gpt6_astra_geometry_nav_rules.json",
+    "method_native_navmesh_used": false,
+    "connect_islands": false,
+    "keep_largest_only": false,
+    "failure_policy": "ITT",
+    "aggregation": "mean over the four seeds inside each specification, then mean over 25 specifications",
+    "bootstrap_repeats": 10000,
+    "bootstrap_seed": 20260909
+  },
+  "blender": {
+    "path": "blender",
+    "version": "4.2.0",
+    "use_gpu": false,
+    "gpu_reason": "Canonical mesh export performs no rendering or neural inference; Blender dependency-graph and Recast operations are CPU-only"
+  },
+  "downloads_required": false
+}

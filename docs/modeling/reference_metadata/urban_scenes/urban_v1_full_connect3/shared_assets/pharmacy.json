@@ -1,0 +1,24 @@
+{
+  "bounds": [
+    [
+      -4.327500820159912,
+      -0.8950003385543823,
+      -0.9099999666213989
+    ],
+    [
+      23.125,
+      19.524999618530273,
+      11.345000267028809
+    ]
+  ],
+  "dimensions": [
+    27.45250129699707,
+    20.420000076293945,
+    12.255000114440918
+  ],
+  "mesh_instances": 8619,
+  "evaluated_vertices": 719528,
+  "key": "pharmacy",
+  "collection": "ASSET_pharmacy",
+  "source": "./infinigen/outputs/outdoor_full_demo/urban_v1_full_connect3/source_snapshots/pharmacy/scene.blend"
+}

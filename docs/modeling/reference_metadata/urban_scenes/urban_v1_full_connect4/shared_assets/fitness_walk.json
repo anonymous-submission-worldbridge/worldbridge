@@ -1,0 +1,24 @@
+{
+  "bounds": [
+    [
+      -1.4892196655273438,
+      0.8134927153587341,
+      0.9840440154075623
+    ],
+    [
+      1.4892196655273438,
+      2.692701816558838,
+      3.1125199794769287
+    ]
+  ],
+  "dimensions": [
+    2.9784393310546875,
+    1.879209041595459,
+    2.1284759044647217
+  ],
+  "mesh_instances": 115,
+  "evaluated_vertices": 17622,
+  "key": "fitness_walk",
+  "collection": "ASSET_fitness_walk",
+  "source": "./infinigen/outputs/outdoor_part_demo/urban_v3_fitness5/urban_v3_fitness5.blend"
+}

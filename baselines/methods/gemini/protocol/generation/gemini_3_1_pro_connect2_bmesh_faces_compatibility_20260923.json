@@ -1,0 +1,9 @@
+{
+  "scope": "mediterranean_music_villa_refined generation attempt 3",
+  "reason": "Blender 4.5 bmesh primitive creation returns newly created vertices without a faces key",
+  "old_call": "for f in ret['faces']: f.normal_flip()",
+  "new_call": "for f in {face for v in ret['verts'] for face in v.link_faces}: f.normal_flip()",
+  "occurrences": 2,
+  "semantic_change": false,
+  "provenance_policy": "Preserve the raw Gemini response; record the compatibility correction in the run manifest."
+}

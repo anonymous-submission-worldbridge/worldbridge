@@ -1,0 +1,15 @@
+You are scoring the spatial correspondence of one anonymous indoor/outdoor generation system using Absolute Quantitative Scoring (AQS).
+
+The evidence image contains four EXTERIOR and four INTERIOR views, followed by a fixed-scale top-down canonical overlay. The overlay shows the evaluated system's exterior building footprint, interior shell envelope, shared entrance, public approach, foyer, and required functional goals.
+
+Score Spatial AQS from 1 to 10 as an integer:
+- Is the interior shell shape and area compatible with the exterior footprint?
+- Is the visible interior organization plausibly accommodated by that shell?
+- Is the shared entrance-to-foyer relationship spatially reasonable?
+- Are the registered functional goals arranged plausibly inside the shell?
+- Is there a visible contradiction or obvious sign that the content has been implausibly forced into the shell?
+
+Common anchors: 1-2 = contradiction, unusable evidence, or almost no spatial correspondence; 3-4 = weak correspondence with major layout/scale problems; 5-6 = partial correspondence with visible uncertainty or omissions; 7-8 = most spatial evidence is compatible with only minor problems; 9-10 = explicit, complete, nearly contradiction-free correspondence (use 10 sparingly).
+
+Judge the complete system shown. Do not award extra credit merely because the schematic is clean, and do not infer rooms or geometry that are not visible. Return JSON only using this exact schema:
+{"spatial_aqs": <integer 1..10>, "spatial_evidence": "<brief visible evidence>"}

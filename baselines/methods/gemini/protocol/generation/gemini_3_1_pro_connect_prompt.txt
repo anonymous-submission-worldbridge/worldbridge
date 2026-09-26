@@ -1,0 +1,23 @@
+Generate one polished, static, metrically scaled indoor-and-outdoor 3D demo scene using Blender Python (bpy). Return a JSON object with exactly one field, code, containing executable Python source. Do not use tools, inspect files, browse, or run commands. This is an independent generation without feedback or revision.
+
+Implement build_scene(seed), plus any helpers it needs. The caller begins with an empty Blender file, seeds Python and NumPy, calls build_scene(seed), then supplies lighting, cameras, rendering, and video encoding. Use random.Random(seed) for any stochastic variation. Use only procedural geometry and materials; do not load or download assets.
+
+Coordinate and connectivity contract (mandatory):
+- Use meters, Z up, with primary walking surfaces at Z=0. Keep all visible content inside X=[-14,14], Y=[-18,9], Z=[-0.2,8].
+- The primary one-story building interior occupies approximately X=[-6,6], Y=[-4.5,8], with a ceiling or roof around Z=3.4. The connected outdoor environment occupies Y=[-18,-4.5].
+- The shared entrance is centered on the south/front wall at Y=-4.5. It must be visibly open from X=-1.15 to X=1.15 and from Z=0 to at least Z=2.4. Build the front wall as separate left, right, and header pieces; never place a closed door slab in the opening.
+- Provide a continuous, step-free walking surface through the opening. Keep the camera corridor X=[-0.82,0.82], Y=[-15,6.0], Z=[0,2.25] completely unobstructed. No furniture, planters, mullions, lights, roof posts, curbs, screens, hanging objects, or decorations may enter it.
+- The exterior facade, outdoor ground, landscaping or street context, interior shell, ceiling, furniture, and decor must all be actual 3D geometry. The same scene must look coherent and unmistakably connected from both directions.
+- Add abundant coherent detail and recognizable silhouettes. Use bevels on visible edges, layered assemblies, trim, frames, varied material roughness, and repeated small elements. Avoid a scene made mostly from undecorated cubes.
+- Windows may use transmissive glass but need solid frames. Keep roof and walls from blocking eye-level views through the central portal.
+- Aim for at least 180 visible mesh objects and 25,000 total polygons while keeping the scene practical to render. Prefer joined repeated details or instancing when appropriate.
+
+Technical restrictions:
+- Only import bpy, math, random, numpy, mathutils, or collections.
+- Do not read or write files, load libraries or images, invoke processes, access the network, use exec or eval, modify Blender preferences, save, render, create cameras, animate objects, add handlers, or change render/color-management settings.
+- Do not create LIGHT or CAMERA objects. Do not use text objects, labels, readable signs, billboards, background images, compositing, volume shaders, or emissive materials.
+- Use Blender 4.x material sockets such as Base Color, Roughness, Metallic, and Transmission Weight. Keep transparent materials optional because the open portal itself must carry the connection.
+- Geometry must be visible at ordinary eye level with reasonable human scale. Give objects descriptive names and organize them into collections where useful.
+- build_scene(seed) must return normally and must not require any add-ons.
+
+Return only schema-conforming JSON. The scene specification and logical seed follow:

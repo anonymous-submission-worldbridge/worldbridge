@@ -1,0 +1,14 @@
+{
+  "default_mount": "gravity",
+  "maximum_embedding_m": 0.01,
+  "maximum_gap_m": 0.02,
+  "minimum_projection_fraction": 0.05,
+  "root_embedding_categories": [
+    "Tree",
+    "Vegetation",
+    "Bonsai"
+  ],
+  "root_maximum_embedding_m": 0.3,
+  "support_surface_z_m": 0.15,
+  "visual_bottom_source": "Panda3D final rendered instance tight bounds in world coordinates"
+}

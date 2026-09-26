@@ -1,0 +1,24 @@
+{
+  "bounds": [
+    [
+      -3.180000066757202,
+      -3.180000066757202,
+      0.0
+    ],
+    [
+      3.180000066757202,
+      3.180000066757202,
+      3.1103286743164062
+    ]
+  ],
+  "dimensions": [
+    6.360000133514404,
+    6.360000133514404,
+    3.1103286743164062
+  ],
+  "mesh_instances": 208,
+  "evaluated_vertices": 134783,
+  "key": "fountain3",
+  "collection": "ASSET_fountain3",
+  "source": "./infinigen/outputs/outdoor_part_demo/urban_v3_fountain3/urban_v3_fountain.blend"
+}

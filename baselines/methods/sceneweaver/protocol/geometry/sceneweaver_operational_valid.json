@@ -1,0 +1,38 @@
+{
+  "protocol_id": "worldbridge-table3-sceneweaver-operational-valid-supplement-v1",
+  "status": "post_hoc_supplementary_sensitivity_not_primary_table3",
+  "method": "sceneweaver",
+  "domain": "indoor",
+  "base_result": "baselines/evaluation/geometry/results/sceneweaver_table3_full.json",
+  "base_result_sha256": "ccbc1481e83c8cf774b933a9d7a73aabdf28440fbaab622587a1063428aa8036",
+  "frozen_primary_valid_scene_unchanged": true,
+  "fixed_conditions": {
+    "output_contract_passed": true,
+    "collision_rate_max_percent": 0.0,
+    "floating_rate_max_percent": 0.0,
+    "oob_rate_max_percent": 0.0,
+    "support_validity_min_percent": 100.0,
+    "navmesh_success_required": true,
+    "navigable_area_ratio_min_percent": 72.15721426255115
+  },
+  "primary_connected_area_ratio_min_percent": 97.26265267349281,
+  "operational_connected_area_ratio_min_percent": 80.0,
+  "operational_rationale": "At least 80% of the final walkable surface must belong to the largest connected component. Only the connected-area cutoff is relaxed; all structural, output, NavMesh, navigable-area, and ITT conditions remain unchanged.",
+  "connected_sensitivity_thresholds_percent": [
+    97.26265267349281,
+    95.0,
+    90.0,
+    85.0,
+    80.0,
+    75.0,
+    70.0,
+    0.0
+  ],
+  "aggregation": {
+    "order": "mean_over_spec(mean_over_seed(binary_scene_pass))",
+    "failure_policy": "itt",
+    "cluster_bootstrap_repeats": 10000,
+    "cluster_bootstrap_seed": 20260909,
+    "display_decimals": 1
+  }
+}

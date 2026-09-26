@@ -1,0 +1,9 @@
+{
+  "version": "table3-sceneweaver-v1",
+  "penetration_depth_m": 0.01,
+  "overlap_volume_m3": 0.00001,
+  "smaller_object_volume_fraction": 0.005,
+  "oob_area_ratio": 0.01,
+  "registered_exceptions": ["same native instance", "fixture-to-structural registered attachment", "support contact with at most 1 cm embedding"],
+  "notes": "Object pairs require actual final-mesh proxy BVH intersection after broad phase; native SceneWeaver #OB/#CN is not reused."
+}

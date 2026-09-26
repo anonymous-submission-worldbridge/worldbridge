@@ -1,0 +1,24 @@
+{
+  "bounds": [
+    [
+      -0.3799999952316284,
+      7.450580596923828e-09,
+      0.0
+    ],
+    [
+      0.3799999952316284,
+      0.8700000047683716,
+      1.0799999237060547
+    ]
+  ],
+  "dimensions": [
+    0.7599999904632568,
+    0.8700000047683716,
+    1.0799999237060547
+  ],
+  "mesh_instances": 5,
+  "evaluated_vertices": 224,
+  "key": "bin",
+  "collection": "ASSET_bin",
+  "source": "./infinigen/outputs/outdoor_part_demo/urban_v3_all43_25/urban_v3_all43_25.blend"
+}

@@ -1,0 +1,27 @@
+{
+  "bounds": [
+    [
+      -12.493096351623535,
+      0.6804783940315247,
+      -1.2919211387634277
+    ],
+    [
+      12.493095397949219,
+      19.436250686645508,
+      7.929000377655029
+    ]
+  ],
+  "dimensions": [
+    24.986190795898438,
+    18.75577163696289,
+    9.220921516418457
+  ],
+  "mesh_instances": 565,
+  "evaluated_vertices": 7726800,
+  "key": "townhouse",
+  "collection": "ASSET_townhouse",
+  "source": "./infinigen/outputs/outdoor_part_demo/urban_v3_all45_09/urban_v3_all45_09.blend",
+  "placement_audit": "townhouse_interior_placement_audit.json",
+  "foundation_grounded": true,
+  "ground_shift": -1.309826374053955
+}

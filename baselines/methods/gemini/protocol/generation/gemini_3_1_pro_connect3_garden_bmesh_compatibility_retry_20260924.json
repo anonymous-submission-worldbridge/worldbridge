@@ -1,0 +1,9 @@
+{
+  "date": "2026-09-24",
+  "scope": "garden_residential_microdistrict visual-quality retry",
+  "classification": "Blender 4.5 bmesh compatibility correction",
+  "reason": "The accepted Gemini retry used unavailable bmesh create_torus and create_cylinder operator names.",
+  "change": "Construct the same torus quad grids directly and use Blender 4.5 create_cone with equal radii for the requested cylinders. All original radii, depths, segment counts, transforms, materials, locations, and scene design are preserved.",
+  "preserves_method_identity": true,
+  "is_image_postprocess": false
+}

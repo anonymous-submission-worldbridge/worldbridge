@@ -1,0 +1,24 @@
+{
+  "bounds": [
+    [
+      -6.25,
+      0.9099999666213989,
+      0.9500000476837158
+    ],
+    [
+      6.020000457763672,
+      2.6549999713897705,
+      3.8433430194854736
+    ]
+  ],
+  "dimensions": [
+    12.270000457763672,
+    1.7450000047683716,
+    2.893342971801758
+  ],
+  "mesh_instances": 1934,
+  "evaluated_vertices": 433450,
+  "key": "parcel",
+  "collection": "ASSET_parcel",
+  "source": "./infinigen/outputs/outdoor_part_demo/urban_v3_delivery6/urban_v3_delivery6.blend"
+}

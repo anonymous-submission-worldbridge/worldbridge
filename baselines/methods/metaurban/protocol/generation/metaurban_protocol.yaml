@@ -1,0 +1,80 @@
+protocol_id: table2-v1-metaurban
+status: blocked_pending_registered_full_assets
+domain: urban
+method: metaurban
+spec_file: baselines/protocol/generation/urban_specs.jsonl
+seeds_file: baselines/protocol/generation/seeds.json
+output_root: baselines/data/table2/urban/metaurban
+pilot_output_root: baselines/data/pilot/urban/metaurban
+source:
+  repository: https://github.com/metadriverse/metaurban
+  commit: 6b8ff9aa48dd27d5c57fa1c712db520732f11fa9
+  source_archive_sha256: 4933b8ba8614c3a701db1b4ce0ede87dd5cae407fd2ff24842814879e31aaa5a
+  installed_version_string: 0.0.1
+seed_mapping: method_seed = spec_index * 4 + logical_seed
+native_adapter:
+  environment: SidewalkStaticMetaUrbanEnv
+  category_to_sidewalk:
+    residential: Neighborhood 1
+    commercial: Wide Commercial
+    mixed_use: Medium Commercial
+    park_edge: Ribbon Sidewalk
+    leisure_civic: Neighborhood 2
+  topology_to_map:
+    four_way: {map: X, mapping: exact}
+    t_junction: {map: T, mapping: exact}
+    main_road_side_road: {map: T, mapping: fixed_native_approximation}
+    offset_intersection: {map: TT, mapping: fixed_native_approximation}
+    irregular_intersection: {map: CX, mapping: fixed_native_approximation}
+  output_selection: none
+  retry_on_quality_failure: false
+generation:
+  full_registered_assets_required: true
+  tiny_assets_allowed_for_formal_or_pilot: false
+  lane_width_m: 3.5
+  lane_count_per_direction: 3
+  exit_length_m: 50.0
+  object_density: 0.6
+  crosswalk_density: 1.0
+  traffic_density: 0.0
+  background_agent_count: 0
+  static_traffic_object: true
+  terrain_height_scale: 1.0
+  render_pipeline: false
+camera:
+  coordinate_system: MetaUrban world and OpenCV camera axes
+  trajectory_frames: 50
+  trajectory_fps: 10
+  trajectory_length_m: 42.0
+  height_m: 1.65
+  horizontal_fov_degrees: 70.0
+  view_rotation_degrees: 75.0
+  anchors_zero_based: [0, 7, 14, 21, 28, 35, 42, 49]
+  anchor_resolution: [1280, 720]
+  sequence_resolution: [512, 512]
+renderer:
+  implementation: Panda3D offscreen OpenGL
+  required_device: NVIDIA L40S
+  allowed_physical_gpu_indices: [0, 1]
+success_contract:
+  require_scene_descriptor: true
+  require_anchor_count: 8
+  require_sequence_count: 50
+  require_cameras_json: true
+  image_mean_range: [0.01, 0.99]
+  image_std_min: 0.01
+  trajectory_path_length_range_m: [35.0, 50.0]
+  min_trajectory_max_displacement_m: 35.0
+  view_rotation_range_degrees: [60.0, 90.0]
+metrics:
+  qalign: pyiqa-qalign
+  clipiqa_plus: pyiqa-clipiqa+
+  layout_plausibility: three-rater-blind-likert
+  prompt_alignment: three-rater-fact-checklist
+  consistency_3d: worldscore-static-3d-consistency
+  appearance_diversity: lpips-alex-v0.1
+  layout_diversity: segformer-ade20k-semantic-1-miou
+failure_policy: intention-to-treat
+resource_guards:
+  minimum_free_filesystem_gib: 100
+  one_serial_queue_per_gpu: true

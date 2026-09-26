@@ -1,0 +1,9 @@
+{
+  "scope": "mediterranean_music_villa_refined generation attempt 3",
+  "reason": "Blender 4.5 bmesh exposes cylinder creation through create_cone with equal radii; create_cylinder is not an available bmesh operator",
+  "old_call": "bmesh.ops.create_cylinder(..., radius=r, depth=d)",
+  "new_call": "bmesh.ops.create_cone(..., radius1=r, radius2=r, depth=d)",
+  "occurrences": 6,
+  "semantic_change": false,
+  "provenance_policy": "Preserve the raw Gemini response and rejected-attempt archives; record pre- and post-correction source hashes in the run manifest."
+}

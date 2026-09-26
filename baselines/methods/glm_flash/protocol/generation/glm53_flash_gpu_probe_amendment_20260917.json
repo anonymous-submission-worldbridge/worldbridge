@@ -1,0 +1,17 @@
+{
+  "amended_at_utc": "2026-09-17T16:04:00Z",
+  "method": "glm53_flash",
+  "scope": "runtime_gpu_availability_probe_only",
+  "reason": "This server's nvidia-smi 580.65.06 rejects --id=<numeric-index> with exit status 9 and accepts -i <numeric-index>.",
+  "before": ["nvidia-smi", "--id=<gpu>", "--query-gpu=memory.free", "--format=csv,noheader,nounits"],
+  "after": ["nvidia-smi", "-i", "<gpu>", "--query-gpu=memory.free", "--format=csv,noheader,nounits"],
+  "failed_attempts": {
+    "indoor": 1,
+    "urban": 1,
+    "stage_started": false,
+    "metric_outputs_written": false
+  },
+  "protocol_effect": "none; no scene selection, evaluator, threshold, score, or model output changed",
+  "old_runner_sha256": "098b065cd0e337eb0c6cd3fba50da643321cfa0ef92f7e400ca21c1e5926dc70",
+  "new_runner_sha256": "5b10460d2385f5827278a4a9f669ff8051114900f8edf5acfca173c5a1c578e9"
+}

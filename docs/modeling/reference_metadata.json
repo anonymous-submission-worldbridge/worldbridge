@@ -1,0 +1,507 @@
+[
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect/corner_kitchen2/assets/native_outdoor.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect/corner_kitchen2/assets/native_outdoor.json",
+    "sha256": "1e6306f415f8c663b42d29a669d0f866ece0dc3a95a609a0ced30f7102631146"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect/shared_assets/native_indoor_assets.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect/shared_assets/native_indoor_assets.json",
+    "sha256": "e5375b1b15ff2427abc23d5c4dcf0b9fb7ddd97946dd535152a8ebfd1d84aed8"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect2/pharmacy2/assets/catalog.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect2/pharmacy2/assets/catalog.json",
+    "sha256": "6557efb40c7a7e0caefe2b1d1f8df5bbadb8a1e8c70d384fb990f95624a1f630"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect2/shared_assets/native_extended.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect2/shared_assets/native_extended.json",
+    "sha256": "a933a17d927a68aa99b83378bfbf4186f7d641ef8dd8a35a0cec3fa797ab9dde"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect2/shared_assets/native_fruit.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect2/shared_assets/native_fruit.json",
+    "sha256": "11e625a4129a14186216d4cdadf39c18875aa10e3dd98b01fcfd08b08c526fc3"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect2/shared_assets/native_indoor_assets.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect2/shared_assets/native_indoor_assets.json",
+    "sha256": "e5375b1b15ff2427abc23d5c4dcf0b9fb7ddd97946dd535152a8ebfd1d84aed8"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/community_reading_park2/assets/native_furniture.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/community_reading_park2/assets/native_furniture.json",
+    "sha256": "c036b7bbd7999697a4397f41b929773e19de45671325b3e1e105f02fe06d7277"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/atm.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/atm.json",
+    "sha256": "8c95a2ae1932eab2235a658ef861958aa3622299c6b34e081846270c3f82ea8f"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/bank.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/bank.json",
+    "sha256": "9c14eb4a8c62af2edef70b72b62a59e8cf2c1eff6cb317734b12d9536b1fd0a0"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/bar.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/bar.json",
+    "sha256": "67bbb0d7de3f6f3586708723d5c73607288d75ec3c353e9854d91ba03a713728"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/bench.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/bench.json",
+    "sha256": "1f44441fdc5e23a3c1475e094c5b3c45ecbb7a7215337b10e1c972ab824a99c4"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/bike.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/bike.json",
+    "sha256": "57413b3a8ae3bc6e4e4c4bf8151ec9ffd778e1624baa3d7d11002a364389af41"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/bin.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/bin.json",
+    "sha256": "7e6144791933cb1007b08a041d04859cc531e24baa522b53713344783897c780"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/cafe.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/cafe.json",
+    "sha256": "f0c0e961cbc811db8fab0f601f6f2d2a1691abc48e06c332c099d1bd2d3f809a"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/cafe_set.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/cafe_set.json",
+    "sha256": "579163d9520d55df3ca0c3e7ad24eaa001af3e7453f3dd6166f2bcdf31d0053a"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/can.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/can.json",
+    "sha256": "6cd4ce790b2777d11f800d0d5d96b47d1e9a063827b4038a6efb86921ad61b37"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/car.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/car.json",
+    "sha256": "b975087e104eb2d60541d58a6055f1cf9dfdb7f564505747f620650bfefd874f"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/carton.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/carton.json",
+    "sha256": "f249fd269bfa2c1dcd09e920de37b02f4fc4d840b98a7e47ea1e5d472c254ceb"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/corner_store.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/corner_store.json",
+    "sha256": "a873b08c55b6d8b33baa03c5f20133efbef102bae83da5fd3e75aa450e37fb93"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/delivery.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/delivery.json",
+    "sha256": "dcf81b2482e17037aa4857b971de49b7f78ab433ba0cbdde34f1ea71e46483b4"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/factory.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/factory.json",
+    "sha256": "6300604311fb071de8c199590d6b91953b868cfd620a24dac36c5de2c828b459"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/fastfood.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/fastfood.json",
+    "sha256": "2d764071ecc9f800ddccbb1326dcaf4395601f98313ba61856bec925f3f09d51"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/fire.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/fire.json",
+    "sha256": "18e3e683c51452ffb5690da903d0c31588c698ccf3dff9b84bfe21c58c7536c1"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/fitness.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/fitness.json",
+    "sha256": "b6ff7fa6abe2c44bac678dcf222fc5e99e0c4b9a1fb1ee4cdf692cb185c347ac"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/fitness_walk.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/fitness_walk.json",
+    "sha256": "93cf07551e62f458dca521113cf508f7ce8604ca6ab0a02ff6f9a8b04967dbe1"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/flowerbed.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/flowerbed.json",
+    "sha256": "0d6f48757e6e42d125a720a269fd0d8cf11cd2c43320142e71501583b5f55ea2"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/food_locker.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/food_locker.json",
+    "sha256": "3115e4124f54e686d145e1e451678eadb2c5cbcd321891a7c0802653b2f7f9f6"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/gas.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/gas.json",
+    "sha256": "f0209b74091ffa4fabc70c1e178b18c34d696e1510b59180cfe55042685d3686"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/gym.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/gym.json",
+    "sha256": "4d16ddf0b46cd0a10006afe24243044e7213be7e68fd3644e81092b055afaeb2"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/hospital.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/hospital.json",
+    "sha256": "0a8c2e5b2b5206d0933c41d1847509966872629503cec78f215c2221d37e5d3b"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/house.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/house.json",
+    "sha256": "d7fdddc94f2889409def06594cf03d16ef4d8a329f9449db53fff2612a9ecca0"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/lake.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/lake.json",
+    "sha256": "5b89c2fcdeb2a3df63293dee8e1b881d7c499b613939d24ac69e99ab9a1425d8"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/library.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/library.json",
+    "sha256": "c256e6df4d1e8c96935bbd193961e65850dfc2fad26706dc9e7130e92d64e54c"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/market.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/market.json",
+    "sha256": "d0fca03c0bacf745afc9f8505ec10c4a600f64874b5e13088165a17bb9abf765"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/native_extended.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/native_extended.json",
+    "sha256": "a933a17d927a68aa99b83378bfbf4186f7d641ef8dd8a35a0cec3fa797ab9dde"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/native_fruit.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/native_fruit.json",
+    "sha256": "11e625a4129a14186216d4cdadf39c18875aa10e3dd98b01fcfd08b08c526fc3"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/native_indoor_assets.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/native_indoor_assets.json",
+    "sha256": "e5375b1b15ff2427abc23d5c4dcf0b9fb7ddd97946dd535152a8ebfd1d84aed8"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/native_variants.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/native_variants.json",
+    "sha256": "df11a6c466728ef9b5d0b94df42a1e5af263425bda474d8429c445988e56aafa"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/parcel.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/parcel.json",
+    "sha256": "f34cfa114f96cdc8c82e79ce44708e795dba3a2cfb56cb5e4310c7d18905a30c"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/pastry.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/pastry.json",
+    "sha256": "a5b48515faa1d1a39086afba6ffd69aef2fb10f739aa09b72aaa907fe1c7b8fd"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/pharmacy.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/pharmacy.json",
+    "sha256": "bb258a845ed79b4ec2600c8159cb81f6c8556a438da54e91e601d26d2e40e70d"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/police.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/police.json",
+    "sha256": "6da4a7ebb8d390e07be3daba88505efff02f7fcc1ae208917c5e3e9a5a3bd371"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/restaurant.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/restaurant.json",
+    "sha256": "4977faf1fb359b115457664fd308a0de52aa63421e658595161630917f3a97cd"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/river.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/river.json",
+    "sha256": "e3086d616ac6d66fc45e95e906108d89fb3364a12c013a7dfa3d176477f55353"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/school.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/school.json",
+    "sha256": "fd87456ed3d47540d331e45266acef0b43f533e9fd2b8edf5328ccf1487e571c"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/streetlight.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/streetlight.json",
+    "sha256": "7b0918a8ebe9c726aa1028b887ef80d68da321fadfd462f20ba6e0f37ca1265c"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/townhouse.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/townhouse.json",
+    "sha256": "ee2cf2e44b0b9857b08bf5ca0bf294d469a85e5be0febf366fab9822efb59114"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/townhouse_interior_placement_audit.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/townhouse_interior_placement_audit.json",
+    "sha256": "a9fe22f9da2c368ff69a3dbf6890e038c1fad8a6387909d9f35809584aaad7da"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/shared_assets/tree619.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect3/shared_assets/tree619.json",
+    "sha256": "c1d58e20d302bbabc749a9d09ff452f853a6045514c54bf1ce345f78883b5893"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/atm.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/atm.json",
+    "sha256": "8c95a2ae1932eab2235a658ef861958aa3622299c6b34e081846270c3f82ea8f"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/bank.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/bank.json",
+    "sha256": "9c14eb4a8c62af2edef70b72b62a59e8cf2c1eff6cb317734b12d9536b1fd0a0"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/bar.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/bar.json",
+    "sha256": "8b0103932a6fdcf6da49dfd5d85bc3555052c7da01bd9e0273afac93f0f20e75"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/bench.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/bench.json",
+    "sha256": "1f44441fdc5e23a3c1475e094c5b3c45ecbb7a7215337b10e1c972ab824a99c4"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/bike.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/bike.json",
+    "sha256": "57413b3a8ae3bc6e4e4c4bf8151ec9ffd778e1624baa3d7d11002a364389af41"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/bin.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/bin.json",
+    "sha256": "7e6144791933cb1007b08a041d04859cc531e24baa522b53713344783897c780"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/botanical_island.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/botanical_island.json",
+    "sha256": "b225ee9948a7eb16aae0bf7816129d9a4f2165a06836388bdde42d014322ec80"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/cafe.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/cafe.json",
+    "sha256": "a2220132ef0eb568385008f9c1f838f0e1aea22cdcd89f3a7c61ab0159088ec5"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/cafe_set.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/cafe_set.json",
+    "sha256": "579163d9520d55df3ca0c3e7ad24eaa001af3e7453f3dd6166f2bcdf31d0053a"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/can.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/can.json",
+    "sha256": "6cd4ce790b2777d11f800d0d5d96b47d1e9a063827b4038a6efb86921ad61b37"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/car.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/car.json",
+    "sha256": "b975087e104eb2d60541d58a6055f1cf9dfdb7f564505747f620650bfefd874f"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/carton.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/carton.json",
+    "sha256": "f249fd269bfa2c1dcd09e920de37b02f4fc4d840b98a7e47ea1e5d472c254ceb"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/corner_store.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/corner_store.json",
+    "sha256": "2be29ba0c697f5fbbbd9b15087c2d14e80307c5d17f320f50740bb11c3f29ef5"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/delivery.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/delivery.json",
+    "sha256": "d375d79f8faef0c4dcde6fdc76e4542de7db3321faa0ef4e02b10bc0f4983ef8"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/espresso_assembly.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/espresso_assembly.json",
+    "sha256": "73dea536cef493bb013806dae9bf077a1312a466facaccbdef41598ef8895e29"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/factory.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/factory.json",
+    "sha256": "6300604311fb071de8c199590d6b91953b868cfd620a24dac36c5de2c828b459"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/fastfood.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/fastfood.json",
+    "sha256": "2d764071ecc9f800ddccbb1326dcaf4395601f98313ba61856bec925f3f09d51"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/fire.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/fire.json",
+    "sha256": "9b71cb3a22e8080809347c58c37b1aea8f100011216e35cd56ebc41d76e5d37a"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/fire_engine.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/fire_engine.json",
+    "sha256": "32c30bc420351ec88470e23cea8b042ddf12aab0f861868b8c1f593f6791dea0"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/fitness.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/fitness.json",
+    "sha256": "b6ff7fa6abe2c44bac678dcf222fc5e99e0c4b9a1fb1ee4cdf692cb185c347ac"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/fitness_walk.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/fitness_walk.json",
+    "sha256": "93cf07551e62f458dca521113cf508f7ce8604ca6ab0a02ff6f9a8b04967dbe1"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/flowerbed.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/flowerbed.json",
+    "sha256": "0d6f48757e6e42d125a720a269fd0d8cf11cd2c43320142e71501583b5f55ea2"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/food_locker.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/food_locker.json",
+    "sha256": "3115e4124f54e686d145e1e451678eadb2c5cbcd321891a7c0802653b2f7f9f6"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/fountain0.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/fountain0.json",
+    "sha256": "b8ef4611e8cf77c2f19a77d1f3457e9231563fa2f1c730e722fd685f68c8e75f"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/fountain1.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/fountain1.json",
+    "sha256": "9b3946f2d26593291fee785f567fd0fb536ebea844992b929eace61050cc9af0"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/fountain2.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/fountain2.json",
+    "sha256": "d69b48496e73716b8ab01411073414aa9ae387fef209b51de050d748c4ac656c"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/fountain3.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/fountain3.json",
+    "sha256": "a5e957c211b401bc860ca4d77a7ef7ab0467ed6460810a763aa213598cdaed26"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/gas.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/gas.json",
+    "sha256": "8a3fbf0464fe5fdf9d1392a2097101ad5e00c26c5ff5c61ce600680ddb45fb88"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/gym.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/gym.json",
+    "sha256": "4d16ddf0b46cd0a10006afe24243044e7213be7e68fd3644e81092b055afaeb2"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/hospital.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/hospital.json",
+    "sha256": "6b540651e20aea5fde91af8eb53acd556b8667278548c795639d5744eb8ea35e"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/house.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/house.json",
+    "sha256": "d7fdddc94f2889409def06594cf03d16ef4d8a329f9449db53fff2612a9ecca0"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/lake.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/lake.json",
+    "sha256": "5b89c2fcdeb2a3df63293dee8e1b881d7c499b613939d24ac69e99ab9a1425d8"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/library.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/library.json",
+    "sha256": "c7b30ee8bcbb522091be3cbbb3daa0244175dd18731a055cfba9544e4d254df1"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/market.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/market.json",
+    "sha256": "01f4afeb35acc746c539dd9b228c6496659f6f7c3faeaf0423d0d7dba5325d03"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/native_extended.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/native_extended.json",
+    "sha256": "a933a17d927a68aa99b83378bfbf4186f7d641ef8dd8a35a0cec3fa797ab9dde"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/native_fruit.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/native_fruit.json",
+    "sha256": "11e625a4129a14186216d4cdadf39c18875aa10e3dd98b01fcfd08b08c526fc3"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/native_indoor_assets.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/native_indoor_assets.json",
+    "sha256": "e5375b1b15ff2427abc23d5c4dcf0b9fb7ddd97946dd535152a8ebfd1d84aed8"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/native_terrace0.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/native_terrace0.json",
+    "sha256": "37ed3fe3d411f61b0e68574d95d81ee82553cb6f8d2a34d9ea67f55e1dd6af14"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/native_terrace1.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/native_terrace1.json",
+    "sha256": "def0601e8e03cd5f4a6e2c498aaf2b4c92309c600d027b8c25ec54ef6f8ce7d2"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/native_terrace2.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/native_terrace2.json",
+    "sha256": "7f1f8cef338dde4c4bf828e1e7b9dffd813bb8ba8e2894428265038a17c0a823"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/native_variants.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/native_variants.json",
+    "sha256": "df11a6c466728ef9b5d0b94df42a1e5af263425bda474d8429c445988e56aafa"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/parcel.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/parcel.json",
+    "sha256": "f34cfa114f96cdc8c82e79ce44708e795dba3a2cfb56cb5e4310c7d18905a30c"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/pastry.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/pastry.json",
+    "sha256": "a5b48515faa1d1a39086afba6ffd69aef2fb10f739aa09b72aaa907fe1c7b8fd"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/pharmacy.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/pharmacy.json",
+    "sha256": "fa4a1fa9016058f80278c37e905a90900339c69c7e02177fb3ec13e447c3c5bd"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/police.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/police.json",
+    "sha256": "909458c11c911b96c473a618e73ca892a08e2a39a1c4cd275de28dde5ac0eb13"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/restaurant.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/restaurant.json",
+    "sha256": "ea592d1fc97a7517506720ea83d8966bb7888b38df0b9ce11a9f6f0c7f94572e"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/river.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/river.json",
+    "sha256": "f83864a663ad13ee055aaf57c0ec63a9720a176afc7a68cff733d1f9940d7eab"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/school.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/school.json",
+    "sha256": "fd87456ed3d47540d331e45266acef0b43f533e9fd2b8edf5328ccf1487e571c"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/streetlight.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/streetlight.json",
+    "sha256": "7b0918a8ebe9c726aa1028b887ef80d68da321fadfd462f20ba6e0f37ca1265c"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/townhouse.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/townhouse.json",
+    "sha256": "ee2cf2e44b0b9857b08bf5ca0bf294d469a85e5be0febf366fab9822efb59114"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/townhouse_interior_placement_audit.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/townhouse_interior_placement_audit.json",
+    "sha256": "a9fe22f9da2c368ff69a3dbf6890e038c1fad8a6387909d9f35809584aaad7da"
+  },
+  {
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect4/shared_assets/tree619.json",
+    "destination": "docs/modeling/reference_metadata/urban_scenes/urban_v1_full_connect4/shared_assets/tree619.json",
+    "sha256": "c1d58e20d302bbabc749a9d09ff452f853a6045514c54bf1ce345f78883b5893"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "bounds": [
+    [
+      -0.6700000166893005,
+      0.4803942143917084,
+      0.6894294023513794
+    ],
+    [
+      0.6700000166893005,
+      2.4703943729400635,
+      2.4296798706054688
+    ]
+  ],
+  "dimensions": [
+    1.340000033378601,
+    1.9900001287460327,
+    1.7402504682540894
+  ],
+  "mesh_instances": 116,
+  "evaluated_vertices": 17308,
+  "key": "fitness",
+  "collection": "ASSET_fitness",
+  "source": "./infinigen/outputs/outdoor_part_demo/urban_v3_fitness5/urban_v3_fitness5.blend"
+}

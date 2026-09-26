@@ -1,0 +1,24 @@
+{
+  "bounds": [
+    [
+      -2.519195318222046,
+      -5.4016709327697754e-08,
+      -4.779820983458194e-09
+    ],
+    [
+      2.519195318222046,
+      2.331160545349121,
+      1.7475239038467407
+    ]
+  ],
+  "dimensions": [
+    5.038390636444092,
+    2.331160545349121,
+    1.7475239038467407
+  ],
+  "mesh_instances": 39,
+  "evaluated_vertices": 20603,
+  "key": "car",
+  "collection": "ASSET_car",
+  "source": "./infinigen/outputs/outdoor_part_demo/urban_v3_all43_25/urban_v3_all43_25.blend"
+}

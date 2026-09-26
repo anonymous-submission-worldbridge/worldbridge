@@ -1,0 +1,16 @@
+{
+  "authored_source_paths": 702,
+  "family_groups": 29,
+  "missing_sources": [],
+  "source_hash_mismatches": [],
+  "remaining_model_files": [],
+  "python_files_compiled": 1197,
+  "python_errors": [],
+  "shell_errors": [],
+  "broken_current_documentation_links": [],
+  "english_check_passed": true,
+  "robot_geometry_smoke_passed": true,
+  "core_tests_passed": true,
+  "scope_limit": "Source preservation and targeted validation; complete scene regeneration and all archived scripts were not executed.",
+  "passed": true
+}

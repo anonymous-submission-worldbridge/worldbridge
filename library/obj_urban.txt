@@ -1,0 +1,585 @@
+VehicleFactory
+
+API Source: infinigen.assets.objects.vehicles.vehicle.VehicleFactory
+
+Overview
+VehicleFactory generates procedural vehicles (cars and buses) using a low-poly continuous shell
+layered with detail panels, wheels, lights, windows, and trim. All geometry is built from
+parametric mesh primitives (cube_obj, cylinder_obj, ellipsoid_obj, mesh_obj).
+
+Constructor / Request Parameters
+- mats: Material dictionary (injected by compose_urban). Controls all material colors.
+- request.params["id"]: Unique vehicle identifier string. Example: "car_westbound".
+- request.params["axis"]: Travel direction ("x" = east-west, "y" = north-south).
+- request.params["vehicle_type"]: "car" or "bus". Determines which sub-factory is called.
+- request.params["color"]: Material key for the vehicle body color. Valid keys:
+  - "car_red"   → (0.68, 0.05, 0.04) red metallic
+  - "car_blue"  → (0.04, 0.16, 0.56) navy blue metallic
+  - "car_white" → (0.82, 0.84, 0.80) silver-white metallic
+  - "bus_yellow"→ (0.92, 0.66, 0.08) school-bus yellow
+- request.location: (x, y, 0) placement in scene coordinates.
+- request.yaw: Rotation around Z-axis (radians). Auto-set by compose_urban based on axis.
+
+Car Shell Geometry (VehicleFactory._car_shell)
+The car body is built from a continuous cross-section profile:
+- stations: 5 cross-section stations along the vehicle length.
+  - (-length/2, 0.34, 0.58) → front bumper area
+  - (-length*0.28, 0.70, 0.82) → windshield base
+  - (0.18, 0.80, 0.92) → roofline
+  - (length*0.42, 0.60, 0.72) → rear window
+  - (length/2, 0.38, 0.56) → trunk/rear bumper
+- length: Vehicle body length. Car default ≈ 4.5m, Bus ≈ 11.5m.
+- width: Vehicle body width. Car default ≈ 2.0m, Bus ≈ 2.5m.
+
+Car Detail Parts (added on top of shell)
+- Front/rear bumpers: cube_obj panels at front and rear
+- Hood: cube_obj with slight forward slope
+- Trunk lid: cube_obj panel
+- Roof panel: cube_obj
+- Door panels (4): cube_obj panels with window cutouts
+- Windows (5): cube_obj with car_glass material
+- Headlights (2): ellipsoid_obj with headlight emission material
+- Tail lights (2): cube_obj/ellipsoid with tail_light emission material
+- Wheels (4): cylinder_obj + torus_obj hub rings, tire material
+- License plates (2): cube_obj with license_plate material
+- Side mirrors (2): cube_obj small panels
+
+Bus Detail Parts
+- Body is longer and taller (width ≈ 2.5m, height ≈ 3.5m)
+- Multiple windows along both sides (8–10 per side)
+- Destination board: cube_obj front panel with lamp material
+- Entry doors: 2× door panels (front + rear)
+- Roof equipment: small cube_obj AC unit
+- Wheels (8): larger diameter cylinders
+
+Semantic Tags
+- Shell, panels, roof: "vehicle"
+- Glass panels: "vehicle-glass"
+- Headlights: "vehicle-headlight"
+- Tail lights: "vehicle-taillight"
+- Wheels/tires: "vehicle-wheel"
+- License plate: "vehicle-license-plate"
+
+Example Semantic to Parameters
+- "A red sedan, traveling east":
+  request.params: id="car_east_01", axis="x", vehicle_type="car", color="car_red"
+  request.location: (-18, 1.75, 0)
+
+- "A school bus, traveling north":
+  request.params: id="bus_north_01", axis="y", vehicle_type="bus", color="bus_yellow"
+  request.location: (1.65, 18, 0)
+
+- "A white SUV parked on the street":
+  request.params: id="car_parked_01", axis="x", vehicle_type="car", color="car_white"
+  request.location: (12, -5.5, 0), yaw=0.0
+
+
+TrafficLightFactory
+
+API Source: infinigen.assets.objects.traffic.traffic_light.TrafficLightFactory
+
+Overview
+TrafficLightFactory generates procedural traffic light assemblies. Each traffic light consists
+of a steel pole, a diagonal brace, a cantilevered horizontal mast, a signal box with three
+lenses (red/yellow/green), lens hoods, and a pedestrian push-button box.
+
+Constructor
+- mats: Material dictionary. Uses "metal", "signal_box", "red_signal", "yellow_signal", "green_signal".
+
+Signal colors use emissive materials:
+- red_signal: (1.0, 0.05, 0.03, 1) with emission_strength=1.2
+- yellow_signal: (1.0, 0.75, 0.08, 1) with emission_strength=0.5
+- green_signal: (0.05, 0.9, 0.18, 1) with emission_strength=1.0
+
+Request Parameters
+- request.params["id"]: Unique ID string. Example: "nw" (northwest corner).
+- request.params["facing_axis"]: Direction the signal faces ("x" or "y").
+  - "x": Signal faces east-west traffic (placed at north/south side of intersection).
+  - "y": Signal faces north-south traffic (placed at east/west side of intersection).
+- request.location: (x, y, 0) corner position. Canonical positions:
+  - northwest: (-6.4, 6.4, 0)
+  - northeast: (6.4, 6.4, 0)
+  - southeast: (6.4, -6.4, 0)
+  - southwest: (-6.4, -6.4, 0)
+
+Geometry Details
+- Pole: cylinder_obj, radius=0.07m, height=3.1m, "metal"
+- Base: cylinder_obj, radius=0.22m, height=0.24m, "metal"
+- Mast arm: cube_obj extending 1.1m from pole top, "metal"
+- Diagonal brace: cylinder_between connecting pole mid-point to mast
+- Signal box: cube_obj 0.32×0.22×0.82m, "signal_box"
+- 3 signal lenses: sphere_obj radius=0.095m each (red at top, yellow middle, green bottom)
+- Lens hoods: cube_obj above each lens
+- Pedestrian button box: cube_obj at pole mid-height
+- Pedestrian button: sphere_obj yellow
+
+Semantic Tags: "traffic-light"
+
+Example
+- Standard 4-corner intersection:
+  ("nw", -6.4, 6.4, "y"), ("ne", 6.4, 6.4, "x"),
+  ("se", 6.4, -6.4, "y"), ("sw", -6.4, -6.4, "x")
+
+
+StreetFurnitureFactory
+
+API Source: infinigen.assets.objects.street_furniture.street_assets.StreetFurnitureFactory
+
+Overview
+StreetFurnitureFactory creates six types of urban street furniture: street lamps, bus stops,
+bike racks, fire hydrants, benches, planters, traffic signs, and trash bins.
+
+All assets use "metal", "aged_metal", "bench", "stone", "planter", and other urban materials.
+
+--- create_street_lamp ---
+Geometry: pole (cylinder_obj), curved arm (curve_obj), shade cone (cone_obj), bulb (ellipsoid_obj).
+- Pole height: 3.45m, radius: 0.055m
+- Arm curve: 3 control points, arcs 0.72m outward
+- Shade: inverted cone, radius 0.27m
+- Bulb: ellipsoid 0.13×0.13×0.07m, lamp emission material
+Parameters:
+- id: lamp identifier integer
+- head_sign: +1 or -1, controls which side the lamp arm extends toward the road
+
+--- create_bus_stop ---
+Geometry: glass side panels + rear panel, steel roof, bus-schedule panel, bench, route header.
+- Footprint: 4.2m wide × 1.35m deep
+- Glass panels: cube_obj with bus_stop_glass material (semi-transparent blue-gray)
+- Roof: cube_obj with metal material, slight forward overhang
+- Schedule panel: cube_obj with bus_stop_sign material (route timetable)
+- Built-in bench: 3 seat planks + legs, bench + metal materials
+- Route number header: lamp emission
+- Sign pole: stands separately to one side
+
+--- create_bike_rack ---
+Geometry: single inverted-U torus_obj (360°×35mm tube), two foot cylinders.
+- Loop height: 0.56m (loop center), radius 0.38m
+- Semantic: "bike-rack"
+- Typically placed in groups of 3: (8.5, -10.2), (9.2, -10.2), (9.9, -10.2)
+
+--- create_fire_hydrant ---
+Geometry: body (cylinder), cap (cylinder), two side nozzles (cylinders rotated 90°), decorative
+ring (torus), conical top (cone_obj), chain (cube_obj).
+- Body: radius=0.16m, height=0.72m, hydrant material (red: 0.78, 0.05, 0.03)
+- Total height: ≈1.05m
+- Semantic: "fire-hydrant"
+
+--- create_bench ---
+Geometry: 3 seat planks + 2 back planks + curved metal side frames.
+- Seat plank dimensions: 1.85×0.13×0.07m
+- Back planks: 1.85×0.10×0.07m, set back 0.28m
+- Frame: cylinder_between connections, metal material
+- Semantic: "bench"
+
+--- create_planter ---
+Geometry: rectangular planter box + stone rim + soil layer + leaf mound ellipsoids + flowers.
+- Box: 2.2×0.8×0.7m, planter material (terracotta)
+- Stone rim: front + back strips
+- 5 leaf mounds: alternating "leaf" and "shrub" materials
+- Small flower ellipsoids on alternating positions
+- Semantic: "planter"
+
+--- create_traffic_sign ---
+Geometry: cylindrical post + rectangular sign face + border strips + pictogram (person body).
+- Post: radius=0.035m, height=2.5m
+- Face: 0.9×0.06×0.9m, "sign" material (blue)
+- White border strips top and bottom
+- Pedestrian crossing pictogram: body cylinder + sphere head + two leg cylinders
+- Semantic: "traffic-sign"
+
+--- create_trash_bin ---
+Geometry: cylindrical body + rim + slot opening.
+- Body: radius=0.28m, height=0.82m, trash material (dark green)
+- Rim: radius=0.30m, metal
+- Slot: thin cube_obj opening
+- Semantic: "trash-bin"
+
+Example Semantic to Parameters
+- "3 bike racks side by side":
+  n_bike_racks=3 in _outdoor_assets gin config
+
+- "Sparse street lighting (4 lamps)":
+  n_street_lamps=4 in gin config
+
+- "Busy commercial block with bus stop + benches + planters":
+  has_bus_stop=True, n_benches=4, n_planters=4 in gin config
+
+
+UrbanTreeFactory
+
+API Source: infinigen.assets.objects.trees.urban_tree.UrbanTreeFactory
+
+Overview
+UrbanTreeFactory places realistic street trees. It first attempts to use Infinigen's
+procedural TreeFactory (full photorealistic nature tree) and falls back to a detailed
+hand-crafted leaf-mesh tree if the nature factory fails.
+
+Nature-Factory Path (preferred):
+- Delegates to infinigen.assets.objects.trees.generate.TreeFactory
+- Parameters forwarded via request.params:
+  - season: "summer"/"spring"/"autumn"/"winter" — controls leaf color and density
+  - fruit_chance: 0.0–1.0 — probability of fruit appearing
+  - max_faces: face budget for LOD (default 45000)
+  - distance: camera distance hint for LOD
+  - variant: integer 0–2, selects from 3 prototype tree shapes
+
+Fallback Leaf-Mesh Path:
+When nature factory is unavailable, generates a complete parametric tree:
+- Root flare: wide cylinder at base
+- Trunk: tapered cylinder with slight lean
+- Surface roots: multi_curve_obj web at ground level
+- Bark bands: thin rings at 0.45m, 0.92m, 1.38m height
+- 11 main branches: cylinder_between, radially distributed
+- 44 twigs: short cylinder_between off each branch
+- Leaf geometry: _leaf_mesh() with sun-lit (top) and shade (lower) layers
+  - 190 individual leaf cards with position, orientation, bend, length, width
+  - Sun leaves: "leaf" material (brighter green)
+  - Shade leaves: "leaf_dark" material (darker green)
+- 18 fallen leaf cards scattered on ground around base
+- 4 tree pit stones: cube_obj frames in curb material around base
+
+Tree Pit:
+- 4 curb-material squares at 45° angles around trunk base
+- Each: 0.48×0.10×0.11m or 0.10×0.48×0.11m depending on orientation
+
+Semantic Tags: "tree", "tree-leaf", "leaf-litter", "tree-pit"
+
+Key Parameters
+- scale: Overall tree scale (0.46–0.52 typical for urban trees)
+- variant: 0/1/2 — selects which of 3 prototype shapes to use
+- season: Controls leaf color via TreeFactory (nature path only)
+- yaw: Random rotation for natural variation
+
+Example Semantic to Parameters
+- "Summer street tree, medium scale, variant A":
+  scale=0.48, variant=0, season="summer", yaw=0.0
+
+- "Autumn tree, slightly larger, variant B":
+  scale=0.52, variant=1, season="autumn", yaw=1.2
+
+- "Winter bare tree (no leaves)":
+  scale=0.47, variant=2, season="winter", yaw=0.7
+
+Note on gin control: n_trees in _outdoor_assets controls total tree count (0–30).
+tree_season in _outdoor_assets controls the season for all street trees.
+
+
+UrbanGroundcoverFactory
+
+API Source: infinigen.assets.objects.grassland.urban_groundcover.UrbanGroundcoverFactory
+
+Overview
+UrbanGroundcoverFactory generates three types of lawn-area vegetation:
+grass tufts, shrubs, and flower plants. Each has a nature-factory primary path
+with a hand-crafted mesh fallback.
+
+--- create_grass_tuft ---
+Nature path: infinigen.assets.objects.grassland.grass_tuft.GrassTuftFactory
+- Generates a cluster of 30–60 grass blades per tuft
+- Parameters forwarded:
+  - scale: Overall tuft scale (default 2.0–2.72, larger = wider spread)
+  - yaw: Rotation for directional variation
+
+Fallback path (custom mesh):
+- 34 individual grass blades: each a 3-segment quad strip (base, mid, tip)
+- Each blade has: base_radius(0.028), mid_radius(0.018), tip point, lean angle, height (0.22–0.44m)
+- 4 seed stems: cylinder curves capped with small cones
+- Optional fallen leaf litter piece (every 3rd tuft)
+
+Grass materials: "grass_tuft" (medium green + noise)
+
+--- create_shrub ---
+Nature path: infinigen.assets.objects.trees.generate.BushFactory
+- Full procedural bush with branches, leaves
+- Parameters forwarded:
+  - scale: 0.48–0.60 (controls bush volume)
+  - max_faces: 20000 (face budget)
+  - yaw: Rotation
+
+Fallback path (custom mesh):
+- 18 twig paths (multi_curve_obj), radially arranged
+- Flower ellipsoids on every 5th twig tip
+- Dense leaf cluster using _leaf_cluster() helper: 95 leaf cards
+
+Materials: "shrub" (dark medium green), "leaf_dark", "flower_yellow"
+
+--- create_flowerplant ---
+Nature path: infinigen.assets.objects.grassland.flowerplant.FlowerPlantFactory
+- Full procedural flowering plant
+- Parameters forwarded:
+  - scale: 0.58–0.83 (controls plant size)
+  - max_faces: 8000 (face budget)
+  - yaw: Rotation
+
+Fallback path:
+- 5 flower ellipsoids in pentagon arrangement, radius 0.18m
+- Leaf cluster using _leaf_cluster(): 34 leaf cards
+
+Materials: "leaf", "shrub", "flower_yellow"
+
+Key Parameters (via gin / _outdoor_assets)
+- n_grass_tufts: 0–24 (controls how many grass tufts appear on lawn areas)
+- n_shrubs: 0–10 (controls number of shrubs)
+- n_flower_plants: 0–18 (controls number of flower plants)
+
+Example Semantic to Parameters
+- "Lush lawn with many grass tufts, shrubs, flowers":
+  n_grass_tufts=22, n_shrubs=8, n_flower_plants=14
+
+- "Minimal vegetation (commercial district)":
+  n_grass_tufts=4, n_shrubs=2, n_flower_plants=2
+
+- "No vegetation (industrial block)":
+  n_grass_tufts=0, n_shrubs=0, n_flower_plants=0
+
+
+PedestrianFactory
+
+API Source: infinigen.assets.objects.pedestrians.pedestrian.PedestrianFactory
+
+Overview
+PedestrianFactory generates stylized procedural human figures for sidewalk population.
+Each pedestrian is articulated with a mid-stride walking pose.
+
+Geometry
+- Left/right legs: cylinder_between from hip (0.74m) to ankle (0.16m), pants material
+  - Stride offset: ±0.08m longitudinal offset alternating per pedestrian index
+- Torso: ellipsoid_obj 0.18×0.12×0.34m, shirt material
+- Neck: cylinder_obj radius=0.055m, skin material
+- Head: ellipsoid_obj 0.13×0.115×0.16m, skin material
+- Hair: ellipsoid_obj 0.132×0.115×0.07m, hair material (dark brown)
+- Left/right arms: cylinder_between, slight swing pose
+- Left/right hands: sphere_obj radius=0.045m, skin material
+- Left/right feet: cube_obj 0.13×0.24×0.07m, shoe material (dark)
+- Shoulder bag: cube_obj 0.16×0.08×0.24m, pants material
+
+Total height: ≈1.65m
+
+Materials
+- Shirt variants: "person_shirt_red", "person_shirt_blue", "person_shirt_green"
+- Pants: "person_pants" (dark navy)
+- Skin: "person_skin" (medium brown)
+- Hair: "person_hair" (dark brown)
+- Shoes: "person_shoe" (very dark)
+
+Key Parameters (via gin / _outdoor_assets)
+- n_pedestrians: 0–11, controls total pedestrian count
+  - 0 = empty street
+  - 2–3 = sparse (residential, early morning)
+  - 5–7 = moderate (standard commercial)
+  - 9–11 = crowded (busy commercial, peak hour)
+
+Per-pedestrian parameters (request.params):
+- id: integer index
+- shirt: material key string ("person_shirt_red"/"blue"/"green")
+- facing: Z-rotation in radians (walk direction)
+
+Example Semantic to Parameters
+- "Crowded downtown sidewalk":
+  n_pedestrians=10 in gin config
+
+- "Empty residential street at night":
+  n_pedestrians=0
+
+- "A few people on a quiet morning street":
+  n_pedestrians=3
+
+
+PublicSpaceFactory
+
+API Source: infinigen.assets.objects.decor.urban_public_space.PublicSpaceFactory
+
+Overview
+PublicSpaceFactory generates two types of public space focal elements:
+ornamental fountains and abstract bronze sculptures on stone plinths.
+
+--- create_fountain ---
+Geometry: multi-tier fountain with water pool and animated arcs.
+- Outer basin: cylinder_obj radius=2.22m, height=0.42m, stone material
+- Water pool: cylinder_obj radius=1.78m, water material (blue-teal, alpha=0.75)
+- Outer/inner lip: torus_obj rings
+- Center column: cylinder_obj 0.28m radius, 0.92m height
+- Upper bowl: cylinder_obj 0.72m radius
+- Upper water surface: cylinder_obj with water material
+- Finial sphere: sphere_obj radius=0.16m, stone
+- 8 water arc curves: curve_obj from center top to pool rim, water material
+
+Total footprint: ≈4.5m diameter
+Semantic: "fountain"
+
+--- create_sculpture ---
+Geometry: stone plinth with abstract bronze ring-and-core sculpture.
+- Plinth: cube_obj 1.65×1.65×0.64m, stone material, beveled
+- Outer ring: torus_obj radius=0.55m, tilted 72°, bronze material
+- Inner ring: torus_obj radius=0.32m, tilted 30°, bronze material
+- Central core: ellipsoid_obj 0.24×0.18×0.36m, bronze material
+- Two support arms: cylinder_between connecting plinth to core
+
+Total height: ≈1.85m
+Semantic: "sculpture"
+
+Key Parameters (via gin / _outdoor_assets)
+- has_fountain: bool — whether to place the fountain in the scene
+- has_sculpture: bool — whether to place the sculpture
+  - Typically True for commercial/mixed blocks, False for residential/industrial
+
+Example Semantic to Parameters
+- "Upscale commercial plaza with fountain":
+  has_fountain=True, has_sculpture=True
+
+- "Simple residential street, no decorative features":
+  has_fountain=False, has_sculpture=False
+
+
+compose_urban (gin-configurable scene function)
+
+API Source: infinigen_examples.generate_urban.compose_urban
+
+Overview
+compose_urban is the top-level gin-configurable function that assembles the full urban scene:
+road network, buildings, sidewalks, curbs, surfaces, and outdoor assets.
+
+@gin.configurable Parameters
+
+- block_extent (float, default=64.0):
+  Total scene block size in meters. The block spans from -block_extent/2 to +block_extent/2.
+  Controls how large the city block appears. Range: 48–80.
+  - 56.0 → narrow dense block
+  - 64.0 → standard block (default)
+  - 72.0 → wide boulevard block
+  - 80.0 → large intersection / highway block
+
+- road_width (float, default=8.0):
+  Width of the road in meters (one-way: total road = 2×road_width for a two-lane road).
+  Actually this is the half-road width. Range: 5.0–18.0.
+  - 6.0 → narrow residential street
+  - 8.0 → standard urban street
+  - 12.0 → wide boulevard
+  - 18.0 → highway-scale road
+
+- sidewalk_width (float, default=3.0):
+  Width of the pedestrian sidewalk in meters. Range: 2.0–5.0.
+  - 2.5 → narrow residential sidewalk
+  - 3.0 → standard sidewalk
+  - 4.0 → wide boulevard sidewalk
+
+- curb_height (float, default=0.16):
+  Height of the raised concrete curb in meters. Range: 0.10–0.22.
+  - 0.14 → low residential curb
+  - 0.16 → standard urban curb
+  - 0.18 → historical/raised stone curb
+  - 0.12 → low industrial curb
+
+- min_building_height (float, default=7.0):
+  Minimum height for generated buildings in meters. Range: 3.5–25.0.
+
+- max_building_height (float, default=14.0):
+  Maximum height for generated buildings in meters. Range: 7.0–80.0.
+
+Height profile presets:
+- Low-rise residential:   min=4.0, max=9.0
+- Mid-rise commercial:    min=8.0, max=25.0
+- High-rise downtown:     min=22.0, max=65.0
+- Mixed neighborhood:     min=5.0, max=40.0
+
+Example gin configs:
+# Downtown commercial high-rise:
+compose_urban.block_extent = 72.0
+compose_urban.road_width = 12.0
+compose_urban.sidewalk_width = 4.0
+compose_urban.curb_height = 0.16
+compose_urban.min_building_height = 22.0
+compose_urban.max_building_height = 60.0
+
+# Quiet residential street:
+compose_urban.block_extent = 56.0
+compose_urban.road_width = 6.0
+compose_urban.sidewalk_width = 2.5
+compose_urban.curb_height = 0.14
+compose_urban.min_building_height = 4.0
+compose_urban.max_building_height = 9.0
+
+
+_outdoor_assets (gin-configurable outdoor assets function)
+
+API Source: infinigen_examples.generate_urban._outdoor_assets
+
+Overview
+_outdoor_assets places all movable street-level assets: lamps, furniture, trees, plants,
+vehicles, pedestrians, and public art. All parameters below are gin-configurable.
+
+Parameters
+
+Street Furniture:
+- n_street_lamps (int, default=8): Street lamp count. Range: 0–12.
+  0=no lighting, 4=sparse, 8=normal, 12=dense nighttime scene.
+- has_bus_stop (bool, default=True): Whether a bus stop shelter appears.
+- n_bike_racks (int, default=3): Number of bike rack units. Range: 0–5.
+- has_fire_hydrant (bool, default=True): Whether a red fire hydrant appears.
+- n_benches (int, default=4): Number of park benches. Range: 0–6.
+- n_planters (int, default=4): Number of rectangular planters. Range: 0–7.
+- n_trash_bins (int, default=1): Number of trash bins. Range: 0–3.
+- has_traffic_signs (bool, default=True): Whether crosswalk/pedestrian signs appear.
+
+Traffic Control:
+- has_traffic_lights (bool, default=True): Whether 4-corner traffic lights appear.
+  Set False for residential blocks without full intersections.
+
+Vegetation:
+- n_trees (int, default=21): Street tree count. Range: 0–30.
+  Maps from tree_density: none=0, sparse=5, moderate=14, lush=28.
+- tree_season (str, default="summer"): Season for tree appearance.
+  Valid: "summer", "spring", "autumn", "winter".
+- n_grass_tufts (int, default=18): Lawn grass tuft count. Range: 0–24.
+- n_shrubs (int, default=6): Shrub count. Range: 0–10.
+- n_flower_plants (int, default=14): Flower plant count. Range: 0–18.
+
+Traffic:
+- n_vehicles (int, default=4): Vehicle count on road. Range: 0–4.
+  Maps from vehicle_density: empty=0, light=2, moderate=3, heavy=4.
+- n_pedestrians (int, default=7): Pedestrian count on sidewalk. Range: 0–11.
+  Maps from pedestrian_density: empty=0, sparse=2, moderate=5, crowded=10.
+
+Public Space:
+- has_fountain (bool, default=True): Whether a decorative fountain appears.
+- has_sculpture (bool, default=True): Whether a bronze sculpture appears.
+
+Example gin configs:
+# Busy commercial downtown:
+_outdoor_assets.n_street_lamps = 10
+_outdoor_assets.has_bus_stop = True
+_outdoor_assets.n_bike_racks = 4
+_outdoor_assets.has_fire_hydrant = True
+_outdoor_assets.n_trees = 18
+_outdoor_assets.tree_season = "summer"
+_outdoor_assets.n_grass_tufts = 12
+_outdoor_assets.n_shrubs = 4
+_outdoor_assets.n_flower_plants = 10
+_outdoor_assets.has_fountain = True
+_outdoor_assets.has_sculpture = True
+_outdoor_assets.n_planters = 4
+_outdoor_assets.n_vehicles = 4
+_outdoor_assets.n_pedestrians = 9
+_outdoor_assets.n_benches = 4
+_outdoor_assets.n_trash_bins = 2
+_outdoor_assets.has_traffic_lights = True
+_outdoor_assets.has_traffic_signs = True
+
+# Empty industrial block at night:
+_outdoor_assets.n_street_lamps = 6
+_outdoor_assets.has_bus_stop = False
+_outdoor_assets.n_bike_racks = 0
+_outdoor_assets.has_fire_hydrant = True
+_outdoor_assets.n_trees = 2
+_outdoor_assets.n_grass_tufts = 0
+_outdoor_assets.n_shrubs = 0
+_outdoor_assets.n_flower_plants = 0
+_outdoor_assets.has_fountain = False
+_outdoor_assets.has_sculpture = False
+_outdoor_assets.n_planters = 0
+_outdoor_assets.n_vehicles = 2
+_outdoor_assets.n_pedestrians = 0
+_outdoor_assets.n_benches = 0
+_outdoor_assets.n_trash_bins = 1
+_outdoor_assets.has_traffic_lights = True
+_outdoor_assets.has_traffic_signs = False

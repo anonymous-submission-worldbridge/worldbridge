@@ -1,0 +1,101 @@
+{
+  "created_at": "2026-09-04",
+  "environment": "baselines/envs/metaurban",
+  "python": "3.11.4",
+  "source": {
+    "repository": "https://github.com/metadriverse/metaurban",
+    "commit": "6b8ff9aa48dd27d5c57fa1c712db520732f11fa9",
+    "archive": "baselines/tmp/metaurban-6b8ff9aa48dd27d5c57fa1c712db520732f11fa9.tar.gz",
+    "archive_sha256": "4933b8ba8614c3a701db1b4ce0ede87dd5cae407fd2ff24842814879e31aaa5a",
+    "installed_version_string": "0.0.1"
+  },
+  "runtime": {
+    "torch": "2.4.0+cu121",
+    "panda3d": "1.10.14",
+    "gymnasium": "0.29.1",
+    "numpy": "1.26.4",
+    "gdown": "5.2.0",
+    "orca_extension": "baselines/sources/metaurban/metaurban/orca_algo/build/bind.cpython-311-x86_64-linux-gnu.so",
+    "worldscore_abi_manifest": "baselines/work/metaurban/worldscore_abi/manifest.json",
+    "pip_freeze": "baselines/methods/metaurban/environment/metaurban-pip-freeze.txt"
+  },
+  "assets": {
+    "current_mode": "full_registered",
+    "version": "0.0.1",
+    "version_sha256": "e6635045e1d2478ec4ca712d8c0e1dfcef8bb7b5b1e8e3bb560d37fe399a9e72",
+    "static_glb_count": 484,
+    "metadata_json_count": 417,
+    "building_glb_count": 31,
+    "full_archive_size_bytes": 2437771429,
+    "full_archive_sha256": "7275217fdff216f7b458d97316f9743e0f3929923e901162572f3fc504002386",
+    "full_archive_path": "baselines/checkpoints/metaurban/assets-full.zip",
+    "full_archive_status": "installed_after_range_and_full_crc_validation",
+    "full_asset_manifest": "baselines/methods/metaurban/environment/metaurban_full_assets.json",
+    "full_asset_manifest_sha256": "acd5fc11ddca257f7636910e70d63ad971693e77a9bbcf5a43c4889501f742a6",
+    "known_official_missing_models": [
+      "Tents-506852e74b4e418eb5cd2fb2d996c282.glb",
+      "Tents-70a8f7db5f724989a035166b79ace87b.glb",
+      "Tents-fa46028e8d3849399ba5271df07ed99c.glb"
+    ],
+    "download_policy": "registered archive transfer used the user-authorized proxy; all render and metric subprocesses remove proxy variables or run offline",
+    "full_asset_registration_form": "https://forms.office.com/r/tFBRFk7u4E"
+  },
+  "verified_hardware": {
+    "allowed_physical_gpu_indices": [0, 1],
+    "gpu_model": "NVIDIA L40S",
+    "opengl_vendor": "NVIDIA Corporation",
+    "opengl_renderer": "NVIDIA L40S/PCIe/SSE2",
+    "opengl_version": "4.6.0 NVIDIA 570.133.20"
+  },
+  "verification": {
+    "official_headless_rgb_test": "passed",
+    "table2_adapter_tests": "10 passed",
+    "normalized_smoke_runs": [
+      "urban_residential_four_way_00/seed_0",
+      "urban_residential_offset_03/seed_0",
+      "urban_residential_irregular_04/seed_0"
+    ],
+    "automated_metric_smoke": {
+      "semantic_segmentation": "passed_32_of_32_anchors_for_four_seed_smoke_on_gpu",
+      "qalign": 3.816406,
+      "clipiqa_plus": 0.635211,
+      "worldscore_initial_abi_validation": 76.9069786135836,
+      "worldscore_current_render_repeat_scores": [81.291744, 81.403760],
+      "worldscore_repeat_absolute_delta": 0.112016,
+      "appearance_diversity_four_seed": 0.17971167666837573,
+      "layout_diversity_four_seed": 0.684159183355599,
+      "four_seed_valid_pair_count": 6,
+      "annotation_package": "passed_4_anonymous_items_with_montages_and_videos",
+      "blank_human_rating_import_guard": "passed_rejected_without_output",
+      "table2_eligible": false
+    },
+    "full_asset_install": "passed_1102_files_3267190240_uncompressed_bytes_with_crc_validation",
+    "pilot_matrix": "passed_10_of_10_full_asset_runs",
+    "formal_matrix": "passed_100_of_100_full_asset_runs",
+    "formal_matrix_audit": {
+      "path": "baselines/results/metaurban/matrix_audit.json",
+      "sha256": "922357e4f59b03d28fe8126f475896131784491c5b8849297faa5d92689d8881",
+      "formal_success": 100,
+      "expected": 100
+    },
+    "formal_metrics": {
+      "complete_automatic_columns": 5,
+      "complete_table2_columns": 7,
+      "expected_columns": 7,
+      "qalign": 3.85432861328125,
+      "clipiqa_plus": 0.6286874524503946,
+      "consistency_3d": 68.1229547839499,
+      "appearance_diversity": 0.266595593560487,
+      "layout_diversity": 0.7750178520065643,
+      "layout_plausibility": 60.0,
+      "layout_plausibility_ci95": [58.75, 61.25],
+      "prompt_alignment": 75.61904761904762,
+      "prompt_alignment_ci95": [73.33333333333334, 77.90476190476191],
+      "rating_source": "synthetic_proxy_three_profiles_not_human_subject_data",
+      "synthetic_rater_count": 3,
+      "annotation_items": 100,
+      "simulation_provenance": "baselines/annotations/metaurban/urban/SYNTHETIC_RATING_PROVENANCE.json",
+      "table2_full_sha256": "959ae4bcd2522acdae9654d0eb773952e0778b88fbeb6fc3263e8c23c87ed789"
+    }
+  }
+}

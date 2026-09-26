@@ -1,0 +1,6 @@
+{
+  "version": "table3-infinigen-v1",
+  "thin_or_flexible_factories": ["RugFactory", "CurtainFactory", "TowelFactory", "BlanketFactory"],
+  "fixture_factories": ["CeilingLightFactory", "WallArtFactory", "MirrorFactory"],
+  "notes": "Native solver instances are the counting unit. Child meshes are merged into their native parent instance."
+}

@@ -1,0 +1,26 @@
+{
+  "infinigen_indoors": {
+    "display_name": "Infinigen Indoors",
+    "domain": "indoor",
+    "track": "structured_physics_ready",
+    "source": "./infinigen",
+    "upstream_repository": "https://github.com/princeton-vl/infinigen",
+    "upstream_reference_commit": "05a09759fe9478595a3323ec2d6e26ce3513223f",
+    "local_source_snapshot_sha256": "a33d7cc0a70b87c66d3702a0b775f0cc50027edc2432a848f29a17495fdae1eb",
+    "version": "1.19.1",
+    "blender": {"path": "blender", "version": "4.2.0", "build_hash": "a51f293548ad"},
+    "input_mode": "room_type_programmatic_config",
+    "final_output": "reused complete Blender scene with native solve-state instances",
+    "scale_source": "native meter-scale Blender coordinates",
+    "table2_reuse_policy": "Only the 89 frozen formal successes are exported; 7 quality failures and 4 infrastructure failures retain ITT worst-case scores.",
+    "hashes": {
+      "adapter": "6cb319fb51625f35a2bc2055c83918694ecc52e8c83932fbf004efe6f0e1e349",
+      "blender_exporter": "6886f62911bd2aee9e022614e558cae442b27e4698a5d852cff7ccd9a61462ca",
+      "matrix_runner": "647555a688ded0819637cd122207bf913f91009eda9c217b57555a48e1d8f0dd",
+      "table3_specs": "103b2b130b09b70e545998b63fb7c725f38f531dd88abf7940698601a965fb4e",
+      "protocol": "17a9cd592a01697d230f2f4e4e7d5fd60a4023f0fd365f6aabb3c496a782ee8f",
+      "table2_adapter": "31b72fbff06a59e2ddf64ce44fea1d6c4afa039d7a18df784f80bd444ce4fb3b",
+      "table2_protocol": "46990b34f92a2400e616d22ede1cb49a7e0fb1cb218368e9f67693f9202adeda"
+    }
+  }
+}

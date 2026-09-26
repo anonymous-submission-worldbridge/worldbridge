@@ -1,0 +1,9 @@
+{
+  "date": "2026-09-24",
+  "scope": "garden_residential_microdistrict",
+  "classification": "Blender 4.5 bmesh compatibility correction",
+  "reason": "Gemini called bmesh.ops.create_torus, which Blender 4.5 does not expose.",
+  "change": "Implement the identical torus topology directly as a wrapped quad grid in BMesh and replace the two unavailable calls. Radii, segment counts, transforms, materials, placement, and scene design are unchanged.",
+  "preserves_method_identity": true,
+  "is_image_postprocess": false
+}

@@ -1,0 +1,65 @@
+{
+  "protocol_id": "worldbridge-table3-spatialgen-indoor-surface-v1",
+  "method": "spatialgen",
+  "domain": "indoor",
+  "track": "surface_only",
+  "planned_specs": 25,
+  "seeds": [0, 1, 2, 3],
+  "planned_runs": 100,
+  "source_specs": "baselines/protocol/generation/indoor_specs.jsonl",
+  "reuse": {
+    "table2_archive": "baselines/archives/table2_completed_20260907/spatialgen_indoor.tar.zst",
+    "table2_archive_sha256": "ae9665f614a5e5eca24f7d26a4279d503b31294a268f6ca5e44435488f4e9113",
+    "regenerate": false,
+    "pilot_cache": "baselines/work/spatialgen/pilot_generated/table2/indoor/spatialgen"
+  },
+  "runtime": {
+    "python": "python",
+    "torch": "2.3.1+cu121",
+    "rasterizer_source": "baselines/vendor/SpatialGen/src/recons/Sparse-RaDeGS/submodules/diff-gaussian-rasterization",
+    "rasterizer_isolated_site": "baselines/work/spatialgen/table3/rebuilt_site",
+    "rasterizer_build_cuda": "12.4",
+    "rasterizer_cuda_arch": "8.6",
+    "rasterizer_binary_sha256": "dc68eb5eb6d080c77c7b014bc5930ca0548435c356d94d9c38de4911306de0fa",
+    "recast_binding": "baselines/envs/hyworld2/lib/python3.11/site-packages/recast.cpython-311-x86_64-linux-gnu.so",
+    "recast_binding_sha256": "c4aab7bc62c0731dd3e6e976156a3d3dd0c077541c9a723f7e86bc29bea786c8"
+  },
+  "final_representation": {
+    "name": "Sparse-RaDeGS iteration-7000 Gaussian",
+    "source": "final method output",
+    "native_instances": false,
+    "structured_metrics": "N/A-I"
+  },
+  "surface_reconstruction": {
+    "algorithm": "alpha-thresholded median-coordinate Gaussian front-surface voxelization",
+    "coordinate_output": "median_coord (front surface at accumulated transmittance 0.5)",
+    "camera_source": "all 16 frozen native SpatialGen final-view cameras",
+    "render_width": 512,
+    "render_height": 512,
+    "gaussian_effective_opacity_prune_threshold": 0.1,
+    "alpha_threshold": 0.5,
+    "minimum_distinct_view_observations": 2,
+    "voxel_size_m": 0.05,
+    "roi_margin_m": 0.0,
+    "morphological_closing_iterations": 0,
+    "connect_components": false,
+    "keep_largest_only": false,
+    "scale_calibration": "rotation-matched similarity from final normalized cameras to frozen compiled meter cameras",
+    "maximum_rotation_match_error": 0.0001,
+    "maximum_camera_position_rmse_m": 0.0001
+  },
+  "navigation": {
+    "agent": "baselines/protocol/geometry/agent.yaml",
+    "empty_reference": "extent_m rectangle floor only",
+    "spawn": "entrance-door center inset 0.45 m toward ROI center; ROI center fallback",
+    "spawn_inset_m": 0.45,
+    "minimum_reference_area_fraction": 0.01,
+    "failure_policy": "ITT zero for all three navigation metrics"
+  },
+  "aggregation": {
+    "order": "mean_over_spec(mean_over_seed(scene_metric))",
+    "bootstrap_repeats": 10000,
+    "bootstrap_seed": 20260909,
+    "display_decimals": 1
+  }
+}

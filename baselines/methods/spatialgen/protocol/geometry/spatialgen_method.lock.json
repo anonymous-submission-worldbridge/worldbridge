@@ -1,0 +1,53 @@
+{
+  "lock_id": "worldbridge-table3-spatialgen-method-v1",
+  "status": "formal_complete",
+  "frozen_at_utc": "2026-09-09T17:47:00Z",
+  "method": {
+    "display_name": "SpatialGen",
+    "domain": "indoor",
+    "track": "surface_only",
+    "spatialgen_commit": "677c1168b359b00ae4a64a58783bc71048aabcdd",
+    "sparse_radegs_commit": "ee7b413d2089322dd140f644d597957aca257c09"
+  },
+  "final_output": {
+    "representation": "Sparse-RaDeGS iteration-7000 Gaussian",
+    "source_is_final_method_output": true,
+    "native_instances": false,
+    "structured_metrics": "N/A-I",
+    "scored_metrics": [
+      "navigable_area_ratio",
+      "connected_area_ratio",
+      "navmesh_success_rate"
+    ]
+  },
+  "table2_reuse": {
+    "policy": "read-only final-output reuse; no regeneration and no quality retry",
+    "source_root": "baselines/data/table2/indoor/spatialgen",
+    "archive": "baselines/archives/table2_completed_20260907/spatialgen_indoor.tar.zst",
+    "archive_bytes": 84470638998,
+    "archive_sha256": "ae9665f614a5e5eca24f7d26a4279d503b31294a268f6ca5e44435488f4e9113",
+    "reusable_runs": 100,
+    "planned_runs": 100,
+    "table2_formal_lock": "baselines/methods/spatialgen/protocol/generation/spatialgen_formal.lock.json",
+    "table2_formal_lock_sha256": "c196c4756b32205de63fe22f6068162cdcb9c678e94fe33dd96c9ee8cb79a697",
+    "table2_evaluation_lock": "baselines/methods/spatialgen/protocol/generation/spatialgen_evaluation.lock.json",
+    "table2_evaluation_lock_sha256": "7e6db7b0c8f8ed65be6940092abab379ed38ced223bcc7d05ed18cafd25ba246",
+    "pilot_source_root": "baselines/work/spatialgen/pilot_generated/table2/indoor/spatialgen",
+    "pilot_source_enters_formal_results": false
+  },
+  "runtime": {
+    "inference_python": "python",
+    "torch": "2.3.1+cu121",
+    "cuda_build_toolkit": "12.4",
+    "cuda_arch": "8.6",
+    "formal_gpu_ids": [1, 2, 3, 4],
+    "downloads_performed": false,
+    "rasterizer_build_used_only_existing_local_source": true
+  },
+  "coverage": {
+    "final_gaussian": "100/100",
+    "canonical_collision_geometry": "100/100",
+    "scale_calibration": "100/100",
+    "native_instance": "0/100"
+  }
+}

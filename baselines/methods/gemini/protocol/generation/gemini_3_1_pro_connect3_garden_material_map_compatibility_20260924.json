@@ -1,0 +1,9 @@
+{
+  "date": "2026-09-24",
+  "scope": "garden_residential_microdistrict visual-quality retry",
+  "classification": "generated-helper material-map compatibility correction",
+  "reason": "Gemini's building helper referenced three already-created global materials that were omitted from the per-building role maps.",
+  "change": "Resolve the missing roles to the exact existing Metal_Silver, Metal_Dark and Timber materials before construction. No new materials, geometry, placements or design content are introduced.",
+  "preserves_method_identity": true,
+  "is_image_postprocess": false
+}

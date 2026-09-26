@@ -1,0 +1,250 @@
+{
+  "file_count": 48,
+  "files": [
+    {
+      "path": "HY-Pano-2.0/__init__.py",
+      "sha256": "e5ad54367147f600fd13c4a323958f58d220b399615b247d28a65a36b572f68d",
+      "size": 546
+    },
+    {
+      "path": "HY-Pano-2.0/autoencoder_kl_3d.py",
+      "sha256": "661da07e99b5d188a2f119b7eb481ea54bdc35831afb66ca76a83fbce361c5f1",
+      "size": 44123
+    },
+    {
+      "path": "HY-Pano-2.0/cache_utils.py",
+      "sha256": "98bf555d9a596f79d91e50fc8aedcc54799ef18a582b44f98085d26a69ace251",
+      "size": 9457
+    },
+    {
+      "path": "HY-Pano-2.0/config.json",
+      "sha256": "1e4284cb78ac169ed0cab2fb73bdbfc6b2111d25bb2fa1d32ec5627368ab0679",
+      "size": 6170
+    },
+    {
+      "path": "HY-Pano-2.0/configuration_hunyuan_image_3.py",
+      "sha256": "1abbc86ed1bc478b109841869e2af3e8777af771c009ac147d7fb99547ab9c28",
+      "size": 14337
+    },
+    {
+      "path": "HY-Pano-2.0/generation_config.json",
+      "sha256": "292b17ee174fec3fec6e664036b89aefed28729712a424a7c565b299b0a200b9",
+      "size": 499
+    },
+    {
+      "path": "HY-Pano-2.0/hunyuan_image_3_pipeline.py",
+      "sha256": "c15de3e4bddf1e00b2eb57f75394d1a394bf224dd9bb4d407b1dbb75fc0c3601",
+      "size": 39522
+    },
+    {
+      "path": "HY-Pano-2.0/image_processor.py",
+      "sha256": "dafb68945f21e98ad9b61d298c32edc9d8267a3338ef27e48f449037ebc60222",
+      "size": 21112
+    },
+    {
+      "path": "HY-Pano-2.0/model-00001-of-00032.safetensors",
+      "sha256": "e9116bb7190352897387ae062c2ffecc6f5a27a59475de7ffd8ce149516cba4c",
+      "size": 5363066616
+    },
+    {
+      "path": "HY-Pano-2.0/model-00002-of-00032.safetensors",
+      "sha256": "3728fd762a531fddea23535fbb384f479dcfe44702ca768c4b8240bae52de891",
+      "size": 5319461528
+    },
+    {
+      "path": "HY-Pano-2.0/model-00003-of-00032.safetensors",
+      "sha256": "2eb6169c73a037f9216f01aa55d13503a7ec4876ba36c9cb366dd4ffb61880ba",
+      "size": 5345676040
+    },
+    {
+      "path": "HY-Pano-2.0/model-00004-of-00032.safetensors",
+      "sha256": "b77e28e8a654e14a257184a3d8fe5dcf8de935a12c500d5bb84d3c8c7a8fd43a",
+      "size": 5353033424
+    },
+    {
+      "path": "HY-Pano-2.0/model-00005-of-00032.safetensors",
+      "sha256": "bb636b0e26bcf5b8b60819ac268b705a8e743bdccd1bf57f54def363eb34e4cf",
+      "size": 5344627360
+    },
+    {
+      "path": "HY-Pano-2.0/model-00006-of-00032.safetensors",
+      "sha256": "20101319b39f57a4dbc423c8dc4a8fa6b7dcd0aededaebbc026c91db38b4e08e",
+      "size": 5344627360
+    },
+    {
+      "path": "HY-Pano-2.0/model-00007-of-00032.safetensors",
+      "sha256": "c5dcc69643113ea54951784a7c9cec1724ceaf46fff249874eb81e0fab5083ee",
+      "size": 5319461536
+    },
+    {
+      "path": "HY-Pano-2.0/model-00008-of-00032.safetensors",
+      "sha256": "430d0372998b4c03232aeac0153b643186ec9c2d48d413d7b22a12e9639e07c8",
+      "size": 5344627368
+    },
+    {
+      "path": "HY-Pano-2.0/model-00009-of-00032.safetensors",
+      "sha256": "53e6eaed1d5e0e6e0cb1a0acfb1beb11c6f47cc539dd9cc05320c974df645fa0",
+      "size": 5319469832
+    },
+    {
+      "path": "HY-Pano-2.0/model-00010-of-00032.safetensors",
+      "sha256": "acfaea288ce5d3e95d2bb3342c0c739232a4a4ed6f35965b0780c7c8b44cfc5f",
+      "size": 5344619128
+    },
+    {
+      "path": "HY-Pano-2.0/model-00011-of-00032.safetensors",
+      "sha256": "d71d6a578972cf529af39b5355ad2f999d3dc4231a1adbd309a94dbbdaff8337",
+      "size": 5319461680
+    },
+    {
+      "path": "HY-Pano-2.0/model-00012-of-00032.safetensors",
+      "sha256": "11860a5833352f3c0226dddbfd6bf9706f042ba08aa134ecc4d2a6e611b26e55",
+      "size": 5344627512
+    },
+    {
+      "path": "HY-Pano-2.0/model-00013-of-00032.safetensors",
+      "sha256": "8c0fd9a29487f80d257b4a9b70c753a860e8d8a63b7f1d5539ce0ce6d2924f46",
+      "size": 5319461680
+    },
+    {
+      "path": "HY-Pano-2.0/model-00014-of-00032.safetensors",
+      "sha256": "5812aa786a2c358ce5b02052ae76e6fca7e8b1c1702ac40ac775a48773f50b39",
+      "size": 5344627512
+    },
+    {
+      "path": "HY-Pano-2.0/model-00015-of-00032.safetensors",
+      "sha256": "343a547070546b4cbb4853c7f447eb8082e0ab1345c4ce3ea180410be2e38ff4",
+      "size": 5319461680
+    },
+    {
+      "path": "HY-Pano-2.0/model-00016-of-00032.safetensors",
+      "sha256": "663c332628c337ec9f2897f18297e45e8a9e2ffa8c8fa0793f8372f86df93c13",
+      "size": 5344627512
+    },
+    {
+      "path": "HY-Pano-2.0/model-00017-of-00032.safetensors",
+      "sha256": "414a5546eca60beb59455a1e0b08d630583aa5770a86cf379f92540351c16c47",
+      "size": 5319461672
+    },
+    {
+      "path": "HY-Pano-2.0/model-00018-of-00032.safetensors",
+      "sha256": "5aa6f46d5574f767bab9e5f78e691e83b13c6e40c026b6160f161a77f24af3f4",
+      "size": 5354082144
+    },
+    {
+      "path": "HY-Pano-2.0/model-00019-of-00032.safetensors",
+      "sha256": "4c32c5d9058acd0b7f34d67842574fe482bb4f7130bb15fc9ec4d569a83decf3",
+      "size": 5319461672
+    },
+    {
+      "path": "HY-Pano-2.0/model-00020-of-00032.safetensors",
+      "sha256": "441bf504a3b26fda8b4a29a961d6b8e0260591318394a11de9868225ddb1623f",
+      "size": 5319461672
+    },
+    {
+      "path": "HY-Pano-2.0/model-00021-of-00032.safetensors",
+      "sha256": "8c5d50ae584de89816cdb14b1f3f199018e8c0c07644608945b4dadcd2b2d3cc",
+      "size": 5344627512
+    },
+    {
+      "path": "HY-Pano-2.0/model-00022-of-00032.safetensors",
+      "sha256": "c237124cf15da17fc18fe878e6d27ef0e7af31670512f1b159e375a3386879d7",
+      "size": 5344627512
+    },
+    {
+      "path": "HY-Pano-2.0/model-00023-of-00032.safetensors",
+      "sha256": "69c299ca67f3c4a3256f67afcdeb1223c7be9fe55a9e699ea747fe8efd2feee9",
+      "size": 5319461680
+    },
+    {
+      "path": "HY-Pano-2.0/model-00024-of-00032.safetensors",
+      "sha256": "dcdc2015bc2e29699748687c35e8f94aef543470486adcb7f31f5b4bcb48fcc5",
+      "size": 5344627512
+    },
+    {
+      "path": "HY-Pano-2.0/model-00025-of-00032.safetensors",
+      "sha256": "f50e562d42c173b85432a7d569d304a8fbdc532b5ff319b700847d3e6b1884c8",
+      "size": 5319461680
+    },
+    {
+      "path": "HY-Pano-2.0/model-00026-of-00032.safetensors",
+      "sha256": "97066805d1448a402e4eaf642c08a0a2470b12be0b3aa849e54ce69dabfcfe79",
+      "size": 5344627512
+    },
+    {
+      "path": "HY-Pano-2.0/model-00027-of-00032.safetensors",
+      "sha256": "3d535282e41169699507152dce06c3440846181f10576a70ed6f74f7067630f4",
+      "size": 5319461680
+    },
+    {
+      "path": "HY-Pano-2.0/model-00028-of-00032.safetensors",
+      "sha256": "e3f129722efa26a8eb2c1f58334d70c0e28d884828d62d2a933132e341b68c54",
+      "size": 5344627512
+    },
+    {
+      "path": "HY-Pano-2.0/model-00029-of-00032.safetensors",
+      "sha256": "1a6be5cf47f91b4c983fc2294d930a801db713e774c05954b5b166877cc4e13a",
+      "size": 5319461680
+    },
+    {
+      "path": "HY-Pano-2.0/model-00030-of-00032.safetensors",
+      "sha256": "69218ab8d3efe2c4c1aac834fc76df553cb8183d2c414ec0a81486dc996770ee",
+      "size": 5314687676
+    },
+    {
+      "path": "HY-Pano-2.0/model-00031-of-00032.safetensors",
+      "sha256": "4a1cec7a1420c77197f321be9cc3920bd5ac97319f24c8cb76134f5aac6df790",
+      "size": 5335082312
+    },
+    {
+      "path": "HY-Pano-2.0/model-00032-of-00032.safetensors",
+      "sha256": "cac6b1ff897c0c273328d39509f910a47d12652310a802c43558a08e9d9ee467",
+      "size": 3203019864
+    },
+    {
+      "path": "HY-Pano-2.0/model.safetensors.index.json",
+      "sha256": "c1dce35454b17df455650da72810d62b544969e784f81508007159156b83506b",
+      "size": 478077
+    },
+    {
+      "path": "HY-Pano-2.0/modeling_hunyuan_image_3.py",
+      "sha256": "0dd3ec2592ab7458534a6b22eb0c16864aaee9c1869e4a1422ab5e308e02a71b",
+      "size": 154597
+    },
+    {
+      "path": "HY-Pano-2.0/pytorch_lora_weights.safetensors",
+      "sha256": "64db8d1b9369aa9080fc9cea20c594e2b34935cb67217394c1da78399d1682ae",
+      "size": 849544392
+    },
+    {
+      "path": "HY-Pano-2.0/siglip2.py",
+      "sha256": "e8956a331d45ab31bb169489548c983178dd0914b94b9bfe89d9553421b8d6f4",
+      "size": 23972
+    },
+    {
+      "path": "HY-Pano-2.0/system_prompt.py",
+      "sha256": "280f145b0b9ac3c1370b2a51a12ab066c190fc9d65dd3d27aeb9b7859d5a29d8",
+      "size": 16113
+    },
+    {
+      "path": "HY-Pano-2.0/tokenization_hunyuan_image_3.py",
+      "sha256": "ab961d6519d44ab49a4806badf617069313b4caeb38bc4780d569da580b5561e",
+      "size": 79292
+    },
+    {
+      "path": "HY-Pano-2.0/tokenizer.json",
+      "sha256": "ad87837258cc0d1e0d2d0d191c9867c17a8b48fc16ff49d3961a28e93c066879",
+      "size": 25028987
+    },
+    {
+      "path": "HY-Pano-2.0/tokenizer_config.json",
+      "sha256": "86d2370b7cd57889da2c4fef002a5a105fd51a312baf21ccdc6a8b4216cc85cc",
+      "size": 223
+    }
+  ],
+  "prefix": "HY-Pano-2.0/",
+  "repo": "Tencent-Hunyuan/HY-World-2.0",
+  "revision": "master",
+  "total_bytes": 169432640479,
+  "transport": "ModelScope official mirror"
+}

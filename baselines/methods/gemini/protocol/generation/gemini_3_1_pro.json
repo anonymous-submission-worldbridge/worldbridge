@@ -1,0 +1,92 @@
+{
+  "protocol_id": "table2-gemini-3.1-pro-v1",
+  "status": "formal_in_progress",
+  "method": "gemini_3_1_pro",
+  "display_name": "Gemini 3.1 Pro",
+  "model": "gemini-3.1-pro-high",
+  "method_definition": "Gemini 3.1 Pro through Google Antigravity CLI account authentication generates Blender Python scene code; fixed Blender construction and rendering; procedural geometry and materials, no external scene assets",
+  "transport": "antigravity_cli_google_ai_pro_account",
+  "auth_mode": "account_subscription_no_api_key",
+  "antigravity_version": "1.2.5",
+  "client_helper": "./baselines/methods/gemini/tools/ask_gemini_3_1_pro.sh",
+  "client_helper_sha256": "fc6c661f4f2e8d38058e598bd845435830d2f5196eb43504309d7cd4419ee4eb",
+  "legacy_client_helper": {
+    "path": "/home/anonymous/.codex/skills/gemini-3-1-pro/scripts/ask_gemini.sh",
+    "sha256": "415d6a4dd86aa951199915a257048cbf485cd63a9501a16f9aa0f7215da63519"
+  },
+  "antigravity_binary": "./baselines/tools/antigravity_cli_1_2_5_frozen/agy",
+  "antigravity_binary_sha256": "84808e105f643f135d9b347b36005d5bbe6cfe09c5ffc61e3311700adb5a3286",
+  "client_recovery_amendment": "methods/gemini/protocol/generation/gemini_3_1_pro_client_recovery_amendment_20260918.json",
+  "legacy_run_identity": {
+    "protocol_sha256": "d74961ff53c7a7f1c995c5883d5361da656648a8d3a141b92e6fcc65a5ab42a8",
+    "adapter_sha256": "af566c0ed84ab0ab275d4edbf5a67132bb87dc704800f4c39f602b4c5d096d80",
+    "client_helper_sha256": "415d6a4dd86aa951199915a257048cbf485cd63a9501a16f9aa0f7215da63519"
+  },
+  "generation_timeout_s": 1000,
+  "generation_concurrency_max": 2,
+  "build_timeout_s": 21600,
+  "build_workers": 8,
+  "domains": ["indoor", "urban"],
+  "spec_files": {
+    "indoor": "protocol/generation/indoor_specs.jsonl",
+    "urban": "protocol/generation/urban_specs.jsonl"
+  },
+  "seeds_file": "protocol/generation/seeds.json",
+  "pilot_specs_per_domain": 5,
+  "pilot_seeds": [0, 1],
+  "formal_specs_per_domain": 25,
+  "formal_seeds": [0, 1, 2, 3],
+  "api_seed_supported": false,
+  "api_seed_note": "Logical seeds index independent Antigravity CLI requests; no deterministic remote model seed or returned model snapshot is exposed. Preserved generated code makes local reconstruction deterministic.",
+  "reasoning_effort": "high",
+  "client_mode": "plan",
+  "max_retries_infrastructure": 2,
+  "retry_quality_failures": false,
+  "gpu_policy": "remaining_memory_sharing",
+  "min_render_free_mib": 8192,
+  "generation_weights": "remote_subscription_model_no_local_weights",
+  "pilot_data_root": "data/gemini_3_1_pro_pilot",
+  "formal_data_root": "data/table2",
+  "results_root": "results/gemini_3_1_pro",
+  "metrics_lock": "protocol/generation/metrics.lock.json",
+  "subjective_metrics": "synthetic_proxy_three_profiles_after_actual_montage_review",
+  "blender_executable": "blender",
+  "metrics_python": "envs/worldscore/bin/python",
+  "camera": {
+    "anchors": 8,
+    "anchor_resolution": [1280, 720],
+    "sequence_frames": 50,
+    "sequence_resolution": [512, 512],
+    "horizontal_fov_degrees": 70,
+    "indoor_height_m": 1.55,
+    "urban_height_m": 1.65
+  },
+  "render_timeout_s": 1800,
+  "build_threads": 8,
+  "render_threads": 8,
+  "iqa_batch_size": 1,
+  "storage": {
+    "minimum_free_bytes": 53687091200,
+    "compress_completed_logs": true,
+    "compression": "gzip_level_1"
+  },
+  "fairness_reference": {
+    "shared_prompt": "methods/gpt/protocol/generation/gpt6_astra_prompt.txt",
+    "shared_output_schema": "methods/gpt/protocol/generation/gpt6_astra_output.schema.json",
+    "shared_renderer": "methods/gpt/tools/blender_render_gpt.py",
+    "shared_metrics": [
+      "evaluation/visual/eval_iqa.py",
+      "evaluation/visual/generate_semantics.py",
+      "evaluation/visual/eval_worldscore_gpt_high_frozen.py",
+      "evaluation/visual/eval_diversity.py"
+    ]
+  },
+  "notes": [
+    "The client helper pins gemini-3.1-pro-high, high effort and plan mode.",
+    "The helper removes GEMINI_API_KEY, GOOGLE_API_KEY and GOOGLE_GEMINI_BASE_URL and refuses Gemini API-key provider mode.",
+    "The official 1.2.5 binary is held in a read-only baselines directory because the home-directory installation self-updated despite the disable-update environment guard.",
+    "Pre-migration terminal runs retain their original frozen identity and are accepted only through the recorded client recovery amendment.",
+    "No fallback model or API-billed provider is permitted.",
+    "All method outputs are isolated under gemini_3_1_pro paths."
+  ]
+}

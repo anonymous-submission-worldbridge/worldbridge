@@ -1,0 +1,18 @@
+{
+  "created_at_utc": "2026-09-09T15:34:59.303970+00:00",
+  "files": {
+    "baselines/methods/worldgen/protocol/geometry/geometry_worldgen.yaml": "0a36c0219813f11e1d3d0d0eacc887c03afa5fbc4cdb13b170bb12cd4476191f",
+    "baselines/methods/worldgen/protocol/geometry/geometry_worldgen_method.lock.json": "de92e0e131d451e1afc8ceeac31305f741c06ab44b1df27042d6574d05fa6685",
+    "baselines/evaluation/geometry/metrics/build_navmesh.py": "10578c6f18f0f9187b1813d08217740e093f8449d09ea39504694393f3db0fa6",
+    "baselines/methods/worldgen/geometry/runtime/recast_glibc231_clean2/recast.cpython-311-x86_64-linux-gnu.so": "5bf75563711bf63ab248e92a32d909f3a2a7ac3effb5d17d1e65528080a564d7",
+    "baselines/methods/worldgen/geometry/worldgen_geometry.py": "3d5e6200e43176ea6104cba2b7a890af6982c0115a4c192bb8e9992009208909"
+  },
+  "protocol_id": "worldbridge-table3-worldgen-surface-v1",
+  "recast_build": {
+    "compiler": "/usr/bin/g++ 9.4.0",
+    "components_connected": false,
+    "glibc_compatibility": "2.31",
+    "largest_component_only": false
+  },
+  "recast_source": "baselines/sources/HY-World-2.0/hyworld2/worldgen/third_party/{navmesh,recastnavigation}"
+}

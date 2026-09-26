@@ -1,0 +1,17 @@
+{
+  "excluded_categories": [
+    "Vegetation"
+  ],
+  "expected_contacts": [
+    "placed_object:native_pedestrian_surface"
+  ],
+  "overlap_volume_m3": 1e-05,
+  "penetration_depth_m": 0.01,
+  "root_embedding_categories": [
+    "Tree",
+    "Vegetation",
+    "Bonsai"
+  ],
+  "root_maximum_embedding_m": 0.3,
+  "smaller_object_volume_fraction": 0.005
+}

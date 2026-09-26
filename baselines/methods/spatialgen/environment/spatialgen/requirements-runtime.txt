@@ -1,0 +1,43 @@
+# SpatialGen runtime requirements copied from the upstream requirements.txt at
+# commit 677c1168b359b00ae4a64a58783bc71048aabcdd.
+#
+# torch, torchvision, xformers and pytorch3d are installed separately from
+# their CUDA 12.1 wheels.  Keeping them out of this file prevents pip from
+# silently replacing the verified GPU stack.
+plyfile
+ipython
+numpy==1.26.4
+matplotlib
+Pillow
+imageio
+imageio-ffmpeg
+rembg[gpu]
+lpips
+einops
+safetensors
+sentencepiece
+accelerate==1.2.1
+transformers==4.47.1
+diffusers==0.32
+kiui
+omegaconf
+pyarrow
+redis
+loguru
+pandas
+image-reward
+git+https://github.com/openai/CLIP.git
+deepspeed==0.15.4
+icecream
+trimesh
+open3d
+shapely
+jaxtyping==0.2.23
+tensorboard==2.12.0
+wandb
+torchmetrics
+mapbox-earcut
+recordclass
+diptest==0.6.1
+iopath
+peft==0.14.0

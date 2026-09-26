@@ -1,0 +1,87 @@
+{
+  "protocol_version": "worldbridge-table4-v1",
+  "status": "pilot_ready",
+  "method": "worldgen",
+  "display_name": "WorldGen (ZiYang-xie)",
+  "track": "matched_text_independent",
+  "spec_file": "baselines/protocol/unified/specs.jsonl",
+  "functions": ["residence", "food_service", "retail", "office", "civic_community"],
+  "visual_themes": ["contemporary", "brick_industrial", "timber_traditional", "tropical", "futuristic_stylized"],
+  "pilot": {"spec_indices": [0, 5, 10, 15, 20], "seeds": [0, 1], "planned_pairs": 10},
+  "formal": {"spec_indices": "all", "seeds": [0, 1, 2, 3], "planned_pairs": 100},
+  "generation": {
+    "mode": "text_to_scene",
+    "resolution": [1600, 800],
+    "inference_steps": 50,
+    "guidance_scale": 7.0,
+    "blend_extend": 6,
+    "low_vram": false,
+    "use_sharp": false,
+    "inpaint_bg": false,
+    "outputs": ["gaussian_splat", "official_triangle_mesh"],
+    "offline_only": true
+  },
+  "render": {
+    "renderer": "gsplat-1.5.3",
+    "sequence_frames_per_side": 50,
+    "anchors_per_side": 8,
+    "aqs_anchor_indices_per_side": {
+      "exterior": [4, 5, 6, 7],
+      "interior": [0, 2, 5, 7]
+    },
+    "anchor_calibration": "baselines/results/table4/worldgen/table2_anchor_calibration.json",
+    "sequence_resolution": [512, 512],
+    "anchor_resolution": [1280, 720],
+    "horizontal_fov_degrees": 70.0,
+    "success_contract": "both sides have splat+official mesh and all four preregistered AQS anchors pass mean/std validation",
+    "table2_sequence_validation": "retained as a diagnostic but not used as the Table 4 pair-success criterion"
+  },
+  "aqs": {
+    "label": "AQS-VLM",
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "model_source": "local_modelscope_snapshot",
+    "passes": 3,
+    "seeds": [102, 203, 304],
+    "temperature": 0.2,
+    "top_p": 0.9,
+    "score_range": [1, 10],
+    "dimensions": ["functional", "visual"],
+    "failure_value": 1,
+    "evidence": "four deterministic exterior anchors plus four deterministic interior anchors"
+  },
+  "aggregation": {
+    "order": "mean_over_spec(mean_over_seed(mean_over_vlm_pass))",
+    "bootstrap_repeats": 10000,
+    "bootstrap_seed": 20260909,
+    "confidence": 0.95
+  },
+  "capability": {
+    "native_shared_world_frame": false,
+    "native_building_to_interior_identity": false,
+    "native_shared_portal": false,
+    "functional_aqs": "numeric",
+    "visual_aqs": "numeric",
+    "spatial_aqs": "N/A-U",
+    "shape_iou": "N/A-U",
+    "entrance_alignment": "N/A-U",
+    "entrance_passability": "N/A-U",
+    "transition_collision": "N/A-U",
+    "io_connectivity_rate": "N/A-U",
+    "cross_boundary_reachability": "N/A-U"
+  },
+  "resources": {
+    "allowed_physical_gpus": [0, 1, 2, 3, 4, 5],
+    "minimum_free_memory_mib": 40000,
+    "maximum_start_utilization_percent": 10,
+    "cuda_arch_list": "8.6",
+    "large_downloads_required": false
+  },
+  "paths": {
+    "formal_data": "baselines/data/table4/worldgen",
+    "pilot_data": "baselines/work/table4_worldgen/pilot/data/table4/worldgen",
+    "formal_annotations": "baselines/annotations/table4/worldgen",
+    "pilot_annotations": "baselines/work/table4_worldgen/pilot/annotations/worldgen",
+    "formal_results": "baselines/results/table4/worldgen",
+    "pilot_results": "baselines/work/table4_worldgen/pilot/results/worldgen"
+  }
+}

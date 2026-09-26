@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "worldbridge"
+version = "0.1.0"
+description = "Code-driven scene generation and independent baseline evaluation"
+requires-python = ">=3.11"
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+include = ["worldbridge*", "baselines*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "baselines"]
+addopts = "-p no:cacheprovider --import-mode=importlib"
+
+[tool.black]
+line-length = 88

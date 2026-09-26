@@ -1,0 +1,25 @@
+{
+  "method": "gemini_3_1_pro",
+  "date_utc": "2026-09-18",
+  "stage": "formal_after_97_terminal_slots",
+  "trigger": "The account client self-updated in place from Antigravity CLI 1.2.5 to 1.2.6, causing the frozen binary hash gate to pause before the next request.",
+  "old_client": {
+    "version": "1.2.5",
+    "sha256": "84808e105f643f135d9b347b36005d5bbe6cfe09c5ffc61e3311700adb5a3286",
+    "path": "/home/anonymous/.local/bin/agy"
+  },
+  "recovery_client": {
+    "version": "1.2.6",
+    "sha256": "312eb057d8b8155383e74242e948333c6556adc779e9398b121a863390691fe9",
+    "path": "runtime/gemini_3_1_pro_client_1_2_6/agy",
+    "storage": "local frozen copy of the already-installed binary; no download"
+  },
+  "unchanged": [
+    "Original account-auth helper SHA-256 415d6a4dd86aa951199915a257048cbf485cd63a9501a16f9aa0f7215da63519",
+    "gemini-3.1-pro-high model selection, high effort and plan mode",
+    "GEMINI_API_KEY and GOOGLE_API_KEY removal and API-provider refusal",
+    "prompts, specs, logical seeds, generated-code policy, renderer, cameras, validators, ITT policy and metrics",
+    "quality failures are not retried and completed slots are not regenerated"
+  ],
+  "classification": "client infrastructure recovery; not a model-quality retry"
+}

@@ -1,0 +1,24 @@
+{
+  "bounds": [
+    [
+      -0.8338887095451355,
+      1.30385160446167e-08,
+      0.0
+    ],
+    [
+      0.8338887095451355,
+      1.5444653034210205,
+      1.6024320125579834
+    ]
+  ],
+  "dimensions": [
+    1.667777419090271,
+    1.5444653034210205,
+    1.6024320125579834
+  ],
+  "mesh_instances": 353,
+  "evaluated_vertices": 44256,
+  "key": "flowerbed",
+  "collection": "ASSET_flowerbed",
+  "source": "./infinigen/outputs/outdoor_part_demo/urban_v3_all43_25/urban_v3_all43_25.blend"
+}

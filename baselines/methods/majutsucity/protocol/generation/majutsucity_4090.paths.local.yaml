@@ -1,0 +1,46 @@
+version: 1
+
+paths:
+  interpreters:
+    controller: ./baselines/envs/majutsucity/bin/python
+    layout: ./baselines/envs/majutsucity/bin/python
+    render: ./baselines/envs/majutsucity/bin/python
+    qwen: ./baselines/envs/majutsucity/bin/python
+    hunyuan: ./baselines/envs/majutsucity/bin/python
+    blender: ./baselines/envs/majutsucity/bin/python
+
+  models:
+    longclip: ./baselines/checkpoints/MajutsuCity/LongCLIP-L/longclip-L.pt
+    qwen_image_edit: ./baselines/checkpoints/MajutsuCity/Qwen-Image-Edit-2509
+    qwen_image: ./baselines/checkpoints/MajutsuCity/Qwen-Image
+    texture_lora: ./baselines/checkpoints/MajutsuCity/MajutsuCity/texture/Texture_Lora.safetensors
+    skybox_lora: ./baselines/checkpoints/MajutsuCity/MajutsuCity/texture/SkyBox_Lora.safetensors
+    rmbg: ./baselines/checkpoints/MajutsuCity/RMBG-2.0-modelscope
+    hunyuan3d_omni: ./baselines/checkpoints/MajutsuCity/Hunyuan3D-Omni
+    hunyuan3d: ./baselines/checkpoints/MajutsuCity/Hunyuan3D-2.1
+    dinov2_omni: ./baselines/checkpoints/MajutsuCity/dinov2-large
+    dinov2: ./baselines/checkpoints/MajutsuCity/dinov2-giant
+
+  external:
+    hunyuan3d_omni_repo: ./baselines/work/majutsucity_l40s/source/external/Hunyuan3D-Omni
+    hunyuan3d_repo: ./baselines/work/majutsucity_l40s/source/external/Hunyuan3D-2.1
+
+layout_generation:
+  layout_model_config: layout_gen/models/cldm_v21.yaml
+  height_model_config: layout_gen/models/cldm_v21_height.yaml
+  layout_checkpoint: ./baselines/checkpoints/MajutsuCity/MajutsuCity/layout/layout_generation.ckpt
+  height_checkpoint: ./baselines/checkpoints/MajutsuCity/MajutsuCity/layout/height_generation.ckpt
+  layout_prompt: A semantic city layout with connected roads, varied building blocks, vegetation patches, and open public space.
+  height_prompt: A standard height map generated from the input semantic layout map.
+
+runtime:
+  layout_initial_min_free_mib: 16000
+  qwen_placement: group_cpu_offload
+  qwen_initial_min_free_mib: 0
+  qwen_initial_poll_seconds: 10
+  hunyuan_initial_min_free_mib: 18000
+  hunyuan_initial_poll_seconds: 10
+  qwen_gpu_groups: "1;2;3;4"
+  qwen_environment_gpu_groups: "1;2;3;4"
+  hunyuan_gpus: "1,2"
+  hunyuan_environment_gpus: "1,2"

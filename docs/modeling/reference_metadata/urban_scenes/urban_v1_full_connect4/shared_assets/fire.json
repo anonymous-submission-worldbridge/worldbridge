@@ -1,0 +1,43 @@
+{
+  "bounds": [
+    [
+      -26.613502502441406,
+      -2.09999942779541,
+      0.03876996040344238
+    ],
+    [
+      26.801496505737305,
+      25.329998016357422,
+      12.621767044067383
+    ]
+  ],
+  "dimensions": [
+    53.415000915527344,
+    27.429996490478516,
+    12.58299732208252
+  ],
+  "mesh_instances": 3119,
+  "evaluated_vertices": 614754,
+  "key": "fire",
+  "collection": "ASSET_fire",
+  "source": "./infinigen/outputs/outdoor_full_demo/urban_v1_full_connect3/shared_assets/fire.blend",
+  "enterable": true,
+  "door": [
+    0,
+    0
+  ],
+  "floor_z": 0.63,
+  "inside_y": 5.0,
+  "room_center": [
+    -0.006000004708766937,
+    13.899999618530273
+  ],
+  "preparation": [
+    {
+      "entrance": "existing raised apparatus bay 3, full-depth equipment hall"
+    },
+    {
+      "apparatus": "existing full-detail modern ladder engine in adjacent equipment bay"
+    }
+  ]
+}

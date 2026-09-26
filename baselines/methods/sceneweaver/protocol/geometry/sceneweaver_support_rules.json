@@ -1,0 +1,14 @@
+{
+  "version": "table3-sceneweaver-v1",
+  "support_gap_m": 0.02,
+  "embedding_tolerance_m": 0.01,
+  "minimum_support_projection_fraction": 0.05,
+  "native_relation_map": {
+    "onfloor": "gravity_floor",
+    "ontop": "gravity_parent",
+    "on": "gravity_parent",
+    "against_wall": "wall_attachment",
+    "onceiling": "ceiling_attachment"
+  },
+  "fallback": "infer nearest legal floor or parent only when no native support relation exists"
+}

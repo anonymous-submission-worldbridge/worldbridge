@@ -1,0 +1,82 @@
+{
+  "protocol_id": "table2-gpt6-astra-v1",
+  "status": "formal_frozen",
+  "method": "gpt6_astra",
+  "display_name": "GPT-6 Astra",
+  "official_documentation": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+  "model": "gpt-6-astra",
+  "base_url": "https://api.openai.com/v1",
+  "api_key_env": "OPENAI_API_KEY",
+  "api_key_file_env": "GPT6_ASTRA_API_KEY_FILE",
+  "method_definition": "GPT-6 Astra via Codex CLI generates Blender Python scene code; fixed Blender construction and rendering; procedural geometry and materials, no external scene assets",
+  "transport": "codex_exec_saved_chatgpt_login",
+  "codex_version": "0.153.4",
+  "generation_timeout_s": 900,
+  "build_timeout_s": 21600,
+  "build_workers": 16,
+  "proposed_method_definition": "GPT-6 Astra generates Blender scene code; a fixed renderer produces Table-2 views",
+  "domains": [
+    "indoor",
+    "urban"
+  ],
+  "spec_files": {
+    "indoor": "protocol/generation/indoor_specs.jsonl",
+    "urban": "protocol/generation/urban_specs.jsonl"
+  },
+  "seeds_file": "protocol/generation/seeds.json",
+  "pilot_specs_per_domain": 5,
+  "pilot_seeds": [
+    0,
+    1
+  ],
+  "formal_specs_per_domain": 25,
+  "formal_seeds": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "api_seed_supported": false,
+  "api_seed_note": "Logical seeds index fresh independent Codex CLI sessions; no deterministic model seed is supported. Preserve the returned code for deterministic local reconstruction. CLI JSONL does not return a model snapshot identifier.",
+  "reasoning_effort": "high",
+  "max_output_tokens": null,
+  "max_retries_infrastructure": 2,
+  "gpu_policy": "remaining_memory_sharing_user_confirmed_20260908",
+  "min_render_free_mib": 8192,
+  "retry_quality_failures": false,
+  "generation_weights": "remote_codex_model_no_local_weights",
+  "pilot_data_root": "data/gpt6_astra_pilot",
+  "formal_data_root": "data/table2",
+  "results_root": "results/gpt6_astra",
+  "metrics_lock": "protocol/generation/metrics.lock.json",
+  "human_metrics": "three_real_blinded_raters_per_scene",
+  "blender_executable": "blender",
+  "metrics_python": "envs/worldscore/bin/python",
+  "camera": {
+    "anchors": 8,
+    "anchor_resolution": [
+      1280,
+      720
+    ],
+    "sequence_frames": 50,
+    "sequence_resolution": [
+      512,
+      512
+    ],
+    "horizontal_fov_degrees": 70,
+    "indoor_height_m": 1.55,
+    "urban_height_m": 1.65
+  },
+  "notes": [
+    "Original pilot generation used codex-cli 0.153.2. The user restored the execution environment with 0.153.4 on 2026-09-08; validate the same gpt-6-astra transport before formal freezing. Preserve prior pilot manifests and generated code; do not regenerate quality failures.",
+    "Scene construction definition confirmed by user; Codex CLI connectivity passed. Freeze renderer and validator after pilot. CLI does not expose the former API max_output_tokens setting; timeout and reasoning effort are recorded instead.",
+    "Reuse existing metric environments and caches without modifying other methods or shared frozen lock files.",
+    "Unstarted runs are missing data, not observed failures; never synthesize ITT scores for them.",
+    "Do not substitute another model, another method's scenes or simulated human ratings.",
+    "IQA production uses batch 1 only: repeat delta 0 on the fixed 10-image pilot. CLIP-IQA+ batch-8 diagnostic exceeded the suggested 1e-4 tolerance and is not approved. Q-Align batch 8 and CPU fp16 LLM validation were not supported/tested; do not claim all diagnostic modes passed."
+  ],
+  "render_timeout_s": 1800,
+  "build_threads": 8,
+  "render_threads": 8,
+  "iqa_batch_size": 1
+}

@@ -1,0 +1,1 @@
+"""majutsucity baseline implementation."""

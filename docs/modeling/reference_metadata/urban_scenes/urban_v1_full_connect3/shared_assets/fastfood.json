@@ -1,0 +1,24 @@
+{
+  "bounds": [
+    [
+      -8.380000114440918,
+      0.6800004839897156,
+      0.0
+    ],
+    [
+      8.380000114440918,
+      12.720000267028809,
+      7.020000457763672
+    ]
+  ],
+  "dimensions": [
+    16.760000228881836,
+    12.039999961853027,
+    7.020000457763672
+  ],
+  "mesh_instances": 646,
+  "evaluated_vertices": 69104,
+  "key": "fastfood",
+  "collection": "ASSET_fastfood",
+  "source": "./infinigen/outputs/outdoor_part_demo/urban_v3_all43_25/urban_v3_all43_25.blend"
+}

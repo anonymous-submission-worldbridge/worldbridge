@@ -1,0 +1,289 @@
+{
+  "infinigen_indoors": {
+    "display_name": "Infinigen Indoors",
+    "domain": "indoor",
+    "source": "local snapshot at ./infinigen",
+    "upstream_repository": "https://github.com/princeton-vl/infinigen",
+    "upstream_reference_commit": "05a09759fe9478595a3323ec2d6e26ce3513223f",
+    "local_source_snapshot_sha256": "a33d7cc0a70b87c66d3702a0b775f0cc50027edc2432a848f29a17495fdae1eb",
+    "adapter_sha256": "31b72fbff06a59e2ddf64ce44fea1d6c4afa039d7a18df784f80bd444ce4fb3b",
+    "matrix_runner_sha256": "1be486e8d8466841efd0acd3f0eabed2cb05c07cc99eb12cfe15e478f2f07db0",
+    "renderer_sha256": "dd31144813349dd6ef72bb18c5bf5dd29d811c62776b1e43c2ac14086f54e8f8",
+    "runtime_patches": [
+      {
+        "path": "baselines/methods/infinigen/patches/infinigen_duplicate_addition_name.py",
+        "sha256": "f302df2e673348595667dfdbdc825faa16cc9750812d8b5d43ab871c0c63b56b",
+        "scope": "Resample an object name only when the upstream double-sampling bug produces a collision; generation and scoring logic are unchanged."
+      },
+      {
+        "path": "baselines/methods/infinigen/patches/infinigen_concrete_wall_kwargs.py",
+        "sha256": "1583a2e3cd5d03c00507b7effb416b684a4f378f67b59982dd04ca9f13ad7200",
+        "scope": "Ignore only tile-orientation keywords that Infinigen room_walls passes to Concrete.generate, which otherwise raises a deterministic TypeError; the sampled Concrete material is preserved."
+      }
+    ],
+    "version": "1.19.1",
+    "blender": {
+      "path": "blender",
+      "version": "4.2.0",
+      "build_hash": "a51f293548ad"
+    },
+    "python_environment": "external/envs/infinigen",
+    "input_mode": "room_type_programmatic_config",
+    "output_type": "blend",
+    "configs": [
+      "singleroom.gin",
+      "rrt_cam_indoors.gin",
+      "real_geometry_with_bump.gin"
+    ],
+    "overrides": {
+      "compose_indoors.terrain_enabled": false,
+      "compose_indoors.enable_ocmesh_room": false,
+      "compose_indoors.solve_steps_large": 300,
+      "compose_indoors.solve_steps_medium": 200,
+      "compose_indoors.solve_steps_small": 50,
+      "execute_tasks.frame_range": [1, 50],
+      "blender.use_file_compression": true
+    },
+    "notes": [
+      "The local working tree has no usable .git metadata; the upstream reference commit is from the neighboring full checkout and the experiment records local source hashes separately.",
+      "A runtime-only, baselines-local compatibility patch prevents a rare duplicate object-name assertion in Infinigen 1.19.1; the upstream source tree remains read-only.",
+      "Pilot living-room and kitchen seed 1 exposed an upstream Concrete.generate keyword mismatch during room-wall decoration. A second baselines-local runtime patch fixes only that deterministic call-signature error; each failed attempt 1 is retained, and the same seeds succeeded on attempt 2.",
+      "The frozen 5x2 pilot produced 9 validator-valid runs and one preregistered image-validator quality failure (dining-room seed 1, a nearly black anchor); the quality failure was not retried. The living-room and kitchen compatibility failures both succeeded on the same seeds after applying the frozen Concrete keyword patch.",
+      "Pilot attempts with the official room OcMesher enabled were not resource-stable for the frozen 50-pose trajectory: one room shell alone exceeded 12.9M vertices and Blender was externally killed before saving. The official compose_indoors.enable_ocmesh_room switch is therefore disabled for every Infinigen run; original room meshes, furniture, materials, solve budgets, seeds and camera trajectories are unchanged.",
+      "Blender lossless .blend compression is enabled before generation to reduce artifact storage; it does not alter scene content or renders.",
+      "The common indoor renderer preserves Infinigen's collision-checked XY trajectory and per-frame forward vector, fixes world-space camera height to 1.55 m, and reconstructs camera up from global +Z to remove random roll. This pilot revision is applied uniformly before any formal matrix renders; the pre-revision bedroom seed-0 render is invalidated and rerendered.",
+      "Only the room category can be compiled into Infinigen's native interface. Prompt facts unsupported by the native interface remain in the blinded prompt-alignment evaluation.",
+      "WorldBridge is disabled for this baseline-only phase."
+    ]
+  },
+  "worldgen": {
+    "display_name": "WorldGen (ZiYang-xie)",
+    "identity_note": "This entry is the public ZiYang-xie/WorldGen project, not Meta Reality Labs' CVPR 2026 system of the same name.",
+    "domain": [
+      "indoor",
+      "urban"
+    ],
+    "source": "baselines/sources/WorldGen",
+    "upstream_repository": "https://github.com/ZiYang-xie/WorldGen",
+    "commit": "7ce7b2767fdf31e2727b69a2e61e2e950e3a017f",
+    "submodules": {
+      "DA-2": "d659838585f2bc9967c7e9367af573795271dbbb"
+    },
+    "python_environment": "baselines/environments/worldgen",
+    "input_mode": "text",
+    "output_type": "gaussian_splat",
+    "adapter_sha256": "b3113e6c11968a8af4f372a4740ecb11738f4813b5f2abf4c314e411d2fcbf89",
+    "matrix_runner_sha256": "0d08d0788eb0e73e201cb4ba1587b91e634fd95e8d3068ee4548351fd1919edb",
+    "renderer_sha256": "040a9c2d693db31eba20ba24e0064e2bc914b542983edd069372b48e6538c465",
+    "metric_runner_sha256": "e2d8957ae7f79f93ead0d0aa5c7e5f9817dea45f1ea8fe05b96d6066ee753734",
+    "pilot_supervisor_sha256": "88d8a2b4386a7b2c2b4e7a9a5efec309bbc4dad2990482800d47c471d41e34b2",
+    "urban_path_diagnostic_sha256": "56816f65c6014a770ff76aaee859359103a96071bdf33f4e9d8680be69798278",
+    "flux_downloader_sha256": "1288a4a62c351256537a147143c0fbea9f1a84b13c26e953ad85adf12de8368f",
+    "patched_pano_gen_sha256": "9bcfbbf14f3e140f81e7182f4387072a2bea97f6759a71a78e5aaa43330f4f09",
+    "protocol_sha256": "896f15f3bda662c0f1aefe0d771c9805607373f348234bc9a429a737535a645e",
+    "metrics_lock_sha256": "84f0d82c2315a041c9da42d8dce4f6dd5f9ae82146c69ad18ff3d0b94e60df19",
+    "pip_freeze_sha256": "33f58fb0060bc54ebb97a0375bfe691df791d644aa402a64e67a1c82bdcff0b0",
+    "worldscore_abi": {
+      "manifest": "baselines/work/metaurban/worldscore_abi/manifest.json",
+      "manifest_sha256": "0c5d1f485a14b6214bcc14e74a9aee0bd00270f682795c13b3e428d8db5abb2e",
+      "droid_backends_sha256": "eadd5f93be295079e0d60809e4c06fd7443cdd3759d06024dc395e12b32f0319",
+      "lietorch_backends_sha256": "ba997a996db126227a51624e6c9b35b14a5e05f74e327da7933ef794e5066e2f"
+    },
+    "weights": {
+      "LeoXie/WorldGen:text2scene_lora": {
+        "revision": "2e2b2cb4dc3144a65481f0ca26b892584436868c",
+        "size_bytes": 34647632,
+        "sha256": "5349c785650892914b32e74d88d16baa5863981a63a8747b70332e67e0feb10b"
+      },
+      "haodongli/DA-2": {
+        "revision": "0d55ccb5e46b8ed4715fae3a4c04fc897f1689f3",
+        "size_bytes": 1378513064,
+        "sha256": "d8ea568fc3dfb7d7432e5b763de499dd03fb6dc1c2020d84639f35e2dfa4f78e"
+      },
+      "black-forest-labs/FLUX.1-dev": {
+        "revision": "3de623fc3c33e44ffbe2bad470d0f45bccf2eb21",
+        "snapshot_file_count": 23,
+        "snapshot_size_bytes": 33746383552,
+        "core_weights": {
+          "text_encoder/model.safetensors": "893d67a23f4693ed42cdab4cbad7fe3e727cf59609c40da28a46b5470f9ed082",
+          "text_encoder_2/model-00001-of-00002.safetensors": "ec87bffd1923e8b2774a6d240c922a41f6143081d52cf83b8fe39e9d838c893e",
+          "text_encoder_2/model-00002-of-00002.safetensors": "a5640855b301fcdbceddfa90ae8066cd9414aff020552a201a255ecf2059da00",
+          "transformer/diffusion_pytorch_model-00001-of-00003.safetensors": "d86a3038eacaa720682cb9b1da3c49fecf8a3ded605af4def6061eaa18903eb8",
+          "transformer/diffusion_pytorch_model-00002-of-00003.safetensors": "5e830704a83aa938dfaf23da308100a1c44b83fa084283abf1d163ea727e5f7a",
+          "transformer/diffusion_pytorch_model-00003-of-00003.safetensors": "0d9c7c663217d1c3d44a6deed4e1cf1ac09fbc2c4137c47de1e3d74c959833de",
+          "vae/diffusion_pytorch_model.safetensors": "f5b59a26851551b67ae1fe58d32e76486e1e812def4696a4bea97f16604d40a3"
+        },
+        "verification": "all_core_weights_sha256_verified"
+      }
+    },
+    "configuration": {
+      "resolution": [
+        1600,
+        800
+      ],
+      "inference_steps": 50,
+      "guidance_scale": 7.0,
+      "blend_extend": 6,
+      "use_sharp": false,
+      "inpaint_bg": false,
+      "low_vram": false,
+      "renderer": "gsplat-1.5.3"
+    },
+    "notes": [
+      "The upstream public API fixes panorama seed 42. The adapter calls the same upstream gen_pano_image function with logical seeds 0,1,2,3.",
+      "The public text interface cannot ingest structured room dimensions or road topology; those requirements remain in blinded prompt-alignment scoring.",
+      "DA-2 normalizes every panorama's maximum radial depth to 20, so camera translations are declared in native normalized units rather than falsely labeled meters.",
+      "The official experimental ml-sharp and background-inpainting paths are disabled for every run.",
+      "FLUX.1-dev revision 3de623fc3c33e44ffbe2bad470d0f45bccf2eb21 is cached locally; all seven core weight files were independently SHA-256 verified before GPU execution.",
+      "A two-call source compatibility patch supplies the already-local LoRA filename explicitly because Diffusers 0.33.1 requires weight_name in offline mode; model weights and generation parameters are unchanged.",
+      "The first real indoor seed-0 smoke run completed the 50-step panorama, DA-2 reconstruction, and 8-anchor/50-frame gsplat validator successfully on physical GPU 1.",
+      "The frozen 5-spec-per-domain x 2-seed pilot completed 20/20 panoramas, reconstructions, 8-anchor/50-frame renders, and validators successfully.",
+      "Before formal freezing, uniform urban path calibration on all ten pilot splats selected [-0.60,0,-0.30] to [0,0,0]: 10/10 runs passed the image and path validator twice, and DROID-SLAM confirmed nonzero trackable parallax. The indoor path remains [-0.60,0,-0.30] to [0.60,0,0.30].",
+      "Pilot metric sanity passed for cached Q-Align, CLIP-IQA+, ADE20K SegFormer, LPIPS, and DROID-SLAM/WorldScore. WorldScore reuses the already verified baselines-local GLIBC 2.31 ABI artifacts recorded above.",
+      "The formal protocol status and all implementation hashes were frozen only after the pilot completed; formal outputs are written separately under baselines/data/table2."
+    ]
+  },
+  "metaurban": {
+    "display_name": "MetaUrban",
+    "domain": "urban",
+    "source": "baselines/sources/metaurban",
+    "upstream_repository": "https://github.com/metadriverse/metaurban",
+    "commit": "6b8ff9aa48dd27d5c57fa1c712db520732f11fa9",
+    "source_archive_sha256": "4933b8ba8614c3a701db1b4ce0ede87dd5cae407fd2ff24842814879e31aaa5a",
+    "python_environment": "baselines/envs/metaurban",
+    "environment_manifest": "baselines/methods/metaurban/environment/metaurban.json",
+    "environment_manifest_sha256": "ad2db3521e952702e1d8f06495152346267ed8f10dc0921d7610955312a7d394",
+    "pip_freeze": "baselines/methods/metaurban/environment/metaurban-pip-freeze.txt",
+    "pip_freeze_sha256": "1748193efe1d1276afde79f866268bd995fbbc6e33753ac1911316e3d027af53",
+    "input_mode": "programmatic_urban_config",
+    "output_type": "procedural_scene_descriptor+rgb",
+    "adapter_sha256": "5d64c93be10550fda0f5d924e94bc80470d985ba700e085c29e41778575cf64e",
+    "matrix_runner_sha256": "0b758dc0a48adebb485db5eead4ea1d33d564cc16c09add6c60f9a818184f236",
+    "metric_runner_sha256": "0fc1fb1f114c0da02be89190dc1bc21dab200ed8559ce96c6180a23ef113f7ab",
+    "worldscore_abi_manifest": "baselines/work/metaurban/worldscore_abi/manifest.json",
+    "worldscore_abi_manifest_sha256": "0c5d1f485a14b6214bcc14e74a9aee0bd00270f682795c13b3e428d8db5abb2e",
+    "protocol_sha256": "330f9ff21d144383249f2d589c36bf7f26e0ed24730fb6054283a06e5bb24a88",
+    "full_asset_installer_sha256": "29f05e02d2dfee9dc9e03b29d39cc772ca080ae6dbedb1b393d3f84da3c9a3ae",
+    "matrix_auditor_sha256": "01849fd5c417ba202484ded9c9b453afedebb3e18b0b25112197040a1f9fc84e",
+    "assets": {
+      "tiny": {
+        "status": "installed_for_smoke_only",
+        "version": "0.0.1",
+        "version_sha256": "e6635045e1d2478ec4ca712d8c0e1dfcef8bb7b5b1e8e3bb560d37fe399a9e72",
+        "static_glb_count": 50,
+        "metadata_json_count": 50
+      },
+      "full": {
+        "status": "blocked_pending_registration_code_and_direct_download",
+        "official_google_drive_file_id": "17pUIjPZrtac60YVHUL3YHMSaQ6J_Pmgc",
+        "registration_form": "https://forms.office.com/r/tFBRFk7u4E",
+        "retained_partial_archive": "baselines/checkpoints/metaurban/assets-full.zip.proxy-partial-28835840"
+      }
+    },
+    "configuration": {
+      "environment": "SidewalkStaticMetaUrbanEnv",
+      "object_density": 0.6,
+      "traffic_density": 0.0,
+      "background_agents": 0,
+      "camera_height_m": 1.65,
+      "horizontal_fov_degrees": 70.0,
+      "trajectory_length_m": 42.0,
+      "trajectory_frames": 50,
+      "anchor_count": 8,
+      "allowed_physical_gpus": [0, 1]
+    },
+    "notes": [
+      "Formal and pilot runs reject the official tiny pack; it is accepted only in a separate smoke output root.",
+      "Four-way and T-junction map directly to X/T; other shared topologies use preregistered compound approximations and remain subject to blinded prompt-alignment scoring.",
+      "Three normalized tiny-asset smoke runs passed on NVIDIA L40S, including the compound TT and CX map sequences.",
+      "The automated metric chain passed a GPU smoke test, including 50-frame DROID-SLAM/WorldScore through a MetaUrban-local GLIBC compatibility copy; smoke scores are explicitly excluded from Table 2.",
+      "MetaUrban render and metric subprocesses remove all upper- and lower-case proxy variables before execution.",
+      "The full static asset archive is password protected after registration. The server cannot directly connect to Google Drive when all proxy variables are disabled, so no formal run has started.",
+      "WorldBridge and every other comparison method are disabled for this MetaUrban-only task."
+    ]
+  },
+  "syncity3k": {
+    "display_name": "SynCity 3000",
+    "domain": [
+      "indoor",
+      "urban"
+    ],
+    "source": "baselines/vendor/syncity-3k",
+    "upstream_repository": "https://github.com/paulengstler/syncity-3k",
+    "commit": "b4052154217a13cdbdec28ef77ae77581d90afff",
+    "python_environment": "baselines/envs/syncity-3k",
+    "pip_freeze_sha256": "669ed3052157e22fcdc7d75dc7e2468e80c20fb30bc447ff8d98b766888ce279",
+    "input_mode": "native_scene_layout_json",
+    "output_type": "gaussian_splat_ply",
+    "adapter_sha256": "4d2b18b7d18e83a6394a4e0564b7189c774c0a844d4acc4b1e58b97b44bbce7c",
+    "generation_adapter_sha256_before_storage_amendment": "f59861be5e02302d8c6dfcdebbbfb164de2cec71563601553597edee93a6dbba",
+    "matrix_runner_sha256": "87a339626acdbd5e117fd4eebfd6b556fe0791908c92bf141f6d14e8075ad822",
+    "matrix_runner_sha256_before_generation_itt": "992614fdebb9b9861093c45c65dc575b0a2f5fea43a3ae0afc9c24a477f528fb",
+    "matrix_runner_sha256_before_cuda_arch_autodetect": "bbff5a2d48df12b63a0118ad5750f1430dca61661efdbe8d9d1210eb7c23eb44",
+    "formal_supervisor_sha256": "18e87e5f37674e8147719499ebe7d890fef9f13e0e9cf1f30a610d76a632bae1",
+    "postprocess_supervisor_sha256": "56f71fcb3122a3f43867bfe2608074b772ac7ea2f0ad2c40e969376385b86826",
+    "matrix_auditor_sha256": "d0495c74188b11c4d732dd293eb33b4d6cb46cafca701bfbbde606d87f7ad33d",
+    "matrix_auditor_sha256_before_generation_itt": "8aad662c6d5a8a7626ca0c9b7893b76d0ebd6d239f521d01be784f847e74cca6",
+    "intermediate_pruner_sha256": "7fdba1d3682f0063fb0135ff2715f3595ae5194b738ee0190168b081749f4c4c",
+    "tests_sha256": "30295cba6f6eb51c1af52ac3eabaa9629cd8a406e88dfed467327b2c00adca3a",
+    "tests_sha256_before_generation_itt": "9f4ee02f36ffd89612bb3082aa875282d5035a0ddda72d9835d1e9f7ca86fefc",
+    "renderer_sha256": "a1c472a406d3004f127f1adc95eed1dc80a87524d0e1bac9a43893e655fa66d6",
+    "metric_runner_sha256": "24648b7bad1f394d6c534ed5db0e7afa79951ab1260e064a63c1976379c70ca1",
+    "metric_runner_sha256_before_artifact_mirror": "ba37853a423425175e98d62b73e09eb5e74a53da0f3d1f47d2d144933bb4496d",
+    "iqa_evaluator_sha256": "370ac7ba9533c93fc87d570732c53eb914e14a543c4890f75d4893618e927452",
+    "worldscore_evaluator_sha256": "c4c4293017c59b39f08205fde2a3cd0aa70b958b6e7ad1435a13286b7f1d3d6e",
+    "diversity_evaluator_sha256": "c1fcb7a0b4e899b0f86b2f76dd874f67ba2314114697fe4504bdeb14c40a065a",
+    "semantic_evaluator_sha256": "e29bdb5e50d1801e9b2c8acdfab1c63d189de0317ff1bb6442afd91c8856c8ae",
+    "worldscore_resume_tests_sha256": "60375221f0e0f2de52ebd70181fbf348d192d8b1549ede280956a41a91f5b6b1",
+    "offline_runtime_sha256": "ed52e7904ac5ca04321ca4da5c3b13414a2e5d6788e0b16bac842a52332c3799",
+    "protocol_sha256": "302816e509a1c06b7b605bc602e30104d4a3257f242c91feb5aecbf3831b495c",
+    "indoor_specs_sha256": "38ba6b4eb2b65142b9a8223cb656720cd18904ca16d8e73075d5ba12a93ea657",
+    "urban_specs_sha256": "3c1fde2ec5725145ead3afc8bbf2d110ec78624183de988c1a51570e0f21d79b",
+    "asset_manifest_sha256": "0879a419bec636d44c3af6f5dafe65b9ba5dbb9c1444e49c2550263dfdd41cbe",
+    "weights": {
+      "paulengstler/syncity-3k": {
+        "revision": "cf11932c4067612e8254b7fe0be95430a8dffdbd",
+        "ss_denoiser_sha256": "4aedd3ff2884c57c59547e59375d11015ac4bb27249217a5fb6c0f0dbb15b18e",
+        "slat_denoiser_sha256": "47f4a629436b38e5f8238e55e751bee5fdfef1e6564f451328d72f023bbff560"
+      },
+      "microsoft/TRELLIS-image-large": {
+        "revision": "25e0d31ffbebe4b5a97464dd851910efc3002d96"
+      },
+      "alimama-creative/FLUX.1-dev-Controlnet-Inpainting-Beta": {
+        "revision": "4c71e88b32ab247b3c2518803224c7c6473dbeb9",
+        "weights_sha256": "ca46c5f7b5de02caee7c069f2aedbf628af8def8578319ceae3be1588d448448"
+      },
+      "black-forest-labs/FLUX.1-dev": {
+        "revision": "3de623fc3c33e44ffbe2bad470d0f45bccf2eb21",
+        "reuse": "existing verified baselines-local snapshot"
+      },
+      "facebookresearch/dinov2": {
+        "checkpoint": "dinov2_vitl14_reg4_pretrain.pth",
+        "size_bytes": 1217607321,
+        "sha256": "36e4deffbaef061a2576705b0c36f93621e2ae20bf6274694821b0b492551b51"
+      }
+    },
+    "configuration": {
+      "scene_size": 3,
+      "window_size": 2,
+      "stride": 1,
+      "extrusion_height_px": 60,
+      "logical_seeds": [0, 1, 2, 3],
+      "trajectory_frames": 50,
+      "anchor_count": 8,
+      "renderer": "gsplat-1.5.3"
+    },
+    "notes": [
+      "Official code, isolated environment and all required model assets are staged below baselines; generation workers run with proxy variables removed and Hugging Face/Diffusers/Torch Hub forced to pinned local snapshots.",
+      "SynCity exposes no metric scale or navigation mesh, so the preregistered native-trajectory exception uses a scale-normalized translated arc around the complete dimetric scene.",
+      "The first real indoor pilot run produced scene_color_adjusted.ply, 50 sequence frames, 8 anchors and valid camera metadata; the output validator passed.",
+      "The successful migrated pilot artifact is eligible for hard-link promotion into the formal data root because its source commit, spec, native input, renderer and seed match the frozen configuration.",
+      "Storage-only amendment on 2026-09-11: after validating the color-adjusted primary PLY and terminal manifest, redundant pre-color scene/scene.ply intermediates are removed. This does not alter generation, rendering, success classification or metrics; the pruner records every removed path and byte count.",
+      "Runtime portability amendment on 2026-09-11: the matrix runner no longer forces the previous machine's TORCH_CUDA_ARCH_LIST=8.9 and instead lets PyTorch compile gsplat for the single visible GPU. On this RTX A6000 host the native sm_86 build reproduced the frozen 1024-pixel color render and repaired the affected raw PLYs without repeating 3D generation; model weights, prompts, seeds, camera parameters, output resolution and metric protocol are unchanged.",
+      "ITT terminal-state amendment on 2026-09-12: after three byte-identical seeded attempts reproduced the upstream Structured Latent empty-sparse-tensor exception, the runner classifies only that exact recognized signature as a generation method quality failure and assigns the preregistered ITT zero. Unknown generation errors remain infrastructure failures. The auditor and two regression tests enforce this distinction; no successful output, prompt, seed, weight or renderer setting was changed.",
+    "WorldBridge and every comparison method other than SynCity 3000 are disabled for this task.",
+    "Metric storage portability amendment on 2026-09-13: migrated successful run directories are read-only under their original UID, so ADE20K maps and per-scene metric JSON/log files are written to baselines/work/syncity3k mirrors while all RGB, cameras and manifests remain read-only inputs. The evaluator algorithms, checkpoints, seeds and aggregate result paths are unchanged.",
+    "WorldScore result-write repair on 2026-09-13: the first DROID pass completed inference but attempted to express a mirrored log path relative to the read-only source run, discarding the in-memory error and recording infrastructure zeros. The path base was corrected, successful artifacts gained identity-checked resume caching, and process-unique temporary names prevent concurrent writer races. Only WorldScore was rerun; the final artifacts contain 197 measured successes and the three preregistered generation-failure ITT zeros. The related adapter/WorldScore/aggregate regression suite passed 29/29."
+    ]
+  }
+}

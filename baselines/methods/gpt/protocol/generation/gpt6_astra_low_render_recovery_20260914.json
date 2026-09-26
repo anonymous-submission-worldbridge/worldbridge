@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-14",
+  "method": "gpt6_astra_low",
+  "domain": "urban",
+  "authorization_context": "The user requested resuming progress migrated from other machines, completing the full GPT-6 Astra Low experiment without duplicate work, and matching the completed GPT-6 Astra High configuration and experiment.",
+  "interrupted_controller_runs": [
+    "urban_leisure_civic_four_way_20/seed_1",
+    "urban_leisure_civic_four_way_20/seed_2",
+    "urban_leisure_civic_main_side_22/seed_1"
+  ],
+  "exhausted_infrastructure_targets": [
+    "urban_mixed_use_irregular_14/seed_1",
+    "urban_park_edge_main_side_17/seed_0"
+  ],
+  "original_timeout_s": 1800,
+  "recovery_timeout_s": 7200,
+  "original_max_attempts": 3,
+  "max_attempts_for_exact_exhausted_targets": 4,
+  "additional_attempts_per_exhausted_target": 1,
+  "gpu_admission_free_mib": 24576,
+  "rationale": "The three open attempts lost their controller before recording an exit and retain the original retry cap. The two exhausted runs contain only timed-out infrastructure attempts on shared GPUs. GPT-6 Astra High used the same resource-only 7200-second recovery policy for exhausted Urban renders. Applying it here makes the execution policy comparable while preserving every prior attempt.",
+  "unchanged": [
+    "requested model and reasoning_effort=low",
+    "generated Python and Blender scenes",
+    "frozen prompt, schema, renderer, cameras, resolution and samples",
+    "quality-failure no-retry rule",
+    "metrics and ITT aggregation"
+  ],
+  "disclosure": "Post-freeze resource-only recovery. No quality failure is retried or converted to an infrastructure result."
+}

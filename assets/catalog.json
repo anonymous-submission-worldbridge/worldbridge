@@ -1,0 +1,7 @@
+{
+  "status": "source_only",
+  "model_files_packaged": 0,
+  "source_catalog": "../docs/modeling/catalog.json",
+  "source_index": "../docs/modeling/README.md",
+  "historical_model_copy_catalog": "../docs/assets/model_catalog_history.json"
+}

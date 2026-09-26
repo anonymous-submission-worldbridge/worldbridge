@@ -1,0 +1,9 @@
+{
+  "version": "table3-sceneweaver-v1",
+  "native_instance_source": "final scene/layout.json objects",
+  "mesh_source": "final scene.blend unique_assets direct members",
+  "fixture_patterns": ["Window", "Door", "Mirror", "Picture", "WallArt", "WallDecor", "WallShelf", "Ceiling", "Pendant", "Chandelier", "WallLamp"],
+  "thin_or_flexible_patterns": ["Rug", "Carpet", "Curtain", "Blanket", "Cloth", "Wire"],
+  "default_role": "placed_object",
+  "notes": "Native layout instances are the counting unit; Blender mesh nodes are never counted independently."
+}

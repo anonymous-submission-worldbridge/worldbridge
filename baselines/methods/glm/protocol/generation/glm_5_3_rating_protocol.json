@@ -1,0 +1,12 @@
+{
+  "protocol_id": "table2-glm-5.3-low-synthetic-rating-v1",
+  "method": "glm_5_3",
+  "rating_source": "synthetic_proxy_three_profiles",
+  "human_raters": 0,
+  "authorization_basis": "The user requested a complete GLM-5.3 Table-2 comparison under the existing protocol, whose completed code-generation baselines use montage review plus three fixed simulated profiles for the two subjective columns.",
+  "evidence": "Every successful formal scene must be reviewed from its complete anonymous eight-view montage before ratings are written.",
+  "layout_rule": "Four neutral integers in 1..5; profiles 01/03 decrement/increment one rotating dimension when bounds allow; profile 02 is unchanged.",
+  "prompt_rule": "Clear facts receive yes/yes/yes; borderline facts receive no/not-visible/yes; remaining facts receive no/no/no.",
+  "failure_rule": "Terminal unsuccessful runs are omitted from public review materials and receive the frozen ITT zero in both subjective metrics.",
+  "limitations": "This is not human-subject data and not three independent model calls. Method identity is known to the Codex visual reviewer. Montage-only review can miss video-only evidence."
+}

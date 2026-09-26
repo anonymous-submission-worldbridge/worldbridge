@@ -1,0 +1,25 @@
+{
+  "method": "worldgen",
+  "implementation": "ZiYang-xie/WorldGen",
+  "repository": "https://github.com/ZiYang-xie/WorldGen",
+  "commit": "7ce7b2767fdf31e2727b69a2e61e2e950e3a017f",
+  "da2_submodule_commit": "d659838585f2bc9967c7e9367af573795271dbbb",
+  "worldgen_lora_revision": "2e2b2cb4dc3144a65481f0ca26b892584436868c",
+  "output_mode": "gaussian_splat",
+  "use_sharp": false,
+  "inpaint_bg": false,
+  "return_mesh": false,
+  "source_file_sha256": {
+    "src/worldgen/worldgen.py": "cf55a052fc45dd577b125bce0d324a83daf2e522ec9bc4b38a711c4932b65948",
+    "src/worldgen/pano_depth.py": "8d6501af1ef7862630afe5db876f86535be96b31a25464c66e213cdb139aab6c",
+    "src/worldgen/utils/general_utils.py": "cc5ef52b82044ead753ad247db13142594f36b93a31ce42ecaf1dc7b7b9bc229",
+    "src/worldgen/utils/splat_utils.py": "5dcaba659d651cd0d6d7435ef66ddcb9488d6a54ef9c5c5312a781233016f0f7"
+  },
+  "weight_content_ids": {
+    "haodongli/DA-2": "d8ea568fc3dfb7d7432e5b763de499dd03fb6dc1c2020d84639f35e2dfa4f78e",
+    "LeoXie/WorldGen": "5349c785650892914b32e74d88d16baa5863981a63a8747b70332e67e0feb10b"
+  },
+  "table2_outputs": "baselines/data/table2/{indoor,urban}/worldgen",
+  "table3_name": "WorldGen (ZiYang-xie)",
+  "table3_track": "surface_only"
+}

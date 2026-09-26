@@ -1,0 +1,40 @@
+{
+  "frozen_at_utc": "2026-09-13T08:53:04Z",
+  "method": "gpt6_astra_low",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "low",
+  "transport": "codex_exec_saved_chatgpt_login",
+  "codex_version": "0.153.4",
+  "pilot_counts": {
+    "valid": 19,
+    "quality": 1
+  },
+  "high_parity_fields": 28,
+  "files_sha256": {
+    "methods/gpt/protocol/generation/gpt6_astra_low.json": "7b01ecfc290e0005efeca13df0d77d71fda58f4c1998472c5d5d74b16c2323ac",
+    "methods/gpt/protocol/generation/gpt6_astra_prompt.txt": "80a163c283bebec21641856882df33321c66a3020ed839d05a22a69fb59fbc0e",
+    "methods/gpt/protocol/generation/gpt6_astra_output.schema.json": "ff375ee28f3751d4c36ba57081673ae020c0c711b2248dc1aca2d78608249db0",
+    "methods/gpt/protocol/generation/gpt6_astra_low_rating_protocol.json": "8faebf357fd330fac5431e936389e3b7e77e1202e384864e281b744d23a5dd39",
+    "protocol/generation/indoor_specs.jsonl": "38ba6b4eb2b65142b9a8223cb656720cd18904ca16d8e73075d5ba12a93ea657",
+    "protocol/generation/urban_specs.jsonl": "3c1fde2ec5725145ead3afc8bbf2d110ec78624183de988c1a51570e0f21d79b",
+    "protocol/generation/seeds.json": "af531f72fc11957e7a41f657bda2ffef1b2cc2805fb3406490c701475cd72a46",
+    "protocol/generation/metrics.lock.json": "84f0d82c2315a041c9da42d8dce4f6dd5f9ae82146c69ad18ff3d0b94e60df19",
+    "methods/gpt/adapter_low.py": "61765bc613a24eb693f632d35e7c535c6651c9d2f0c918293dafb5b1eeab9ac0",
+    "methods/gpt/run_low_matrix.py": "1d983f2f6486bf7a2696ced35dca0e9d91f59da1f9397ff6072e1201e5db689d",
+    "methods/gpt/run_low_metrics.py": "3ba5414b77cb6ebd92c72664a4f924a9b3344188bbb6bea2934bb96de5b8ff44",
+    "methods/gpt/tools/blender_render_gpt.py": "962947b31310f597148176d080a86f662e4ddab4da4432dbf8f164fd50b7bed4",
+    "methods/sceneweaver/tools/blender_render_sceneweaver.py": "74889d09cedc6de0fa81380385200d698a03d4e5dcff9c5a18b211d495084d61",
+    "methods/gpt/tools/gpt_camera.py": "3d4eb1c4d0d6717c6ac76a4cd644060c004effe76676508fa27172af3580169a",
+    "methods/gpt/tools/audit_gpt_low.py": "0aec48bdc561a0936ec115f9978ada1f92d71444bfe7526f5206f931171cd47f",
+    "methods/gpt/tools/check_gpt_low_pilot.py": "26064d99340038e2edd8e69787392d9c27c07cac0301d07194e581e4c36603be",
+    "methods/gpt/tools/fill_simulated_gpt_low_ratings.py": "b6d745fce738560bc74317f372e23fb4ba0ea02456db447b8f2c97e456a8c13f",
+    "methods/gpt/tools/make_annotation_package_gpt_high_frozen.py": "5cac2ecbf615a0f8f6cfa22253b986cb4ff282bc38f259a9107f353dbe67d6cc",
+    "tools/make_rating_review_sheets.py": "c83ac616b357db2dc426674cf571ca4a5e01653b8ec0be57682b339cd635b073",
+    "evaluation/visual/eval_iqa.py": "370ac7ba9533c93fc87d570732c53eb914e14a543c4890f75d4893618e927452",
+    "evaluation/visual/eval_worldscore_gpt_high_frozen.py": "0bd4feb1b117adcdd3a5fb2327517b4597a6c3e479d46d9ad0cdcb092f623933",
+    "evaluation/visual/eval_diversity.py": "c1fcb7a0b4e899b0f86b2f76dd874f67ba2314114697fe4504bdeb14c40a065a",
+    "evaluation/visual/generate_semantics.py": "e29bdb5e50d1801e9b2c8acdfab1c63d189de0317ff1bb6442afd91c8856c8ae",
+    "evaluation/visual/import_human_ratings.py": "211489503dd126307489046e15363122e5830757a1cff148d212827334d7ffaf",
+    "evaluation/visual/aggregate_generation.py": "cac981d1abac4afd22fe7e5592f8c36700df36c3efaf22889d18cc2919fc885f"
+  }
+}

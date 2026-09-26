@@ -1,0 +1,27 @@
+{
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 20260827,
+  "bootstrap_unit": "spec_id",
+  "frozen_at_utc": "2026-09-05T14:56:49.258771+00:00",
+  "human_ratings": "three actual independent raters; synthetic proxy requires explicit instruction for SpatialGen",
+  "iqa_python": "python",
+  "iqa_repeat_max_abs_tolerance": 1e-05,
+  "iqa_versions": {
+    "lpips": "0.1.4",
+    "pyiqa": "0.1.14.1",
+    "torch": "2.6.0+cu118",
+    "torchvision": "0.21.0+cu118",
+    "transformers": "4.37.2"
+  },
+  "sources": {
+    "evaluation/visual/aggregate_generation.py": "cac981d1abac4afd22fe7e5592f8c36700df36c3efaf22889d18cc2919fc885f",
+    "evaluation/visual/eval_diversity.py": "b57582799d50f03554d077d43d475e1efb9cbfda76e53bd988405bb6894be303",
+    "evaluation/visual/eval_iqa.py": "a64956092ed7eb5683f5caf4b6bc3055e750f12883db7873950c41c9c8f858fb",
+    "evaluation/visual/eval_worldscore.py": "0bd4feb1b117adcdd3a5fb2327517b4597a6c3e479d46d9ad0cdcb092f623933",
+    "evaluation/visual/generate_semantics.py": "9e441d6c18da9e73f29655bbd89fe4ef88cc7dad8b59dc65da19ddf6bb145c59",
+    "evaluation/visual/import_human_ratings.py": "211489503dd126307489046e15363122e5830757a1cff148d212827334d7ffaf",
+    "methods/spatialgen/tools/audit_spatialgen_matrix.py": "93c8a1d48f77fac0e47613a8f334ac1abe89695c397d58df844eb61d6a6cee90",
+    "tools/make_annotation_package.py": "5cac2ecbf615a0f8f6cfa22253b986cb4ff282bc38f259a9107f353dbe67d6cc"
+  },
+  "worldscore_python": "./baselines/envs/worldscore/bin/python"
+}

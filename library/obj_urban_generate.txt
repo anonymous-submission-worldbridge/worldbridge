@@ -1,0 +1,506 @@
+# ===================== Urban Asset Generation Examples =====================
+# Run method (headless Blender): blender -b -P obj_urban_generate.txt --python-exit-code 1
+# Ensure infinigen is on PYTHONPATH before running.
+# Each example saves a .blend file to ./infinigen/outputs/obj/
+
+import sys
+import math
+import bpy
+
+sys.path.append("./infinigen")
+
+# Shared material helper (mirrors generate_urban._make_mat)
+def _make_mat(name, color, roughness=0.55, metallic=0.0, emission_strength=0.0):
+    mat = bpy.data.materials.new(name)
+    mat.use_nodes = True
+    bsdf = mat.node_tree.nodes.get("Principled BSDF")
+    if bsdf:
+        bsdf.inputs["Base Color"].default_value = color
+        bsdf.inputs["Roughness"].default_value = roughness
+        bsdf.inputs["Metallic"].default_value = metallic
+        if emission_strength > 0 and "Emission Strength" in bsdf.inputs:
+            if len(color) >= 3:
+                ec = tuple(color[:3]) + (1.0,)
+                if "Emission Color" in bsdf.inputs:
+                    bsdf.inputs["Emission Color"].default_value = ec
+            bsdf.inputs["Emission Strength"].default_value = emission_strength
+    return mat
+
+
+def clear_scene():
+    bpy.ops.object.select_all(action="SELECT")
+    bpy.ops.object.delete()
+
+
+def save(path):
+    bpy.ops.wm.save_as_mainfile(filepath=path)
+    print(f"Saved: {path}")
+
+
+# ===================== Example 1: Traffic Light =====================
+# Semantic: "Complete traffic light assembly at northwest intersection corner,
+#            facing north-south traffic, all three signal lenses present."
+
+clear_scene()
+
+from infinigen.assets.objects.traffic.traffic_light import TrafficLightFactory
+from infinigen.assets.utils.urban_primitives import UrbanAssetRequest
+
+mats = {
+    "metal":         _make_mat("metal",         (0.18, 0.18, 0.18, 1), roughness=0.62, metallic=0.2),
+    "signal_box":    _make_mat("signal_box",     (0.035, 0.04, 0.035, 1)),
+    "red_signal":    _make_mat("red_signal",     (1.0, 0.05, 0.03, 1), emission_strength=1.2),
+    "yellow_signal": _make_mat("yellow_signal",  (1.0, 0.75, 0.08, 1), emission_strength=0.5),
+    "green_signal":  _make_mat("green_signal",   (0.05, 0.9, 0.18, 1), emission_strength=1.0),
+}
+
+factory = TrafficLightFactory(mats)
+objs, info = factory.create(UrbanAssetRequest(
+    asset_type="traffic-light",
+    location=(-6.4, 6.4, 0),
+    semantic="traffic-light",
+    yaw=0.0,
+    params={"id": "nw", "facing_axis": "y"},
+))
+print(f"Traffic light created: {len(objs)} objects, metadata={info}")
+save("./infinigen/outputs/obj/traffic_light_nw.blend")
+
+
+# ===================== Example 2: Street Lamp =====================
+# Semantic: "Tall street lamp with curved arm, lamp head facing the road."
+
+clear_scene()
+
+from infinigen.assets.objects.street_furniture.street_assets import StreetFurnitureFactory
+
+mats_lamp = {
+    "metal": _make_mat("metal",  (0.18, 0.18, 0.18, 1), roughness=0.62, metallic=0.2),
+    "lamp":  _make_mat("lamp",   (1.0, 0.86, 0.48, 1), emission_strength=0.8),
+}
+
+street = StreetFurnitureFactory(mats_lamp)
+objs, info = street.create_street_lamp(UrbanAssetRequest(
+    asset_type="street-lamp",
+    location=(-24, 8.0, 0),
+    semantic="street-lamp",
+    yaw=0.0,
+    params={"id": 0, "head_sign": -1},  # head_sign=-1 → arm points toward road (negative y)
+))
+print(f"Street lamp created: {len(objs)} objects")
+save("./infinigen/outputs/obj/street_lamp.blend")
+
+
+# ===================== Example 3: Full Bus Stop Shelter =====================
+# Semantic: "Bus stop shelter with glass panels, roof, schedule board, bench inside."
+
+clear_scene()
+
+mats_busstop = {
+    "metal":         _make_mat("metal",         (0.18, 0.18, 0.18, 1), roughness=0.62, metallic=0.2),
+    "bus_stop_glass":_make_mat("bus_stop_glass",(0.22, 0.38, 0.45, 0.55), roughness=0.08),
+    "bus_stop_sign": _make_mat("bus_stop_sign", (0.05, 0.22, 0.72, 1)),
+    "bench":         _make_mat("bench",         (0.32, 0.19, 0.10, 1)),
+    "lamp":          _make_mat("lamp",          (1.0, 0.86, 0.48, 1), emission_strength=0.6),
+    "license_plate": _make_mat("license_plate", (0.88, 0.86, 0.74, 1)),
+}
+
+street = StreetFurnitureFactory(mats_busstop)
+objs, info = street.create_bus_stop(UrbanAssetRequest(
+    asset_type="bus-stop",
+    location=(-15.5, -7.2, 0),
+    semantic="bus-stop",
+    yaw=0.0,
+    params={"id": 0},
+))
+print(f"Bus stop created: {len(objs)} objects")
+save("./infinigen/outputs/obj/bus_stop.blend")
+
+
+# ===================== Example 4: Fire Hydrant =====================
+# Semantic: "Red fire hydrant with side nozzles, chain, and ring detail."
+
+clear_scene()
+
+mats_hydrant = {
+    "hydrant": _make_mat("hydrant", (0.78, 0.05, 0.03, 1), roughness=0.35),
+    "metal":   _make_mat("metal",   (0.18, 0.18, 0.18, 1), roughness=0.62, metallic=0.2),
+}
+
+street = StreetFurnitureFactory(mats_hydrant)
+objs, info = street.create_fire_hydrant(UrbanAssetRequest(
+    asset_type="fire-hydrant",
+    location=(-9.2, -6.8, 0),
+    semantic="fire-hydrant",
+    yaw=0.0,
+    params={"id": 0},
+))
+print(f"Fire hydrant created: {len(objs)} objects")
+save("./infinigen/outputs/obj/fire_hydrant.blend")
+
+
+# ===================== Example 5: Car (blue sedan) =====================
+# Semantic: "Blue sedan traveling east on the main road, continuous shell body."
+
+clear_scene()
+
+from infinigen.assets.objects.vehicles.vehicle import VehicleFactory
+
+mats_vehicle = {
+    "car_blue":     _make_mat("car_blue",     (0.04, 0.16, 0.56, 1), roughness=0.32),
+    "car_glass":    _make_mat("car_glass",    (0.035, 0.08, 0.11, 1), roughness=0.12),
+    "tire":         _make_mat("tire",         (0.015, 0.014, 0.013, 1), roughness=0.8),
+    "metal":        _make_mat("metal",        (0.18, 0.18, 0.18, 1), roughness=0.62, metallic=0.2),
+    "headlight":    _make_mat("headlight",    (1.0, 0.92, 0.70, 1), emission_strength=0.25),
+    "tail_light":   _make_mat("tail_light",   (0.9, 0.03, 0.02, 1), emission_strength=0.2),
+    "license_plate":_make_mat("license_plate",(0.88, 0.86, 0.74, 1)),
+    "asphalt":      _make_mat("asphalt",      (0.035, 0.038, 0.04, 1), roughness=0.88),
+}
+
+vehicles = VehicleFactory(mats_vehicle)
+objs, info = vehicles.create(UrbanAssetRequest(
+    asset_type="vehicle",
+    location=(21, -1.65, 0),
+    semantic="vehicle",
+    yaw=0.0,
+    params={"id": "car_east_01", "axis": "x", "vehicle_type": "car", "color": "car_blue"},
+))
+print(f"Car created: {len(objs)} objects, type={info['type']}")
+save("./infinigen/outputs/obj/car_blue.blend")
+
+
+# ===================== Example 6: Bus (school bus yellow) =====================
+# Semantic: "Yellow school-style bus traveling north on the cross street."
+
+clear_scene()
+
+mats_bus = {
+    "bus_yellow":   _make_mat("bus_yellow",   (0.92, 0.66, 0.08, 1), roughness=0.36),
+    "car_glass":    _make_mat("car_glass",    (0.035, 0.08, 0.11, 1), roughness=0.12),
+    "tire":         _make_mat("tire",         (0.015, 0.014, 0.013, 1), roughness=0.8),
+    "metal":        _make_mat("metal",        (0.18, 0.18, 0.18, 1), roughness=0.62, metallic=0.2),
+    "headlight":    _make_mat("headlight",    (1.0, 0.92, 0.70, 1), emission_strength=0.25),
+    "tail_light":   _make_mat("tail_light",   (0.9, 0.03, 0.02, 1), emission_strength=0.2),
+    "license_plate":_make_mat("license_plate",(0.88, 0.86, 0.74, 1)),
+    "lamp":         _make_mat("lamp",         (1.0, 0.86, 0.48, 1), emission_strength=0.5),
+}
+
+vehicles = VehicleFactory(mats_bus)
+objs, info = vehicles.create(UrbanAssetRequest(
+    asset_type="vehicle",
+    location=(1.65, 18, 0),
+    semantic="vehicle",
+    yaw=0.0,
+    params={"id": "bus_north_01", "axis": "y", "vehicle_type": "bus", "color": "bus_yellow"},
+))
+print(f"Bus created: {len(objs)} objects")
+save("./infinigen/outputs/obj/bus_yellow.blend")
+
+
+# ===================== Example 7: Pedestrian =====================
+# Semantic: "Person in red shirt walking with mid-stride pose."
+
+clear_scene()
+
+from infinigen.assets.objects.pedestrians.pedestrian import PedestrianFactory
+
+mats_ped = {
+    "person_skin":       _make_mat("skin",       (0.68, 0.48, 0.34, 1)),
+    "person_pants":      _make_mat("pants",      (0.05, 0.06, 0.09, 1)),
+    "person_hair":       _make_mat("hair",        (0.06, 0.035, 0.018, 1)),
+    "person_shoe":       _make_mat("shoe",        (0.025, 0.022, 0.02, 1)),
+    "person_shirt_red":  _make_mat("shirt_red",   (0.70, 0.08, 0.08, 1)),
+    "person_shirt_blue": _make_mat("shirt_blue",  (0.07, 0.18, 0.55, 1)),
+    "person_shirt_green":_make_mat("shirt_green", (0.08, 0.42, 0.20, 1)),
+}
+
+peds = PedestrianFactory(mats_ped)
+objs, info = peds.create(UrbanAssetRequest(
+    asset_type="pedestrian",
+    location=(-4.2, -5.8, 0),
+    semantic="pedestrian",
+    yaw=0.0,
+    params={"id": 0, "shirt": "person_shirt_red", "facing": math.radians(20)},
+))
+print(f"Pedestrian created: {len(objs)} objects")
+save("./infinigen/outputs/obj/pedestrian_red.blend")
+
+
+# ===================== Example 8: Street Tree (Nature Factory path) =====================
+# Semantic: "Realistic summer street tree with leaf mesh, tree pit stone surround."
+
+clear_scene()
+
+from infinigen.assets.objects.trees.urban_tree import UrbanTreeFactory
+
+mats_tree = {
+    "trunk":     _make_mat("trunk",     (0.20, 0.12, 0.05, 1)),
+    "bark_dark": _make_mat("bark_dark", (0.10, 0.055, 0.025, 1), roughness=0.85),
+    "leaf":      _make_mat("leaf",      (0.08, 0.32, 0.13, 1)),
+    "leaf_dark": _make_mat("leaf_dark", (0.035, 0.20, 0.07, 1)),
+    "leaf_litter":_make_mat("leaf_litter",(0.34, 0.18, 0.06, 1), roughness=0.9),
+    "curb":      _make_mat("curb",      (0.64, 0.62, 0.56, 1), roughness=0.8),
+}
+
+trees = UrbanTreeFactory(mats_tree)
+objs, info = trees.create_tree(UrbanAssetRequest(
+    asset_type="tree",
+    location=(18, -13, 0),
+    semantic="tree",
+    yaw=0.37,
+    params={
+        "id": 0,
+        "scale": 0.48,
+        "variant": 0,
+        "season": "summer",
+        "fruit_chance": 0.0,
+        "max_faces": 45000,
+    },
+))
+trees.cleanup_prototypes()
+print(f"Street tree created: {len(objs)} objects, type={info.get('type', 'unknown')}")
+save("./infinigen/outputs/obj/street_tree_summer.blend")
+
+
+# ===================== Example 9: Autumn Street Tree =====================
+# Semantic: "Autumn tree with orange-red foliage, slightly different trunk variant."
+
+clear_scene()
+
+trees = UrbanTreeFactory(mats_tree)
+objs, info = trees.create_tree(UrbanAssetRequest(
+    asset_type="tree",
+    location=(0, 0, 0),
+    semantic="tree",
+    yaw=1.2,
+    params={
+        "id": 1,
+        "scale": 0.52,
+        "variant": 1,
+        "season": "autumn",
+        "fruit_chance": 0.0,
+        "max_faces": 45000,
+    },
+))
+trees.cleanup_prototypes()
+print(f"Autumn tree: {len(objs)} objects")
+save("./infinigen/outputs/obj/street_tree_autumn.blend")
+
+
+# ===================== Example 10: Grass Tuft (Nature Factory) =====================
+# Semantic: "Natural grass tuft for lawn areas between sidewalk and buildings."
+
+clear_scene()
+
+from infinigen.assets.objects.grassland.urban_groundcover import UrbanGroundcoverFactory
+
+mats_green = {
+    "grass_tuft": _make_mat("grass_tuft", (0.05, 0.26, 0.07, 1), roughness=0.95),
+    "leaf_dark":  _make_mat("leaf_dark",  (0.035, 0.20, 0.07, 1)),
+    "trunk":      _make_mat("trunk",      (0.20, 0.12, 0.05, 1)),
+    "leaf_litter":_make_mat("leaf_litter",(0.34, 0.18, 0.06, 1), roughness=0.9),
+}
+
+groundcover = UrbanGroundcoverFactory(mats_green)
+objs, info = groundcover.create_grass_tuft(UrbanAssetRequest(
+    asset_type="grass",
+    location=(-26, 20, 0),
+    semantic="grass",
+    yaw=0.51,
+    params={"id": 0, "scale": 2.2},
+))
+print(f"Grass tuft: {len(objs)} objects")
+save("./infinigen/outputs/obj/grass_tuft.blend")
+
+
+# ===================== Example 11: Shrub (Nature Factory) =====================
+# Semantic: "Dense urban shrub with mixed foliage, small yellow flowers at tips."
+
+clear_scene()
+
+mats_shrub = {
+    "shrub":         _make_mat("shrub",       (0.05, 0.24, 0.08, 1)),
+    "leaf_dark":     _make_mat("leaf_dark",   (0.035, 0.20, 0.07, 1)),
+    "trunk":         _make_mat("trunk",       (0.20, 0.12, 0.05, 1)),
+    "flower_yellow": _make_mat("flower_yel",  (0.95, 0.78, 0.10, 1)),
+    "lamp":          _make_mat("lamp",        (1.0, 0.86, 0.48, 1)),  # fallback for flower
+}
+
+groundcover = UrbanGroundcoverFactory(mats_shrub)
+objs, info = groundcover.create_shrub(UrbanAssetRequest(
+    asset_type="shrub",
+    location=(-24, 23.8, 0),
+    semantic="shrub",
+    yaw=0.42,
+    params={"id": 0, "scale": 0.52, "max_faces": 20000},
+))
+print(f"Shrub: {len(objs)} objects")
+save("./infinigen/outputs/obj/urban_shrub.blend")
+
+
+# ===================== Example 12: Flower Plant =====================
+# Semantic: "Colorful flowering plant for planter strips and lawn borders."
+
+clear_scene()
+
+mats_flower = {
+    "leaf":          _make_mat("leaf",         (0.08, 0.32, 0.13, 1)),
+    "shrub":         _make_mat("shrub",        (0.05, 0.24, 0.08, 1)),
+    "flower_yellow": _make_mat("flower_yel",   (0.95, 0.78, 0.10, 1)),
+    "lamp":          _make_mat("lamp",         (1.0, 0.86, 0.48, 1)),  # fallback
+}
+
+groundcover = UrbanGroundcoverFactory(mats_flower)
+objs, info = groundcover.create_flowerplant(UrbanAssetRequest(
+    asset_type="flowerplant",
+    location=(-25.4, 21.4, 0),
+    semantic="flowerplant",
+    yaw=0.33,
+    params={"id": 0, "scale": 0.72, "max_faces": 8000},
+))
+print(f"Flower plant: {len(objs)} objects")
+save("./infinigen/outputs/obj/flowerplant.blend")
+
+
+# ===================== Example 13: Fountain =====================
+# Semantic: "Large multi-tier ornamental fountain for commercial plaza, water arcs."
+
+clear_scene()
+
+from infinigen.assets.objects.decor.urban_public_space import PublicSpaceFactory
+
+mats_plaza = {
+    "stone":  _make_mat("stone",  (0.56, 0.54, 0.50, 1)),
+    "water":  _make_mat("water",  (0.12, 0.38, 0.62, 0.75), roughness=0.05),
+    "bronze": _make_mat("bronze", (0.55, 0.32, 0.13, 1), metallic=0.45),
+}
+
+plaza = PublicSpaceFactory(mats_plaza)
+objs, info = plaza.create_fountain(UrbanAssetRequest(
+    asset_type="fountain",
+    location=(18, -17, 0),
+    semantic="fountain",
+    yaw=0.0,
+    params={"id": 0},
+))
+print(f"Fountain: {len(objs)} objects")
+save("./infinigen/outputs/obj/fountain.blend")
+
+
+# ===================== Example 14: Sculpture =====================
+# Semantic: "Abstract bronze sculpture on stone plinth for public plaza."
+
+clear_scene()
+
+objs, info = plaza.create_sculpture(UrbanAssetRequest(
+    asset_type="sculpture",
+    location=(10.5, -23.5, 0),
+    semantic="sculpture",
+    yaw=0.0,
+    params={"id": 0},
+))
+print(f"Sculpture: {len(objs)} objects")
+save("./infinigen/outputs/obj/sculpture.blend")
+
+
+# ===================== Example 15: Planter Box =====================
+# Semantic: "Terracotta rectangular planter with mixed leaf mounds and purple flowers."
+
+clear_scene()
+
+mats_planter = {
+    "planter":       _make_mat("planter",      (0.42, 0.25, 0.14, 1)),
+    "stone":         _make_mat("stone",        (0.56, 0.54, 0.50, 1)),
+    "leaf":          _make_mat("leaf",         (0.08, 0.32, 0.13, 1)),
+    "shrub":         _make_mat("shrub",        (0.05, 0.24, 0.08, 1)),
+    "flower_purple": _make_mat("flower_pur",   (0.45, 0.16, 0.62, 1)),
+    "lamp":          _make_mat("lamp",         (1.0, 0.86, 0.48, 1)),  # fallback
+    "trunk":         _make_mat("trunk",        (0.20, 0.12, 0.05, 1)),  # soil fallback
+    "soil":          _make_mat("soil",         (0.13, 0.075, 0.035, 1), roughness=0.95),
+}
+
+street_full = StreetFurnitureFactory(mats_planter)
+objs, info = street_full.create_planter(UrbanAssetRequest(
+    asset_type="planter",
+    location=(14, -24, 0),
+    semantic="planter",
+    yaw=0.0,
+    params={"id": 0},
+))
+print(f"Planter: {len(objs)} objects")
+save("./infinigen/outputs/obj/planter.blend")
+
+
+# ===================== Example 16: Bike Rack =====================
+# Semantic: "Inverted-U steel bike rack for commercial sidewalk."
+
+clear_scene()
+
+mats_rack = {
+    "metal": _make_mat("metal", (0.18, 0.18, 0.18, 1), roughness=0.62, metallic=0.2),
+}
+
+street_rack = StreetFurnitureFactory(mats_rack)
+objs, info = street_rack.create_bike_rack(UrbanAssetRequest(
+    asset_type="bike-rack",
+    location=(8.5, -10.2, 0),
+    semantic="bike-rack",
+    yaw=0.0,
+    params={"id": 0},
+))
+print(f"Bike rack: {len(objs)} objects")
+save("./infinigen/outputs/obj/bike_rack.blend")
+
+
+# ===================== Example 17: Full Urban Scene via generate_urban.py =====================
+# This example shows how to run a complete urban scene programmatically.
+# (Normally called via scripts/scene_stream_urban.sh)
+#
+# from pathlib import Path
+# import gin
+# gin.parse_config_files_and_bindings(
+#     ["infinigen_examples/configs_urban/base_urban.gin",
+#      "infinigen_examples/configs_urban/generated_urban_scene.gin"],
+#     []
+# )
+# from infinigen_examples.generate_urban import compose_urban
+# compose_urban(output_folder=Path("outputs/urban/coarse"), scene_seed=42)
+
+
+# ===================== Example 18: Reusing Nature Factories (shared with nature stream) =====================
+# Urban trees and groundcover reuse nature factories — these are the SAME as obj_nature_generate.py
+# TreeFactory (used by UrbanTreeFactory for street trees):
+
+clear_scene()
+
+from infinigen.assets.objects.trees.generate import TreeFactory, BushFactory
+
+factory = TreeFactory(factory_seed=42, season="summer", fruit_chance=0.2, coarse=False)
+tree = factory.spawn_asset(42, loc=(0, 0, 0), rot=(0, 0, 0), distance=10, vis_distance=10)
+print(f"TreeFactory (urban reuse): {tree.name}")
+save("./infinigen/outputs/obj/urban_reuse_tree.blend")
+
+# GrassTuftFactory (used by UrbanGroundcoverFactory):
+clear_scene()
+
+from infinigen.assets.objects.grassland.grass_tuft import GrassTuftFactory
+from infinigen.core.util.math import FixedSeed
+
+gf = GrassTuftFactory(seed=1234)
+with FixedSeed(1234):
+    grass = gf.create_asset()
+gf.finalize_assets([grass])
+grass.scale *= 2.5  # urban scale
+print(f"GrassTuftFactory (urban reuse): {grass.name}")
+save("./infinigen/outputs/obj/urban_reuse_grass.blend")
+
+# FlowerPlantFactory (used by UrbanGroundcoverFactory):
+clear_scene()
+
+from infinigen.assets.objects.grassland.flowerplant import FlowerPlantFactory
+
+fpf = FlowerPlantFactory(factory_seed=5678, coarse=False)
+with FixedSeed(5678):
+    flower = fpf.create_asset()
+flower.scale *= 0.85
+print(f"FlowerPlantFactory (urban reuse): {flower.name}")
+save("./infinigen/outputs/obj/urban_reuse_flower.blend")

@@ -1,0 +1,16 @@
+{
+  "date": "2026-09-09",
+  "method": "gpt6_astra",
+  "domain": "urban",
+  "authorization_context": "The assistant explicitly proposed a 120-minute render cap and one extra recovery for exhausted infrastructure runs; the user replied: \"Continue to complete all city scenes, my time is running out, focus on the task goal, finish as soon as possible, and provide me with real-time progress updates.\" It was interpreted and disclosed as proceeding with that proposed resource-only revision.",
+  "original_timeout_s": 1800,
+  "new_attempt_timeout_s": 7200,
+  "original_max_attempts": 3,
+  "exhausted_or_old_draining_runs_max_attempts": 4,
+  "new_attempts_for_other_runs_max_attempts": 3,
+  "inflight_policy": "Do not kill, restart or reset old attempts. Old draining controller retains original deadlines; its runs excluded until it exits. New budget applies only to new attempts.",
+  "extra_exhausted_runs_observed": ["urban_commercial_offset_08/seed_3", "urban_commercial_irregular_09/seed_2"],
+  "original_exhausted_runs": ["urban_residential_main_side_02/seed_3", "urban_commercial_main_side_07/seed_3"],
+  "preserved": ["original frozen configuration and 28 source hashes", "generated code", "Blender scene", "render implementation", "samples and resolutions", "old attempt counts and logs", "quality failures without retry", "ITT and metric definitions"],
+  "disclosure": "Post-freeze compute-budget amendment, not an unchanged execution budget. No technical failures converted to quality zeros. All writes remain under baselines."
+}

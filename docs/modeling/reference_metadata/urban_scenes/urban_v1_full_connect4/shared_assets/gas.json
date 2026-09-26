@@ -1,0 +1,54 @@
+{
+  "bounds": [
+    [
+      -19.649999618530273,
+      -19.850000381469727,
+      2.9802322387695312e-08
+    ],
+    [
+      15.350000381469727,
+      11.350000381469727,
+      8.579999923706055
+    ]
+  ],
+  "dimensions": [
+    35.0,
+    31.200000762939453,
+    8.579999923706055
+  ],
+  "mesh_instances": 3514,
+  "evaluated_vertices": 13494156,
+  "key": "gas",
+  "collection": "ASSET_gas",
+  "source": "./infinigen/outputs/outdoor_full_demo/urban_v1_full_connect3/shared_assets/gas.blend",
+  "enterable": true,
+  "door": [
+    0,
+    0
+  ],
+  "floor_z": 1.16,
+  "inside_y": 2.5,
+  "room_center": [
+    -4.350000381469727,
+    4.649999618530273
+  ],
+  "preparation": [
+    {
+      "store_door_leaf": -1,
+      "parts": 19,
+      "degrees": -100
+    },
+    {
+      "store_door_leaf": 1,
+      "parts": 19,
+      "degrees": 100
+    },
+    {
+      "native_refrigerated_bottles": 144
+    },
+    {
+      "native_shelf_products": 300,
+      "variants": "existing native bottle, jar and food bag assemblies; removed old body/cap/label proxies"
+    }
+  ]
+}

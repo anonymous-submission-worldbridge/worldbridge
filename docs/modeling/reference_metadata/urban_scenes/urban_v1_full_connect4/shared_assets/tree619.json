@@ -1,0 +1,24 @@
+{
+  "bounds": [
+    [
+      -4.32627010345459,
+      0.0,
+      0.0
+    ],
+    [
+      4.32627010345459,
+      8.647626876831055,
+      8.79348373413086
+    ]
+  ],
+  "dimensions": [
+    8.65254020690918,
+    8.647626876831055,
+    8.79348373413086
+  ],
+  "mesh_instances": 2,
+  "evaluated_vertices": 27811747,
+  "key": "tree619",
+  "collection": "ASSET_tree619",
+  "source": "./infinigen/outputs/outdoor_part_demo/urban_v3_lake3/urban_v3_lake3.blend"
+}

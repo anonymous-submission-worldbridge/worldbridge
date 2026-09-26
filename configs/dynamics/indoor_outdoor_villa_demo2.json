@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "timeline": {
+    "frame_start": 1,
+    "frame_end": 192,
+    "fps": 24,
+    "loop": true
+  },
+  "render": {
+    "engine": "AUTO_EEVEE",
+    "resolution_x": 1280,
+    "resolution_y": 720,
+    "resolution_percentage": 100,
+    "samples": 32,
+    "transparent": false,
+    "keep_frames": false,
+    "video_path": "./infinigen/outputs/indoor_outdoor_villa_demo2/videos/dynamic_all_gpus.mp4"
+  },
+  "camera": {
+    "mode": "orbit",
+    "target": [3.2, -5.2, 1.2],
+    "radius": 22.0,
+    "height": 10.0,
+    "start_degrees": -110.0,
+    "end_degrees": -70.0,
+    "lens_mm": 38.0
+  },
+  "effects": {
+    "vehicles": {
+      "enabled": true,
+      "distance_m": 12.0,
+      "forward_axis": "Y",
+      "wheel_spin": false,
+      "routes": [
+        {
+          "object": "CA_DEMO2_vehicle_waiting_before_crosswalk_C2W_ROOT",
+          "forward_axis": "Y",
+          "points": [[10.4, -9.1], [-2.1, -9.1]]
+        },
+        {
+          "object": "CA_DEMO2_vehicle_passing_far_lane_C2W_ROOT",
+          "forward_axis": "Y",
+          "points": [[-2.1, -11.675], [10.4, -11.675]]
+        }
+      ]
+    },
+    "wind": {
+      "enabled": true,
+      "angle_degrees": 3.0,
+      "period_frames": 64,
+      "max_objects": 96
+    },
+    "river": {
+      "enabled": false
+    },
+    "fountain": {
+      "enabled": false
+    }
+  }
+}

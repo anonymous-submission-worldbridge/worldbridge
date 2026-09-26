@@ -1,0 +1,105 @@
+{
+  "frozen_at_utc": "2026-09-12T16:47:55.962894+00:00",
+  "method": "gpt6_astra_medium",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "medium",
+  "transport": "codex_exec_saved_chatgpt_login",
+  "codex_version": "0.153.4",
+  "reference_high_protocol_sha256": "9a387b973b52285a82e225466e827ee7d6814d4d5a5a8c7da9a824aa21749880",
+  "pilot_counts": {
+    "valid": 18,
+    "quality": 2
+  },
+  "pair_evidence": {
+    "indoor": {
+      "spec_id": "indoor_bedroom_00",
+      "seed_0_anchor_hashes": [
+        "23a7a16d8c8529907c2b389d5a385722eb8d6053cf04809f792055400f4ae875",
+        "6414c683c8e305d6075ebd19a8f4bd6eeca50f1c838407aa801706649eeb61f5",
+        "00c649b735132d9ad0dfef2213c042e8659f7c2552f4d3673214abf7ac5c60f0",
+        "e4452f0f2932f467f6d5b7a977083b046e94da54ce70d62d3f6aa55a9495dc0b",
+        "a54f4621edacdd5c75f032b572bbfa085b7ac627bb33c19ac462299dbe84be95",
+        "2dbc2f0fb93c4d763375d4fbfef9697b675077e609d5be49c73e46e5305b3eb4",
+        "f79503c46d231f52d4d57b3db6b94a40e286c95555c06339bce4cda75d471138",
+        "1c72f3f0cde1bf55ad21f6ed7d4b207ec51b6b2440d3bfae3a18eaf839b9afb0"
+      ],
+      "seed_1_anchor_hashes": [
+        "cd9cdbb30b278d05440c86cf34795f7bf8133f70836105d4460981424f8f6c5c",
+        "33c6c21314a1eb32bc3bcc1870949f7a0b0a5f8addef93f6435a0143955d162a",
+        "642cf68dcee86ef59c940a740bb593048200fb9f86a4a01202368f292a01b1e9",
+        "5c875749a6a565732ad3de44fb5bfc4d895516c0a423927104a3362ebed2d949",
+        "f66cb69435630946669e8a8dded12e33f541bf972ad4606fe9f6fbb347424a02",
+        "4c4ae70f859c259d3093ca3ef9c651905b4ac84c99e946ed519ee3abf8729079",
+        "1e8bf3c1795bb99e31bc970a61ccbb7a2325c39ba1d2bf5f91b65746c1be6dca",
+        "9457d7a2246b1123b96835d6a31e10c1ec69716b0b77006c32d5dae8c270c155"
+      ]
+    },
+    "urban": {
+      "spec_id": "urban_commercial_four_way_05",
+      "seed_0_anchor_hashes": [
+        "d4bb064308d411baf69ef7df837909d8e15bb5bafd7fbd66874d1b207c12a24f",
+        "b01828922ae69b4f87c6e959e9bdb8f9339112531a87cc7321742a6704e4232e",
+        "b33b014a6b57859e1fa3d42215e7bb0e12932a57ee1e9ac8d298f5dd9d028152",
+        "fa9e56bdb79b4d9fe38f3ebef81e1952a5c6a21eaf767b8ce8f710adcfbbb1a4",
+        "83aa1fddab0b3e49444b9437ae49b858478fb59010250a38daac66882713c4ed",
+        "5ef422ca01a0af86503b02431f26b43dcf17729dde05d2a567910e70eb7a69f6",
+        "5b550ea7f5e627ba9dbdaed9844085d9fad6df6a3dc0f3b67a3007441542db76",
+        "f2c42a1a3e0a93dff05ddf7a836367157bd19494796d0d9c9953101f1786e6aa"
+      ],
+      "seed_1_anchor_hashes": [
+        "2317d91da159fa0766a21cac84a303cbb6c9be12f18487bb9740b1d0b52e9de4",
+        "c4d5a5c66d2ed1a9f0c41d8bf193c4d5349318fc380c6d52a77321606fb7b9e9",
+        "bcf14dec0a422e95dc1a2b3340d697660de3e83f5f66e8dbeb4a05d772715e42",
+        "6fc568db50b8bdc0866aa0b64e841c5a22d13eeebdec1d98f47e08652a11b818",
+        "4aabc9d9be37b25cc925812a59354a5b08bfe9f15e2d953c55fb775d9e098e88",
+        "7f7d645f228e6ce146ebfde348ea1f435a9525903cd9c22f4928114b754f6fbf",
+        "a12961daf7979e79be0f495fc6e5e33c8cd9831cf8a6a90546d77bcf13f703ba",
+        "fbb37739a999be53118786bff65a5e94f174d60fc816ff72ab841123ff8ee5de"
+      ]
+    }
+  },
+  "metric_smoke": {
+    "indoor": {
+      "spec_id": "indoor_bedroom_00",
+      "seed": 0,
+      "iqa_sha256": "65788c4833721a1e18e711eb59d422c259edb39a55c29c25066521e7852cb844",
+      "consistency_sha256": "9e98d9ecb3697da4a9452ccf80bd49bb530356fe237df2a85340820e22bc620f",
+      "semantics_sha256": "731b5cb0804d292d3ce3651c37fbcad4b82882affdc3f54a523d7fdbddd6ab84"
+    },
+    "urban": {
+      "spec_id": "urban_residential_four_way_00",
+      "seed": 0,
+      "iqa_sha256": "1d6d3f7742e340e845617d735791b129fa7d614b9b6d98adab0c4c89c720def2",
+      "consistency_sha256": "1f2406c18b2e337b1c1e07f0f01ca771bba7099e424a2624e742a81e61b09d65",
+      "semantics_sha256": "3722fc7123ca5e08686464b9c519313f33f225af19a91d37b5c9815a40f720c9"
+    }
+  },
+  "evaluation_amendments_sha256": {
+    "methods/gpt/protocol/generation/gpt6_astra_medium_evaluator_amendment_20260913.json": "c44a4b81d2d69581ad3a8b568c1c6d2e34893e8e9d099b6f4f5a0228dcc1a87b"
+  },
+  "files_sha256": {
+    "methods/gpt/protocol/generation/gpt6_astra_medium.json": "4e83500c2d2114b89ce5601d11db7449fa165e7a4d081e03217e8fb9305d87ac",
+    "methods/gpt/protocol/generation/gpt6_astra_prompt.txt": "80a163c283bebec21641856882df33321c66a3020ed839d05a22a69fb59fbc0e",
+    "methods/gpt/protocol/generation/gpt6_astra_output.schema.json": "ff375ee28f3751d4c36ba57081673ae020c0c711b2248dc1aca2d78608249db0",
+    "protocol/generation/indoor_specs.jsonl": "38ba6b4eb2b65142b9a8223cb656720cd18904ca16d8e73075d5ba12a93ea657",
+    "protocol/generation/urban_specs.jsonl": "3c1fde2ec5725145ead3afc8bbf2d110ec78624183de988c1a51570e0f21d79b",
+    "protocol/generation/seeds.json": "af531f72fc11957e7a41f657bda2ffef1b2cc2805fb3406490c701475cd72a46",
+    "protocol/generation/metrics.lock.json": "84f0d82c2315a041c9da42d8dce4f6dd5f9ae82146c69ad18ff3d0b94e60df19",
+    "methods/gpt/adapter.py": "a6f20749bc618ee54465449b527a14ebe78cd5ca7e2040cc35525cb7fffbfca9",
+    "methods/gpt/adapter_medium.py": "41e5f868d3594d985f36d883acda7d12dae18b977a71f18ee40d34a72b15df52",
+    "methods/gpt/run_medium_matrix.py": "384d8a03f154a99afb4af64f62fd5984d35b14088cebb8e8c2d359cc62f75a21",
+    "methods/gpt/run_medium_metrics.py": "197aa61cfff3039b80b1a87ba8d76bf4e2d711cc792851ca3dbdd65830aecb4c",
+    "methods/gpt/tools/blender_render_gpt.py": "962947b31310f597148176d080a86f662e4ddab4da4432dbf8f164fd50b7bed4",
+    "methods/sceneweaver/tools/blender_render_sceneweaver.py": "74889d09cedc6de0fa81380385200d698a03d4e5dcff9c5a18b211d495084d61",
+    "methods/gpt/tools/gpt_camera.py": "3d4eb1c4d0d6717c6ac76a4cd644060c004effe76676508fa27172af3580169a",
+    "methods/gpt/tools/audit_gpt_medium.py": "4c9ca65cca962e4215c55914231588bb8311a26aee1f6b11b98aceea5bc92265",
+    "methods/gpt/tools/freeze_gpt_medium.py": "51ce34b78b0d188ec91e9c10436b0b78130942469ab4c531d16656cb9a20f1c3",
+    "evaluation/visual/eval_iqa.py": "370ac7ba9533c93fc87d570732c53eb914e14a543c4890f75d4893618e927452",
+    "evaluation/visual/eval_worldscore_gpt_high_frozen.py": "0bd4feb1b117adcdd3a5fb2327517b4597a6c3e479d46d9ad0cdcb092f623933",
+    "evaluation/visual/eval_diversity.py": "c1fcb7a0b4e899b0f86b2f76dd874f67ba2314114697fe4504bdeb14c40a065a",
+    "evaluation/visual/generate_semantics.py": "e29bdb5e50d1801e9b2c8acdfab1c63d189de0317ff1bb6442afd91c8856c8ae",
+    "evaluation/visual/aggregate_generation.py": "cac981d1abac4afd22fe7e5592f8c36700df36c3efaf22889d18cc2919fc885f",
+    "evaluation/visual/import_human_ratings.py": "211489503dd126307489046e15363122e5830757a1cff148d212827334d7ffaf",
+    "methods/gpt/tools/make_annotation_package_gpt_high_frozen.py": "5cac2ecbf615a0f8f6cfa22253b986cb4ff282bc38f259a9107f353dbe67d6cc"
+  }
+}

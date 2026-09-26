@@ -1,0 +1,42 @@
+{
+  "schema_version": "table4-hyworld2-local-cache-lock-v1",
+  "verified_against_canonical_by": "full relative-path and byte-size equality",
+  "verified_at_utc": "2026-09-11T10:04:56.719863+00:00",
+  "entries": {
+    ".cache/hyworld2_models_uid2002/HY-World-2.0": {
+      "file_count": 48,
+      "total_bytes": 169432640479,
+      "size_manifest_sha256": "16ce1974492a6e74dc773883cc3911ce81654793e7ec64913dc3430e4b8a9b63"
+    },
+    ".cache/hyworld2_models_uid2002/WorldStereo": {
+      "file_count": 12,
+      "total_bytes": 34863758018,
+      "size_manifest_sha256": "a659d940a21bc73ca394147a51dcaeb0fe2ba98dfbba260c80cf2a95eb6311fa"
+    },
+    ".cache/hyworld2_models_uid2002/Wan2.1-I2V-14B-480P-Diffusers": {
+      "file_count": 47,
+      "total_bytes": 90104322072,
+      "size_manifest_sha256": "e08492f23b49da7d34d04fa815928b4f1380bff61adcee6e37ff265c508c03f8"
+    },
+    ".cache/hyworld2_models_uid2002/sam3": {
+      "file_count": 13,
+      "total_bytes": 6895094316,
+      "size_manifest_sha256": "b58125b9f7f49f5ac3ea30fa0f1b81da9005c5f4290e23b78b45fa580b591b3a"
+    },
+    ".cache/hyworld2_models_uid2002/moge-2-vitl-normal": {
+      "file_count": 5,
+      "total_bytes": 1324274848,
+      "size_manifest_sha256": "b63cc8c73ca372af8c9bfcc24289ef605715e28ea45fedc630ee3ddce2eabfbd"
+    },
+    ".cache/hyworld2_models_uid2002/grounding-dino-tiny": {
+      "file_count": 12,
+      "total_bytes": 1382224823,
+      "size_manifest_sha256": "b795d68d5dbf6362c9725a8055b619b5881f1d37926b8c375cf4f55990c27ca7"
+    },
+    ".cache/hyworld2_models_uid2002/zim-anything-vitl": {
+      "file_count": 2,
+      "total_bytes": 1255022286,
+      "size_manifest_sha256": "6f5b9790637dc3335b545d4be58aa515e16ce5a9377417ab9a3d10514e68f14f"
+    }
+  }
+}

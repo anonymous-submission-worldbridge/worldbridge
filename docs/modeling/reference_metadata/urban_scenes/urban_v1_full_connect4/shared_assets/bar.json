@@ -1,0 +1,45 @@
+{
+  "bounds": [
+    [
+      -1.1599998474121094,
+      -1.5629420280456543,
+      0.0
+    ],
+    [
+      7.480000019073486,
+      8.34000015258789,
+      7.461319923400879
+    ]
+  ],
+  "dimensions": [
+    8.639999389648438,
+    9.902942657470703,
+    7.461319923400879
+  ],
+  "mesh_instances": 486,
+  "evaluated_vertices": 12027842,
+  "key": "bar",
+  "collection": "ASSET_bar",
+  "source": "./infinigen/outputs/outdoor_full_demo/urban_v1_full_connect3/shared_assets/bar.blend",
+  "enterable": true,
+  "door": [
+    0,
+    0
+  ],
+  "floor_z": 0.27,
+  "inside_y": 3.0,
+  "room_center": [
+    3.1600000858306885,
+    3.2100000381469727
+  ],
+  "preparation": [
+    {
+      "articulated_parts": 6,
+      "degrees": -100
+    },
+    {
+      "native_spirit_bottles": 52,
+      "planter_foliage": "complete existing full08 branching and leaf geometry"
+    }
+  ]
+}

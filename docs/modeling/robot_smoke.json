@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "blender_version": "5.1.2",
+  "objects": 42,
+  "meshes": 36,
+  "arms": 2,
+  "legs": 2,
+  "keyframed_poses": 2,
+  "model_files_written": 0
+}

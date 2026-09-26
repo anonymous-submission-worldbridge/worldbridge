@@ -1,0 +1,24 @@
+{
+  "bounds": [
+    [
+      -4.319999694824219,
+      -1.1920928955078125e-07,
+      0.0
+    ],
+    [
+      4.319999694824219,
+      9.130000114440918,
+      7.461319923400879
+    ]
+  ],
+  "dimensions": [
+    8.639999389648438,
+    9.130000114440918,
+    7.461319923400879
+  ],
+  "mesh_instances": 708,
+  "evaluated_vertices": 97884,
+  "key": "bar",
+  "collection": "ASSET_bar",
+  "source": "./infinigen/outputs/outdoor_part_demo/urban_v3_all43_25/urban_v3_all43_25.blend"
+}

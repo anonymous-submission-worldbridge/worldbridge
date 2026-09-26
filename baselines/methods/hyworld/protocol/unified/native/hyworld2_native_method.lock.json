@@ -1,0 +1,53 @@
+{
+  "schema_version": "table4-hyworld2-native-method-lock-v1",
+  "frozen_at_utc": "2026-09-10T08:01:06.671626+00:00",
+  "finalized_at_utc": "2026-09-12T15:03:00Z",
+  "method": "hyworld2",
+  "track": "matched_text_independent",
+  "upstream_commit": "df9988efb87bfc0f4947eb3889411cf957478b06",
+  "protocol_sha256": "d0f16d448a080b489d5b57495431bc61c12fac7052986263763e1381099765a7",
+  "specs_sha256": "b3fe8e3d45cacea8d2fb5ea339dfbf3ea87c5e78a421f37a6167798d903e6362",
+  "aqs_prompt_sha256": "86659293875a8b09172f116e45c1f21c440d0a15cbb15f26cc525858f1059b95",
+  "implementation_sha256": {
+    "baselines/methods/hyworld/adapter.py": "589a828c248c2013073089e60d9e565e3104cb993a1a1a7c89ba2bc73a7c06b5",
+    "baselines/methods/hyworld/run.py": "ab479018bdbeed4fd42e9ae48e0495da52ad5d7b9f40c27d13b84566083cabfa",
+    "baselines/methods/hyworld/supervise_matrix.py": "bb9e18bce561d90b55f8a511d80b30cbf7dc854129998c419663e9931737f80c",
+    "baselines/methods/hyworld/unified/native/adapters/hyworld.py": "9734172e896500116a03f5748ef4d3b0230708d5ece7fa52304de86d15d53da5",
+    "baselines/evaluation/unified/aqs.py": "f06bc13c18e5d36ce7c71c132f9adff5905fc3ac76dceaf51db307a87acce64e",
+    "baselines/methods/hyworld/unified/native/run.py": "8b50fe145feab7c89f042f8b79502924a958af538e15f3d343b4a11921f76179",
+    "baselines/methods/hyworld/unified/native/build_hyworld_gsplat.py": "2197ea1d9cf83c1acbe4d2176a0b4739296f0f91f62c1b1aa324e2347004f2f4",
+    "baselines/methods/hyworld/unified/native/run_hyworld_formal_shards.py": "5673e0c9240485579eaed7bd3a1454fc223fb495e4d5742645ee44c9587e0891",
+    "baselines/methods/hyworld/unified/native/run_hyworld_gs_parallel.py": "730ed2789a64858fff330e7a639af27fc7d02752708eed49eae85262d5f66624",
+    "baselines/methods/hyworld/unified/native/run_hyworld_matrix.py": "d4e1abf8daf765c2fd0df1a77e36a3e1278719454b52c2988439d144e8c067b8",
+    "baselines/methods/hyworld/unified/native/stage_hyworld_formal_outputs.py": "83a36e31f0c5a347073735b3e9dd2797daeb15f36064da6b983671e701131a38",
+    "baselines/methods/hyworld/unified/native/supervise_hyworld.py": "f2d025f18e7eb452bdb88571a2cb249160fe0dff2b8968006fb42cab121129be",
+    "baselines/methods/hyworld/tools/hyworld_generate_panoramas.py": "46d3eb7141e1ee6f1ef8585af1c8d0d3ebed9514d0c824e02ba6a60ba2a9cdfb",
+    "baselines/methods/hyworld/tools/render_hyworld_generation.py": "8f26f8ceb2b0cfa86c9cf279f1fb6236722ece1e76286fe9282fcf6e104b7e64",
+    "baselines/sources/HY-World-2.0/hyworld2/panogen/hunyuan_image_3/modeling_hunyuan_image_3.py": "81957efd0aa1a6e543f6f3ad4ea860f52655e101a36d700094473a054a8eb548",
+    "baselines/sources/HY-World-2.0/hyworld2/worldgen/gen_gs_data.py": "9c38de7e19e16370719d0f29771f216ed658bcf808deda6dfe68508cb93936c7",
+    "baselines/sources/HY-World-2.0/hyworld2/worldgen/traj_generate.py": "7b683240aa04d61a2bad472507b8517b90b3a756b85dacf7b0796ec346eb0961",
+    "baselines/sources/HY-World-2.0/hyworld2/worldgen/traj_render.py": "2928d14df02cb28baf429afbed151347721125b11fe6a6ac7e0d6e286283aa00",
+    "baselines/sources/HY-World-2.0/hyworld2/worldgen/video_gen.py": "30c9442b6cc29d96f64b658110472ae526fa10c72d5828a2a0319027aa41569f",
+    "baselines/sources/HY-World-2.0/hyworld2/worldgen/world_gs_trainer.py": "f94a786f49eb89c2c573b19f061fad896da405951e1d3c896d6fcf3be29967a5"
+  },
+  "operational_amendments_sha256": {
+    "baselines/methods/hyworld/protocol/unified/native/hyworld2_capacity_sharing_amendment_20260910.json": "735a397fda577874265fb449ae58d9b5771cb425574f27580146940760f68506"
+  },
+  "runtime_locks_sha256": {
+    "baselines/methods/hyworld/protocol/unified/native/hyworld2_local_cache.lock.json": "57558dec0d3f6aa1c8fd38b7f33972653cd46a1e5c58babf558bb1c797224433",
+    "baselines/methods/hyworld/protocol/unified/native/hyworld2_local_runtime.lock.json": "119111b983ce21d43b9fa8c146a390608ebababbd9d2896ea532357ded38104b"
+  },
+  "checkpoint_manifest_sha256": {
+    "grounding_dino_tiny_modelscope.json": "3381eb1b6167b9eee70cac33de0147367602af2e3e6de46f333b7dc68f21d02b",
+    "hyworld2_pinned_revision_crosscheck.json": "85541722d29de177b9986b696021442c6c900670de30e7fb887140959679072d",
+    "moge2_vitl_normal_huggingface.json": "766f46ff7edae1f7ea4d24600dcd07cc28661a484b1d0ba4e04b5558049d51a2",
+    "qwen3_vl_8b_modelscope.json": "46c4dcd1dd3a02e89e319915223e817aa41bcabc9f5843a88f20493d01686081",
+    "sam3_modelscope.json": "971ec70859321896489bedaeb89def4e79ba88c18f48535df8e80f5123e514a8",
+    "wan21_i2v_14b_modelscope.json": "4b96a8c4e2d0dc78bb4731675ae2eb462092e477c6dbb62335cb27b5c5d600a4",
+    "worldstereo_huggingface.json": "ab41b6bd4afd6cc3327ab89124853417161fed303e8c9c455494cca570441526",
+    "zim_huggingface_api.json": "e0a7a9d9eab1604f6d32f63eaa2116b880123f7bda44d2b9fe6e8278da38963f",
+    "zim_vitl_huggingface.json": "742940813657e9721fe09e5092de5543ad23d7eb75b4a36a05ff6af66b43bf51"
+  },
+  "uses_reused_table2_runtime": true,
+  "requires_network_download": false
+}

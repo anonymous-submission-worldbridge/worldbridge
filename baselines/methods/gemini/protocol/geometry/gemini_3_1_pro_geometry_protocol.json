@@ -1,0 +1,98 @@
+{
+  "protocol_id": "worldbridge-table3-gemini-3.1-pro-native-mesh-nav-v1",
+  "status": "frozen",
+  "created_at_utc": "2026-09-19T00:00:00Z",
+  "method": "gemini_3_1_pro",
+  "display_name": "Gemini 3.1 Pro",
+  "model_id": "gemini-3.1-pro-high",
+  "provider_model": "Google AI Pro account / Antigravity CLI",
+  "source_method_lock": "baselines/methods/gemini/protocol/generation/gemini_3_1_pro.lock.json",
+  "method_definition": "Gemini 3.1 Pro High through the Google AI Pro account subscription generated Blender Python scene code for Table 2; retained final Blender meshes are reused for Table 3 without another model request",
+  "domains": ["indoor", "urban"],
+  "track": "native_mesh_instance_incomplete",
+  "structural_metrics": {
+    "collision_rate": "N/A-I",
+    "floating_rate": "N/A-I",
+    "oob_rate": "N/A-I",
+    "support_validity": "N/A-I",
+    "valid_scene_rate": "N/A-I",
+    "reason": "The frozen final output has meshes and descriptive Blender node names but no stable independent-instance graph, unified object roles, or native support edges."
+  },
+  "navigation_metrics": ["navigable_area_ratio", "connected_area_ratio", "navmesh_success_rate"],
+  "planned_specs_per_domain": 25,
+  "seeds": [0, 1, 2, 3],
+  "planned_runs_per_domain": 100,
+  "pilot": {
+    "spec_indices": [0, 5, 10, 15, 20],
+    "seeds": [0, 1],
+    "runs_per_domain": 10,
+    "status": "accepted",
+    "reviewed_at_utc": "2026-09-19T16:08:00Z",
+    "terminal_runs": 20,
+    "evaluated_geometry_runs": 13,
+    "itt_runs_from_table2_failures": 7,
+    "new_runner_failures": 0,
+    "visual_review": [
+      "data/table3_gemini_3_1_pro/indoor/indoor_bedroom_00/seed_0/navigation/debug_topdown.png",
+      "data/table3_gemini_3_1_pro/urban/urban_commercial_four_way_05/seed_0/navigation/debug_topdown.png"
+    ],
+    "acceptance_note": "Both reviewed plots use the registered ROI and spawn convention. All 13 reusable pilot meshes reached terminal navigation evaluation and all seven unavailable Table-2 slots were retained as ITT zeros."
+  },
+  "reuse": {
+    "source": "baselines/data/table2/{domain}/gemini_3_1_pro/{spec_id}/seed_{seed}",
+    "regenerate": false,
+    "model_requests_in_table3": 0,
+    "required_files": ["run_manifest.json", "scene/scene.blend", "SUCCESS"],
+    "eligible": "frozen Gemini identity, Google AI Pro account auth, generation_success=true, build_success=true, retained scene.blend, and SUCCESS marker",
+    "table2_quality_failure_policy": "ITT zero; never regenerate",
+    "source_eligible_coverage": {
+      "indoor": {"reusable": 78, "unavailable": 22},
+      "urban": {"reusable": 76, "unavailable": 24}
+    },
+    "expected_coverage": {
+      "indoor": {"evaluated": 77, "itt": 23},
+      "urban": {"evaluated": 72, "itt": 28}
+    }
+  },
+  "output_root": "baselines/data/table3_gemini_3_1_pro/{domain}/{spec_id}/seed_{seed}",
+  "coordinate_system": "Blender meters, Z up, evaluation region centered at X=Y=0",
+  "roi": {
+    "indoor": "full frozen extent_m XY rectangle",
+    "urban": "fixed central [-30,30] x [-30,30] meter crop"
+  },
+  "navigation": {
+    "agent": "baselines/protocol/geometry/agent.yaml",
+    "walkable_rules": "baselines/methods/gpt/protocol/geometry/gpt6_astra_geometry_nav_rules.json",
+    "shared_exporter": "baselines/methods/gpt/tools/export_gpt_geometry.py",
+    "shared_evaluator": "baselines/methods/gpt/tools/evaluate_gpt_geometry_nav.py",
+    "method_native_navmesh_used": false,
+    "connect_islands": false,
+    "keep_largest_only": false,
+    "failure_policy": "ITT",
+    "aggregation": "mean over the four seeds inside each specification, then mean over 25 specifications",
+    "bootstrap_repeats": 10000,
+    "bootstrap_seed": 20260909
+  },
+  "blender": {
+    "path": "blender",
+    "version": "4.2.0",
+    "use_gpu": false,
+    "gpu_reason": "Canonical mesh export performs no rendering or neural inference; Blender dependency-graph and Recast operations are CPU-only"
+  },
+  "python_environment": {
+    "preferred_existing_path": "python",
+    "fallback_existing_path": "baselines/envs/hyworld2/bin/python",
+    "purpose": "Existing Python 3.11 environment for NumPy and the frozen Recast extension; no downloads required"
+  },
+  "downloads_required": false,
+  "billing": "No Table-3 model request; only retained Table-2 artifacts are read",
+  "amendments": [
+    {
+      "id": "gemini-table3-canonical-unusable-itt-20260919",
+      "recorded_at_utc": "2026-09-19T16:12:00Z",
+      "stage": "after the first formal export attempt and before aggregation or reporting",
+      "reason": "Four reusable Urban Blender files had no upward triangles selected by the frozen pedestrian-surface rules. One reusable Indoor file produced selected reference triangles but no connected Recast component after the frozen agent-radius erosion.",
+      "effect": "Apply the already-frozen unusable-final-geometry ITT policy. Source eligibility remains 78 Indoor and 76 Urban; Table-3 coverage becomes 77 evaluated plus 23 ITT Indoor and 72 evaluated plus 28 ITT Urban. No model, scene, selection rule, threshold, navigation formula, or aggregate value was changed after observation."
+    }
+  ]
+}

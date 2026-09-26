@@ -1,0 +1,37 @@
+{
+  "method": "syncity3k",
+  "display_name": "SynCity 3000",
+  "repository": "https://github.com/paulengstler/syncity-3k",
+  "commit": "b4052154217a13cdbdec28ef77ae77581d90afff",
+  "python_environment": "baselines/envs/syncity-3k",
+  "pip_freeze_sha256": "669ed3052157e22fcdc7d75dc7e2468e80c20fb30bc447ff8d98b766888ce279",
+  "input_mode": "native_scene_layout_json",
+  "output_mode": "final_color_adjusted_gaussian_splat_ply",
+  "table2_outputs": "baselines/data/table2/{indoor,urban}/syncity3k",
+  "table3_track": "surface_only",
+  "native_instances": false,
+  "native_metric_scale": false,
+  "weights": {
+    "paulengstler/syncity-3k": {
+      "revision": "cf11932c4067612e8254b7fe0be95430a8dffdbd",
+      "ss_denoiser_sha256": "4aedd3ff2884c57c59547e59375d11015ac4bb27249217a5fb6c0f0dbb15b18e",
+      "slat_denoiser_sha256": "47f4a629436b38e5f8238e55e751bee5fdfef1e6564f451328d72f023bbff560"
+    },
+    "microsoft/TRELLIS-image-large": {
+      "revision": "25e0d31ffbebe4b5a97464dd851910efc3002d96"
+    }
+  },
+  "frozen_table2_configuration": {
+    "scene_size": 3,
+    "window_size": 2,
+    "stride": 1,
+    "extrusion_height_px": 60,
+    "logical_seeds": [0, 1, 2, 3]
+  },
+  "source_file_sha256": {
+    "baselines/vendor/syncity-3k/convert_to_3d.py": "8a057c610875a7f17c87d5011e42b84baa94720de29888191e91632865cb6206",
+    "baselines/methods/syncity/adapter.py": "0b95c197449eb6480066aba070b64088087f9b6dabb29e1181fc32ab7f2d32aa",
+    "baselines/methods/syncity/tools/render_syncity_generation.py": "dd36a0b38f5a0bfe3cfadf0920d18a913ae574ecbf04a96043974957a9274be4"
+  }
+}
+

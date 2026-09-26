@@ -1,0 +1,64 @@
+{
+  "method": "gemini_3_1_pro",
+  "date_utc": "2026-09-18",
+  "stage": "formal_after_86_terminal_before_remaining_114",
+  "trigger": "The experiment data migrated to a host where the previously frozen home-directory helper and Antigravity binary were absent. The official 1.2.5 binary was restored byte-identically, but the private helper source was not present in the migrated data.",
+  "pre_recovery_checkpoint": {
+    "expected": 200,
+    "terminal": 86,
+    "success": 68,
+    "quality_failure": 18,
+    "indoor": {
+      "expected": 100,
+      "terminal": 86,
+      "success": 68,
+      "quality_failure": 18,
+      "incomplete": 2,
+      "unstarted": 12
+    },
+    "urban": {
+      "expected": 100,
+      "terminal": 0,
+      "success": 0,
+      "quality_failure": 0,
+      "incomplete": 0,
+      "unstarted": 100
+    }
+  },
+  "official_client_recovery": {
+    "source_url": "https://storage.googleapis.com/antigravity-public/antigravity-cli/1.2.5-4931130160447488/linux-x64/cli_linux_x64.tar.gz",
+    "archive_sha256": "e450caab5682acc920721b04cf0f6860c313d1f5296bc6e49d79cd3843802e65",
+    "binary_version": "1.2.5",
+    "binary_sha256": "84808e105f643f135d9b347b36005d5bbe6cfe09c5ffc61e3311700adb5a3286",
+    "frozen_path": "tools/antigravity_cli_1_2_5_frozen/agy",
+    "directory_mode": "0555",
+    "reason_for_read_only_copy": "The standard home-directory installation self-updated to 1.2.6 despite AGY_CLI_DISABLE_AUTO_UPDATE=1."
+  },
+  "authentication": {
+    "transport": "Google OAuth account subscription",
+    "account_tier_observed": "Google AI Pro",
+    "target_model_visible": "gemini-3.1-pro-high",
+    "api_key_provider": false,
+    "api_key_fields_present": false,
+    "telemetry_opt_in": false
+  },
+  "change": [
+    "Relocate the helper into baselines/tools and pin it to the read-only, byte-identical Antigravity 1.2.5 binary.",
+    "Clear GEMINI_API_KEY, GOOGLE_API_KEY and GOOGLE_GEMINI_BASE_URL before every request.",
+    "Recognize the exact pre-migration identity tuple for already terminal runs without rewriting or rerunning them.",
+    "When an interrupted pre-migration generation resumes, retain its old identity in identity_history and use the recovered identity for the new attempt."
+  ],
+  "legacy_identity": {
+    "protocol_sha256": "d74961ff53c7a7f1c995c5883d5361da656648a8d3a141b92e6fcc65a5ab42a8",
+    "adapter_sha256": "af566c0ed84ab0ab275d4edbf5a67132bb87dc704800f4c39f602b4c5d096d80",
+    "client_helper_sha256": "415d6a4dd86aa951199915a257048cbf485cd63a9501a16f9aa0f7215da63519"
+  },
+  "unchanged": [
+    "Requested model gemini-3.1-pro-high, high effort and plan mode",
+    "Prompt template, output schema, semantic specifications and logical seeds",
+    "No quality retries, no resampling and no selection of best outputs",
+    "Generated-code AST policy, Blender construction, cameras, renderer and validators",
+    "IQA, semantic, WorldScore, diversity, subjective proxy and ITT aggregation protocols"
+  ],
+  "classification": "execution-client recovery required by host migration; not a model-quality retry"
+}

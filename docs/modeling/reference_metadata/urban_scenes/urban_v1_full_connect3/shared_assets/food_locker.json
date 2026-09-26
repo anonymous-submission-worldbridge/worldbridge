@@ -1,0 +1,24 @@
+{
+  "bounds": [
+    [
+      -3.0139994621276855,
+      0.38599997758865356,
+      0.5205000042915344
+    ],
+    [
+      3.0640006065368652,
+      1.4270000457763672,
+      3.234999895095825
+    ]
+  ],
+  "dimensions": [
+    6.078000068664551,
+    1.0410001277923584,
+    2.7144999504089355
+  ],
+  "mesh_instances": 2248,
+  "evaluated_vertices": 409734,
+  "key": "food_locker",
+  "collection": "ASSET_food_locker",
+  "source": "./infinigen/outputs/outdoor_part_demo/urban_v3_delivery6/urban_v3_delivery6.blend"
+}

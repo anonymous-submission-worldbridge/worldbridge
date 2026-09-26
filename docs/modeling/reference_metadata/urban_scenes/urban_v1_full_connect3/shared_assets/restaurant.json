@@ -1,0 +1,24 @@
+{
+  "bounds": [
+    [
+      -13.730000495910645,
+      -1.6815985441207886,
+      -0.009999997913837433
+    ],
+    [
+      2.1499996185302734,
+      9.380001068115234,
+      6.12000036239624
+    ]
+  ],
+  "dimensions": [
+    15.880000114440918,
+    11.061599731445312,
+    6.130000591278076
+  ],
+  "mesh_instances": 1224,
+  "evaluated_vertices": 6587787,
+  "key": "restaurant",
+  "collection": "ASSET_restaurant",
+  "source": "./infinigen/outputs/outdoor_full_demo/urban_v1_full_connect3/source_snapshots/restaurant/scene.blend"
+}

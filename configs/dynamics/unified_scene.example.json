@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "timeline": {
+    "frame_end": 192,
+    "fps": 24
+  },
+  "camera": {
+    "mode": "orbit",
+    "target": [0.0, 0.0, 8.0],
+    "radius": 75.0,
+    "height": 28.0,
+    "start_degrees": -35.0,
+    "end_degrees": 35.0
+  },
+  "effects": {
+    "vehicles": {
+      "routes": [
+        {
+          "object": "vn1_Grp_Root",
+          "forward_axis": "X",
+          "points": [[2.25, -48.0, 0.0], [2.25, 48.0, 0.0]]
+        }
+      ]
+    },
+    "fountain": {
+      "center": [26.0, 20.0, 0.0]
+    }
+  }
+}

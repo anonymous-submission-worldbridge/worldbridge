@@ -1,0 +1,100 @@
+protocol_id: worldbridge-table3-hyworld2-surface-v1
+method: hyworld2
+display_name: HY-World 2.0
+track: surface_only
+domains: [indoor, urban]
+specs:
+  indoor: baselines/protocol/generation/indoor_specs.jsonl
+  urban: baselines/protocol/generation/urban_specs.jsonl
+seeds: [0, 1, 2, 3]
+pilot_spec_indices: [0, 6, 12, 18, 24]
+reuse:
+  source_root: baselines/hyworld2_runtime/data/table2
+  regenerate: false
+  require_generation_success: true
+  table2_render_failure_policy: evaluate_generated_geometry
+  selected_final_output: scene/gs/ply/point_cloud_<latest>.ply
+  forbidden_scored_inputs:
+    - scene/native/navmesh
+    - scene/native/navmesh/vis_recon.ply
+    - scene/native/render_results/global_pcd.ply
+representation:
+  native: final_trained_3d_gaussian_splat
+  canonical: expected_depth_multiview_surface_mesh
+  native_instances: false
+  structured_metrics: N/A-I
+scale_calibration:
+  source: initial_panorama_geometry_camera_height_anchor
+  calibration_geometry: scene/native/render_results/global_pcd.ply
+  calibration_geometry_usage: scale_and_floor_only_not_scored_surface
+  coordinate_system: native_right_handed_z_up_camera_at_origin
+  negative_height_cutoff_native: -0.05
+  lower_histogram_fraction: 0.25
+  histogram_bin_width_native: 0.01
+  minimum_mode_samples: 1000
+  maximum_mode_mad_native: 0.02
+  minimum_meters_per_native_unit: 0.5
+  maximum_meters_per_native_unit: 10.0
+  nominal_camera_height_m:
+    indoor: 1.55
+    urban: 1.65
+surface_extraction:
+  renderer: gsplat_expected_depth
+  execution_requires_cuda: true
+  render_mode: ED
+  render_width: 416
+  render_height: 240
+  maximum_views: 24
+  panorama_views: 12
+  polar_views: 4
+  alpha_threshold: 0.50
+  near_plane_native: 0.01
+  far_plane_native: 50.0
+  grid_stride: 2
+  maximum_triangle_edge_m: 0.30
+  lower_height_margin_m: 0.30
+  upper_height_margin_above_agent_m: 0.30
+  crop_to_preregistered_walkable_mask: true
+  face_region_test: centroid
+  hole_filling: false
+  component_filtering: false
+  connect_components: false
+reference:
+  indoor:
+    type: centered_spec_extent_rectangle
+  urban:
+    type: deterministic_pedestrian_corridors_by_topology
+    sidewalk_width_m: 3.0
+    road_width_m: 12.0
+    main_road_width_m: 14.0
+    side_road_width_m: 8.0
+agent:
+  height_m: 1.70
+  radius_m: 0.30
+  max_climb_m: 0.20
+  max_slope_deg: 45.0
+recast:
+  cell_size_m: 0.05
+  cell_height_m: 0.05
+  partition: watershed
+  filter_low_hanging_obstacles: true
+  filter_ledge_spans: true
+  filter_low_height_spans: true
+postprocess:
+  connect_components: false
+  keep_largest_only: false
+  max_walkable_height_above_floor_m: 0.20
+spawn:
+  horizontal_tolerance_m: 0.30
+  vertical_tolerance_m: 0.50
+success:
+  minimum_reference_area_fraction: 0.01
+  failure_policy: all_three_navigation_metrics_zero_on_any_surface_or_navmesh_predicate_failure
+aggregation:
+  order: mean_over_spec_mean_over_seed
+  failure_policy: intention_to_treat
+  bootstrap_repeats: 10000
+  bootstrap_seed: 20260910
+display:
+  unit: percent
+  decimals: 1

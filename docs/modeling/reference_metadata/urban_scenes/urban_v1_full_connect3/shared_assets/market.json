@@ -1,0 +1,24 @@
+{
+  "bounds": [
+    [
+      -8.570000648498535,
+      -1.6815985441207886,
+      -0.009999997913837433
+    ],
+    [
+      7.310000419616699,
+      9.380001068115234,
+      5.840000152587891
+    ]
+  ],
+  "dimensions": [
+    15.880001068115234,
+    11.061599731445312,
+    5.850000381469727
+  ],
+  "mesh_instances": 2404,
+  "evaluated_vertices": 40123756,
+  "key": "market",
+  "collection": "ASSET_market",
+  "source": "./infinigen/outputs/outdoor_full_demo/urban_v1_full_connect3/source_snapshots/market/scene.blend"
+}

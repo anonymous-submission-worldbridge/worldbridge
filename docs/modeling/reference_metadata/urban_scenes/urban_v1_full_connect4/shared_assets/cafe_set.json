@@ -1,0 +1,24 @@
+{
+  "bounds": [
+    [
+      -1.40500009059906,
+      1.8835777382264496e-08,
+      -1.2819196371083308e-08
+    ],
+    [
+      1.40500009059906,
+      2.7100000381469727,
+      1.0214861631393433
+    ]
+  ],
+  "dimensions": [
+    2.81000018119812,
+    2.7100000381469727,
+    1.0214861631393433
+  ],
+  "mesh_instances": 91,
+  "evaluated_vertices": 9120,
+  "key": "cafe_set",
+  "collection": "ASSET_cafe_set",
+  "source": "./infinigen/outputs/outdoor_part_demo/urban_v3_all43_25/urban_v3_all43_25.blend"
+}

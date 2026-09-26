@@ -1,0 +1,9 @@
+{
+  "date": "2026-09-24",
+  "scope": "school_library_learning_campus",
+  "classification": "Blender helper compatibility correction",
+  "reason": "Gemini's make_box helper documented and called dim as full dimensions but assigned the tuple to Object.scale, doubling every requested dimension and violating the frozen site contract.",
+  "change": "Replace obj.scale = dim with obj.dimensions = dim in the generated helper. No scene design, facility, object placement, material, camera, lighting, or render content was added.",
+  "preserves_method_identity": true,
+  "is_image_postprocess": false
+}

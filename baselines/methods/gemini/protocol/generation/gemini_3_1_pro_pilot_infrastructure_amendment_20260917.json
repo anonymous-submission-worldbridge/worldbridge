@@ -1,0 +1,20 @@
+{
+  "method": "gemini_3_1_pro",
+  "date_utc": "2026-09-17",
+  "stage": "pilot_before_any_metric_or_formal_run",
+  "trigger": "The host rejects unprivileged Bubblewrap namespaces before Blender starts: loopback RTM_NEWADDR and uid-map permission errors.",
+  "change": "Build and render use the same Blender 4.2 factory-startup command directly on the host instead of inside Bubblewrap.",
+  "unchanged": [
+    "Gemini model, account-auth client, prompt, specifications and logical seeds",
+    "generated-code AST allowlist and forbidden operations",
+    "Blender executable, generated code, construction entry point and renderer",
+    "camera protocol, resolutions, image validator, ITT policy and all metrics"
+  ],
+  "safety": [
+    "Generated code cannot import filesystem, process or network modules.",
+    "Generated code cannot call open, exec, eval, compile or __import__.",
+    "Factory-startup disables user startup files and add-ons.",
+    "GEMINI_API_KEY, GOOGLE_API_KEY and proxy variables are removed from the Blender environment."
+  ],
+  "classification": "pre-registered pilot infrastructure adaptation; not a model-quality retry"
+}

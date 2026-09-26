@@ -1,0 +1,49 @@
+protocol_id: table2-v1-syncity3k
+status: formal_frozen
+method: syncity3k
+display_name: SynCity 3000
+domains: [indoor, urban]
+source:
+  repository: https://github.com/paulengstler/syncity-3k
+  commit: b4052154217a13cdbdec28ef77ae77581d90afff
+input:
+  mode: native_scene_layout_json
+  scene_size: 3
+  window_size: 2
+  stride: 1
+  extrusion_height_px: 60
+  logical_seeds: [0, 1, 2, 3]
+output:
+  representation: gaussian_splat_ply
+  primary_scene: scene/scene_color_adjusted.ply
+camera:
+  trajectory_frames: 50
+  trajectory_fps: 10
+  horizontal_fov_degrees: 70.0
+  anchors: [0, 7, 14, 21, 28, 35, 42, 49]
+  anchor_resolution: [1280, 720]
+  sequence_resolution: [512, 512]
+  scale_mode: robust_1_99_percentile_centered_unit_half_extent
+  trajectory_type: method_native_dimetric_scene_arc
+  note: >-
+    SynCity exposes neither metric scale nor a navigation mesh. The frozen path
+    is therefore a scale-normalized translated arc around the complete scene;
+    this follows the native-trajectory exception in the common protocol and is
+    not claimed to be an identical metric camera path.
+success_contract:
+  require_scene: true
+  require_anchor_count: 8
+  require_sequence_count: 50
+  require_cameras_json: true
+  image_mean_range: [0.01, 0.99]
+  image_std_min: 0.01
+  min_trajectory_path_length_normalized_units: 0.5
+metrics:
+  qalign: pyiqa-qalign
+  clipiqa_plus: pyiqa-clipiqa+
+  layout_plausibility: three-rater-blind-likert
+  prompt_alignment: three-rater-fact-checklist
+  consistency_3d: worldscore-static-3d-consistency
+  appearance_diversity: lpips-alex-v0.1
+  layout_diversity: segformer-ade20k-semantic-1-miou
+failure_policy: intention-to-treat

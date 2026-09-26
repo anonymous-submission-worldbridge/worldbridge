@@ -1,0 +1,24 @@
+{
+  "bounds": [
+    [
+      -7.309999942779541,
+      -1.7658158540725708,
+      0.0
+    ],
+    [
+      1.279999852180481,
+      8.29800033569336,
+      6.6875
+    ]
+  ],
+  "dimensions": [
+    8.59000015258789,
+    10.06381607055664,
+    6.6875
+  ],
+  "mesh_instances": 775,
+  "evaluated_vertices": 6196550,
+  "key": "cafe",
+  "collection": "ASSET_cafe",
+  "source": "./infinigen/outputs/outdoor_full_demo/urban_v1_full_connect3/source_snapshots/cafe/scene.blend"
+}

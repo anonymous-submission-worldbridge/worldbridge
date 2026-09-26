@@ -1,0 +1,80 @@
+{
+  "protocol_id": "worldbridge-table3-gpt6-astra-native-mesh-nav-v1",
+  "representation_track": "native_mesh_instance_incomplete",
+  "structural_metric_status": "N/A-I",
+  "indoor_roi": "full frozen extent_m rectangle centered at the origin",
+  "urban_roi": {
+    "type": "fixed_center_crop",
+    "half_extent_m": 30.0,
+    "reason": "Matches the frozen Table-2 central 60 m evaluation region and bounds Recast independently of generated content"
+  },
+  "walkable_name_patterns": [
+    "sidewalk",
+    "footpath",
+    "walkway",
+    "pedestrian",
+    "crosswalk",
+    "crossing",
+    "plaza",
+    "promenade",
+    "boardwalk",
+    "trail",
+    "park path",
+    "garden path",
+    "pavement",
+    "courtyard"
+  ],
+  "support_surface_name_patterns": [
+    "floor",
+    "ground",
+    "road",
+    "asphalt",
+    "sidewalk",
+    "footpath",
+    "walkway",
+    "pedestrian",
+    "crosswalk",
+    "crossing",
+    "plaza",
+    "promenade",
+    "boardwalk",
+    "trail",
+    "path",
+    "pavement",
+    "courtyard",
+    "grass",
+    "lawn",
+    "terrain",
+    "parking surface"
+  ],
+  "surface_detail_exclusions": [
+    "joint",
+    "seam",
+    "marking",
+    "centerline",
+    "lane boundary",
+    "stop bar",
+    "bay tick",
+    "expansion line"
+  ],
+  "thin_nav_exclusions": [
+    "rug",
+    "carpet",
+    "curtain",
+    "blanket",
+    "duvet",
+    "towel"
+  ],
+  "crosswalk_cluster_center_distance_m": 2.0,
+  "upward_normal_min_z": 0.65,
+  "minimum_triangle_area_m2": 1e-8,
+  "reference_mask_bin_m": 0.5,
+  "reference_mask_vertical_tolerance_m": 0.30,
+  "failure_policy": "ITT: missing or unusable final geometry contributes zero to all three navigation metrics",
+  "notes": [
+    "No object names are converted into independent object instances.",
+    "Road, parking, lawn, and generic ground surfaces are not registered pedestrian walkable regions.",
+    "The empty reference is reconstructed only from final native pedestrian/floor surfaces; final navigation is clipped back to that frozen semantic mask.",
+    "Crosswalk stripe components are clustered geometrically and filled to their native marking envelope so paint gaps do not become artificial pedestrian gaps."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "bounds": [
+    [
+      -0.5960001349449158,
+      0.9835444092750549,
+      0.75
+    ],
+    [
+      0.5459999442100525,
+      2.2380001544952393,
+      2.922499895095825
+    ]
+  ],
+  "dimensions": [
+    1.1420000791549683,
+    1.254455804824829,
+    2.172499895095825
+  ],
+  "mesh_instances": 426,
+  "evaluated_vertices": 144927,
+  "key": "atm",
+  "collection": "ASSET_atm",
+  "source": "./infinigen/outputs/outdoor_part_demo/urban_v3_atm4/urban_v3_atm4.blend"
+}

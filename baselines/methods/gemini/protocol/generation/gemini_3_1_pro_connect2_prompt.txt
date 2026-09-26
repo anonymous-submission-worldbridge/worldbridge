@@ -1,0 +1,29 @@
+Generate one exceptionally detailed, static, metrically scaled indoor-and-outdoor architectural visualization scene using Blender Python (bpy). Return a JSON object with exactly one field, code, containing executable Python source. Do not use tools, inspect files, browse, or run commands. This is an independent Gemini 3.1 Pro generation.
+
+Implement build_scene(seed), plus helpers. The caller starts with an empty Blender file, seeds Python and NumPy, calls build_scene(seed), then supplies lights, cameras, rendering, and video encoding. Use random.Random(seed) for stochastic variation. Use only procedural geometry and materials; never load or download assets.
+
+This is a refinement-quality demo, not a blockout. Modeling quality is the primary objective:
+- Build a layered architectural visualization with convincing silhouettes, human-scale proportions, trim, reveals, joints, frames, hardware, panel divisions, floor or paving patterns, ceiling detail, facade depth, and coherent material variation.
+- Major furniture must be recognizable multipart assemblies, not single cubes. Chairs need seats, shaped backs, frames or legs; tables need tops, aprons or supports; cabinetry needs carcasses, door or drawer divisions, handles, and worktops; plants need trunks or stems plus modeled leaf clusters.
+- Avoid broad blank walls and empty floors in all listed views. Distribute meaningful detail across interior, transition, facade, near exterior, and far exterior. Do not inflate counts using meaningless hidden objects or thousands of identical tiny cubes.
+- Use bevelled geometry or bevel modifiers on visible hard edges. Use cylinders, curves converted to mesh, bmesh, profiles, and joined repeated components where they improve silhouettes. Use 24–48 segments on prominent round forms and smooth shading where appropriate.
+- Include at least twelve major designed assemblies, each made from multiple components, plus secondary props and repeated architectural details.
+- Target at least 350 visible mesh objects and at least 60,000 evaluated-looking polygons. More is welcome when meaningful. Keep the source practical for Blender 4.5 Eevee rendering.
+- Use a rich but coherent palette with clearly distinguishable materials. Do not make most of the scene white or gray. Materials must use different base colors, roughness, and metallic values appropriate to their roles.
+
+Coordinate and connectivity contract:
+- Use meters, Z up. Keep visible content approximately inside X=[-14.5,14.5], Y=[-19,9.5], Z=[-1.5,9]. Walking surfaces are at Z=0.
+- The primary one-story interior occupies X about [-6,6], Y=[-4.5,8], with ceiling or roof around Z=3.4. Exterior occupies Y=[-18,-4.5].
+- The shared entrance is centered at Y=-4.5 and visibly open from at least X=-1.2 to X=1.2 and Z=0 to Z=2.5. Construct wall, jamb, header, tracks, and trim around it; never close the opening with a door slab.
+- Provide a continuous step-free surface through the opening. Keep X=[-0.85,0.85], Y=[-15.5,6.2], Z=[0,2.3] unobstructed by all geometry, including furniture, frames, handles, lights, plants, mullions, rails, curbs, posts, and hanging decor.
+- Interior shell, furnishings, facade, exterior ground, hardscape, plants, context, and transition detail must all be real 3D geometry in one scene. The connection must read clearly from near, far, centered, and oblique viewpoints in both directions.
+- Design specifically for views near: interior center (0,7), interior corners (+/-5,6), inside-to-outside (0,4) and (0,0.5), exterior front (0,-17), exterior corners (+/-11,-15), outside-to-inside (0,-13) and (0,-8), plus oblique threshold views. Avoid geometry that blocks these sightlines.
+
+Technical restrictions:
+- Only import bpy, bmesh, math, random, numpy, mathutils, or collections.
+- Do not read or write files, load libraries or images, invoke processes, access the network, use exec or eval, modify Blender preferences, save, render, create cameras, animate objects, add handlers, or change render/color-management settings.
+- Do not create LIGHT, CAMERA, FONT, text, readable labels, signs, billboards, background images, compositing, volume shaders, or emissive materials.
+- Use Blender 4.x material sockets including Base Color, Roughness, Metallic, and Transmission Weight where useful.
+- Give collections and objects descriptive names. build_scene(seed) must return normally and require no add-ons.
+
+Return only schema-conforming JSON. The scene specification and logical seed follow:

@@ -1,0 +1,474 @@
+[
+  {
+    "source_relative_uri": "outputs/outdoor_part_demo/urban_v3_lake3/render/render_multiview.py",
+    "destination": "scripts/modeling_history/urban_components/urban_v3_lake3/render/render_multiview.py",
+    "source_sha256": "b2c9714f2ba850ec17c18515709ca430862996502d7296ecc71be51769454f25",
+    "current_sha256": "b2c9714f2ba850ec17c18515709ca430862996502d7296ecc71be51769454f25",
+    "translated_existing_copy": null,
+    "previous_destination": "assets/models/urban_components/urban_v3_lake3/render/render_multiview.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_part_demo/urban_v3_library4/renders2/render_views.py",
+    "destination": "scripts/modeling_history/urban_components/urban_v3_library4/renders2/render_views.py",
+    "source_sha256": "baccab1fb4343a3d551994f587f1e9b16bb3720ca9467c3a20eee725622b19bc",
+    "current_sha256": "d38ad3ecbc2ed0dcba68cbca118f45dd130e464ecdcb43112e1cbd7ac4a5ee14",
+    "translated_existing_copy": null,
+    "previous_destination": "assets/models/urban_components/urban_v3_library4/renders2/render_views.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_part_demo/urban_v3_library4/renders2/make_gallery.py",
+    "destination": "scripts/modeling_history/urban_components/urban_v3_library4/renders2/make_gallery.py",
+    "source_sha256": "1c382306d7c6732748c4607fc6938c127edbb22a7ec7fec865ba9d734d656edd",
+    "current_sha256": "740315e5a57b58cce34e3e6b2f321ca936e254c45e7cdcba040a45f000d4557e",
+    "translated_existing_copy": null,
+    "previous_destination": "assets/models/urban_components/urban_v3_library4/renders2/make_gallery.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_part_demo/urban_v3_fitness4/backup_urban_v3_fitness3/source/generate_urban_v3_fitness.py",
+    "destination": "scripts/modeling_history/urban_components/urban_v3_fitness4/backup_urban_v3_fitness3/source/generate_urban_v3_fitness.py",
+    "source_sha256": "786b0c5c071a3cf667969483660f1b510ebba4b5823b3793f043e2ce83985a56",
+    "current_sha256": "5ec40a3e987751c19692b67cdb7b594cd63fe0f19a3d7ade16f495464211b87f",
+    "translated_existing_copy": null,
+    "previous_destination": "assets/models/urban_components/urban_v3_fitness4/backup_urban_v3_fitness3/source/generate_urban_v3_fitness.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_part_demo/urban_v3_fitness4/backup_urban_v3_fitness3/source/urban_assets.py",
+    "destination": "scripts/modeling_history/urban_components/urban_v3_fitness4/backup_urban_v3_fitness3/source/urban_assets.py",
+    "source_sha256": "66f2c462ea9752f85c6e5c34c8bd76e9119853e1bf45965dbfe6fa47e9ba6253",
+    "current_sha256": "8c884d8425540745a4a44c07c0185226b524c6c614c21dad2da188a5453c4a4d",
+    "translated_existing_copy": null,
+    "previous_destination": "assets/models/urban_components/urban_v3_fitness4/backup_urban_v3_fitness3/source/urban_assets.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_part_demo/urban_v3_all41/render_residential_orbit.py",
+    "destination": "scripts/modeling_history/urban_components/urban_v3_all41/render_residential_orbit.py",
+    "source_sha256": "5ba68991346db1a3a799d6221064f99c25342604f047ecbb014a554fb4a82728",
+    "current_sha256": "5ba68991346db1a3a799d6221064f99c25342604f047ecbb014a554fb4a82728",
+    "translated_existing_copy": null,
+    "previous_destination": "assets/models/urban_components/urban_v3_all41/render_residential_orbit.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_part_demo/urban_v3_delivery5/modeling_scheme_backup_20260902/generate_urban_v3_delivery.py",
+    "destination": "scripts/modeling_history/urban_components/urban_v3_delivery5/modeling_scheme_backup_20260902/generate_urban_v3_delivery.py",
+    "source_sha256": "e3fb97a970accbcbcf3767e759bfa2c12bf6bf0e71e7c27358934674fcae78e2",
+    "current_sha256": "1c90d364d5fe6e177498ceace88fde6f2ac377fcc8b644d1ad26b31c06d1341f",
+    "translated_existing_copy": null,
+    "previous_destination": "assets/models/urban_components/urban_v3_delivery5/modeling_scheme_backup_20260902/generate_urban_v3_delivery.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_part_demo/urban_v3_delivery5/modeling_scheme_backup_20260902/realizer.py",
+    "destination": "scripts/modeling_history/urban_components/urban_v3_delivery5/modeling_scheme_backup_20260902/realizer.py",
+    "source_sha256": "c87e7f614d6d6ceb0fe230d344622e6a1fae5c415bbd65b787f9280a6ad31b14",
+    "current_sha256": "30c4f0e45898b1817b28e31cdc71ec722da8f6e9f72d34053bb881527d43900a",
+    "translated_existing_copy": null,
+    "previous_destination": "assets/models/urban_components/urban_v3_delivery5/modeling_scheme_backup_20260902/realizer.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_part_demo/urban_v3_delivery5/modeling_scheme_backup_20260902/urban_assets.py",
+    "destination": "scripts/modeling_history/urban_components/urban_v3_delivery5/modeling_scheme_backup_20260902/urban_assets.py",
+    "source_sha256": "2829d404d3a14b77ff69c10dfb82012055e1267aaac7c38521f69f29b48a85b4",
+    "current_sha256": "6806b2d701f2b8e090a7b899d12e10cb6af767a078eb15cb1a85d6cfc87365c2",
+    "translated_existing_copy": null,
+    "previous_destination": "assets/models/urban_components/urban_v3_delivery5/modeling_scheme_backup_20260902/urban_assets.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_part_demo/urban_v3_delivery5/modeling_scheme_backup_20260902/resolver.py",
+    "destination": "scripts/modeling_history/urban_components/urban_v3_delivery5/modeling_scheme_backup_20260902/resolver.py",
+    "source_sha256": "020335820bea2ee167f046bef396d53c52f8fa7b24625706157fbb93f430a578",
+    "current_sha256": "1c70a7760c5f164ef1181c3aa62a58ec6ac06d0991618b6966aacf0b43087a3b",
+    "translated_existing_copy": "worldbridge/scene_stream_urban/resolver.py",
+    "previous_destination": "assets/models/urban_components/urban_v3_delivery5/modeling_scheme_backup_20260902/resolver.py"
+  },
+  {
+    "source_relative_uri": "outputs/indoor_outdoor_villa_demo2/scripts/patch_connection.py",
+    "destination": "scripts/modeling_history/indoor_scenes/indoor_outdoor_villa_demo2/scripts/patch_connection.py",
+    "source_sha256": "799503307647bf97f5b4a6869adfcf2ec6c4f3c3f9a0ae3eb0883b38c8402ba7",
+    "current_sha256": "799503307647bf97f5b4a6869adfcf2ec6c4f3c3f9a0ae3eb0883b38c8402ba7",
+    "translated_existing_copy": null,
+    "previous_destination": "assets/models/indoor_scenes/indoor_outdoor_villa_demo2/scripts/patch_connection.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_connect3/reproduction_scripts/fix_connect3_delivery_ground.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/fix_connect3_delivery_ground.py",
+    "source_sha256": "655ddba48b9e9e76ef1928f84bc63dee729904f168d595d035c331c5d1a3356d",
+    "current_sha256": "7f3652fcbbf27d3f9afaf602f3ad380ca8974e985bba3353dd50f08fd0250f1b",
+    "translated_existing_copy": "scripts/fix_connect3_delivery_ground.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/reproduction_scripts/fix_connect3_delivery_ground.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_connect3/reproduction_scripts/fix_connect3_review.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/fix_connect3_review.py",
+    "source_sha256": "82e79a7948a8d15bbdee98dfbd2e5b83eae4ee3dad7a6b86d252acda558b0638",
+    "current_sha256": "d8efb871fac1af140b912a8264970d8851d12b68b04d1eb3d5f1e6f6cfb816fc",
+    "translated_existing_copy": "scripts/fix_connect3_review.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/reproduction_scripts/fix_connect3_review.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_connect3/reproduction_scripts/prepare_connect3_assets.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/prepare_connect3_assets.py",
+    "source_sha256": "6d641a084264913bdeca7b60d8ff864cb63055367cc17e4214ac2eb65fd89210",
+    "current_sha256": "e297147b08b19041d0e21ac293735c56734922498f2de0810100b7590e0125be",
+    "translated_existing_copy": "scripts/prepare_connect3_assets.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/reproduction_scripts/prepare_connect3_assets.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_connect3/reproduction_scripts/refine_connect3_lighting.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/refine_connect3_lighting.py",
+    "source_sha256": "4f43dc6e6dfd83970509f5e10556d6f0ce4c21e5a765c5c4482f92491366ce32",
+    "current_sha256": "6dc521b2f1c5b8cd981835fd080617e8d4456b7dd3340554b9accda3ed989315",
+    "translated_existing_copy": "scripts/refine_connect3_lighting.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/reproduction_scripts/refine_connect3_lighting.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_connect3/reproduction_scripts/fix_connect3_fonts.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/fix_connect3_fonts.py",
+    "source_sha256": "2a6864308b544e1f4e36d3882c5d78069983cbbe55290b630660cab9e142ba5d",
+    "current_sha256": "b1becca3354b08b61356149c91b13abd5b8a21492708b2fa11272c422e22a9fe",
+    "translated_existing_copy": "scripts/fix_connect3_fonts.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/reproduction_scripts/fix_connect3_fonts.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_connect3/reproduction_scripts/refine_connect3_public_realm.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/refine_connect3_public_realm.py",
+    "source_sha256": "9ecb96faef60ba53e125c326cb867f49778b61d03bc57ea5f05beef162691940",
+    "current_sha256": "78c0224d5c8b5c0db65ecdf8b01fb0a82f3f3030fc7775e988162a054f9a1386",
+    "translated_existing_copy": "scripts/refine_connect3_public_realm.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/reproduction_scripts/refine_connect3_public_realm.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_connect3/reproduction_scripts/refine_connect3_scene.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/refine_connect3_scene.py",
+    "source_sha256": "9e752abc368ca4dbd50ea61b02c207a4e8c45a8a6aadf6c51bc67ffa8bec14ee",
+    "current_sha256": "c295caf4189f9eaa679c7ba1b09566e3edf950a2f585d2cbdf74585c7fcc3702",
+    "translated_existing_copy": "scripts/refine_connect3_scene.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/reproduction_scripts/refine_connect3_scene.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_connect3/reproduction_scripts/refine_connect3_townhouse_envelope.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/refine_connect3_townhouse_envelope.py",
+    "source_sha256": "84e87b58b060b3b8e077fb98734c89e066a5e7e314f21cb77793feaf75341f71",
+    "current_sha256": "7a1909de16057f7e20a7f48cb56a6472a73cf0b3e0be30ec9b0aa1fd27243632",
+    "translated_existing_copy": "scripts/refine_connect3_townhouse_envelope.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/reproduction_scripts/refine_connect3_townhouse_envelope.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_connect3/reproduction_scripts/fix_connect3_townhouse_ground.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/fix_connect3_townhouse_ground.py",
+    "source_sha256": "24b4457917d1f862a763ecabc52ccd2025de58ec6c755eb25ab4bed14bb14df3",
+    "current_sha256": "c75147eaf6bc42a0910ee0da748eeef1d995f229a6e00cd572f374272bb0ee01",
+    "translated_existing_copy": "scripts/fix_connect3_townhouse_ground.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/reproduction_scripts/fix_connect3_townhouse_ground.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_connect3/reproduction_scripts/audit_connect3_scene.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/audit_connect3_scene.py",
+    "source_sha256": "10d81271010124ded5b5cb964af04c40cad73f2e4c3bac85d5a43bd25d1c2236",
+    "current_sha256": "61a0a2418fc89af069c8e90b59a839403909fc1799647439c1bcf9c0726f9cc6",
+    "translated_existing_copy": "scripts/audit_connect3_scene.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/reproduction_scripts/audit_connect3_scene.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_connect3/reproduction_scripts/inspect_connect3_assets.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/inspect_connect3_assets.py",
+    "source_sha256": "a69ecdec09ba1009d9eb55ebe6dd126fab530d866a494112c84f6ceccd2e77db",
+    "current_sha256": "775d6f55024b650694978664ea3a5181e42038308747744bf88c5f150e62c08b",
+    "translated_existing_copy": "scripts/inspect_connect3_assets.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/reproduction_scripts/inspect_connect3_assets.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_connect3/reproduction_scripts/render_urban_v1_full_connect_dependency.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/render_urban_v1_full_connect_dependency.py",
+    "source_sha256": "5065422914b7f6f4399e53512c1967e3679cb6cbe4ef2c4a3db5a35a67cf7461",
+    "current_sha256": "ab7a9ca20e7b9e2804a49a0b5699eb2b46b736d7e76d21d3be1af36533d859da",
+    "translated_existing_copy": "scripts/render_urban_v1_full_connect.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/reproduction_scripts/render_urban_v1_full_connect_dependency.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_connect3/reproduction_scripts/fix_connect3_water_ground.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/fix_connect3_water_ground.py",
+    "source_sha256": "99ff5940ac641eab7aba632e3d29c72457c4cd91d5b00dbfed29abf523f94e32",
+    "current_sha256": "371f3e872f02f6cf4134db99889e3757b2b28b2321e5edbcf02b83249f940813",
+    "translated_existing_copy": "scripts/fix_connect3_water_ground.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/reproduction_scripts/fix_connect3_water_ground.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_connect3/reproduction_scripts/build_urban_v1_full_connect3.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/build_urban_v1_full_connect3.py",
+    "source_sha256": "078ca3ec3b987152c6ad280e7b3f0407d2638a97fbfced967482bfa7d84a9490",
+    "current_sha256": "7c66b8a2bf439ee4e2f6d94080529c0498152da5533aed34c1f376952d5f8978",
+    "translated_existing_copy": "scripts/build_urban_v1_full_connect3.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/reproduction_scripts/build_urban_v1_full_connect3.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_connect3/reproduction_scripts/prepare_connect3_native.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/prepare_connect3_native.py",
+    "source_sha256": "2133a81d51a9972124156c442a217f89e1eb782bd84236f01c28b4b4cf132d53",
+    "current_sha256": "3e888718ead6bb30cec538cdaaa49695d1908f307ccce15919fce5d2e8991eca",
+    "translated_existing_copy": "scripts/prepare_connect3_native.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/reproduction_scripts/prepare_connect3_native.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_connect3/reproduction_scripts/prepare_connect3_river.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/prepare_connect3_river.py",
+    "source_sha256": "31b87bfb505ed78a5c2a59fb5a806a21607a675a16b6f9efb17a4a625730462e",
+    "current_sha256": "3e2aa19a7c6bb0b37cd26d3a592733182d66c52074b8a6f69976897aaf744c97",
+    "translated_existing_copy": "scripts/prepare_connect3_river.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/reproduction_scripts/prepare_connect3_river.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_connect3/reproduction_scripts/fix_connect3_delivery_facing.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/fix_connect3_delivery_facing.py",
+    "source_sha256": "0ce81a0cf879d8e39503ae2c737fe1699b38846632ac749114a0f0e9b0ab9e5a",
+    "current_sha256": "07c30523705e8b490455ca5139d966f539cde18ef3f8d1c56f495ab221b7367e",
+    "translated_existing_copy": "scripts/fix_connect3_delivery_facing.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/reproduction_scripts/fix_connect3_delivery_facing.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_connect3/reproduction_scripts/repair_connect3_townhouse.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/repair_connect3_townhouse.py",
+    "source_sha256": "c8f71fc3d20cd4be52c10527e9a49912aaa926811dc11873d81e27a4faaa18d8",
+    "current_sha256": "3f9ebfe4125fa5e648e7d1d4ec434ebe8d997ad6f7dbad1a38d02f2032c21423",
+    "translated_existing_copy": "scripts/repair_connect3_townhouse.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/reproduction_scripts/repair_connect3_townhouse.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_connect3/reproduction_scripts/run_connect3_builds.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/run_connect3_builds.py",
+    "source_sha256": "c6e6efa4ab475f40f6ad9bbffe1ffacd7aeaee65852787c139276297769b31b2",
+    "current_sha256": "f663c84298c0a68c81855706bdc1c5a2eafbd8830311782354fbcb00ee399235",
+    "translated_existing_copy": "scripts/run_connect3_builds.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/reproduction_scripts/run_connect3_builds.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_connect3/reproduction_scripts/prepare_connect3_special.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/prepare_connect3_special.py",
+    "source_sha256": "daa3698aa3548b10a0f2574b89b8dc7510c91d41383cc38d8740931963dcd295",
+    "current_sha256": "96ffc0242ea1498ccd5863e2a3b9b9484b000bd69d415b7fc16f5e1ad323afff",
+    "translated_existing_copy": "scripts/prepare_connect3_special.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/reproduction_scripts/prepare_connect3_special.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_connect3/reproduction_scripts/prepare_connect3_water.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/prepare_connect3_water.py",
+    "source_sha256": "44ef68b5b7d5aae33dc94d28781010ba0cf79f92d8e98695ff4efc14518e0045",
+    "current_sha256": "ef3a3cf826f0d6b921525d82e66bbb37fed8214643be5a23d3610bf92b8d854b",
+    "translated_existing_copy": "scripts/prepare_connect3_water.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/reproduction_scripts/prepare_connect3_water.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_connect3/reproduction_scripts/connect3_plan.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/connect3_plan.py",
+    "source_sha256": "32060c48f4a113bfb204ed10b1b458b1a378269265619e98acb1ade5446927c4",
+    "current_sha256": "84c12113444bcc4320466bf1518dc66c5c3334a988f22593813381c148eeab80",
+    "translated_existing_copy": "scripts/connect3_plan.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/reproduction_scripts/connect3_plan.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_connect3/reproduction_scripts/render_urban_v1_full_connect3.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/render_urban_v1_full_connect3.py",
+    "source_sha256": "d926ceb0b8e7aa002c8e06120db70d58e17681363d7aead1b9cb3337ce8c6e2c",
+    "current_sha256": "cd1bd4df1904e14d98d7cc5bcfd0810e96daba9cfaaedabbf2f840b3888af5b5",
+    "translated_existing_copy": "scripts/render_urban_v1_full_connect3.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/reproduction_scripts/render_urban_v1_full_connect3.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_connect3/reproduction_scripts/fix_connect3_river_ground.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/fix_connect3_river_ground.py",
+    "source_sha256": "e2fd5e7c7edd3dc14f6e418447fb74d64275f36652558a8ba1f841497b6641d3",
+    "current_sha256": "49f7e8e4579ad245faab1f29819095ed822fa2a1b01d158f004b10af85e4a0b2",
+    "translated_existing_copy": "scripts/fix_connect3_river_ground.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/reproduction_scripts/fix_connect3_river_ground.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_connect3/reproduction_scripts/finalize_connect3_delivery.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/finalize_connect3_delivery.py",
+    "source_sha256": "fec022cb2368ad182b972efe17d3dbed3200cd599c11b59d0138c22948140178",
+    "current_sha256": "8446f3d59e5611e457a44677ba7e9a87cccfc9600fc13d4dd5207c8c2611f5f0",
+    "translated_existing_copy": "scripts/finalize_connect3_delivery.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/reproduction_scripts/finalize_connect3_delivery.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_connect3/reproduction_scripts/run_connect3_render.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/run_connect3_render.py",
+    "source_sha256": "f3115e79832ed858646a3a8770e9061704b79780c992f1a35813a09f50a25aca",
+    "current_sha256": "e391b19fadb55c750b9326c8b9305102a35308a93596431600f1c5ba27813d11",
+    "translated_existing_copy": "scripts/run_connect3_render.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_connect3/reproduction_scripts/run_connect3_render.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_astra/source_snapshot/plan.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/plan.py",
+    "source_sha256": "6a9b05c6453b34e4897d55d6ba425e93e6a0ad3dd8499c01a6c99015a13cf6f9",
+    "current_sha256": "9f34a58874931d5cf622830ad2c12238d2f46e0eaace75df5c6ef3110935af43",
+    "translated_existing_copy": "scripts/astra_city/plan.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_astra/source_snapshot/plan.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_astra/source_snapshot/assets.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/assets.py",
+    "source_sha256": "704d5bb98f5598c98c319a704a3d4effba55a24ee46f3c3bd41e0f55a83f9e06",
+    "current_sha256": "b72019117a258a56e3ff732efde38799fe5360745c981cff56de22191eb90295",
+    "translated_existing_copy": "scripts/astra_city/assets.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_astra/source_snapshot/assets.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_astra/source_snapshot/prepare_assets.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/prepare_assets.py",
+    "source_sha256": "2fa49fab211ad8d81057671601e2ce979e9c6313ebcb789e87c25c5c92f71bb4",
+    "current_sha256": "8898b510c95b4682285a9ac0fd08676a90e4bd14aa54c14ea63385845ec86470",
+    "translated_existing_copy": "scripts/astra_city/prepare_assets.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_astra/source_snapshot/prepare_assets.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_astra/source_snapshot/bake_materials.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/bake_materials.py",
+    "source_sha256": "a8e10847b89049fdb70d9774ce5b32121167a5ec0365f4b64aaf3a715b82f0a0",
+    "current_sha256": "8e8c2b1648316006052d5607094ce0f31e0e9b3824df31fbdd3d175948b7381a",
+    "translated_existing_copy": "scripts/astra_city/bake_materials.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_astra/source_snapshot/bake_materials.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_astra/source_snapshot/render.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/render.py",
+    "source_sha256": "1caf804775662309549083143726d73dbb18acf5b53392df376b3193fd4de676",
+    "current_sha256": "bd2355603e5cd683c01342b1cbe11fe11bf21f8770a488039959a1d7ad59e63f",
+    "translated_existing_copy": "scripts/astra_city/render.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_astra/source_snapshot/render.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_astra/source_snapshot/test_pipeline.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/test_pipeline.py",
+    "source_sha256": "df42ef58d3f6c6c21559f5314ff6ed2ae7dd6e64df65e65849938d2ebeab4694",
+    "current_sha256": "56a5c67d188e478608997dd71af274e4c4d9c544eb9585b1cbe6039a83b28bf7",
+    "translated_existing_copy": "scripts/astra_city/test_pipeline.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_astra/source_snapshot/test_pipeline.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_astra/source_snapshot/build.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/build.py",
+    "source_sha256": "77b91ec2015152de42a77547f17f9e224a3bfe829a0295bb3b667f43a5cc1808",
+    "current_sha256": "c4a0381372d9e28eb11d709e8d9604b2a9bab647b678f0286d4c223a3a9f6234",
+    "translated_existing_copy": "scripts/astra_city/build.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_astra/source_snapshot/build.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_astra/source_snapshot/fbx_roundtrip.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/fbx_roundtrip.py",
+    "source_sha256": "754e0cbdc94185bcfd97a1cf02f5a653a31220272cb3349cc4328a1812bd9e2f",
+    "current_sha256": "d5c05607978316860b2edd4f233a5f1f4107affd6fd22b9f060f0dc5a51dadfe",
+    "translated_existing_copy": "scripts/astra_city/fbx_roundtrip.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_astra/source_snapshot/fbx_roundtrip.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_astra/source_snapshot/run_step.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/run_step.py",
+    "source_sha256": "30701d71ce6fec6af0ad562a68b860dd7d673eb0d664d302ab6fff4f1fa97be0",
+    "current_sha256": "acffbd9248fb0b2b445c0c7b5d584fc50ae955d7e287709b9c596e2b8021083b",
+    "translated_existing_copy": "scripts/astra_city/run_step.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_astra/source_snapshot/run_step.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_astra/source_snapshot/geometry.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/geometry.py",
+    "source_sha256": "e5d3df8115996ccc9cf12006cb970b93aadd09d9bad7782d34694803266b876c",
+    "current_sha256": "72058a7f62a69ba260480343a3e2faa50259d80aec2fd01bd13b9a27cb00fbfa",
+    "translated_existing_copy": "scripts/astra_city/geometry.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_astra/source_snapshot/geometry.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_astra/source_snapshot/inspect_native_materials.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/inspect_native_materials.py",
+    "source_sha256": "d1912e62e96c7e340b376e55fb46605c2d7bd0691d876d04b2dfeb9075cce2ef",
+    "current_sha256": "1e4df311f853b8d9de53ef70ba6e169f62341f1a5e34a176b882632e601a7998",
+    "translated_existing_copy": "scripts/astra_city/inspect_native_materials.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_astra/source_snapshot/inspect_native_materials.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_astra/source_snapshot/mesh_audit.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/mesh_audit.py",
+    "source_sha256": "bb8174e3844fb768e88de69d59826f1beb3834276df91f55a4a01a6d8baefe5c",
+    "current_sha256": "dad45fcbc1eadcee270119e2fda03068bc72e25a9990bc3cc217cea07a6d5e92",
+    "translated_existing_copy": "scripts/astra_city/mesh_audit.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_astra/source_snapshot/mesh_audit.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_astra/source_snapshot/__init__.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/__init__.py",
+    "source_sha256": "fb81e2f4711ffd7599e111abf1867c2ec4bcb6067d915564ba75f7763fc966bb",
+    "current_sha256": "fb81e2f4711ffd7599e111abf1867c2ec4bcb6067d915564ba75f7763fc966bb",
+    "translated_existing_copy": "scripts/astra_city/__init__.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_astra/source_snapshot/__init__.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_astra/source_snapshot/runtime_route.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/runtime_route.py",
+    "source_sha256": "0c32ca4ef67122468f075f85fc29502af26cee5b41da9c05fa55662337cc7fe1",
+    "current_sha256": "c8ff7a3862944941617ff2eaa3daf62871e269eff5a6b75f24f2a7e46dc624ec",
+    "translated_existing_copy": "scripts/astra_city/runtime_route.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_astra/source_snapshot/runtime_route.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_astra/source_snapshot/generate_urban_v1_full_astra.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/generate_urban_v1_full_astra.py",
+    "source_sha256": "f469a2bf3c1c83d86a830393c3454da04fcefe9ef1166d0f09ebed6e65520a55",
+    "current_sha256": "8d62f189c5c9187d0f667765e7346ddf9877a7c0b5bd4d0ad14ba9e32161b4c0",
+    "translated_existing_copy": "scripts/generate_urban_v1_full_astra.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_astra/source_snapshot/generate_urban_v1_full_astra.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_astra/source_snapshot/repair_native_materials.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/repair_native_materials.py",
+    "source_sha256": "97ee9b66c159b05a318f882a95398ced194ac491f7ca4c847aea044f779ba544",
+    "current_sha256": "fc2121b53c874023daacc04d135773035e0a0ccc9bfc8a0d193c78b4ec024782",
+    "translated_existing_copy": "scripts/astra_city/repair_native_materials.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_astra/source_snapshot/repair_native_materials.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_astra/source_snapshot/package.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/package.py",
+    "source_sha256": "6df749c10fb2d655b0dcb67b3d6cb0d651391190058eaa2c5332fae451f0e0d3",
+    "current_sha256": "9d7438cd16b1622d79823c9469453ef170cca0d909085a0d48082726cea2edad",
+    "translated_existing_copy": "scripts/astra_city/package.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_astra/source_snapshot/package.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_astra/source_snapshot/validate.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/validate.py",
+    "source_sha256": "7e1f98167b7ade194c84021f937b5b0f9fdc1fa397db6fb6d144998e06a5fa49",
+    "current_sha256": "9959719cba1b305e9a7336b97ee65a17d07b852966861680eb20468b50b0c2ff",
+    "translated_existing_copy": "scripts/astra_city/validate.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_astra/source_snapshot/validate.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_astra/source_snapshot/audit.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/audit.py",
+    "source_sha256": "23c39425ce20b4ffe05131d1adba64738da3353015a665911b011435cc2daeba",
+    "current_sha256": "30e548dd53fc28a4fe452e1cf0aac370d68f7a2fe7dbc04da2e222ed388b36e2",
+    "translated_existing_copy": "scripts/astra_city/audit.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_astra/source_snapshot/audit.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_astra/source_snapshot/asset_probe.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/asset_probe.py",
+    "source_sha256": "8f52a592c27e8e04dbdf00777131263d55b50dbcff66062a71d908a3e6907435",
+    "current_sha256": "798df7dbb4929e958cd3f566181f842a28433014199f5376fdb3a977deb56b2e",
+    "translated_existing_copy": "scripts/astra_city/asset_probe.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_astra/source_snapshot/asset_probe.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_astra/source_snapshot/export_ue.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/export_ue.py",
+    "source_sha256": "c33c1cd76c06176ea5abec8f100166a9377a7ebd15fddc7a20f56a9119126e6c",
+    "current_sha256": "eb252af8db7f3c0ea2407411a38ba28e3e5d160273aad0eda4756aaf69c53f7d",
+    "translated_existing_copy": "scripts/astra_city/export_ue.py",
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_astra/source_snapshot/export_ue.py"
+  },
+  {
+    "source_relative_uri": "outputs/outdoor_full_demo/urban_v1_full_astra/ue5/import_city.py",
+    "destination": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/ue5/import_city.py",
+    "source_sha256": "3da90ba3e70e74ef9585f99bcd8ad55db94a510f09a11d83a854231c77127a79",
+    "current_sha256": "3da90ba3e70e74ef9585f99bcd8ad55db94a510f09a11d83a854231c77127a79",
+    "translated_existing_copy": null,
+    "previous_destination": "assets/models/urban_scenes/urban_v1_full_astra/ue5/import_city.py"
+  }
+]

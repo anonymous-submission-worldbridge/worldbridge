@@ -1,0 +1,24 @@
+{
+  "bounds": [
+    [
+      -0.7275000214576721,
+      0.0,
+      0.0
+    ],
+    [
+      0.7274999618530273,
+      0.5199999809265137,
+      5.050000190734863
+    ]
+  ],
+  "dimensions": [
+    1.4549999237060547,
+    0.5199999809265137,
+    5.050000190734863
+  ],
+  "mesh_instances": 6,
+  "evaluated_vertices": 296,
+  "key": "streetlight",
+  "collection": "ASSET_streetlight",
+  "source": "./infinigen/outputs/outdoor_part_demo/urban_v3_all43_25/urban_v3_all43_25.blend"
+}

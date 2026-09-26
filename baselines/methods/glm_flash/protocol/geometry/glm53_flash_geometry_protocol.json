@@ -1,0 +1,104 @@
+{
+  "protocol_id": "worldbridge-table3-glm53-flash-native-mesh-nav-v1",
+  "status": "frozen",
+  "created_at_utc": "2026-09-17T18:00:00Z",
+  "method": "glm53_flash",
+  "display_name": "GLM-5.3 Flash",
+  "model_id": "glm-5.3-flash",
+  "provider_model": "glm-coding-plan/glm-5.3-flash",
+  "requested_thinking": {"type": "disabled"},
+  "requested_reasoning_effort": "none",
+  "source_method_lock": "baselines/methods/glm_flash/protocol/generation/glm53_flash.lock.json",
+  "method_definition": "GLM-5.3 Flash through the GLM Coding Plan and OpenCode generated Blender Python scene code for Table 2; retained final Blender meshes are reused for Table 3 without another model request",
+  "domains": ["indoor", "urban"],
+  "track": "native_mesh_instance_incomplete",
+  "structural_metrics": {
+    "collision_rate": "N/A-I",
+    "floating_rate": "N/A-I",
+    "oob_rate": "N/A-I",
+    "support_validity": "N/A-I",
+    "valid_scene_rate": "N/A-I",
+    "reason": "The frozen final output has meshes and descriptive Blender node names but no stable independent-instance graph, unified object roles, or native support edges."
+  },
+  "navigation_metrics": [
+    "navigable_area_ratio",
+    "connected_area_ratio",
+    "navmesh_success_rate"
+  ],
+  "planned_specs_per_domain": 25,
+  "seeds": [0, 1, 2, 3],
+  "planned_runs_per_domain": 100,
+  "pilot": {
+    "spec_indices": [0, 5, 10, 15, 20],
+    "seeds": [0, 1],
+    "runs_per_domain": 10,
+    "status": "accepted",
+    "reviewed_at_utc": "2026-09-17T18:17:00Z",
+    "terminal_runs": 20,
+    "evaluated_geometry_runs": 8,
+    "itt_runs_from_table2_failures": 12,
+    "new_runner_failures": 0,
+    "visual_review": [
+      "data/table3_glm53_flash/indoor/indoor_bathroom_00/seed_0/navigation/debug_topdown.png",
+      "data/table3_glm53_flash/urban/urban_residential_four_way_00/seed_0/navigation/debug_topdown.png"
+    ],
+    "acceptance_note": "Both reviewed plots use the registered ROI and spawn convention; all eight reusable pilot meshes reached terminal evaluation and all twelve unavailable Table-2 slots were retained as ITT zeros."
+  },
+  "reuse": {
+    "source": "baselines/data/table2/{domain}/glm53_flash/{spec_id}/seed_{seed}",
+    "regenerate": false,
+    "model_requests_in_table3": 0,
+    "required_files": ["run_manifest.json", "scene/scene.blend", "SUCCESS"],
+    "eligible": "frozen GLM identity, generation_success=true, build_success=true, retained scene.blend, and SUCCESS marker",
+    "table2_quality_failure_policy": "ITT zero; never regenerate",
+    "source_eligible_coverage": {
+      "indoor": {"reusable": 44, "unavailable": 56},
+      "urban": {"reusable": 30, "unavailable": 70}
+    },
+    "expected_coverage": {
+      "indoor": {"evaluated": 44, "itt": 56},
+      "urban": {"evaluated": 28, "itt": 72}
+    }
+  },
+  "output_root": "baselines/data/table3_glm53_flash/{domain}/{spec_id}/seed_{seed}",
+  "coordinate_system": "Blender meters, Z up, evaluation region centered at X=Y=0",
+  "roi": {
+    "indoor": "full frozen extent_m XY rectangle",
+    "urban": "fixed central [-30,30] x [-30,30] meter crop"
+  },
+  "navigation": {
+    "agent": "baselines/protocol/geometry/agent.yaml",
+    "walkable_rules": "baselines/methods/gpt/protocol/geometry/gpt6_astra_geometry_nav_rules.json",
+    "shared_exporter": "baselines/methods/gpt/tools/export_gpt_geometry.py",
+    "shared_evaluator": "baselines/methods/gpt/tools/evaluate_gpt_geometry_nav.py",
+    "method_native_navmesh_used": false,
+    "connect_islands": false,
+    "keep_largest_only": false,
+    "failure_policy": "ITT",
+    "aggregation": "mean over the four seeds inside each specification, then mean over 25 specifications",
+    "bootstrap_repeats": 10000,
+    "bootstrap_seed": 20260909
+  },
+  "blender": {
+    "path": "blender",
+    "version": "4.2.0",
+    "use_gpu": false,
+    "gpu_reason": "Canonical mesh export performs no rendering or neural inference; Blender dependency-graph and Recast operations are CPU-only"
+  },
+  "python_environment": {
+    "preferred_existing_path": "python",
+    "fallback_existing_path": "baselines/envs/hyworld2/bin/python",
+    "purpose": "Existing Python 3.11 environment for NumPy and the frozen Recast extension; no downloads required"
+  },
+  "downloads_required": false,
+  "billing": "No Table-3 model request; only retained Table-2 artifacts are read",
+  "amendments": [
+    {
+      "id": "glm53-flash-table3-canonical-unusable-itt-20260917",
+      "recorded_at_utc": "2026-09-17T18:22:00Z",
+      "stage": "after the first formal export attempt and before aggregation or reporting",
+      "reason": "Two reusable Urban Blender files deterministically contained no upward triangles selected by the frozen pedestrian-surface rules. The already-frozen failure policy requires unusable final geometry to contribute ITT zeros.",
+      "effect": "Preserve Table-2 source eligibility at 30/100 Urban; classify two canonical-no-walkable-surface slots as Table-3 ITT, yielding 28 evaluated and 72 ITT Urban slots. No model, scene, semantic rule, threshold, navigation formula, or aggregate value was changed after observation."
+    }
+  ]
+}

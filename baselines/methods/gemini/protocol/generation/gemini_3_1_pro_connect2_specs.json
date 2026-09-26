@@ -1,0 +1,56 @@
+[
+  {
+    "demo_id": "coastal_culinary_pavilion_refined",
+    "logical_seed": 1311,
+    "title": "Refined Coastal Culinary Pavilion",
+    "style": "high-end coastal contemporary architecture with limewashed plaster, fluted pale oak, blue-green glazed tile, brushed stainless steel, woven cane, linen, and warm stone",
+    "interior_program": "a fully detailed chef kitchen and dining pavilion with layered cabinetry, inset appliance fronts, an articulated island, bar stools built from multiple shaped components, open shelves, table settings, pendant housings, banquette joinery, rugs, plants, and ceiling structure",
+    "exterior_program": "a deep timber deck and dune garden with boardwalk detailing, sculpted grasses, wind-pruned trees, loungers, side tables, a slatted shade structure, stone retaining edges, and distant layered planting",
+    "transition": "a refined wide pocket-door opening with recessed tracks, jamb trim, flush threshold, continuous floor alignment, and clear views in both directions"
+  },
+  {
+    "demo_id": "japanese_tea_library_refined",
+    "logical_seed": 1427,
+    "title": "Refined Japanese Tea Library",
+    "style": "carefully crafted Japanese-modern interior with dark walnut joinery, textured warm plaster, tatami weave geometry, indigo textiles, blackened metal, river stone, and restrained vermilion accents",
+    "interior_program": "a library and tea room with gridded bookcases, many varied books, low upholstered reading seats, a detailed tea table, floor cushions, writing desk, ceramics, timber ceiling lattice, wall niches, and fine baseboard and frame details",
+    "exterior_program": "a layered rain garden courtyard with raked gravel geometry, stepping stones away from the camera route, moss islands, maple-like branching trees with leaf clusters, stone lantern forms, basin, bridge-like deck, screen walls, and sheltered bench",
+    "transition": "a tall open timber portal with stacked frame layers, recessed sliding panels, a level stone threshold, and an uninterrupted axial garden path"
+  },
+  {
+    "demo_id": "desert_ceramics_workshop_refined",
+    "logical_seed": 1563,
+    "title": "Refined Desert Ceramics Workshop",
+    "style": "gallery-quality Sonoran modernism with rammed-earth strata, terracotta, dark steel, canvas, mesquite wood, turquoise glaze, and warm sand-colored stone",
+    "interior_program": "a convincing working ceramics studio with compound workbenches, pottery wheels, stools, kilns, drying racks, tool rails, sinks, storage drawers, shelves holding many distinct modeled vessels, clay blocks, glazing tables, and articulated roof structure",
+    "exterior_program": "a shaded production patio with a detailed slatted canopy, clay display plinths, outdoor worktable, gravel beds, numerous modeled agave and cactus forms, boulders, benches, low walls, and layered desert planting",
+    "transition": "a broad open steel-framed workshop portal with deep reveals, overhead track detail, flush paving, and a continuous hardscape axis"
+  },
+  {
+    "demo_id": "urban_bicycle_cafe_refined",
+    "logical_seed": 1659,
+    "title": "Refined Urban Bicycle Cafe",
+    "style": "polished adaptive-reuse architecture with richly modeled brick bonds, cream ceramic tile, walnut, blackened steel, olive upholstery, terrazzo, and brushed brass",
+    "interior_program": "a detailed cafe with paneled service bar, pastry case with shelves, espresso machine assembled from many components, cup stacks, menu-free display wall, banquettes, varied tables and chairs, pendant fixtures, exposed ceiling services, bicycle frames and racks outside the clear aisle",
+    "exterior_program": "a richly furnished pocket park with brick paving pattern, curb-free promenade, cafe tables, bike stands, layered planters, shade trees, benches, bollards, drainage grates, neighboring facade fragments, windows, cornices, and street furniture",
+    "transition": "multiple folded-open storefront leaves gathered to both sides of a wide flush opening with detailed rails and facade trim"
+  },
+  {
+    "demo_id": "nordic_dining_conservatory_refined",
+    "logical_seed": 1773,
+    "title": "Refined Nordic Dining Conservatory",
+    "style": "precise Nordic craft architecture with white-oiled timber, muted forest green, pale limestone, woven linen, handmade ceramic colors, and slim black steel",
+    "interior_program": "a refined dining and gathering hall with a long trestle table, individually assembled chairs, layered table settings, detailed sideboard, open shelving, fireplace surround away from the central route, window seats, pendant housings, acoustic timber ceiling, and floor-board joints",
+    "exterior_program": "an orchard conservatory terrace with pergola ribs, stone and gravel paving patterns, espalier frames, fruit trees with branching trunks and many leaves or fruit, raised herb beds, long bench, lantern housings, fencing, and distant field-edge layers",
+    "transition": "a deep open timber portal with stacked jamb profiles, recessed glazed panels, drainage slot detail, and perfectly level floor-to-terrace paving"
+  },
+  {
+    "demo_id": "mediterranean_music_villa_refined",
+    "logical_seed": 1881,
+    "title": "Refined Mediterranean Music Villa",
+    "style": "layered Mediterranean contemporary architecture with softly textured stucco geometry, travertine courses, dark walnut, dusty rose textiles, aged bronze, patterned tile, and deep green planting",
+    "interior_program": "an intimate music salon with a recognizable multipart grand piano, upholstered sofas and lounge chairs, record shelving with many sleeves, console equipment shapes, acoustic wall panels, side tables, rugs, sculptural decor, ceiling coffers, and fine trim",
+    "exterior_program": "a richly layered terrace with pergola beams and vines, dining set, modeled olive and citrus trees, water basin with coping, patterned paving, low walls, pots, side planting beds, distant terraces, and landscape framing",
+    "transition": "a carefully profiled tall arch portal with layered stone trim, open recessed panels, level travertine threshold, and an unobstructed terrace axis"
+  }
+]

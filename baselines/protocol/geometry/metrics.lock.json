@@ -1,0 +1,20 @@
+{
+  "protocol_id": "worldbridge-table3-infinigen-indoor-v1",
+  "geometry_proxy": "final evaluated Blender child-mesh bounds merged per native solver instance into rigid OBB; actual mesh BVH surface intersection is the narrow phase for candidate pair collisions",
+  "collision_thresholds": {"penetration_depth_m": 0.01, "overlap_volume_m3": 0.00001, "smaller_object_volume_fraction": 0.005},
+  "support_thresholds": {"gap_m": 0.02, "embedding_m": 0.01, "minimum_projection_fraction": 0.05},
+  "oob_thresholds": {"outside_area_fraction": 0.01},
+  "recast_binding": {"path": "baselines/envs/hyworld2/lib/python3.11/site-packages/recast.cpython-311-x86_64-linux-gnu.so", "version": "0.1.0", "sha256": "c4aab7bc62c0731dd3e6e976156a3d3dd0c077541c9a723f7e86bc29bea786c8", "postprocess_connect_components": false, "postprocess_keep_largest": false},
+  "valid_scene_thresholds": {"navigable_area_ratio": 72.15721426255115, "connected_area_ratio": 97.26265267349281, "calibration_result": "baselines/evaluation/geometry/results/reference_indoor_calibration.json", "reference_definitions_sha256": "267066088abd56ca88e7aa48159a8bb849eda62dcad81e01841e51f0581233a0"},
+  "hashes": {
+    "geometry": "ee6f9cbb3b61c4d7c8fd9abe99dc74f3653afd97a2268e75dabfc1ad8aa514a5",
+    "navigability": "f159c7fc15be5dd97477ce210ee381cbccecbfff619915253a789ef8e7097223",
+    "aggregate": "9977035cae4640d856afb45b63f1e29f0f32ca9fafc46222040f06eaeda62689",
+    "object_roles": "2adf2b409726385729b876c207b3e857a8b8abd5b05d1a8e6426ee37ea1ba57d",
+    "support_rules": "1914a38f19e97aeef28b1f99c03913c6c10b860f0165eed8d100a1b6b7bc722b",
+    "collision_exceptions": "6ddab819968233f22e61735df0e50c537557a915e182f9dc6a842083d57f9be1",
+    "agent": "4ee9433562c18e43aa1443f6aa7c511095a52292d136d83a3cfdaf9902f5750d",
+    "reference_thresholds": "f5d03aab3f9bca45865d89ce89e3279d5dff6f2f2f79e1017ed918760bb8a91e",
+    "reference_definitions": "267066088abd56ca88e7aa48159a8bb849eda62dcad81e01841e51f0581233a0"
+  }
+}

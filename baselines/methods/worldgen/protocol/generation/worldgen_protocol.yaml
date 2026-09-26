@@ -1,0 +1,71 @@
+protocol_id: table2-worldgen-ziyang-v1
+status: formal_frozen
+method: worldgen
+display_name: WorldGen (ZiYang-xie)
+identity_note: This is not Meta Reality Labs' CVPR 2026 WorldGen system.
+domains: [indoor, urban]
+spec_files:
+  indoor: baselines/protocol/generation/indoor_specs.jsonl
+  urban: baselines/protocol/generation/urban_specs.jsonl
+seeds_file: baselines/protocol/generation/seeds.json
+source:
+  repository: https://github.com/ZiYang-xie/WorldGen
+  commit: 7ce7b2767fdf31e2727b69a2e61e2e950e3a017f
+  submodules:
+    DA-2: d659838585f2bc9967c7e9367af573795271dbbb
+native_generation:
+  mode: t2s
+  resolution: [1600, 800]
+  inference_steps: 50
+  guidance_scale: 7.0
+  blend_extend: 6
+  prompt_prefix: A high quality 360 panorama photo of
+  prompt_suffix: HDR, RAW, 360 consistent, omnidirectional
+  output: gaussian_splat
+  use_sharp: false
+  inpaint_bg: false
+  low_vram: false
+  seed_adapter: call upstream gen_pano_image with logical seed
+  depth_model: haodongli/DA-2
+  depth_scale: normalize maximum radial distance to 20 native units
+camera:
+  coordinate_system: WorldGen/OpenCV x-right, y-down, z-forward
+  frames: 50
+  fps: 10
+  horizontal_fov_degrees: 70.0
+  anchors: [0, 7, 14, 21, 28, 35, 42, 49]
+  anchor_resolution: [1280, 720]
+  sequence_resolution: [512, 512]
+  coordinate_scale: native_normalized_not_metric
+  indoor:
+    nominal_height_m: 1.55
+    path_start_native: [-0.60, 0.0, -0.30]
+    path_end_native: [0.60, 0.0, 0.30]
+  urban:
+    nominal_height_m: 1.65
+    path_start_native: [-0.60, 0.0, -0.30]
+    path_end_native: [0.0, 0.0, 0.0]
+  yaw_degrees: [-35.0, 35.0]
+render:
+  implementation: gsplat-1.5.3
+  background: black
+  near_plane: 0.01
+  far_plane: 100.0
+success_contract:
+  require_scene: true
+  require_anchor_count: 8
+  require_sequence_count: 50
+  require_cameras_json: true
+  image_mean_range: [0.01, 0.99]
+  image_std_min: 0.01
+  min_indoor_path_native_units: 1.0
+  min_urban_path_native_units: 0.6
+metrics:
+  qalign: pyiqa-qalign
+  clipiqa_plus: pyiqa-clipiqa+
+  layout_plausibility: three-rater-blind-likert
+  prompt_alignment: three-rater-fact-checklist
+  consistency_3d: worldscore-static-3d-consistency
+  appearance_diversity: lpips-alex-v0.1
+  layout_diversity: segformer-ade20k-semantic-1-miou
+failure_policy: intention-to-treat

@@ -1,0 +1,87 @@
+{
+  "protocol_id": "worldbridge-table3-gpt6-astra-low-native-mesh-nav-v1",
+  "status": "frozen",
+  "created_at_utc": "2026-09-14T15:28:00Z",
+  "method": "gpt6_astra_low",
+  "display_name": "GPT-6 Astra Low",
+  "model_id": "gpt-6-astra",
+  "reasoning_effort": "low",
+  "source_method_lock": "baselines/methods/gpt/protocol/generation/gpt6_astra_low.lock.json",
+  "method_definition": "GPT-6 Astra Low via frozen Codex CLI sessions generated Blender Python scene code; retained final Blender meshes from Table 2 are reused without another model call",
+  "comparison_to_high": "The Table-3 geometry and Recast stack is byte-identical to GPT-6 Astra High; source scenes differ only because Table 2 used reasoning_effort=low",
+  "domains": ["indoor", "urban"],
+  "track": "native_mesh_instance_incomplete",
+  "structural_metrics": {
+    "collision_rate": "N/A-I",
+    "floating_rate": "N/A-I",
+    "oob_rate": "N/A-I",
+    "support_validity": "N/A-I",
+    "valid_scene_rate": "N/A-I",
+    "reason": "The frozen final output has meshes and descriptive node names but no stable independent-instance graph, unified object roles, or native support edges."
+  },
+  "navigation_metrics": [
+    "navigable_area_ratio",
+    "connected_area_ratio",
+    "navmesh_success_rate"
+  ],
+  "planned_specs_per_domain": 25,
+  "seeds": [0, 1, 2, 3],
+  "planned_runs_per_domain": 100,
+  "pilot": {
+    "spec_indices": [0, 5, 10, 15, 20],
+    "seeds": [0, 1],
+    "runs_per_domain": 10,
+    "reviewed_at_utc": "2026-09-14T17:08:00Z",
+    "terminal_runs": 20,
+    "evaluated_geometry_runs": 20,
+    "itt_runs_from_table2_failures": 0,
+    "new_failures": 0,
+    "recovery_note": "A first deterministic pilot invocation briefly overlapped after an interpreter-prefix recovery; its 21-line log is retained as matrix_pilot_pre_recovery_20260914.jsonl. A clean single-controller force rerun produced the authoritative 20-line matrix_pilot.jsonl with identical per-run metrics.",
+    "visual_review": [
+      "data/table3_gpt6_astra_low/indoor/indoor_bedroom_00/seed_0/navigation/debug_topdown.png",
+      "data/table3_gpt6_astra_low/urban/urban_residential_four_way_00/seed_0/navigation/debug_topdown.png"
+    ]
+  },
+  "reuse": {
+    "source": "baselines/data/table2/{domain}/gpt6_astra_low",
+    "regenerate": false,
+    "required_files": ["run_manifest.json", "scene/scene.blend", "SUCCESS"],
+    "eligible": "generation_success=true, build_success=true, retained scene.blend, and SUCCESS marker",
+    "table2_quality_failure_policy": "ITT zero; never regenerate",
+    "expected_coverage": {
+      "indoor": {"evaluated": 97, "itt": 3},
+      "urban": {"evaluated": 98, "itt": 2}
+    }
+  },
+  "output_root": "baselines/data/table3_gpt6_astra_low/{domain}/{spec_id}/seed_{seed}",
+  "coordinate_system": "Blender meters, Z up, evaluation region centered at X=Y=0",
+  "roi": {
+    "indoor": "full extent_m XY rectangle",
+    "urban": "fixed central [-30,30] x [-30,30] meter crop"
+  },
+  "navigation": {
+    "agent": "baselines/protocol/geometry/agent.yaml",
+    "walkable_rules": "baselines/methods/gpt/protocol/geometry/gpt6_astra_geometry_nav_rules.json",
+    "shared_high_exporter": "baselines/methods/gpt/tools/export_gpt_geometry.py",
+    "shared_high_evaluator": "baselines/methods/gpt/tools/evaluate_gpt_geometry_nav.py",
+    "method_native_navmesh_used": false,
+    "connect_islands": false,
+    "keep_largest_only": false,
+    "failure_policy": "ITT",
+    "aggregation": "mean over the four seeds inside each specification, then mean over 25 specifications",
+    "bootstrap_repeats": 10000,
+    "bootstrap_seed": 20260909
+  },
+  "blender": {
+    "path": "blender",
+    "version": "4.2.0",
+    "use_gpu": false,
+    "gpu_reason": "Canonical mesh export performs no rendering or neural inference; Blender dependency-graph and Recast operations are CPU-only"
+  },
+  "python_environment": {
+    "preferred_existing_path": "python",
+    "fallback_existing_path": "baselines/envs/hyworld2/bin/python",
+    "purpose": "Existing Python 3.11 environment for NumPy and the frozen Recast extension; no downloads required"
+  },
+  "downloads_required": false
+}

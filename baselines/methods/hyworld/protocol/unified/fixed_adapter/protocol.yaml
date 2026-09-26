@@ -1,0 +1,254 @@
+{
+  "adapter": {
+    "allowed_inputs": [
+      "frozen pair specification",
+      "immutable HY-World pair manifest and side success markers",
+      "immutable HY-World final 3DGS point-cloud references"
+    ],
+    "anchors": {
+      "foyer": [
+        0.0,
+        -3.35,
+        0.0
+      ],
+      "goal_slots": [
+        [
+          -3.0,
+          1.5,
+          0.0
+        ],
+        [
+          0.0,
+          0.5,
+          0.0
+        ],
+        [
+          3.0,
+          1.5,
+          0.0
+        ]
+      ],
+      "outdoor": [
+        [
+          -0.75,
+          -7.0,
+          0.0
+        ],
+        [
+          0.75,
+          -7.0,
+          0.0
+        ]
+      ]
+    },
+    "building_shell": {
+      "floor_z_m": 0.0,
+      "footprint_depth_m": 10.0,
+      "footprint_width_m": 12.0,
+      "wall_height_m": 3.0,
+      "wall_thickness_m": 0.3
+    },
+    "coordinate_system": "right-handed Z-up",
+    "forbidden_operations": [
+      "per-sample ICP",
+      "IoU-maximizing transform search",
+      "per-sample scaling",
+      "metric-aware repair",
+      "human visual adjustment",
+      "native point-cloud or splat deletion or overwrite"
+    ],
+    "native_geometry_policy": "retain immutable HY-World final 3DGS point-cloud paths and SHA-256; native geometry is visual provenance only and is excluded from the explicitly synthetic adapter collision",
+    "native_visual_transforms": {
+      "axis_mapping": "identity metadata-only reference; frozen HY-World canonical renders are the visual evidence",
+      "camera_translation_m": {
+        "exterior": [
+          0.0,
+          -7.0,
+          1.65
+        ],
+        "interior": [
+          0.0,
+          0.0,
+          1.55
+        ]
+      },
+      "nominal_camera_height_m": {
+        "exterior": 1.65,
+        "interior": 1.55
+      },
+      "rotation_degrees": 0.0,
+      "scale_rule": "fixed identity metadata transform; no native geometry enters adapter collision or geometry metrics",
+      "source_reference": "each side's frozen scene/gs/ply/point_cloud_49.ply"
+    },
+    "portal": {
+      "bottom_z_m": 0.0,
+      "center_xyz_m": [
+        0.0,
+        -4.85,
+        1.05
+      ],
+      "height_m": 2.1,
+      "outward_normal_xyz": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "rule": "single shared record centered on the south wall for every pair",
+      "state": "open",
+      "width_m": 1.2
+    },
+    "source_pair_success_rule": "both frozen HY-World exterior/SUCCESS and interior/SUCCESS markers exist",
+    "unit": "meter",
+    "walkway": {
+      "outside_y_range_m": [
+        -8.0,
+        -5.0
+      ],
+      "threshold_y_range_m": [
+        -5.0,
+        -4.7
+      ],
+      "x_range_m": [
+        -1.5,
+        1.5
+      ]
+    }
+  },
+  "agent": {
+    "height_m": 1.7,
+    "max_climb_m": 0.2,
+    "max_slope_deg": 45.0,
+    "radius_m": 0.3
+  },
+  "aggregation": {
+    "bootstrap_repeats": 10000,
+    "bootstrap_seed": 20260909,
+    "confidence": 0.95,
+    "failure_policy": "planned-run ITT",
+    "order": "mean_over_spec(mean_over_seed(metric))"
+  },
+  "display_name": "HY-World 2.0 + fixed IO adapter",
+  "failure_values": {
+    "cross_boundary_reachability": 0.0,
+    "entrance_alignment": 0.0,
+    "entrance_passability": 0.0,
+    "functional_aqs": 1.0,
+    "io_connectivity_rate": 0.0,
+    "shape_iou": 0.0,
+    "spatial_aqs": 1.0,
+    "transition_collision": 100.0,
+    "visual_aqs": 1.0
+  },
+  "formal": {
+    "planned_pairs": 100,
+    "seeds": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "spec_indices": "all"
+  },
+  "frozen_after_pilot_at_utc": "2026-09-12T16:51:21.943543+00:00",
+  "method": "hyworld2_fixed_io_adapter",
+  "metrics": {
+    "cross_boundary_reachability": {
+      "rule": "all ordered registered outdoor-anchor by functional-goal pairs"
+    },
+    "entrance_alignment": {
+      "max_bottom_delta_m": 0.05,
+      "max_normal_angle_deg": 15.0,
+      "max_normal_distance_m": 0.1,
+      "max_tangent_offset_m": 0.2,
+      "min_aperture_iou": 0.8
+    },
+    "entrance_passability": {
+      "inside_probe_m": 1.5,
+      "outside_probe_m": 1.5
+    },
+    "io_connectivity": {
+      "rule": "at least one registered outdoor anchor and foyer share a Recast component"
+    },
+    "shape_iou": {
+      "polygon": "first-floor exterior footprint versus adapter interior shell outer envelope"
+    },
+    "transition_collision": {
+      "sample_step_m": 0.05
+    }
+  },
+  "paths": {
+    "formal_annotations": "baselines/annotations/table4_hyworld2_io_adapter",
+    "formal_data": "baselines/data/table4_hyworld2_io_adapter",
+    "formal_results": "baselines/results/table4_hyworld2_io_adapter",
+    "formal_source_view": "baselines/work/table4_hyworld2_io_adapter/source_views/formal",
+    "pilot_annotations": "baselines/work/table4_hyworld2_io_adapter/pilot/annotations",
+    "pilot_data": "baselines/work/table4_hyworld2_io_adapter/pilot/data",
+    "pilot_results": "baselines/work/table4_hyworld2_io_adapter/pilot/results",
+    "pilot_source_view": "baselines/work/table4_hyworld2_io_adapter/source_views/pilot"
+  },
+  "pilot": {
+    "planned_pairs": 10,
+    "seeds": [
+      0,
+      1
+    ],
+    "spec_indices": [
+      0,
+      6,
+      12,
+      18,
+      24
+    ]
+  },
+  "postprocess": {
+    "connect_components": false,
+    "keep_largest_only": false,
+    "max_walkable_height_above_floor_m": 0.2
+  },
+  "protocol_version": "worldbridge-table4-hyworld2-fixed-io-adapter-v1",
+  "recast": {
+    "cell_height_m": 0.05,
+    "cell_size_m": 0.05,
+    "filter_ledge_spans": true,
+    "filter_low_hanging_obstacles": true,
+    "filter_low_height_spans": true,
+    "partition": "watershed"
+  },
+  "source_formal_annotations": "baselines/annotations/table4/hyworld2/formal",
+  "source_formal_data": "baselines/data/table4/hyworld2",
+  "source_formal_results": "baselines/results/table4/hyworld2/formal",
+  "source_method": "hyworld2",
+  "source_pilot_annotations": "baselines/annotations/table4/hyworld2/pilot",
+  "source_pilot_data": "baselines/data/table4/hyworld2",
+  "source_pilot_results": "baselines/results/table4/hyworld2/pilot",
+  "source_protocol": "baselines/methods/hyworld/protocol/unified/native/hyworld2.yaml",
+  "source_spec_file": "baselines/protocol/unified/specs.jsonl",
+  "spatial_aqs": {
+    "evidence": "the frozen eight-view HY-World montage plus the same fixed-scale adapter footprint/portal/navigation overlay used by the WorldGen adapter system track",
+    "failure_value": 1,
+    "label": "AQS-VLM",
+    "model": "Qwen/Qwen3-VL-8B-Instruct",
+    "model_source": "existing local checkpoint",
+    "passes": 3,
+    "score_range": [
+      1,
+      10
+    ],
+    "seeds": [
+      102,
+      203,
+      304
+    ],
+    "temperature": 0.2,
+    "top_p": 0.9
+  },
+  "spawn": {
+    "horizontal_tolerance_m": 0.3,
+    "vertical_tolerance_m": 0.5
+  },
+  "status": "formal_frozen",
+  "success": {
+    "minimum_reference_area_fraction": 0.01
+  },
+  "track": "fixed_io_adapter_system"
+}

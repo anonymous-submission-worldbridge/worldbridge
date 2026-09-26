@@ -1,0 +1,102 @@
+[
+  {
+    "demo_id": "garden_residential_microdistrict",
+    "logical_seed": 3101,
+    "title": "Garden Residential Microdistrict",
+    "style": "warm contemporary brick-and-timber neighborhood with varied townhouse roofs, articulated balconies, pale stone, green metalwork, planted courtyards, and lived-in street furniture",
+    "layout_strategy": "an asymmetrical woonerf bends around a central rain garden; three townhouse rows, a compact apartment house, and corner services face the shared lane at different setbacks",
+    "required_facilities": ["three residential buildings", "apartment building", "pharmacy", "ATM alcove", "parcel lockers", "small neighborhood park"],
+    "anchor_interior": "a fully furnished ground-floor community lounge and residential lobby with mail wall, seating groups, reception joinery, planters, shelves, ceiling details, and a wide open entrance facing the woonerf",
+    "signature_objects": "bicycles, prams, benches, bollards, lamp posts, balcony furniture, bins, utility covers, parked compact cars, playground equipment, parcel cabinets, pharmacy display furniture, trees and dense planting"
+  },
+  {
+    "demo_id": "school_library_learning_campus",
+    "logical_seed": 3217,
+    "title": "School and Library Learning Campus",
+    "style": "bright civic architecture combining red brick, pale precast concrete, timber fins, colored enamel panels, robust steelwork, and abundant shade trees",
+    "layout_strategy": "a pinwheel campus around a stepped learning court with the school, public library, sports hall, arts pavilion, and cafe forming distinct nearby volumes linked by covered walks",
+    "required_facilities": ["school classroom building", "public library", "sports gymnasium", "arts workshop", "cafe shop", "play court"],
+    "anchor_interior": "a detailed school-library commons with circulation desk, book stacks filled with modeled books, study tables and multipart chairs, soft seating, display plinths, acoustic ceiling, and a fully open portal to the learning court",
+    "signature_objects": "basketball hoops, bike racks, school benches, drinking fountains, planters, book carts, backpacks, outdoor tables, climbing play structures, lamp posts, trees and planted bioswales"
+  },
+  {
+    "demo_id": "civic_emergency_health_block",
+    "logical_seed": 3331,
+    "title": "Civic Emergency and Health Block",
+    "style": "confident contemporary municipal architecture with buff brick, deep blue metal, warm terracotta panels, glass canopies, durable terrazzo, and clear but non-textual color coding",
+    "layout_strategy": "a compact four-way civic block: police station and fire station flank a shared emergency forecourt while a neighborhood hospital, pharmacy, and pocket plaza complete the enclosure",
+    "required_facilities": ["police station", "fire station with apparatus bays", "hospital or urgent care", "pharmacy", "public plaza", "parking court"],
+    "anchor_interior": "a realistic urgent-care reception with curved reception desk, waiting chairs, privacy screens, clinical storage, exam-room glimpse, ceiling services, plants, and a broad open entrance to the civic plaza",
+    "signature_objects": "multipart police cars, fire engine, ambulance, hydrants, traffic barriers, flagless poles, benches, wheelchairs, medical carts, pharmacy shelving, street lamps, bins, trees and emergency forecourt markings made as geometry"
+  },
+  {
+    "demo_id": "high_street_finance_retail_quarter",
+    "logical_seed": 3449,
+    "title": "High Street Finance and Retail Quarter",
+    "style": "dense mixed-use main street with glazed brick, sandstone trim, dark bronze storefronts, colorful awnings without lettering, upper-floor bay windows, and fine-grained paving",
+    "layout_strategy": "a short pedestrian-priority high street widens into a triangular plaza; a bank, pharmacy, grocery, bakery, restaurant, and upper-floor homes create varied frontages and rooflines",
+    "required_facilities": ["bank branch", "two exterior ATMs", "pharmacy", "multiple shops", "restaurant takeaway", "takeout lockers", "upper-floor residences"],
+    "anchor_interior": "a richly modeled bank and community service hall with teller desk, consultation tables, waiting seats, secure partitions, ATM backs, pendant fixtures, plants, and open folding frontage to the plaza",
+    "signature_objects": "shop counters, product shelving, cafe tables, awnings, planters, bollards, bicycles, delivery scooters, takeout cabinets, cash machines with blank screens, market carts, benches, lamp posts and street trees"
+  },
+  {
+    "demo_id": "factory_logistics_maker_yard",
+    "logical_seed": 3563,
+    "title": "Factory and Logistics Maker Yard",
+    "style": "carefully detailed light-industrial district with sawtooth roofs, weathered brick, corrugated colored metal, exposed steel, translucent clerestories, concrete aprons, and planted storm-water edges",
+    "layout_strategy": "an irregular service loop ties a small factory, maker workshop, warehouse, delivery station, canteen, and utility sheds around a busy shared yard without becoming a single megabuilding",
+    "required_facilities": ["small factory", "warehouse", "maker workshop", "delivery station", "parcel lockers", "canteen shop"],
+    "anchor_interior": "an active maker workshop with robust benches, multipart machines, tool walls, material racks, work stools, overhead ducts, safety rails, storage bins, and a tall open loading portal facing the yard",
+    "signature_objects": "forklift, cargo van, pallet stacks, hand trucks, crates, drums, pipes, rooftop vents, loading docks, parcel cabinets, outdoor canteen tables, wheel stops, drainage channels, lamps, fences, shrubs and worker bicycles"
+  },
+  {
+    "demo_id": "stadium_recreation_precinct",
+    "logical_seed": 3677,
+    "title": "Stadium and Recreation Precinct",
+    "style": "energetic recreation architecture with pale concrete ribs, red structural steel, blue ceramic tile, timber soffits, translucent canopies, durable rubber paving, and lush perimeter planting",
+    "layout_strategy": "a compact neighborhood stadium anchors an oval public forecourt, with a separate sports hall, pool pavilion, clinic, equipment shop, and cafe arranged as distinct nearby buildings",
+    "required_facilities": ["small stadium with stands", "indoor sports gym", "pool pavilion", "sports clinic", "equipment shop", "cafe"],
+    "anchor_interior": "a sports-club lobby and gym edge with reception, trophy-like abstract objects without text, lockers, benches, exercise equipment, ceiling trusses, retail racks, and a wide open entrance to the stadium forecourt",
+    "signature_objects": "stadium seating rows, goals, basketball hoops, exercise machines, bicycle racks, ball racks, cafe furniture, ticket turnstile forms, benches, lamp columns, shade trees, planters and paving bands"
+  },
+  {
+    "demo_id": "roadside_fuel_service_village",
+    "logical_seed": 3793,
+    "title": "Roadside Fuel Service Village",
+    "style": "polished roadside contemporary architecture using charcoal brick, silver metal, warm timber, deep green tile, bright canopy soffits, concrete paving, and drought-tolerant landscaping",
+    "layout_strategy": "a diagonal local road creates an island gas station with a separate convenience store, repair garage, bank ATM pavilion, diner, car wash, and small fire-response outpost clustered within walking distance",
+    "required_facilities": ["gas station", "convenience store", "repair garage", "ATM pavilion", "diner shop", "car wash", "small fire outpost"],
+    "anchor_interior": "a dense convenience store interior with checkout counter, product gondolas, refrigerated case geometry, coffee station, ceiling grid, baskets, small seating nook, and a broad open glazed entrance toward the pump canopy",
+    "signature_objects": "fuel pumps and hoses, canopy columns, multipart cars, tow pickup, tire racks, workshop tools, air pump, cash machine, cafe tables, bollards, bins, drainage grates, lamp posts and xeric plants"
+  },
+  {
+    "demo_id": "riverside_market_delivery_district",
+    "logical_seed": 3889,
+    "title": "Riverside Market and Delivery District",
+    "style": "layered river-town architecture with old red brick, contemporary timber additions, patinated metal roofs, colored market canopies, stone embankments, boardwalk decking, and riparian planting",
+    "layout_strategy": "a curving river edge meets a market square; a food hall, small shops, delivery depot, post room, cafe, and residential lofts form a dense crescent of separate buildings",
+    "required_facilities": ["river with embankment", "market food hall", "several shops", "delivery or express station", "parcel lockers", "takeout lockers", "riverside park"],
+    "anchor_interior": "a detailed market food hall with vendor counters, shelving, produce stands, multipart tables and chairs, kitchen equipment silhouettes, overhead trusses, plants, and a tall open frontage to the river square",
+    "signature_objects": "delivery vans, cargo bicycles, market stalls, baskets, crates, parcel and meal cabinets, benches, railings, mooring posts, small footbridge, lamps, riverside trees, reeds, rocks and modeled water surface"
+  },
+  {
+    "demo_id": "lakeside_medical_residential_park",
+    "logical_seed": 4001,
+    "title": "Lakeside Medical Residential Park",
+    "style": "calm biophilic neighborhood with light stone, pale timber, sage ceramic panels, bronze frames, planted roofs, softly curved paths, timber decks, and dense lakeside vegetation",
+    "layout_strategy": "a small crescent lake is wrapped by senior housing, family apartments, a community hospital, pharmacy, wellness pavilion, and boathouse, all separate and connected by a public park loop",
+    "required_facilities": ["lake and lakeside park", "community hospital", "pharmacy", "two residential buildings", "wellness pavilion", "boathouse"],
+    "anchor_interior": "a welcoming hospital wellness lounge with reception, waiting clusters, consultation booth, accessible furniture, shelving, indoor planting, acoustic ceiling rafts, and a wide level opening to the lakeside garden",
+    "signature_objects": "wheelchairs, medical trolleys, benches, fitness equipment, pharmacy shelving, apartment balconies, picnic tables, play features, small rowboats, boardwalk rails, lamps, reeds, rocks, trees and modeled lake water"
+  },
+  {
+    "demo_id": "old_town_transit_civic_hub",
+    "logical_seed": 4127,
+    "title": "Old Town Transit and Civic Hub",
+    "style": "adaptively reused urban quarter mixing restored masonry, arched openings, slate roofs, modern copper-and-glass insertions, warm shopfront timber, patterned stone streets, and mature trees",
+    "layout_strategy": "an offset T-junction opens to a civic square with a library, police kiosk, bank, pharmacy, neighborhood school annex, transit shelter, shops, and residences occupying several varied historic-scale buildings",
+    "required_facilities": ["library", "police station or kiosk", "bank and ATM", "pharmacy", "school annex", "shops", "residential buildings", "transit square"],
+    "anchor_interior": "a refined public library reading hall with dense book stacks, circulation desk, varied seating, study lamps modeled without emission, media cabinets, ceiling beams, plants, and an arched open entrance to the square",
+    "signature_objects": "bus shelter, bicycles, compact police vehicle, cash machine, book carts, shop displays, cafe furniture, school play objects, benches, bollards, lamp posts, fountain basin, mature trees and planter beds"
+  }
+]

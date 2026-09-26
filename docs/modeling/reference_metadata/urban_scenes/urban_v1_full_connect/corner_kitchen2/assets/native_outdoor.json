@@ -1,0 +1,284 @@
+[
+  {
+    "collection": "CK2_NATIVE_TableDiningFactory_0",
+    "factory": "TableDiningFactory",
+    "original_object": "TableDiningFactory(3514142).spawn_asset(341483)",
+    "dimensions": [
+      1.7032328844070435,
+      1.038554072380066,
+      0.8457464575767517
+    ],
+    "vertices": 27648,
+    "materials": [
+      "shader_ceramic.018",
+      "shader_wood.221"
+    ],
+    "source_blend": "./infinigen/outputs/indoor_outdoor_villa_demo2/coarse/scene.blend"
+  },
+  {
+    "collection": "CK2_NATIVE_ChairFactory_0",
+    "factory": "ChairFactory",
+    "original_object": "ChairFactory(6400606).spawn_asset(1371945)",
+    "dimensions": [
+      0.48751989006996155,
+      0.4918321967124939,
+      0.9267857074737549
+    ],
+    "vertices": 99670,
+    "materials": [
+      "shader_wood.324",
+      "shader_wood.324",
+      "shader_shelves_black_wood.276"
+    ],
+    "source_blend": "./infinigen/outputs/indoor_outdoor_villa_demo2/coarse/scene.blend"
+  },
+  {
+    "collection": "CK2_NATIVE_CupFactory_0",
+    "factory": "CupFactory",
+    "original_object": "CupFactory(2427617).spawn_asset(380481)",
+    "dimensions": [
+      0.10107177495956421,
+      0.10107176005840302,
+      0.11822596937417984
+    ],
+    "vertices": 63086,
+    "materials": [
+      "shader_text.544"
+    ],
+    "source_blend": "./infinigen/outputs/indoor_outdoor_villa_demo2/coarse/scene.blend"
+  },
+  {
+    "collection": "CK2_NATIVE_CupFactory_1",
+    "factory": "CupFactory",
+    "original_object": "CupFactory(2794958).spawn_asset(8547822)",
+    "dimensions": [
+      0.12492381036281586,
+      0.12492382526397705,
+      0.12691575288772583
+    ],
+    "vertices": 82853,
+    "materials": [
+      "shader_translucent_plastic.219",
+      "shader_text.616"
+    ],
+    "source_blend": "./infinigen/outputs/indoor_outdoor_villa_demo2/coarse/scene.blend"
+  },
+  {
+    "collection": "CK2_NATIVE_CupFactory_2",
+    "factory": "CupFactory",
+    "original_object": "CupFactory(3985953).spawn_asset(9775977)",
+    "dimensions": [
+      0.12584370374679565,
+      0.12584371864795685,
+      0.1579747498035431
+    ],
+    "vertices": 94242,
+    "materials": [
+      "shader_text.729"
+    ],
+    "source_blend": "./infinigen/outputs/indoor_outdoor_villa_demo2/coarse/scene.blend"
+  },
+  {
+    "collection": "CK2_NATIVE_CupFactory_3",
+    "factory": "CupFactory",
+    "original_object": "CupFactory(4792541).spawn_asset(3092947)",
+    "dimensions": [
+      0.08527214825153351,
+      0.08527213335037231,
+      0.06465785205364227
+    ],
+    "vertices": 29702,
+    "materials": [
+      "shader_grained_metal.135",
+      "shader_text.626"
+    ],
+    "source_blend": "./infinigen/outputs/indoor_outdoor_villa_demo2/coarse/scene.blend"
+  },
+  {
+    "collection": "CK2_NATIVE_CupFactory_4",
+    "factory": "CupFactory",
+    "original_object": "CupFactory(5395226).spawn_asset(5294613)",
+    "dimensions": [
+      0.16636405885219574,
+      0.13498421013355255,
+      0.09483693540096283
+    ],
+    "vertices": 59255,
+    "materials": [
+      "shader_marble.158",
+      "shader_text.727"
+    ],
+    "source_blend": "./infinigen/outputs/indoor_outdoor_villa_demo2/coarse/scene.blend"
+  },
+  {
+    "collection": "CK2_NATIVE_CupFactory_5",
+    "factory": "CupFactory",
+    "original_object": "CupFactory(7450886).spawn_asset(357007)",
+    "dimensions": [
+      0.157499760389328,
+      0.12180589139461517,
+      0.06179225444793701
+    ],
+    "vertices": 47220,
+    "materials": [
+      "shader_vase_ceramic.243",
+      "shader_vase_ceramic.244",
+      "shader_text.765"
+    ],
+    "source_blend": "./infinigen/outputs/indoor_outdoor_villa_demo2/coarse/scene.blend"
+  },
+  {
+    "collection": "CK2_NATIVE_PlateFactory_0",
+    "factory": "PlateFactory",
+    "original_object": "PlateFactory(8042783).spawn_asset(7476702)",
+    "dimensions": [
+      0.35420745611190796,
+      0.3542073965072632,
+      0.046173423528671265
+    ],
+    "vertices": 160722,
+    "materials": [
+      "shader_rough_plastic.374",
+      "shader_colored_glass.107"
+    ],
+    "source_blend": "./infinigen/outputs/indoor_outdoor_villa_demo2/coarse/scene.blend"
+  },
+  {
+    "collection": "CK2_NATIVE_PlantContainerFactory_0",
+    "factory": "PlantContainerFactory",
+    "original_object": "PlantContainerFactory(3925623).spawn_asset(1587403)",
+    "dimensions": [
+      0.27501997351646423,
+      0.27501997351646423,
+      0.5203380584716797
+    ],
+    "vertices": 1179160,
+    "materials": [
+      "shader_glass_volume.215",
+      "shader_dirt.006",
+      "shader_cactus.032",
+      "shader_spikes"
+    ],
+    "source_blend": "./infinigen/outputs/indoor_outdoor_villa_demo2/coarse/scene.blend"
+  },
+  {
+    "collection": "CK2_NATIVE_PlantContainerFactory_1",
+    "factory": "PlantContainerFactory",
+    "original_object": "PlantContainerFactory(5924813).spawn_asset(1635766)",
+    "dimensions": [
+      0.2535102963447571,
+      0.2535102963447571,
+      0.5678173899650574
+    ],
+    "vertices": 228037,
+    "materials": [
+      "shader_brushed_metal.116",
+      "shader_dirt.005",
+      "shader_snake_plant.001"
+    ],
+    "source_blend": "./infinigen/outputs/indoor_outdoor_villa_demo2/coarse/scene.blend"
+  },
+  {
+    "collection": "CK2_NATIVE_PlantContainerFactory_2",
+    "factory": "PlantContainerFactory",
+    "original_object": "PlantContainerFactory(6798580).spawn_asset(4032132)",
+    "dimensions": [
+      0.32354971766471863,
+      0.32354971766471863,
+      0.40732261538505554
+    ],
+    "vertices": 887617,
+    "materials": [
+      "shader_glass_volume.078",
+      "shader_dirt.004",
+      "shader_green_succulent"
+    ],
+    "source_blend": "./infinigen/outputs/indoor_outdoor_villa_demo2/coarse/scene.blend"
+  },
+  {
+    "collection": "CK2_NATIVE_PlantContainerFactory_3",
+    "factory": "PlantContainerFactory",
+    "original_object": "PlantContainerFactory(8271736).spawn_asset(4636076)",
+    "dimensions": [
+      0.2478284239768982,
+      0.2478284239768982,
+      0.4801184833049774
+    ],
+    "vertices": 227388,
+    "materials": [
+      "shader_vase_ceramic.066",
+      "shader_SAND",
+      "shader_snake_plant"
+    ],
+    "source_blend": "./infinigen/outputs/indoor_outdoor_villa_demo2/coarse/scene.blend"
+  },
+  {
+    "collection": "CK2_NATIVE_LargePlantContainerFactory_0",
+    "factory": "LargePlantContainerFactory",
+    "original_object": "LargePlantContainerFactory(1244998).spawn_asset(9766621)",
+    "dimensions": [
+      0.5352823734283447,
+      0.6640236377716064,
+      1.3111894130706787
+    ],
+    "vertices": 789013,
+    "materials": [
+      "shader_hammered_metal.040",
+      "shader_dirt.003",
+      "shader_monocot.163"
+    ],
+    "source_blend": "./infinigen/outputs/indoor_outdoor_villa_demo2/coarse/scene.blend"
+  },
+  {
+    "collection": "CK2_NATIVE_LargePlantContainerFactory_1",
+    "factory": "LargePlantContainerFactory",
+    "original_object": "LargePlantContainerFactory(3292824).spawn_asset(7398469)",
+    "dimensions": [
+      0.631792426109314,
+      0.7840650081634521,
+      1.1969828605651855
+    ],
+    "vertices": 656402,
+    "materials": [
+      "shader_colored_glass.015",
+      "shader_dirt.002",
+      "shader_monocot.087"
+    ],
+    "source_blend": "./infinigen/outputs/indoor_outdoor_villa_demo2/coarse/scene.blend"
+  },
+  {
+    "collection": "CK2_NATIVE_LargePlantContainerFactory_2",
+    "factory": "LargePlantContainerFactory",
+    "original_object": "LargePlantContainerFactory(471768).spawn_asset(1524908)",
+    "dimensions": [
+      0.5161826014518738,
+      0.7327146530151367,
+      1.2231131792068481
+    ],
+    "vertices": 2271735,
+    "materials": [
+      "shader_vase_ceramic.012",
+      "shader_dirt",
+      "shader_monocot.030"
+    ],
+    "source_blend": "./infinigen/outputs/indoor_outdoor_villa_demo2/coarse/scene.blend"
+  },
+  {
+    "collection": "CK2_NATIVE_LargePlantContainerFactory_3",
+    "factory": "LargePlantContainerFactory",
+    "original_object": "LargePlantContainerFactory(6381817).spawn_asset(7090625)",
+    "dimensions": [
+      0.6691181659698486,
+      1.006356120109558,
+      1.4275139570236206
+    ],
+    "vertices": 725830,
+    "materials": [
+      "shader_ceramic.005",
+      "shader_dirt.001",
+      "shader_monocot.056",
+      "shader_ear.003"
+    ],
+    "source_blend": "./infinigen/outputs/indoor_outdoor_villa_demo2/coarse/scene.blend"
+  }
+]

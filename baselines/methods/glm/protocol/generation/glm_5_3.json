@@ -1,0 +1,88 @@
+{
+  "protocol_id": "table2-glm-5.3-v1",
+  "status": "formal_frozen",
+  "method": "glm_5_3",
+  "display_name": "GLM-5.3 (Low)",
+  "official_documentation": "https://docs.bigmodel.cn/cn/coding-plan/tool/claude",
+  "model": "glm-5.3",
+  "cli_model": "glm-coding-plan/glm-5.3",
+  "base_url": "https://open.bigmodel.cn/api/coding/paas/v4",
+  "api_key_env": "GLM53_API_KEY",
+  "transport": "opencode_openai_compatible_glm_coding_plan",
+  "opencode_version": "1.1.1",
+  "method_definition": "GLM-5.3 at the official low reasoning effort through the GLM Coding Plan OpenCode integration generates Blender Python scene code; fixed Blender construction and rendering; procedural geometry and materials, no external scene assets",
+  "domains": [
+    "indoor",
+    "urban"
+  ],
+  "spec_files": {
+    "indoor": "protocol/generation/indoor_specs.jsonl",
+    "urban": "protocol/generation/urban_specs.jsonl"
+  },
+  "seeds_file": "protocol/generation/seeds.json",
+  "pilot_specs_per_domain": 5,
+  "pilot_seeds": [
+    0,
+    1
+  ],
+  "pilot_min_valid_per_domain": 1,
+  "formal_specs_per_domain": 25,
+  "formal_seeds": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "api_seed_supported": false,
+  "api_seed_note": "Logical seeds index fresh independent Claude Code sessions. The service does not expose a deterministic sampling seed; preserve generated.py for deterministic local reconstruction.",
+  "max_retries_infrastructure": 2,
+  "retry_quality_failures": false,
+  "generation_timeout_s": 900,
+  "max_output_tokens": 65536,
+  "thinking_mode": "enabled",
+  "reasoning_effort": "low",
+  "generation_concurrency_max": 2,
+  "build_timeout_s": 21600,
+  "render_timeout_s": 1800,
+  "build_workers": 12,
+  "build_threads": 8,
+  "render_threads": 8,
+  "gpu_policy": "remaining_memory_sharing",
+  "min_render_free_mib": 8192,
+  "generation_weights": "remote_glm_coding_plan_no_local_weights",
+  "pilot_data_root": "data/glm_5_3_pilot_v5_low_opencode",
+  "formal_data_root": "data/table2",
+  "results_root": "results/glm_5_3",
+  "metrics_lock": "protocol/generation/metrics.lock.json",
+  "subjective_metrics": "synthetic_proxy_three_profiles_after_complete_visual_review; real_human_raters=0",
+  "blender_executable": "blender",
+  "metrics_python": "envs/worldscore/bin/python",
+  "camera": {
+    "anchors": 8,
+    "anchor_resolution": [
+      1280,
+      720
+    ],
+    "sequence_frames": 50,
+    "sequence_resolution": [
+      512,
+      512
+    ],
+    "horizontal_fov_degrees": 70,
+    "indoor_height_m": 1.55,
+    "urban_height_m": 1.65
+  },
+  "notes": [
+    "The API key is supplied only through the GLM53_API_KEY process environment and is never written to manifests, commands, logs, or repository files.",
+    "Every request uses the exact OpenCode provider/model identifier glm-coding-plan/glm-5.3 and records OpenCode JSON events plus the returned session identifier and token usage.",
+    "The installed OpenCode 1.1.1 is isolated under baselines/methods/glm_flash/runtime/glm53_opencode and uses the official OpenAI-compatible Coding Plan endpoint.",
+    "The first exploratory queue was preserved under data/glm_5_3_pilot. It exposed the Claude Code 32000-token ceiling before protocol freeze; no exploratory output enters the formal matrix.",
+    "Pilot v2 was preserved and excluded: requesting 65536 output tokens does not override Claude Code 2.0.62's 32000-token custom-model cap, and default maximum reasoning produced an unresolved three-attempt infrastructure failure.",
+    "Pilot v3 was preserved and excluded: Claude Code 2.0.62 did not transmit its configured low effort, so GLM-5.3 remained at the default max effort and repeatedly exceeded that client's 32000-token cap.",
+    "Pilot v4 was preserved and excluded: MAX_THINKING_TOKENS=0 merely omitted the Anthropic thinking field, while GLM-5.3 defaults to max and does not support disabling thinking.",
+    "The uniform v5 pilot and formal method use the official glm-5.3 model code with thinking enabled and reasoning_effort low. OpenCode title generation is disabled with an explicit title and all agent tools are disabled so each slot issues exactly one main-model request.",
+    "Before formal freeze, the v5 pilot acceptance gate was set to at least one fully rendered valid scene per domain: its purpose is end-to-end interface and metric validation, while every formal quality failure remains an ITT lower-bound result without replacement or resampling.",
+    "Unstarted slots are missing data, not ITT failures. Only terminal preregistered quality failures receive ITT lower bounds.",
+    "Shared frozen Table-2 renderer, cameras, metric environments, caches, specs and seeds are reused without modifying another method's artifacts."
+  ]
+}

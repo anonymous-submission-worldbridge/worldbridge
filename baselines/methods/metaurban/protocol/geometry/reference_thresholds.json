@@ -1,0 +1,10 @@
+{
+  "agent_sha256": "d1fdb10f65488efc1d4d23f161b66d58b4688b6af1c6fc926225eda562553a1c",
+  "connected_area_ratio": 99.99999999999999,
+  "domain": "urban",
+  "navigable_area_ratio": 98.22774756790096,
+  "percentile": 5,
+  "recast_sha256": "80d73f09a9f1af6ce439826f808b9cbbc725304be24b70491df4d18daa842523",
+  "reference_count": 50,
+  "reference_definitions_sha256": "f37e5c1acc71fbd8b7f13a265735ae9d6b8f5a0dc78000c3485444995422ccdd"
+}

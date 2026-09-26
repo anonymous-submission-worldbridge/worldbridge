@@ -1,0 +1,41 @@
+{
+  "frozen_at_utc": "2026-09-08T13:31:04.960018+00:00",
+  "method": "gpt6_astra",
+  "model": "gpt-6-astra",
+  "transport": "codex_exec_saved_chatgpt_login",
+  "codex_version": "0.153.4",
+  "pilot_counts": {
+    "valid": 19,
+    "quality": 1
+  },
+  "files_sha256": {
+    "methods/gpt/protocol/generation/gpt6_astra.json": "9a387b973b52285a82e225466e827ee7d6814d4d5a5a8c7da9a824aa21749880",
+    "methods/gpt/protocol/generation/gpt6_astra_prompt.txt": "80a163c283bebec21641856882df33321c66a3020ed839d05a22a69fb59fbc0e",
+    "methods/gpt/protocol/generation/gpt6_astra_output.schema.json": "ff375ee28f3751d4c36ba57081673ae020c0c711b2248dc1aca2d78608249db0",
+    "protocol/generation/indoor_specs.jsonl": "38ba6b4eb2b65142b9a8223cb656720cd18904ca16d8e73075d5ba12a93ea657",
+    "protocol/generation/urban_specs.jsonl": "3c1fde2ec5725145ead3afc8bbf2d110ec78624183de988c1a51570e0f21d79b",
+    "protocol/generation/seeds.json": "af531f72fc11957e7a41f657bda2ffef1b2cc2805fb3406490c701475cd72a46",
+    "protocol/generation/metrics.lock.json": "84f0d82c2315a041c9da42d8dce4f6dd5f9ae82146c69ad18ff3d0b94e60df19",
+    "methods/gpt/adapter.py": "a6f20749bc618ee54465449b527a14ebe78cd5ca7e2040cc35525cb7fffbfca9",
+    "methods/gpt/run.py": "c528a46197e4c659b792eaabd7a8339aef97714aa5d8c6da40ce262a0b3f03ca",
+    "methods/gpt/evaluate.py": "35fc3b09665055e7b4ae1860cee41415ec68148edb262b1f95797ea6df9a8772",
+    "methods/gpt/tools/blender_render_gpt.py": "962947b31310f597148176d080a86f662e4ddab4da4432dbf8f164fd50b7bed4",
+    "methods/sceneweaver/tools/blender_render_sceneweaver.py": "74889d09cedc6de0fa81380385200d698a03d4e5dcff9c5a18b211d495084d61",
+    "methods/gpt/tools/gpt_camera.py": "3d4eb1c4d0d6717c6ac76a4cd644060c004effe76676508fa27172af3580169a",
+    "evaluation/visual/eval_iqa.py": "a64956092ed7eb5683f5caf4b6bc3055e750f12883db7873950c41c9c8f858fb",
+    "evaluation/visual/eval_worldscore.py": "0bd4feb1b117adcdd3a5fb2327517b4597a6c3e479d46d9ad0cdcb092f623933",
+    "evaluation/visual/eval_diversity.py": "b57582799d50f03554d077d43d475e1efb9cbfda76e53bd988405bb6894be303",
+    "evaluation/visual/generate_semantics.py": "9e441d6c18da9e73f29655bbd89fe4ef88cc7dad8b59dc65da19ddf6bb145c59",
+    "evaluation/visual/aggregate_generation.py": "cac981d1abac4afd22fe7e5592f8c36700df36c3efaf22889d18cc2919fc885f",
+    "evaluation/visual/import_human_ratings.py": "211489503dd126307489046e15363122e5830757a1cff148d212827334d7ffaf",
+    "tools/make_annotation_package.py": "5cac2ecbf615a0f8f6cfa22253b986cb4ff282bc38f259a9107f353dbe67d6cc",
+    "methods/gpt/tools/sanity_gpt_metrics.py": "b8d8226267966840ae60e9ba031f94687d466d7dbc11f581900e6b2e2acd0a4a",
+    "methods/gpt/tools/pilot_pairs_gpt.py": "5615c4b4d2d9a2525ed6d2bf6038cd245b0c2392d7c81a0e1e7e4029be755b83",
+    "methods/gpt/tools/inspect_gpt_semantics.py": "7dbd16e6eb4a4caaebaa0ced96bd8547c58399c782af74cb82bcfcf8092aa091",
+    "methods/gpt/tools/freeze_gpt.py": "ec3cbde24e578309f39c4334b60e8eb8763ca4fc4462cc4e24ba049df390ddbd",
+    "methods/gpt/tools/supervise_gpt.py": "57be34928765c54ad0943251e129b08e1a9c09336c5da1094cfd252d83e0d294",
+    "methods/gpt/tools/migrate_gpt_scheduler.py": "01050fff7ef9d9f5db166c7a3fdfd6a4981cfa9274543ff656e0cc6ccd150ca9",
+    "methods/gpt/tools/audit_gpt.py": "79e1d454f0603f8bdfad8934f467b645d2c1e392ccfff60d2f3f76f5146e892a",
+    "methods/gpt/tools/validate_gpt_pilot_metrics.py": "c4e5df646710b5a29ea6ec192ae1d8e1d6a47f390ab4b1baf2e5879497c4f72a"
+  }
+}

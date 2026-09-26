@@ -1,0 +1,97 @@
+{
+  "aggregation": {
+    "bootstrap_repeats": 10000,
+    "bootstrap_seed": 20260909,
+    "failure_policy": "itt",
+    "order": "mean_over_spec(mean_over_seed(scene_metric))"
+  },
+  "collision_thresholds": {
+    "excluded_categories": [
+      "Vegetation"
+    ],
+    "expected_contacts": [
+      "placed_object:native_pedestrian_surface"
+    ],
+    "overlap_volume_m3": 1e-05,
+    "penetration_depth_m": 0.01,
+    "root_embedding_categories": [
+      "Tree",
+      "Vegetation",
+      "Bonsai"
+    ],
+    "root_maximum_embedding_m": 0.3,
+    "smaller_object_volume_fraction": 0.005
+  },
+  "frozen_at_utc": "2026-09-09T16:24:36.957969+00:00",
+  "hashes": {
+    "agent": "d1fdb10f65488efc1d4d23f161b66d58b4688b6af1c6fc926225eda562553a1c",
+    "aggregate": "bdeb70573e0a21a733a90f403ebd9e610d85eb9c62578d8488322e4e2fe33d50",
+    "calibrate_reference": "cae62f7feb0ad16403f6e971392b5f24f9c3a0f8dec9b7f5328999763dfc44cb",
+    "collision_exceptions": "ce4bfc5ed3e2acce52890873ed1c00c728e6685fd79c045ff6a59d0982e5482b",
+    "containers": "9cf091a776632c3b2b6ba2a628c39b3cf38d205b4245a8ffebb3801c49fd48c4",
+    "evaluate_spec": "0ddda1ea8d969daff416de3623991be49f3508b230feba1c12aea1e48e4eb0c3",
+    "geometry": "f36f412f0b77b5d77a1f5b880f9ad69684214e3628d802c30379bddea58c9932",
+    "navigation": "4d0b6ab0226e7e25d1841d851f204a64a9bd9c41549634275ecbfe3cb3322914",
+    "object_roles": "675a8b9289cfc5520a869153769ac2555d9e0651e01407fb58c3c9c672d29699",
+    "protocol": "1c3a99c1188d9b7e657d3cf8f5c3db69fea07dc43bd72f581cd24fd652c2f40e",
+    "recast": "80d73f09a9f1af6ce439826f808b9cbbc725304be24b70491df4d18daa842523",
+    "reference_definitions": "f37e5c1acc71fbd8b7f13a265735ae9d6b8f5a0dc78000c3485444995422ccdd",
+    "reference_thresholds": "1edb56000935977d51d1bcfa2ca8ebbc34b159d9ab7ed922471f36681997f312",
+    "support_rules": "f77aac928b7eeab6a3184e69baef84e1cb9565ff79880d509c84d6f74daab413",
+    "urban_specs": "ddf814b12f44852c8c1d5e09a41c7e90d784d54c136afaf27b3f96daa844ef51"
+  },
+  "navigation_agent": {
+    "agent": {
+      "height_m": 1.7,
+      "max_climb_m": 0.2,
+      "max_slope_deg": 45.0,
+      "radius_m": 0.3
+    },
+    "postprocess": {
+      "connect_components": false,
+      "keep_largest_only": false,
+      "keep_target_height_band_only": true
+    },
+    "recast": {
+      "cell_height_m": 0.05,
+      "cell_size_m": 0.05,
+      "filter_ledge_spans": true,
+      "filter_low_hanging_obstacles": true,
+      "filter_low_height_spans": true,
+      "partition": "watershed"
+    },
+    "spawn": {
+      "horizontal_tolerance_m": 0.3,
+      "vertical_tolerance_m": 0.5
+    },
+    "success": {
+      "minimum_reference_area_fraction": 0.01
+    }
+  },
+  "oob_thresholds": {
+    "centroid_must_be_inside": true,
+    "outside_area_fraction": 0.01
+  },
+  "protocol_id": "worldbridge-table3-metaurban-urban-v1",
+  "support_thresholds": {
+    "default_mount": "gravity",
+    "maximum_embedding_m": 0.01,
+    "maximum_gap_m": 0.02,
+    "minimum_projection_fraction": 0.05,
+    "root_embedding_categories": [
+      "Tree",
+      "Vegetation",
+      "Bonsai"
+    ],
+    "root_maximum_embedding_m": 0.3,
+    "support_surface_z_m": 0.15,
+    "visual_bottom_source": "Panda3D final rendered instance tight bounds in world coordinates"
+  },
+  "valid_scene_thresholds": {
+    "calibration_result": "baselines/methods/metaurban/geometry/results/reference_urban_calibration.json",
+    "connected_area_ratio": 99.99999999999999,
+    "navigable_area_ratio": 98.22774756790096,
+    "percentile": 5,
+    "reference_count": 50
+  }
+}

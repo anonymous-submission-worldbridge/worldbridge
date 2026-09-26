@@ -1,0 +1,40 @@
+{
+  "aggregation": {
+    "bootstrap_repeats": 10000,
+    "bootstrap_seed": 20260909,
+    "failure_policy": "itt",
+    "order": "mean_over_spec(mean_over_seed(scene_metric))"
+  },
+  "display": {
+    "decimals": 1,
+    "unit": "percent"
+  },
+  "domain": "urban",
+  "method": "metaurban",
+  "navigation": "native pedestrian-region polygons, rebuilt with frozen external Recast; no island connection or largest-only filtering",
+  "planned_runs": 100,
+  "planned_specs": 25,
+  "protocol_id": "worldbridge-table3-metaurban-urban-v1",
+  "representation": {
+    "collision_proxy": "final Bullet box shape reconstructed from native dimensions and pose",
+    "coordinate_system": "right-handed Z-up",
+    "instances": "native AssetManager stable instances",
+    "scale": "native MetaUrban meters",
+    "support_geometry": "final rendered instance tight bounds"
+  },
+  "reuse": {
+    "policy": "reuse formal manifests/native inputs/renders and deterministically reconstruct only missing final engine geometry",
+    "regenerate_table2_renders": false,
+    "source": "baselines/data/table2/urban/metaurban"
+  },
+  "roi": "112 m square centered at final native block positive lane endpoint",
+  "seeds": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "spec_source_sha256": "3c1fde2ec5725145ead3afc8bbf2d110ec78624183de988c1a51570e0f21d79b",
+  "table3_specs_sha256": "ddf814b12f44852c8c1d5e09a41c7e90d784d54c136afaf27b3f96daa844ef51",
+  "track": "structured_physics_ready"
+}

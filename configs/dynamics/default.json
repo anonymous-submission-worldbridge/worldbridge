@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "timeline": {
+    "frame_start": 1,
+    "frame_end": 120,
+    "fps": 24,
+    "loop": true
+  },
+  "render": {
+    "engine": "AUTO_EEVEE",
+    "resolution_x": 1280,
+    "resolution_y": 720,
+    "resolution_percentage": 100,
+    "samples": 32,
+    "keep_frames": false,
+    "video_path": "./output/dynamics/dynamic_scene.mp4"
+  },
+  "camera": {
+    "mode": "existing",
+    "name": ""
+  },
+  "effects": {
+    "vehicles": {
+      "enabled": true,
+      "distance_m": 35.0,
+      "forward_axis": "AUTO",
+      "routes": []
+    },
+    "wind": {
+      "enabled": true,
+      "angle_degrees": 2.0,
+      "period_frames": 48
+    },
+    "river": {
+      "enabled": true,
+      "speed": 0.65,
+      "wave_scale": 2.8,
+      "wave_strength": 0.16
+    },
+    "fountain": {
+      "enabled": true,
+      "center": null,
+      "jet_height_m": 3.2,
+      "jet_radius_m": 1.8,
+      "jet_count": 6,
+      "droplets_per_jet": 7
+    }
+  }
+}

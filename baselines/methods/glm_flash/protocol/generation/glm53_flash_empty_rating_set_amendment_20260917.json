@@ -1,0 +1,11 @@
+{
+  "amended_at_utc": "2026-09-17T16:43:00Z",
+  "method": "glm53_flash",
+  "scope": "synthetic_review_text_parser_only",
+  "reason": "Two valid indoor renders visibly satisfy no requested facts. The parser must represent an empty clear or borderline index field instead of forcing a fabricated fact decision.",
+  "change": "Parse an empty clear or borderline field as an empty list; non-empty compact digit fields are unchanged.",
+  "protocol_effect": "none; this preserves the pre-registered rule that all remaining facts receive no/no/no",
+  "urban_effect": "none; all 30 locked urban review rows have non-empty clear and borderline fields and were scored before this amendment",
+  "old_scorer_sha256": "36898cd5d2db16485b1613ce7a3cbfcbfb2ed5a70c5ccc89057c1984fd1445e0",
+  "new_scorer_sha256": "12e3684b1e48b3dcc66013e0bd8995b97f385356031cd471c425d64c29d548d9"
+}

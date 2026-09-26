@@ -1,0 +1,39 @@
+{
+  "display_name": "GPT-6 Astra Medium + fixed IO adapter",
+  "files": {
+    "baselines/hyworld2_runtime/manifests/qwen3_vl_8b_modelscope.json": "46c4dcd1dd3a02e89e319915223e817aa41bcabc9f5843a88f20493d01686081",
+    "baselines/protocol/generation/indoor_specs.jsonl": "38ba6b4eb2b65142b9a8223cb656720cd18904ca16d8e73075d5ba12a93ea657",
+    "baselines/protocol/unified/specs.jsonl": "b3fe8e3d45cacea8d2fb5ea339dfbf3ea87c5e78a421f37a6167798d903e6362",
+    "baselines/methods/gpt/protocol/unified/high/aqs_prompt.txt": "2e72ae0867d06b3a3ac5129d5a99230e7fcc8bf57893ad6b7d66244704efdcf7",
+    "baselines/methods/gpt/protocol/unified/high/protocol.yaml": "3844a70dcf2d1326064b0e3b4756ae53d53c84880214e34046f707ec4efc9886",
+    "baselines/methods/gpt/protocol/unified/medium/formal_schema_recovery_amendment_20260913.json": "49423c96f90fa0f96c18551f39b59de30ec4b087b0aef06f00508d58c763e217",
+    "baselines/methods/gpt/protocol/unified/medium/protocol.yaml": "5d0cfb8a48154a516788152319f30bdba7f0cdd4f4712cb4f8e146bc3de69ab1",
+    "baselines/protocol/generation/urban_specs.jsonl": "3c1fde2ec5725145ead3afc8bbf2d110ec78624183de988c1a51570e0f21d79b",
+    "baselines/results/gpt6_astra_medium/method.lock.json": "0dd75acad61a2f688d00f43afdea3efb384a6ab3e9e69bb7e63d9b78d5fed225",
+    "baselines/evaluation/geometry/metrics/build_navmesh.py": "10578c6f18f0f9187b1813d08217740e093f8449d09ea39504694393f3db0fa6",
+    "baselines/methods/worldgen/geometry/runtime/recast_glibc231_clean2/recast.cpython-311-x86_64-linux-gnu.so": "5bf75563711bf63ab248e92a32d909f3a2a7ac3effb5d17d1e65528080a564d7",
+    "baselines/methods/gpt/unified/high/gpt_io_adapter.py": "b0eb7f9cabd84ffe38bd1558f7dc7e21fdadd59768966ea0f8944237c8eb7cbc",
+    "baselines/methods/gpt/unified/medium/gpt_medium_io_adapter.py": "d22b78fec5946da3b542df009dfc9b3613bc50e0c7558a86196454fb3769ab38",
+    "baselines/methods/gpt/unified/medium/recover_formal_schema.py": "4c0b3a9342e3ac052995ecd971898db94621d35748d20638d5f83844025aaf2e",
+    "baselines/methods/worldgen/unified/fixed_adapter/worldgen_io_adapter.py": "923cbde03afc1e654cb2e5280386bff2ecd45b7392ed1df5fb0bd008d23c4880"
+  },
+  "formal_amendments": [
+    {
+      "amendment": "baselines/methods/gpt/protocol/unified/medium/formal_schema_recovery_amendment_20260913.json",
+      "scientific_configuration_changed": false,
+      "sha256": "49423c96f90fa0f96c18551f39b59de30ec4b087b0aef06f00508d58c763e217"
+    }
+  ],
+  "frozen_at_utc": "2026-09-13T17:50:46.284768+00:00",
+  "method": "gpt6_astra_medium_fixed_io_adapter",
+  "no_human_postprocessing": true,
+  "no_scene_regeneration": true,
+  "pilot_audit_sha256": "6ff567c8739ed35765b2d9f7ab6433e7366e6916a5529e3371a546cf451830cf",
+  "pilot_summary_sha256": "8eb3504a16926124e6640339102ea251e249ce9848e06dabed259a816d8b20f1",
+  "shared_fixed_adapter_implementation": "baselines/methods/gpt/unified/high/gpt_io_adapter.py",
+  "source_model": "gpt-6-astra",
+  "source_reasoning_effort": "medium",
+  "source_scene_generation_reused": true,
+  "source_table2_method_lock_sha256": "0dd75acad61a2f688d00f43afdea3efb384a6ab3e9e69bb7e63d9b78d5fed225",
+  "track": "fixed_io_adapter_system"
+}

@@ -1,0 +1,66 @@
+{
+  "captured_at_utc": "2026-09-03T14:15:47Z",
+  "method": "spatialgen",
+  "python": {
+    "path": "baselines/envs/spatialgen/bin/python",
+    "version": "3.10.12",
+    "binary_sha256": "7d51cd6b48b521277f5caa4610a82126e315fa2be4df069823a8b1eeb5bd4a86",
+    "requirements": "baselines/methods/spatialgen/environment/spatialgen/requirements-runtime.txt"
+  },
+  "gpu_stack": {
+    "visible_gpu_count": 4,
+    "model": "NVIDIA GeForce RTX 4090",
+    "reported_memory_mib_each": 49140,
+    "driver_version": "580.173.02",
+    "torch": "2.3.1+cu121",
+    "torchvision": "0.18.1+cu121",
+    "torch_cuda_runtime": "12.1",
+    "xformers": "0.0.27",
+    "pytorch3d": "0.7.8",
+    "extension_compiler": "CUDA 12.4 V12.4.131",
+    "extension_arch": "8.9"
+  },
+  "model_runtime": {
+    "diffusers": "0.32.0",
+    "transformers": "4.47.1",
+    "accelerate": "1.2.1",
+    "peft": "0.14.0",
+    "numpy": "1.26.4"
+  },
+  "source": {
+    "spatialgen_commit": "677c1168b359b00ae4a64a58783bc71048aabcdd",
+    "sparse_radegs_commit": "ee7b413d2089322dd140f644d597957aca257c09"
+  },
+  "cuda_extension_smoke": {
+    "status": "passed",
+    "script": "baselines/methods/spatialgen/tools/smoke_spatialgen_cuda.py",
+    "script_sha256": "8d1a9e04128085b94fe366221072f5127631d5872d93bd99696839dbcf2cfeed",
+    "visible_test_gaussians": 4
+  },
+  "official_dataset_loader_smoke": {
+    "status": "passed",
+    "script": "baselines/methods/spatialgen/tools/smoke_spatialgen_dataset.py",
+    "script_sha256": "60df3c51fad027b53c862a422449df2cf1dca5e817eae145ab0fc5423e2353d9",
+    "categories_tested": [
+      "bedroom",
+      "living_room",
+      "kitchen",
+      "bathroom",
+      "dining_room"
+    ]
+  },
+  "current_host_validation": {
+    "captured_at_utc": "2026-09-05T08:39:53Z",
+    "hostname": "ubuntu-SYS-420GP-TNR",
+    "visible_gpu_count": 8,
+    "model": "NVIDIA GeForce RTX 4090",
+    "reported_memory_mib_each": 24564,
+    "driver_version": "570.172.08",
+    "cuda_extension_smoke": "passed",
+    "reference_generation": "passed with sequential CPU offload",
+    "multiview_inference": "passed at 16 views and 512x512",
+    "sparseradegs": "passed at 7000 iterations after direct-GPU UNet loading",
+    "table2_renderer": "passed with 8 anchors and 50 sequence frames"
+  },
+  "storage_policy": "Runtime homes, caches, temporary files, source, weights, inputs, logs, scenes and results are confined to baselines/."
+}

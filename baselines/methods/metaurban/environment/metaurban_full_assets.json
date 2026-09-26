@@ -1,0 +1,18 @@
+{
+  "building_glb_count": 31,
+  "installed_at_utc": "2026-09-04T18:05:09.182741+00:00",
+  "metadata_json_count": 417,
+  "missing_metadata_models": [
+    "Tents-506852e74b4e418eb5cd2fb2d996c282.glb",
+    "Tents-70a8f7db5f724989a035166b79ace87b.glb",
+    "Tents-fa46028e8d3849399ba5271df07ed99c.glb"
+  ],
+  "source_archive": "./baselines/checkpoints/metaurban/assets-full.zip",
+  "source_archive_sha256": "7275217fdff216f7b458d97316f9743e0f3929923e901162572f3fc504002386",
+  "source_archive_size_bytes": 2437771429,
+  "static_glb_count": 484,
+  "status": "installed",
+  "tiny_backup": "./baselines/tmp/metaurban-assets-tiny-backup-20260904T180507Z",
+  "version": "0.0.1",
+  "version_sha256": "e6635045e1d2478ec4ca712d8c0e1dfcef8bb7b5b1e8e3bb560d37fe399a9e72"
+}

@@ -1,0 +1,97 @@
+{
+  "protocol_id": "table2-gpt6-astra-medium-v1",
+  "status": "formal_frozen",
+  "method": "gpt6_astra_medium",
+  "display_name": "GPT-6 Astra Medium",
+  "official_documentation": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "medium",
+  "base_url": "https://api.openai.com/v1",
+  "api_key_env": "OPENAI_API_KEY",
+  "api_key_file_env": "GPT6_ASTRA_API_KEY_FILE",
+  "transport": "codex_exec_saved_chatgpt_login",
+  "codex_version": "0.153.4",
+  "method_definition": "GPT-6 Astra with medium reasoning effort via Codex CLI generates Blender Python scene code; the GPT-6 Astra High prompt, output schema, fixed Blender construction, renderer, cameras, and metrics are reused byte-for-byte",
+  "proposed_method_definition": "GPT-6 Astra generates Blender scene code; a fixed renderer produces Table-2 views",
+  "domains": [
+    "indoor",
+    "urban"
+  ],
+  "spec_files": {
+    "indoor": "protocol/generation/indoor_specs.jsonl",
+    "urban": "protocol/generation/urban_specs.jsonl"
+  },
+  "seeds_file": "protocol/generation/seeds.json",
+  "pilot_specs_per_domain": 5,
+  "pilot_seeds": [
+    0,
+    1
+  ],
+  "formal_specs_per_domain": 25,
+  "formal_seeds": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "api_seed_supported": false,
+  "api_seed_note": "Logical seeds index fresh independent Codex CLI sessions; no deterministic model seed is supported. Preserve returned code for deterministic local reconstruction. CLI JSONL does not expose a model snapshot.",
+  "generation_timeout_s": 900,
+  "build_timeout_s": 21600,
+  "render_timeout_s": 1800,
+  "max_retries_infrastructure": 2,
+  "retry_quality_failures": false,
+  "build_workers": 16,
+  "build_threads": 8,
+  "render_threads": 8,
+  "min_render_free_mib": 8192,
+  "gpu_policy": "remaining_memory_sharing_user_confirmed_20260908",
+  "disk_stop_free_gib": 25,
+  "generation_weights": "remote_codex_model_no_local_weights",
+  "pilot_data_root": "data/gpt6_astra_medium_pilot",
+  "formal_data_root": "data/table2",
+  "results_root": "results/gpt6_astra_medium",
+  "annotations_root": "annotations/gpt6_astra_medium",
+  "metrics_lock": "protocol/generation/metrics.lock.json",
+  "subjective_metrics": "synthetic_proxy_three_profiles_after_actual_montage_review_matching_gpt6_astra_high",
+  "blender_executable": "blender",
+  "metrics_python": "envs/worldscore/bin/python",
+  "camera": {
+    "anchors": 8,
+    "anchor_resolution": [
+      1280,
+      720
+    ],
+    "sequence_frames": 50,
+    "sequence_resolution": [
+      512,
+      512
+    ],
+    "horizontal_fov_degrees": 70,
+    "indoor_height_m": 1.55,
+    "urban_height_m": 1.65
+  },
+  "comparability": {
+    "reference_method": "gpt6_astra",
+    "only_intended_difference": "reasoning_effort: high -> medium",
+    "shared_prompt": "methods/gpt/protocol/generation/gpt6_astra_prompt.txt",
+    "shared_output_schema": "methods/gpt/protocol/generation/gpt6_astra_output.schema.json",
+    "shared_renderer": "methods/gpt/tools/blender_render_gpt.py",
+    "shared_high_worldscore_frozen_copy": "evaluation/visual/eval_worldscore_gpt_high_frozen.py",
+    "shared_high_annotation_frozen_copy": "methods/gpt/tools/make_annotation_package_gpt_high_frozen.py",
+    "shared_specs_seeds_metrics": true
+  },
+  "notes": [
+    "All outputs are isolated under gpt6_astra_medium paths; GPT-6 Astra High artifacts and frozen sources are not modified.",
+    "The method uses existing Codex login and local Blender/metric environments; no model weights or dependencies are downloaded.",
+    "Unstarted runs are missing data, not ITT failures. Only terminal preregistered quality failures receive ITT lower bounds.",
+    "IQA production batch size is 1, matching the validated GPT-6 Astra High protocol.",
+    "Before formal generation, later shared-workspace WorldScore/annotation edits were detected. Medium uses dedicated byte-identical copies whose SHA-256 values match the GPT-6 Astra High lock; the current shared files are not modified."
+  ],
+  "iqa_batch_size": 1,
+  "frozen_at_utc": "2026-09-12T16:47:55.962894+00:00",
+  "pilot_terminal_counts": {
+    "valid": 18,
+    "quality": 2
+  }
+}

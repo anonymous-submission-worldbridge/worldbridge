@@ -1,0 +1,24 @@
+{
+  "bounds": [
+    [
+      -7.5,
+      0.0,
+      0.0
+    ],
+    [
+      7.5,
+      15.5,
+      2.998049736022949
+    ]
+  ],
+  "dimensions": [
+    15.0,
+    15.5,
+    2.998049736022949
+  ],
+  "mesh_instances": 65,
+  "evaluated_vertices": 5094776,
+  "key": "house",
+  "collection": "ASSET_house",
+  "source": "./infinigen/outputs/outdoor_part_demo/urban_v3_all41_house_small_a/scene.blend"
+}

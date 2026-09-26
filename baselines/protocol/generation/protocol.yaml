@@ -1,0 +1,53 @@
+protocol_id: table2-v1
+status: formal_frozen
+domain: indoor
+phase: formal
+spec_file: baselines/protocol/generation/indoor_specs.jsonl
+seeds_file: baselines/protocol/generation/seeds.json
+methods:
+  - infinigen_indoors
+  - sceneweaver
+worldbridge_enabled: false
+output_root: baselines/data/table2
+camera:
+  trajectory_frames: 50
+  trajectory_fps: 10
+  height_m: 1.55
+  horizontal_fov_degrees: 70.0
+  anchors: [1, 8, 15, 22, 29, 36, 43, 50]
+  anchor_resolution: [1280, 720]
+  sequence_resolution: [512, 512]
+  pose_normalization:
+    preserve_source_xy: true
+    preserve_source_forward: true
+    remove_roll_with_global_up: true
+render:
+  engine: cycles
+  device: optix
+  anchor_samples: 256
+  sequence_samples: 64
+  denoise: true
+  color_management:
+    view_transform: Standard
+    look: Medium High Contrast
+    exposure: 0.0
+    gamma: 1.0
+success_contract:
+  require_scene: true
+  require_anchor_count: 8
+  require_sequence_count: 50
+  require_cameras_json: true
+  reject_traceback_in_logs: true
+  image_mean_range: [0.01, 0.99]
+  image_std_min: 0.01
+  min_trajectory_path_length_m: 1.0
+  min_trajectory_max_displacement_m: 0.5
+metrics:
+  qalign: pyiqa-qalign
+  clipiqa_plus: pyiqa-clipiqa+
+  layout_plausibility: three-rater-blind-likert
+  prompt_alignment: three-rater-fact-checklist
+  consistency_3d: worldscore-static-3d-consistency
+  appearance_diversity: lpips-alex-v0.1
+  layout_diversity: segformer-ade20k-semantic-1-miou
+failure_policy: intention-to-treat

@@ -1,0 +1,44 @@
+{
+  "bounds": [
+    [
+      -10.30000114440918,
+      -0.15000124275684357,
+      -1.4901161193847656e-08
+    ],
+    [
+      2.3600001335144043,
+      8.745000839233398,
+      4.340000629425049
+    ]
+  ],
+  "dimensions": [
+    12.660001754760742,
+    8.895002365112305,
+    4.340000629425049
+  ],
+  "mesh_instances": 3233,
+  "evaluated_vertices": 226398,
+  "key": "delivery",
+  "collection": "ASSET_delivery",
+  "source": "./infinigen/outputs/outdoor_full_demo/urban_v1_full_connect3/shared_assets/delivery.blend",
+  "enterable": true,
+  "door": [
+    0,
+    0
+  ],
+  "floor_z": 0.35,
+  "inside_y": 2.7,
+  "room_center": [
+    -3.4599997997283936,
+    4.639999866485596
+  ],
+  "preparation": [
+    {
+      "entrance": "existing open sliding leaf and actual parcel aisles"
+    },
+    {
+      "full_rack_translation_x_m": 0.32,
+      "reason": "clear pedestrian aisle beside entry"
+    }
+  ]
+}
