@@ -71,6 +71,8 @@ python baselines/evaluation/visual/aggregate_generation.py --method worldgen --d
 
 Generate results before evaluation. Default data and output locations are `baselines/data/` and `baselines/results/`. Method-specific protocols are in `baselines/methods/<method>/protocol/`; shared specifications are in `baselines/protocol/`. See the [baseline guide](baselines/README.md) for generation, geometry, and unified indoor/outdoor entry points. Frozen experiment identifiers retain their original values.
 
+The [paper asset coverage guide](docs/PAPER_ASSET_COVERAGE.md) maps the figure categories to included implementations and external dependencies.
+
 The [modeling source index](docs/modeling/README.md) links the implementations for bicycles, delivery lockers, factories, schools, police stations, parks, robots, and other families. The [source catalog](docs/modeling/catalog.json) records retained files and provenance. Procedural generators construct geometry; scene assembly and rendering stages may require previously generated components or external resources. The earlier model-file copies have been removed. Original project files remain untouched. 
 
 ## Anonymous review snapshot

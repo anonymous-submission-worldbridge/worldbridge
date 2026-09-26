@@ -1198,44 +1198,44 @@
     "src": "assets/showcase-industrial_river-indoor-1.jpg",
     "width": 1920,
     "height": 1080,
-    "bytes": 289944,
-    "sha256": "c66f78a08e8f650574705d1e8c056a06d069178c9c08dcfef6d8c1825d33a706"
+    "bytes": 289911,
+    "sha256": "d883cabc9671786c719707ab6eebdfd08223fe3749842215082e18f31abdd6f8"
   },
   {
     "id": "showcase-industrial_river-indoor-2",
     "type": "image",
     "section": "scenes",
     "scene": "industrial_river",
-    "title": "Vehicle bay from another angle",
+    "title": "Parcel station shelving",
     "src": "assets/showcase-industrial_river-indoor-2.jpg",
     "width": 1920,
     "height": 1080,
-    "bytes": 259377,
-    "sha256": "dd46c9cec4a36aefd58e950adb63e64e350c9d2e1238d19b1b8f8edb7aeb3227"
+    "bytes": 396447,
+    "sha256": "769e92de56ecde30e1a0baf915dc44abfbe90e0d6c15e584a7342c2068b43085"
   },
   {
     "id": "showcase-industrial_river-indoor-3",
     "type": "image",
     "section": "scenes",
     "scene": "industrial_river",
-    "title": "Equipment and working space",
+    "title": "Restaurant dining room",
     "src": "assets/showcase-industrial_river-indoor-3.jpg",
     "width": 1920,
     "height": 1080,
-    "bytes": 258165,
-    "sha256": "a6b4ee286b0e36cc39b4051abec93ffff7766adc372036c733b6eb70c625d779"
+    "bytes": 277459,
+    "sha256": "d413477a067ab07f0564b28c153f5bd174c19f5d9c4ed1501a5489159be75c93"
   },
   {
     "id": "showcase-industrial_river-indoor-4",
     "type": "image",
     "section": "scenes",
     "scene": "industrial_river",
-    "title": "Parcel station interior",
+    "title": "Corner store interior",
     "src": "assets/showcase-industrial_river-indoor-4.jpg",
     "width": 1920,
     "height": 1080,
-    "bytes": 396447,
-    "sha256": "769e92de56ecde30e1a0baf915dc44abfbe90e0d6c15e584a7342c2068b43085"
+    "bytes": 258423,
+    "sha256": "0a8bccf4b296409f71eb8ac51f95ba59a6aac782871a6c84cf4cac6c194d3d42"
   },
   {
     "id": "showcase-medical_lakeside-outdoor-1",
@@ -1294,44 +1294,44 @@
     "src": "assets/showcase-medical_lakeside-indoor-1.jpg",
     "width": 1920,
     "height": 1080,
-    "bytes": 179230,
-    "sha256": "9ac330358361002da14c232a58babfb7cf6398f6a57ccb40978e78322ee8dcfb"
+    "bytes": 179196,
+    "sha256": "7b7184fc233ea1245e228510549426412dfb33040377cee786698c448eeb1bc3"
   },
   {
     "id": "showcase-medical_lakeside-indoor-2",
     "type": "image",
     "section": "scenes",
     "scene": "medical_lakeside",
-    "title": "Reception from another angle",
+    "title": "Pharmacy shelves and counter",
     "src": "assets/showcase-medical_lakeside-indoor-2.jpg",
     "width": 1920,
     "height": 1080,
-    "bytes": 214763,
-    "sha256": "b2662d9ffa7031fe376ad055e25942bd739a4750bcc58dbf878221cfad9a8850"
+    "bytes": 314305,
+    "sha256": "aed1cf05fcb5bd62af4428aac27526704da937ccacba5d4c4ff4e424cebdc02e"
   },
   {
     "id": "showcase-medical_lakeside-indoor-3",
     "type": "image",
     "section": "scenes",
     "scene": "medical_lakeside",
-    "title": "Waiting and service area",
+    "title": "Neighborhood cafe",
     "src": "assets/showcase-medical_lakeside-indoor-3.jpg",
     "width": 1920,
     "height": 1080,
-    "bytes": 205102,
-    "sha256": "f26a485fe504052db0b7405aba9cc5575ba54bf09f70c494839b387b8164c8e5"
+    "bytes": 279160,
+    "sha256": "d48982b89a211c12293b8f83bd86cb2d940b995385a57d73c9d8eb06b88669dd"
   },
   {
     "id": "showcase-medical_lakeside-indoor-4",
     "type": "image",
     "section": "scenes",
     "scene": "medical_lakeside",
-    "title": "Pharmacy interior",
+    "title": "Local market interior",
     "src": "assets/showcase-medical_lakeside-indoor-4.jpg",
     "width": 1920,
     "height": 1080,
-    "bytes": 314305,
-    "sha256": "aed1cf05fcb5bd62af4428aac27526704da937ccacba5d4c4ff4e424cebdc02e"
+    "bytes": 259136,
+    "sha256": "41dc66deba35846dcb4562520c76aa1670848302cbc4f696bd8383454ade92f6"
   },
   {
     "id": "showcase-greenway_station-outdoor-1",
@@ -1386,48 +1386,48 @@
     "type": "image",
     "section": "scenes",
     "scene": "greenway_station",
-    "title": "Service market interior",
+    "title": "Service station shop",
     "src": "assets/showcase-greenway_station-indoor-1.jpg",
     "width": 1920,
     "height": 1080,
-    "bytes": 301149,
-    "sha256": "0639118b381e647e12e1454c8c91f3434ae1eacae78b89f7299e4055c1dde915"
+    "bytes": 296954,
+    "sha256": "195974faa4d1f2d5d929d09f9566aca3cf4edc7898bf0d9fdb5d4eaf65c2bae8"
   },
   {
     "id": "showcase-greenway_station-indoor-2",
     "type": "image",
     "section": "scenes",
     "scene": "greenway_station",
-    "title": "Market aisles from another angle",
+    "title": "Corner store shelves",
     "src": "assets/showcase-greenway_station-indoor-2.jpg",
     "width": 1920,
     "height": 1080,
-    "bytes": 308396,
-    "sha256": "ae77b77fddd1c417987168bc7d0926402e296ac568867f58239911b2a5906461"
+    "bytes": 258946,
+    "sha256": "403adcbf283779d9bdaa454becbc10f862d08357bc0efad05366555634776f8f"
   },
   {
     "id": "showcase-greenway_station-indoor-3",
     "type": "image",
     "section": "scenes",
     "scene": "greenway_station",
-    "title": "Shelves at close range",
+    "title": "Restaurant dining room",
     "src": "assets/showcase-greenway_station-indoor-3.jpg",
     "width": 1920,
     "height": 1080,
-    "bytes": 286532,
-    "sha256": "6423109c48312ef04b81897729be780d8aff4e102958ae6ff0894138bfdbda28"
+    "bytes": 275296,
+    "sha256": "389ef58484e0f5cbeb674be75fee98ccc259b68cf8e4ede86a4cf35a09fdb108"
   },
   {
     "id": "showcase-greenway_station-indoor-4",
     "type": "image",
     "section": "scenes",
     "scene": "greenway_station",
-    "title": "Restaurant interior",
+    "title": "Neighborhood market",
     "src": "assets/showcase-greenway_station-indoor-4.jpg",
     "width": 1920,
     "height": 1080,
-    "bytes": 275296,
-    "sha256": "389ef58484e0f5cbeb674be75fee98ccc259b68cf8e4ede86a4cf35a09fdb108"
+    "bytes": 259663,
+    "sha256": "1c18c88cfbcae8a944ffd2a922edd7e100c2a1183e6b18de9895a418eebc799e"
   },
   {
     "id": "industrial_river-overview",
@@ -1623,5 +1623,116 @@
     "poster": "assets/civic-overview.jpg",
     "bytes": 2509165,
     "sha256": "585e8518813983e36742d09a945bc78fad79523ab8e297710485382eeb9c5965"
+  },
+  {
+    "id": "showcase-residential_villa-outdoor-1",
+    "type": "image",
+    "section": "scenes",
+    "scene": "residential_villa",
+    "title": "House and residential street",
+    "src": "assets/showcase-residential_villa-outdoor-1.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 168254,
+    "sha256": "1241a578db9ec7643106a44dc80e09d1378cfd8fa1dac9dde277e840befea995"
+  },
+  {
+    "id": "showcase-residential_villa-outdoor-2",
+    "type": "image",
+    "section": "scenes",
+    "scene": "residential_villa",
+    "title": "Front entrance and street crossing",
+    "src": "assets/showcase-residential_villa-outdoor-2.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 147009,
+    "sha256": "118055a78b29edd610aaeb3ad8afa33ca36657fbe624e7ccddd2fad2513c0010"
+  },
+  {
+    "id": "showcase-residential_villa-outdoor-3",
+    "type": "image",
+    "section": "scenes",
+    "scene": "residential_villa",
+    "title": "House corner and sidewalk",
+    "src": "assets/showcase-residential_villa-outdoor-3.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 141348,
+    "sha256": "3d2c5afedf9243ab306318583ff932b2f193d88fdd4505091822a72d34e029cc"
+  },
+  {
+    "id": "showcase-residential_villa-outdoor-4",
+    "type": "image",
+    "section": "scenes",
+    "scene": "residential_villa",
+    "title": "Entrance and front garden",
+    "src": "assets/showcase-residential_villa-outdoor-4.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 113512,
+    "sha256": "727ce76baec75e8481d5708993c89eb9d67d51366ca44f27e97533cfc562af0f"
+  },
+  {
+    "id": "showcase-residential_villa-indoor-1",
+    "type": "image",
+    "section": "scenes",
+    "scene": "residential_villa",
+    "title": "Living room",
+    "src": "assets/showcase-residential_villa-indoor-1.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 330118,
+    "sha256": "239a8764f10c00d042d63176579488ab16e79f7e302f366944c0a35a98f0e47d"
+  },
+  {
+    "id": "showcase-residential_villa-indoor-2",
+    "type": "image",
+    "section": "scenes",
+    "scene": "residential_villa",
+    "title": "Dining room",
+    "src": "assets/showcase-residential_villa-indoor-2.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 429592,
+    "sha256": "14b9b23c9dd08785f8b77a3fb517618905672d14d480e99b0fc0176503198110"
+  },
+  {
+    "id": "showcase-residential_villa-indoor-3",
+    "type": "image",
+    "section": "scenes",
+    "scene": "residential_villa",
+    "title": "Kitchen",
+    "src": "assets/showcase-residential_villa-indoor-3.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 610204,
+    "sha256": "6333fbc5772c59ff5f16c1aa29e8d10345071fa13e03d7c3a2d885e5561be15f"
+  },
+  {
+    "id": "showcase-residential_villa-indoor-4",
+    "type": "image",
+    "section": "scenes",
+    "scene": "residential_villa",
+    "title": "Bedroom",
+    "src": "assets/showcase-residential_villa-indoor-4.jpg",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 316870,
+    "sha256": "9a90b888ab95997d2069e34dfc48fa5df58c78c05d05477cfaf0d1181ab0f757"
+  },
+  {
+    "id": "residential_villa-overview",
+    "type": "video",
+    "section": "scenes",
+    "scene": "residential_villa",
+    "title": "Residential villa overview",
+    "src": "assets/residential_villa-overview.mp4",
+    "duration": 15.0,
+    "width": 1280,
+    "height": 720,
+    "codec": "h264",
+    "poster": "assets/residential_villa-overview.jpg",
+    "bytes": 3886507,
+    "sha256": "4b541dfaa07489aea1e17b83992b6ea197a7e29c2be17eb89dc59ba2c6d14caa"
   }
 ]

@@ -1,0 +1,3520 @@
+{
+  "status": "passed",
+  "scope": "UTF-8 release files and filenames, decoded JSON strings, and authored modeling source paths. Git internals and binary-media OCR are outside this text scan.",
+  "text_files_scanned": 1660,
+  "cjk_or_private_pattern_hits": 0,
+  "authored_modeling_files": 702,
+  "missing_modeling_files": [],
+  "files": [
+    {
+      "path": "scripts/fix_connect3_delivery_ground.py",
+      "present": true,
+      "sha256": "7f3652fcbbf27d3f9afaf602f3ad380ca8974e985bba3353dd50f08fd0250f1b"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all43_08.py",
+      "present": true,
+      "sha256": "b7f477e00dd2bae8d9a9b1c98b2b7ff8221f282d93a43a0154e158ced7f4e2e6"
+    },
+    {
+      "path": "scripts/refine_connect4_river_asset.py",
+      "present": true,
+      "sha256": "f91bc546015f255e142c4276ff71b7ee0181c2b975aabcc91e163696e3fe8a12"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all44_05.py",
+      "present": true,
+      "sha256": "92285b66994ee0ec67028695146e8482285ecab44ad519a9d92eb3d7c6ad20c8"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all44_13.py",
+      "present": true,
+      "sha256": "54703ea3247cb1a3c15c5a5fb85c56a378d35494f98d21ce293bac3b6a892b68"
+    },
+    {
+      "path": "scripts/diagnose_connect2_room.py",
+      "present": true,
+      "sha256": "8505f0595c0b8d7ef73ad28e496d0f72ba7a9f2e6880c8536908f462928c83af"
+    },
+    {
+      "path": "scripts/run.sh",
+      "present": true,
+      "sha256": "89416c456619055740681a6e8bc2e7e9ace34979d3ff57b1c73ad862ae671484"
+    },
+    {
+      "path": "scripts/run_generate_indoors_all41.py",
+      "present": true,
+      "sha256": "8801cec9ff33bea8cd3cf0bd5c462b697bb4c13cc69657f8f048166d37c88548"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all34.py",
+      "present": true,
+      "sha256": "f1ec9cd4fb513d491744501ea206efbcde94f3c7a72b854df8feaaf44353bc8a"
+    },
+    {
+      "path": "scripts/rerender_urban_v3_all43_08_glass.py",
+      "present": true,
+      "sha256": "c79f0386f837ec90cf96e4b7f387a9dd2b8dc4b3c484b83642aeff5dec0f46f1"
+    },
+    {
+      "path": "scripts/finalize_urban_v3_all45_02_tree_lods.py",
+      "present": true,
+      "sha256": "88b0c8e4546e720c1186610e094e4dd4bd480b5f064955c22e4c0681bbb300fd"
+    },
+    {
+      "path": "scripts/fix_all37.py",
+      "present": true,
+      "sha256": "ccb62c9bdbe7a3cf1d15b9d5e54dacc3b86647162d35289eea0e0473ecae6bc9"
+    },
+    {
+      "path": "scripts/run_urban_v1_full_13_dynamic.sh",
+      "present": true,
+      "sha256": "564ac89b07d9cae937bed4bd5748d29fccc2fe23b36aaefce4ecd16ddfd4e21d"
+    },
+    {
+      "path": "scripts/package_market_images2.py",
+      "present": true,
+      "sha256": "b37e77d9814a7c01f190239432d72d45ba8d0908a3954a6cd365b95585efc3f4"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all43_11_light.py",
+      "present": true,
+      "sha256": "44b2205e63b78616b4ff101ff62aa7b77805200f8d7d7eb5524c650a25496b2f"
+    },
+    {
+      "path": "scripts/render_urban_v1_full_13_dynamic2.py",
+      "present": true,
+      "sha256": "8c1a997d16a8ecbb4bb851a36d36f35d3917221d9fc38af93257f05f27ba2ee5"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all43_12.py",
+      "present": true,
+      "sha256": "218a10b4e09dfda0bc3c086ff521551fe58e7f7823d46327c5c16b6d47abe949"
+    },
+    {
+      "path": "scripts/run_urban_v3_gass.sh",
+      "present": true,
+      "sha256": "99cc7050672211daa4d97b534b6798c59f4c5a1ccd728b01afb7196f9bce7c89"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all21_park.py",
+      "present": true,
+      "sha256": "594df536e35bd18b81904f8f14893c5909634f0321f39b4c790bb107c5b1402c"
+    },
+    {
+      "path": "scripts/probe_connect2_assets.py",
+      "present": true,
+      "sha256": "176a812a68b3e8d45f3c2c4c7c5c5f4c377aee7c37c7274eeb922b5bf2783b16"
+    },
+    {
+      "path": "scripts/fix_connect3_review.py",
+      "present": true,
+      "sha256": "d8efb871fac1af140b912a8264970d8851d12b68b04d1eb3d5f1e6f6cfb816fc"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all25_park.py",
+      "present": true,
+      "sha256": "0d5ad089c11b0f0b484e5611d4794bcf59ab8724b483757263ad47bb2353fb7e"
+    },
+    {
+      "path": "scripts/build_urban_v1_full_connect4.py",
+      "present": true,
+      "sha256": "965907605ada2eafcc7db42ef9add12944a846a5b8416d76cb223324c3ac96eb"
+    },
+    {
+      "path": "scripts/prepare_connect4_landscape.py",
+      "present": true,
+      "sha256": "ababc54c98c941513706965a8d69ef96967c1d1ad9edc373a03080263b7d748f"
+    },
+    {
+      "path": "scripts/prepare_urban_v1_full_connect_assets.py",
+      "present": true,
+      "sha256": "af6da2e37bd3ed1ba24b06f88104ef88e3639d949af39d7efc2a9660f9d036ee"
+    },
+    {
+      "path": "scripts/urban_v1_full_07_river.py",
+      "present": true,
+      "sha256": "405ab47182e077e9ea7d3ef0afbe8f54eefec1affccb821d07217be8b0035c03"
+    },
+    {
+      "path": "scripts/generate_urban_v3_trafficlight.py",
+      "present": true,
+      "sha256": "9cd3bc1830ac689eee8f4e139f37055d60b6ebf4322019652f61623c8cf97397"
+    },
+    {
+      "path": "scripts/upgrade_urban_v1_full_07_river3.py",
+      "present": true,
+      "sha256": "3f76083686cbf82814d6902078ecf52acdeff1c26a8fc5b7c491613e22664815"
+    },
+    {
+      "path": "scripts/render_paper_multiview.py",
+      "present": true,
+      "sha256": "177844cd903a59c43156c326c09cc3469ec56c4a8a4fdbddc18ea80356276305"
+    },
+    {
+      "path": "scripts/audit_urban_v1_full_13_dynamic.py",
+      "present": true,
+      "sha256": "2fd53d991e4f53e1007056e45abdbb070eb4954a132ab4a12d9a71515bda3910"
+    },
+    {
+      "path": "scripts/compare_urban_v3_all42.py",
+      "present": true,
+      "sha256": "b8fb94dc1c96f8ab1366e79a1bb449b6b03e959faf93653e08a9ebc7144e970d"
+    },
+    {
+      "path": "scripts/recover_urban_v1_full_13_view34.sh",
+      "present": true,
+      "sha256": "7fc119f52d71c7f78eb639ed81138a3686fd39680c5072f3a7491c058dacddf7"
+    },
+    {
+      "path": "scripts/refine_urban_v1_full_13_dynamic2.py",
+      "present": true,
+      "sha256": "0097be1bd6ffa421aa0821c8bde1370fec1bc27c6e594d1ba283f547522bd198"
+    },
+    {
+      "path": "scripts/diagnose_urban_v1_full_12_subset.py",
+      "present": true,
+      "sha256": "2b0df7128ad7db0257070f2c191df21e795417f64d2ca34c1b34eb8642afacd9"
+    },
+    {
+      "path": "scripts/prepare_corner_kitchen2_assets.py",
+      "present": true,
+      "sha256": "610a945a273fa7dd1acc4d61956cce0a9fa1fd0ed31f2276bcf5d2425d553b63"
+    },
+    {
+      "path": "scripts/certify_urban_v1_full_14_direct_manifests.py",
+      "present": true,
+      "sha256": "f9b3105997c3967139f56427a7efd60356514a563ca1313d0175771d02fd232e"
+    },
+    {
+      "path": "scripts/certify_urban_v1_full_13_fresh_render.py",
+      "present": true,
+      "sha256": "ea4e56182fee32b7e890c8948e401a37a402b0bcedafb4b42f6537724b787014"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all29.py",
+      "present": true,
+      "sha256": "f37b61a7f35816fa65e7c893556fa43acec17b39803bf7a2c88187b7008f5a98"
+    },
+    {
+      "path": "scripts/render_urban_v3_all45_01_remaining.py",
+      "present": true,
+      "sha256": "1822b9ff2ceaa349754f6c1a77b2669d9aa15d77e1c0475b003f2859f6666864"
+    },
+    {
+      "path": "scripts/export_urban_v1_full_13_camera_diagnostics.py",
+      "present": true,
+      "sha256": "2455f6b1371bd082acdad34a9eab922df45c8d8d12848b00176c83ff1455b3d1"
+    },
+    {
+      "path": "scripts/prepare_connect3_assets.py",
+      "present": true,
+      "sha256": "e297147b08b19041d0e21ac293735c56734922498f2de0810100b7590e0125be"
+    },
+    {
+      "path": "scripts/audit_connect4_assets.py",
+      "present": true,
+      "sha256": "4fc53d4efce1d16c2ade031d5c2b5778c75e8217e5d1e147a8db850ce4d4e786"
+    },
+    {
+      "path": "scripts/run_urban_v1_full_12_camera_fine_probe.sh",
+      "present": true,
+      "sha256": "a966dd01055a778123ce21e2592619fdb08683a8736a2b8fd48d8b0b91404179"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all43_23.py",
+      "present": true,
+      "sha256": "9d0f7b00259537435e886dad0facd528f9f53b171145987c3610db8bb2d6c4aa"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all17_park.py",
+      "present": true,
+      "sha256": "c514f6b79365827b33052598b38493cbcacd297c4b3e95e08437cfedae5d933b"
+    },
+    {
+      "path": "scripts/import_cars_glb_all31.py",
+      "present": true,
+      "sha256": "e9032eedc721ed7c2b0bff684f201ed2502748ef19ec1e536cdf74f928d52a4f"
+    },
+    {
+      "path": "scripts/inspect_urban_v3_all15_all8veg_details.py",
+      "present": true,
+      "sha256": "237276a4ec04c779f2f8bf41a2bb042f3064d72dc09928e57a235ce818c486a0"
+    },
+    {
+      "path": "scripts/inspect_urban_tree_visuals.py",
+      "present": true,
+      "sha256": "0ad55fded56081acf603da2c9efb70eb139e2e6c06f23d6484d9b65e097621c4"
+    },
+    {
+      "path": "scripts/generate_urban_v1_full_12.py",
+      "present": true,
+      "sha256": "f8e6501e0f1685124bb4e5f13f9e234a32954342490098c4c49e83290bd86997"
+    },
+    {
+      "path": "scripts/finalize_connect2_delivery.py",
+      "present": true,
+      "sha256": "fa1cb48ecca64da9f3414ce5ae1e9c8fab25a7db44d7dbb18dd6a9fffacccdaa"
+    },
+    {
+      "path": "scripts/urban_v1_full_09_residential.py",
+      "present": true,
+      "sha256": "3497b612dedbca7e194b44518838b1d8714bf43bae631e8c8c73863619745c72"
+    },
+    {
+      "path": "scripts/sync_connect4_refined_inventory.py",
+      "present": true,
+      "sha256": "d6207a98e7e4380559f8cfd643d5f91b9b5dfbc2e3f954e52932a9ca2152725d"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all43_01.py",
+      "present": true,
+      "sha256": "36fa532684a7486b91b1bfc0c3e98d5f43b816e2d0360050d88df9c9fc7e13fe"
+    },
+    {
+      "path": "scripts/urban_v1_full_07_trees.py",
+      "present": true,
+      "sha256": "79ac0c80de61f36fcdfb46aa067b7ba2b2460ed9565fe6ce38eed983f61992fe"
+    },
+    {
+      "path": "scripts/commercial_full_realism_generator_12.py",
+      "present": true,
+      "sha256": "8e7483ad2a8bc411f8e73fd56a301baaf341fc0d017d93da7a4df375eadb2366"
+    },
+    {
+      "path": "scripts/run_urban_v3_all46_2.sh",
+      "present": true,
+      "sha256": "8668f6842cf71dcf5780ed1a123e0bcbace7e758e9576c1df82b5297633ca474"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all26.py",
+      "present": true,
+      "sha256": "b7cfe7808352e8231be2c76c2d6a5e703c4e24c59c9f893a5fac8c9085cd585e"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all11.py",
+      "present": true,
+      "sha256": "012cea8ca8acca9ab42b2884971ca408e0dbbd48dc848cc4c78b24fea3efd212"
+    },
+    {
+      "path": "scripts/generate_urban_v3_lake.py",
+      "present": true,
+      "sha256": "b96bdf6b1414d50222b5bcd3fd2ec82afeff527531785b49e21acc93096c3752"
+    },
+    {
+      "path": "scripts/finalize_urban_v3_all43_01_camera.py",
+      "present": true,
+      "sha256": "0025182ca642858919d1e9022808af5d958f5cb0d5f3b298993c63c7d27a737b"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all8.py",
+      "present": true,
+      "sha256": "5cf351f7ac95a517cf29b349083b6a008fdb6991ad49b26df66588eb2384d11b"
+    },
+    {
+      "path": "scripts/run_urban_v1_full_12_completion.sh",
+      "present": true,
+      "sha256": "4f6b69061265ff55ea2e4e0d9269d929d1538eb19d227585241167bc3d22ade0"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all4.py",
+      "present": true,
+      "sha256": "63ee018d7fe7e33cae2aba75e579b83691928fc3a3173bf2797ec9e40b1f5fda"
+    },
+    {
+      "path": "scripts/run_urban_v1_full_12_diagnostic_job.sh",
+      "present": true,
+      "sha256": "92103fedd7bc07c7a23552f47d0190389783f6b425b69b479054b37111dbef4e"
+    },
+    {
+      "path": "scripts/assemble_urban_v1_full_13_dynamic3_master.py",
+      "present": true,
+      "sha256": "c22aa2c34cbd3be6e2a3d7a9bf580ff5a0093df0ff62302ca8236f1096e573b3"
+    },
+    {
+      "path": "scripts/prepare_connect2_fruit.py",
+      "present": true,
+      "sha256": "29082252347bd129068b5d9bdaf2609fbb7b76dce11146b154ea42aa224f095f"
+    },
+    {
+      "path": "scripts/rebalance_urban_v1_full_13_dynamic3.py",
+      "present": true,
+      "sha256": "6947b347cba88ae2b99befd7a140531f679df039367355932c0d6371dbd53d36"
+    },
+    {
+      "path": "scripts/fingerprint_urban_v1_full_13_procedural_collections.py",
+      "present": true,
+      "sha256": "85e3f912fe216fd364622d861caa506130a2c80d0de5669f1668ad69e6edf9d3"
+    },
+    {
+      "path": "scripts/generate_urban_v3_kiosk5.py",
+      "present": true,
+      "sha256": "665507ad5e85d19c71150b0367b3aa8c554ec6bb2bb6f49ed68f3940c9c5bd71"
+    },
+    {
+      "path": "scripts/generate_urban_v1_full_08.py",
+      "present": true,
+      "sha256": "efe297d39b5e718ad4bec7c741c30090d5132374b4283fc5aa7e426190f974a6"
+    },
+    {
+      "path": "scripts/render_urban_v1_full_connect.py",
+      "present": true,
+      "sha256": "ab7a9ca20e7b9e2804a49a0b5699eb2b46b736d7e76d21d3be1af36533d859da"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all43_15.py",
+      "present": true,
+      "sha256": "5a9c5d3ed6602889c2f371d1e2677b9ae06ce59a98753930f3e39acf6c585ed9"
+    },
+    {
+      "path": "scripts/upgrade_urban_v1_full_07_river4.py",
+      "present": true,
+      "sha256": "baaf4050f3274c0e26a24b7c6e70c82e723ba66af55dbe53ed38e5d6853bda59"
+    },
+    {
+      "path": "scripts/run_urban_v3_all46_5.sh",
+      "present": true,
+      "sha256": "104373c9db27360b8be402aac8eea5755c5fbef6d723867de3cd87ffa4240535"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all44_10.py",
+      "present": true,
+      "sha256": "09276449a73f54945ce44c50652b75e5507fbb6e8f4343c79d5ffabb1cb4e5e4"
+    },
+    {
+      "path": "scripts/diagnose_connect4.py",
+      "present": true,
+      "sha256": "823a30d786ae2222276d64b6b59f294404032ee7518d5971e8f4c75dffe6942a"
+    },
+    {
+      "path": "scripts/compose_urban_v1_full_14_zdepth.py",
+      "present": true,
+      "sha256": "5d713d3c04706780998cbf14da392bbd5d696aa7382fbe5d33857b50781ed489"
+    },
+    {
+      "path": "scripts/run_urban_v3_all45_05.sh",
+      "present": true,
+      "sha256": "9631213e75716692b295f1365341ede3af1a4e477be428f2452c452e7196bd3c"
+    },
+    {
+      "path": "scripts/generate_urban_v3_sharedbicycle.py",
+      "present": true,
+      "sha256": "83044b2312c7b2ab508a35c2ce27dd35a24ec5f84ae4789e7ecd3d61c1afdb1f"
+    },
+    {
+      "path": "scripts/generate_urban_v1_full_14.py",
+      "present": true,
+      "sha256": "35668f811709b87896d58d9c11962d4dd20e9d0efe28818284ca808ef5cee46e"
+    },
+    {
+      "path": "scripts/audit_urban_v1_full_13_dynamic2.py",
+      "present": true,
+      "sha256": "1712870b3b542f8c797ae751c5daa5dfb70f050a88a670d781e68ad4b90a2011"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all20_park.py",
+      "present": true,
+      "sha256": "4fe5fa1e0320bff0970286b2d96e63d8ea0e886b60dfbfb8c8dd3c3a1afb2727"
+    },
+    {
+      "path": "scripts/commercial_realism_generator_08.py",
+      "present": true,
+      "sha256": "9d91880fa18411a9cd4fa69ac622c1ef9024b0b37b3c70402c41acfa7e46016c"
+    },
+    {
+      "path": "scripts/fingerprint_urban_v1_full_14_procedural_collections.py",
+      "present": true,
+      "sha256": "32d8321fee04540c04f788e79565b308328592dd3b4863998266c1ce4e890ac6"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all43_14.py",
+      "present": true,
+      "sha256": "da8f21339fe855305c88ce48f4d132c04bbf2c46788e049a7f0a8307bdf2c582"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all22_park.py",
+      "present": true,
+      "sha256": "17571cc66bf07043c2c423abe7074af12a2b2a3698796a02a2afa8e6eeeff720"
+    },
+    {
+      "path": "scripts/run_urban_v1_full_12_zdepth_layer_job.sh",
+      "present": true,
+      "sha256": "a8d651c85801a8801739e1e33388ce66aa7338f7a8465071966f052956cbdefe"
+    },
+    {
+      "path": "scripts/robot1_production.py",
+      "present": true,
+      "sha256": "2010c8997d13cb39d06fd377567699234c36a691f8909725cdddbcdecab80c70"
+    },
+    {
+      "path": "scripts/summarize_urban_v1_full_14_resources.py",
+      "present": true,
+      "sha256": "83b86c14b93d051b3876094326790aa003d77bcabb7dfdc6c88f3582711baec5"
+    },
+    {
+      "path": "scripts/refine_urban_v1_full_13_dynamic3_water_optics.py",
+      "present": true,
+      "sha256": "2ba3c551812aa924d2fbfcb45f0a4fdf9e05d2e58aa1965f803abde8dfdc66ad"
+    },
+    {
+      "path": "scripts/process_urban_v1_full_12_exr.py",
+      "present": true,
+      "sha256": "904368339f270571b5a2964b8a5229f99cc3ceb6f46ec10a489ba1433b86236c"
+    },
+    {
+      "path": "scripts/audit_urban_v1_full_13_dynamic3_frames.py",
+      "present": true,
+      "sha256": "09679263a61394aa90254f0846e98a6d69995a605bb8e278ce0f4dd6ce1fe35d"
+    },
+    {
+      "path": "scripts/run_urban_v1_full_12_eevee_fallback_base.sh",
+      "present": true,
+      "sha256": "8f7809bd0113ed78a60a41ba990b54fbd469cd46efbdb15fd53973585c0fa4e4"
+    },
+    {
+      "path": "scripts/prepare_connect4_assets.py",
+      "present": true,
+      "sha256": "3eaecf4bcb195515b59ccb57d685b64c1ce7bb289959e4014b0f5e4912e20688"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all43_18.py",
+      "present": true,
+      "sha256": "6b8ac5d79a5a8c9d1d021adf969e23434a0eae458c821f36d0da0e3a8594821d"
+    },
+    {
+      "path": "scripts/render_urban_v3_all12_workbench.py",
+      "present": true,
+      "sha256": "e2832215bf81033ef3cb22dffc46682752c28526fff7cad272c7bd1e13735eb3"
+    },
+    {
+      "path": "scripts/process_urban_v1_full_13_exr.py",
+      "present": true,
+      "sha256": "afc6ac5fdb38213c999b1460a3d27126da5d4a7030bd551b0597fd216bfa687b"
+    },
+    {
+      "path": "scripts/create_urban_v1_full_07_agent2_demo.py",
+      "present": true,
+      "sha256": "55b12822917221e6ec28383ebbe6d9506be40b4a1d1315479c858d4d1ae20573"
+    },
+    {
+      "path": "scripts/generate_urban_v1_full_06.py",
+      "present": true,
+      "sha256": "129ace9008afd2aaf319f9f803732ec7f86f8836775eb245849067442d75a607"
+    },
+    {
+      "path": "scripts/render_urban_v1_full_12_daytime.py",
+      "present": true,
+      "sha256": "d37b419f7eef79ee9723dec4b0d4fcf700af161023cabc296c849c6abf1ddaad"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all44_11.py",
+      "present": true,
+      "sha256": "98ef40642ac2a88263a98f475660753512166def09b9b5ad22eaf854b564fadf"
+    },
+    {
+      "path": "scripts/audit_urban_all42.py",
+      "present": true,
+      "sha256": "db8772b66feba2ad3eeebd475237299b566e2ae60e2da36ed52cef25c26d344d"
+    },
+    {
+      "path": "scripts/commercial_rebuild_generator_15.py",
+      "present": true,
+      "sha256": "47a0a790f44e91b793ba4e169e2f28c53e4b7b12522f8e2309852c48a31d6d67"
+    },
+    {
+      "path": "scripts/generate_urban_v3_fire.py",
+      "present": true,
+      "sha256": "a4cbb5e98e313bb719cd4441f2fbf61087a792691e3dcde0e9f86deaead56fb9"
+    },
+    {
+      "path": "scripts/finalize_urban_v3_all15_leaf_alignment.py",
+      "present": true,
+      "sha256": "94f233a804d90146db74b2217c847166ecd41963a8d18ab7dcdf7ae43ff58f9f"
+    },
+    {
+      "path": "scripts/resume_urban_v1_full_07_validation.py",
+      "present": true,
+      "sha256": "dfbbe8d0674879560eb6a5201392139fb2169b6f1ee3705ec73e3568da3ba24e"
+    },
+    {
+      "path": "scripts/urban_v1_full_07_agent_mission.py",
+      "present": true,
+      "sha256": "39b87d717aa6daf532b52fdd14635058c1068cf326ba7b3cbdb37192b0ffd7c8"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all12.py",
+      "present": true,
+      "sha256": "9f779cd2f23ec317ec849bceb7b7586d07424b0f83e90880fe7ef0ff185a757b"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all42.py",
+      "present": true,
+      "sha256": "5df417b6d098e778d82177b4e1b5f96e09a89a06802c9bcc268b65d8375cc810"
+    },
+    {
+      "path": "scripts/dynamic2_native_leaf_instances.py",
+      "present": true,
+      "sha256": "89ee11309cefafd74fb23ca6cf33f275ab15137090cf3d1bc3ee739cfc29e525"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all45_02.py",
+      "present": true,
+      "sha256": "0a9ca3301bcf295179d5d1d17d47f97e6c6ff7a5b0222ec970d042259c94ca50"
+    },
+    {
+      "path": "scripts/render_urban_v1_full_09_paper_views.py",
+      "present": true,
+      "sha256": "a52b2f0545b3e763c026ad47302aed18b55fdf8789b9d44733bc2f95e8841b86"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all39_fast4.py",
+      "present": true,
+      "sha256": "1f9665eacac59091ab521a626fd2d32ccca43fb9ce249902a4e772e2faa900ef"
+    },
+    {
+      "path": "scripts/upgrade_urban_v1_full_07_agent4.py",
+      "present": true,
+      "sha256": "826bd2716209ff7685693f59311c14c9b77f936051d2d410b490639902d00c00"
+    },
+    {
+      "path": "scripts/run_urban_v1_full_12_projection_layer_job.sh",
+      "present": true,
+      "sha256": "3164f4bcbe1ee66c49fc080761245151f0e9ef91bbbc7126554ca316100d0a09"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all39_fast5.py",
+      "present": true,
+      "sha256": "bbdd36c89bd8c008ed913b86bfb58cf88d4ef99f82c8043d728cc590302a4930"
+    },
+    {
+      "path": "scripts/finalize_pharmacy2.py",
+      "present": true,
+      "sha256": "bdeb678852525b97c895b96b944134da5da0178b681b02e34eacb177a0903121"
+    },
+    {
+      "path": "scripts/verify_urban_v3_delivery_articulation.py",
+      "present": true,
+      "sha256": "7d19186999dcd94e9758c7182633ff001bc2927941385244b6c7b38e677c143e"
+    },
+    {
+      "path": "scripts/commercial_corner_711_generator_19.py",
+      "present": true,
+      "sha256": "a235c55d0e172739d923ba14229d73b2d180d4797144bc42a0a5fb9c89f58b98"
+    },
+    {
+      "path": "scripts/rerender_urban_v3_all46_3.py",
+      "present": true,
+      "sha256": "8017e3dc35522f08d68df5191e12661b11bb0c969cb5b75ac24e202611a134de"
+    },
+    {
+      "path": "scripts/prepare_pharmacy2_prints.py",
+      "present": true,
+      "sha256": "5dba641a554982812cf0cb26b7d6f8209b08c82d120ac22794fc0fea3d3c0173"
+    },
+    {
+      "path": "scripts/finalize_urban_v1_full_13_dynamic2.py",
+      "present": true,
+      "sha256": "6ab26c20ea0062b3f94f6c851c38e04755d38d7b6043ba4f559fd6da52d2f064"
+    },
+    {
+      "path": "scripts/modify_urban_v3_all31.py",
+      "present": true,
+      "sha256": "ecf7631e9d5edcba88cf1d5957e2839f8c24962955ceb6f0d28bf40c671c5eaa"
+    },
+    {
+      "path": "scripts/correct_urban_v3_all45_04_views.py",
+      "present": true,
+      "sha256": "068277ebf9c1fcf516ddb3cefaaf7bbf581e9c9b25b483cc44a2ecf522934c5e"
+    },
+    {
+      "path": "scripts/robot1_camera.py",
+      "present": true,
+      "sha256": "27b1c85884cf5b46a1e4b8a5f31b875374b5bd955497fec2c8c3902fc7f9e82d"
+    },
+    {
+      "path": "scripts/generate_urban_v3_fitness.py",
+      "present": true,
+      "sha256": "233570537bbb40c17d8e91cedc6c6088dc13dd7c155a165db8dfd066daf39fc2"
+    },
+    {
+      "path": "scripts/render_urban_v1_full_13_dynamic.py",
+      "present": true,
+      "sha256": "8f80f8dc3d569f92e45cdea610b6c2be61deb76516217298bf8f16984aa93634"
+    },
+    {
+      "path": "scripts/recover_urban_v1_full_13_camera_changes.sh",
+      "present": true,
+      "sha256": "e3e15d490c53ef8f98b143d216d1ba3276e5517ba6707b57403569f0adb5c987"
+    },
+    {
+      "path": "scripts/run_urban_v1_full_12_zdepth_layer_chunks.sh",
+      "present": true,
+      "sha256": "5584878e13342f15c6437b51c898d0f83dc20cf8957e23a157df02c1a28c8768"
+    },
+    {
+      "path": "scripts/obj.sh",
+      "present": true,
+      "sha256": "82afd04cbb5874571c6a9da8e360634dce54ff511bedc9500639e0540acdcedf"
+    },
+    {
+      "path": "scripts/build_render_robot1.py",
+      "present": true,
+      "sha256": "1688ce4af9b6557bd668f90a85b9ed2df9e00db7034ef9a29fe04759747bbedc"
+    },
+    {
+      "path": "scripts/validate_robot1.py",
+      "present": true,
+      "sha256": "3c9f3333a92408c15a9f35e9d52e6ca6206b13ad8c86694bce793e9d43b0bd6b"
+    },
+    {
+      "path": "scripts/create_urban_v1_full_07_agent_demo.py",
+      "present": true,
+      "sha256": "299c66edbc46f454dfb9732ebc267cd28cf3ced03e8a43cfc4347e3d576e99be"
+    },
+    {
+      "path": "scripts/robot1_captions.py",
+      "present": true,
+      "sha256": "87004eb0db38d8c61970a479438a593ebbd09b508354e7ece4c617940d09f56d"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all38.py",
+      "present": true,
+      "sha256": "3e885b82b50036aed2047e1444243ebd685200662e608839e8a7cdb5aaa614bc"
+    },
+    {
+      "path": "scripts/repair_connect2_public_rooms.py",
+      "present": true,
+      "sha256": "9bd07fe5ba667daf4da333c4e386c2c98f24652b130a70f598d5a9dccc159788"
+    },
+    {
+      "path": "scripts/generate_urban_v1_full_11.py",
+      "present": true,
+      "sha256": "e864cb61154b7a3e8ecabb91032945ceea9d6d158bfa123e2c0c55d18f5d4d49"
+    },
+    {
+      "path": "scripts/refine_connect3_lighting.py",
+      "present": true,
+      "sha256": "6dc521b2f1c5b8cd981835fd080617e8d4456b7dd3340554b9accda3ed989315"
+    },
+    {
+      "path": "scripts/commercial_mcdonalds_layout_generator_20.py",
+      "present": true,
+      "sha256": "52780eb00be3add5a743ed20ed9a9d87993e3bec4d3bae6f891a6ea38e7bce76"
+    },
+    {
+      "path": "scripts/robot1_gallery.py",
+      "present": true,
+      "sha256": "edc3849ad71b32e3d8114639ce4bfc328600a9bee10b1d47224712ba68039c18"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all43_11_res.py",
+      "present": true,
+      "sha256": "25b94fb3ea0baf41345101929a54e132e8e2db53502b2d793455b02a9c4a6b0a"
+    },
+    {
+      "path": "scripts/compare_urban_v1_full_14_direct_validation.py",
+      "present": true,
+      "sha256": "2f8e1bc85483716d23925dadb1ccf5ec475fd862edad343e76cb2dc7c171e03b"
+    },
+    {
+      "path": "scripts/inspect_urban_v1_full_13_dynamic3.py",
+      "present": true,
+      "sha256": "9dc1a0f5f0a830cf15518ade0b348b566d775c4999cb030ec6601d8df86c0cd0"
+    },
+    {
+      "path": "scripts/render_dynamic_cycles_allgpus.sh",
+      "present": true,
+      "sha256": "799fe8e877408562644d0f935aca1551cd33e0a24b5c037a3cd5011998ce586a"
+    },
+    {
+      "path": "scripts/finalize_urban_v3_all45_04.py",
+      "present": true,
+      "sha256": "baf96bbb14c92363bee553ca41277710740b508922c2b609daed010ad8e4ce21"
+    },
+    {
+      "path": "scripts/build_pharmacy2.py",
+      "present": true,
+      "sha256": "2f7c294ff1e4590a4d51aa0e62afa55e39e1dd154478d477f5ea40bfcd8254ca"
+    },
+    {
+      "path": "scripts/verify_urban_v1_full_13_dynamic2_video.py",
+      "present": true,
+      "sha256": "865606788b0b700e2813ffbd6e4228063347e799dc90278cc0f24c9cb346168b"
+    },
+    {
+      "path": "scripts/fix_urban_v3_all15_tree_leaves.py",
+      "present": true,
+      "sha256": "dc080dbb58d335d8333362b45f9e79a2618179f99c708cc6bd970daa640a672a"
+    },
+    {
+      "path": "scripts/ground_connect2_trees.py",
+      "present": true,
+      "sha256": "7a8e271eb2ecaccadc8d2e30ba9a25e5037432a5f8c76ace12137eaa284cfb38"
+    },
+    {
+      "path": "scripts/render_urban_v1_full_connect4.py",
+      "present": true,
+      "sha256": "cba6ec84ad0e1cc9355cb29737ec8681d93fc1911dabc3290b864bdb91c7fd52"
+    },
+    {
+      "path": "scripts/commercial_realism_generator_07.py",
+      "present": true,
+      "sha256": "117fd515c3459408820273815524528220d77478202ce8ec7368d8d72396ebf9"
+    },
+    {
+      "path": "scripts/preflight_urban_v1_full_13_cameras.py",
+      "present": true,
+      "sha256": "34b042f3618b1189d030b79737a116814b2c34692101ad9487a34ec0794fe57c"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all6.py",
+      "present": true,
+      "sha256": "4885fc11d1cd609e1eecd839270349ce9c9d3db1f39a9f03f2f87b96a536d666"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all39_fast.py",
+      "present": true,
+      "sha256": "cd85baa7b961bb00a09ca87642ccd1ea734ef9c4ac0b6c2c923d862f568a237c"
+    },
+    {
+      "path": "scripts/inspect_urban_v3_all8_tree_modifiers.py",
+      "present": true,
+      "sha256": "1fd4612ce2f252746a7b7d02de8e171c3e0d2745ed8e54949e125ad520d5b532"
+    },
+    {
+      "path": "scripts/generate_urban_v3_kiosk4.py",
+      "present": true,
+      "sha256": "debefdbb2c342cee2b42b344e478f1badc08db843e8a3deb26462bc17a7e2618"
+    },
+    {
+      "path": "scripts/run_urban_v1_full_12_finalize.sh",
+      "present": true,
+      "sha256": "26134b2e1c8c26fc6974522fa43e2258c69d1bbdc99709bec051a52acef2e26f"
+    },
+    {
+      "path": "scripts/prepare_community_reading_park2_assets.py",
+      "present": true,
+      "sha256": "dadfcfe828f8f48e4ffcfc8273fffd8a69ec831379898c5942ef96abce29b9e6"
+    },
+    {
+      "path": "scripts/generate_urban_v3_sharedbicycle2.py",
+      "present": true,
+      "sha256": "65074d775a5cb54bd7ab115d1da1f7572e2b55ec6de03d4b297060eb9fa6608b"
+    },
+    {
+      "path": "scripts/render_urban_v1_full_13_daytime.py",
+      "present": true,
+      "sha256": "c948977a698442a015558975667f31bdaa5d994411af98e0c3cf4ded5a267e5c"
+    },
+    {
+      "path": "scripts/commercial_storefront_cleanup_generator_09.py",
+      "present": true,
+      "sha256": "71a0054ffafee49a8fe5c9a179d0fb27ab1875d23bf88ee88cb5ff678c0de633"
+    },
+    {
+      "path": "scripts/rebind_urban_v1_full_13_layer_provenance.py",
+      "present": true,
+      "sha256": "1953e8822437d3a103f9fda03be4f29be3762d872cff5240b633acf5db86c1bf"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all43_20.py",
+      "present": true,
+      "sha256": "7be49b807b338008f69f26fd5a55112cb2e84c343efe9e54926f19334a56b34d"
+    },
+    {
+      "path": "scripts/generate_urban_v3_police.py",
+      "present": true,
+      "sha256": "6636698fbb61e71e1a308590594a9996a20748d5842125f1104df33244750b4d"
+    },
+    {
+      "path": "scripts/certify_urban_v1_full_13_direct_manifests.py",
+      "present": true,
+      "sha256": "7f86fd33e711eb18aacf7156ece63f16823fd8501987020846fd14fa5b235523"
+    },
+    {
+      "path": "scripts/inspect_pharmacy2_source.py",
+      "present": true,
+      "sha256": "fe850a78b605728b936a2b94316a40091b1cfe3e98d3324010d6f2b955c9153a"
+    },
+    {
+      "path": "scripts/run_urban_v1_full_12_camera_reframe_matrix.sh",
+      "present": true,
+      "sha256": "e3f2912b0b822b3bf67ebec39807cd6dddd3ac4990569fb1f1445b9e64c61179"
+    },
+    {
+      "path": "scripts/warmup_cycles_allgpus.py",
+      "present": true,
+      "sha256": "265ad2a3153673443758220bbdcd677339659a48ee099a15499d0fba4f97d7dd"
+    },
+    {
+      "path": "scripts/generate_urban_v2_full_05.py",
+      "present": true,
+      "sha256": "fd1aa370fcb7cc4fe190997e1e7e1810c00d6db4383f2ae311f265377525f294"
+    },
+    {
+      "path": "scripts/run_urban_v3_library.sh",
+      "present": true,
+      "sha256": "1373fb59d79f10ac209a1753bf9ec6629159a77182796fc82bab0f6430fdc90b"
+    },
+    {
+      "path": "scripts/prepare_connect2_native.py",
+      "present": true,
+      "sha256": "b70e3fd690474074e5020c1b8fcb12cf68ab4f972d8f1aeb72adddefb44243ac"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all10.py",
+      "present": true,
+      "sha256": "ec17c78559cdc1ac8740b56e2cfaac89365a8e07d7486b05212a437011e9c31a"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all43_11.py",
+      "present": true,
+      "sha256": "431fd1a031da13d1df0bbf7c86940580fb1d17dac7cfa478b102891292fb86a1"
+    },
+    {
+      "path": "scripts/render_urban_v1_full_09_isolated.py",
+      "present": true,
+      "sha256": "771cd67fb169e6d3693136e14d580f29f1195fcbb454fe5910d7accaef2e4ad2"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all43_06.py",
+      "present": true,
+      "sha256": "b8a8dd6c842f4ac7336bd59eb5293e6d0b527fa6920d529d397767d474a90c64"
+    },
+    {
+      "path": "scripts/generate_urban_v3_sharedbicycle4.py",
+      "present": true,
+      "sha256": "9cca65502569622ce0f34143a07f93e30929a4fa394de4c77856445cfd61af2e"
+    },
+    {
+      "path": "scripts/build_urban_v1_full_14_procedural_pack.py",
+      "present": true,
+      "sha256": "1435e6f890d727c283725136f76054f32c9fb42fec1aea3786292e42ce2c3a2d"
+    },
+    {
+      "path": "scripts/generate_urban_v3_library.py",
+      "present": true,
+      "sha256": "fc645ffde429747541181b717acc784ff63b13a9916eb596db5abb2dadc63fcf"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all32.py",
+      "present": true,
+      "sha256": "b73df679735b8f7bb00c12339aebc2649f554f785ea5ac5835aca61440090947"
+    },
+    {
+      "path": "scripts/urban_v1_full_14_direct_specs.py",
+      "present": true,
+      "sha256": "f1c13b7e181db5d06d02b5cdedb95598304ca6ee7e00a01af5dea54ac2a6bf71"
+    },
+    {
+      "path": "scripts/commercial_detail_generator_17.py",
+      "present": true,
+      "sha256": "8c04def87a267b4f02aa711f85c660c98c81a199bfbeb2dcb0f63074942f43c0"
+    },
+    {
+      "path": "scripts/add_one_car_all31.py",
+      "present": true,
+      "sha256": "b361f7cc0ab8aebe5724d02f0d3170d1238ad340e7c6a6ed45f1ce6a0576b649"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all23_park.py",
+      "present": true,
+      "sha256": "8d578b3a1b80206a97a02debc584f0e7a91951f9936b451847e8c3d3eb4b67ac"
+    },
+    {
+      "path": "scripts/rebind_urban_v1_full_13_camera_contract.py",
+      "present": true,
+      "sha256": "e05b842b17bf673c2d3eb45646675e0f41fdc20753f98789c2c5f1cf2c128c9c"
+    },
+    {
+      "path": "scripts/render_connect2_grounded_pass.sh",
+      "present": true,
+      "sha256": "19d77ff52603cde7045e2a7f0b8e309ddeb1c89d160af4bdb9e32eb58a2a796e"
+    },
+    {
+      "path": "scripts/factor_urban_v1_full_13_dynamic2_pack.py",
+      "present": true,
+      "sha256": "71b0b3792e448fdbf258a776a052cc2d0cb00f20f0499a6884879897ef7d8171"
+    },
+    {
+      "path": "scripts/run_urban_v1_full_12_render_job.sh",
+      "present": true,
+      "sha256": "466a0e6948368e85e0a189628662c070aa8692f82e8aea0d5431ce26cf88e421"
+    },
+    {
+      "path": "scripts/_inspect_full11_delivery.py",
+      "present": true,
+      "sha256": "d46dce09ec384296fd00540202813a32b6e8a67f2b2ede036c6e888b558e2cf3"
+    },
+    {
+      "path": "scripts/generate_traffic_light_asset_scene.py",
+      "present": true,
+      "sha256": "2803293e26c8422cf954272504090b90d53ca70fefa5c7f68fbd4856cb19afb3"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all35.py",
+      "present": true,
+      "sha256": "df7e1cbc63fabefb5cd7e3b6281d54df2baf9a8b88b3766dbb30af88e00d8387"
+    },
+    {
+      "path": "scripts/build_urban_v1_full_13_dynamic2.py",
+      "present": true,
+      "sha256": "992bcc3134b68fe160ff07551380095c12eb882214fc2fa660cffc98cb024514"
+    },
+    {
+      "path": "scripts/run_urban_v1_full_12_eevee_quality_matrix.sh",
+      "present": true,
+      "sha256": "f83e83460767dd60820901bbae6667d0e566ecf4718b0e1d3a6a9f5ab389f0ae"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all44_14.py",
+      "present": true,
+      "sha256": "e32a28b10660f98c18a27a0a3279f015cf8e12aeabcadc7422154edbaadb0616"
+    },
+    {
+      "path": "scripts/render_market_images2.py",
+      "present": true,
+      "sha256": "9333f6c33e59451fffcb9e9084b3abbb48c652434b4e8d4a2a2f18ce4b28f5d4"
+    },
+    {
+      "path": "scripts/dynamic_scene.sh",
+      "present": true,
+      "sha256": "cd121eb1a1ee7bb3b00bc1fe95a8516bcbc4d832283ddc7d9957eccc76dc3153"
+    },
+    {
+      "path": "scripts/package_connect2_scene.py",
+      "present": true,
+      "sha256": "dbc2de2227c2167a9a4c6a52fd4ea8b590885a31b40453dd14317114522eee9f"
+    },
+    {
+      "path": "scripts/render_corner_kitchen_images2.py",
+      "present": true,
+      "sha256": "efce13f7bd43a7d44388448642ea31b782f0d31ee4aa9844683988c2a7177810"
+    },
+    {
+      "path": "scripts/refine_urban_v1_full_13_dynamic3_ripples.py",
+      "present": true,
+      "sha256": "d4539ed9a420de890c86d73c1c35d8f249708d7e215caa72c2f3d3ca6a37dce9"
+    },
+    {
+      "path": "scripts/generate_urban_v3_road.py",
+      "present": true,
+      "sha256": "ea19d58f3fb927699ee3b4bb3ecb118368778be9812b9da0f0de6df61e16ad31"
+    },
+    {
+      "path": "scripts/generate_urban_v3_fence3.py",
+      "present": true,
+      "sha256": "8d285fe49c88536c98ab31250ce0ff08327546040ff7314dc7b163e4c9bc917e"
+    },
+    {
+      "path": "scripts/generate_urban_v3_delivery.py",
+      "present": true,
+      "sha256": "29e7a413a978745d01d67bb2a1dc2ce19fb29d61fb8c6e2d515b4befe7689cb1"
+    },
+    {
+      "path": "scripts/generate_urban_v3_pharmacy.py",
+      "present": true,
+      "sha256": "8452fea3d03aa9e41aa52a142fd135318f9f9d8974d4955c5b4b428b0316c8bb"
+    },
+    {
+      "path": "scripts/run_urban_v3_police.sh",
+      "present": true,
+      "sha256": "2ec7f8b32ff3735e9c0849088d0a4cf5cd27f31d34f90108775ac34da8bc7233"
+    },
+    {
+      "path": "scripts/test_dynamic2_math.py",
+      "present": true,
+      "sha256": "8985e2af59276310f084ed4dfc6eb2670e9ab7605a500bfcfc15798f64c229eb"
+    },
+    {
+      "path": "scripts/render_urban_v3_all45_03_validation.py",
+      "present": true,
+      "sha256": "74d9423de16bf61f1634cfa84adb4fc1514ccca207523782e53450032b785e65"
+    },
+    {
+      "path": "scripts/fix_connect3_fonts.py",
+      "present": true,
+      "sha256": "b1becca3354b08b61356149c91b13abd5b8a21492708b2fa11272c422e22a9fe"
+    },
+    {
+      "path": "scripts/generate_urban_v3_kiosk7.py",
+      "present": true,
+      "sha256": "6f7b2cae1feac34d3f78864f900698d7615ac83f4abe884eb11d0af1df8d5461"
+    },
+    {
+      "path": "scripts/commercial_complete_interior_generator_11_object3.py",
+      "present": true,
+      "sha256": "0c0be03f7a7fc1370197d2c035a623db4787a4b2ae5e052c27a82d62ec323309"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all44_09.py",
+      "present": true,
+      "sha256": "bbd8fdbe1aecc1ff2b85afc19df065055efe79dc8eead7e0cf829ec3e25e58dd"
+    },
+    {
+      "path": "scripts/render_urban_v1_full_07_agent3_compact.py",
+      "present": true,
+      "sha256": "1e559c7790aee2c8518246bfa9be2a34a97fd29d0dc9b0a8b4ce0fb205c9c018"
+    },
+    {
+      "path": "scripts/refine_connect3_public_realm.py",
+      "present": true,
+      "sha256": "78c0224d5c8b5c0db65ecdf8b01fb0a82f3f3030fc7775e988162a054f9a1386"
+    },
+    {
+      "path": "scripts/refine_connect3_scene.py",
+      "present": true,
+      "sha256": "c295caf4189f9eaa679c7ba1b09566e3edf950a2f585d2cbdf74585c7fcc3702"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all43_04.py",
+      "present": true,
+      "sha256": "fed45ac5fb04f00d58e845de97ae6b1f58d3381db80572ff05bd7ecc398f9ae4"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all14.py",
+      "present": true,
+      "sha256": "6aae872276a5df9d422098dbcda6ee3222e8fe8061a7f28f04b9f2df3b1cb5c4"
+    },
+    {
+      "path": "scripts/audit_urban_v1_full_14_road_furniture.py",
+      "present": true,
+      "sha256": "65ac27e969d9f3883f1daffdf7a0c9307d93129991993d190ecff6d6603345e7"
+    },
+    {
+      "path": "scripts/generate_urban_v3_kiosk8.py",
+      "present": true,
+      "sha256": "5bc50b7e0018b81280b2f754472dcd645a3d569c086fc98c86d4ba5e8ae69046"
+    },
+    {
+      "path": "scripts/upgrade_connect2_coffee_equipment.py",
+      "present": true,
+      "sha256": "2ce15db4df1560581f233f322e3e1c52e29c7b4dbafac88730c1290492a9b3d5"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all44_04.py",
+      "present": true,
+      "sha256": "aa973b9ec0d800b1fd70adad1ad22eead2285789d3c1d4727057004ddd75848f"
+    },
+    {
+      "path": "scripts/compose_urban_v1_full_12_zdepth.py",
+      "present": true,
+      "sha256": "d3c06584f06280d49c054f8be622634322b31837334b2744860d96ff418d8368"
+    },
+    {
+      "path": "scripts/render_lowrise_interiors_all45_08.py",
+      "present": true,
+      "sha256": "eab78922e3a230a197c63f6a76b586a70874d7b34562c5bef4d528b83350ba13"
+    },
+    {
+      "path": "scripts/fix_all42_master_root.py",
+      "present": true,
+      "sha256": "b582739c359cd8237b2fed36d19159fed1b17124668e0c0fde5ba140f04eafa9"
+    },
+    {
+      "path": "scripts/audit_urban_v1_full_09.py",
+      "present": true,
+      "sha256": "1f47eeb2e5398663d143a49c43ec3e83ce1fbd01df19a950eec9028bc7bb98dd"
+    },
+    {
+      "path": "scripts/run_urban_v3_school.sh",
+      "present": true,
+      "sha256": "51c92ae9601535e77c10773032644bae70dd78ca0d3ab89abe97d20556c751a1"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all45_01.py",
+      "present": true,
+      "sha256": "044b8586dc16502dccc0de8fe59d89e04b9039e6402c381327b6335fbf9103cc"
+    },
+    {
+      "path": "scripts/audit_connect2_scene.py",
+      "present": true,
+      "sha256": "552d8c3e963b6d70f52f79fb7060c71e42fd6ecca35eae8c146936682f34cd02"
+    },
+    {
+      "path": "scripts/compose_urban_v1_full_12_projection_audit.py",
+      "present": true,
+      "sha256": "4ba78f7e698884e469d15c704134d017625f4f974856ca9abb0e1088d0da2a2e"
+    },
+    {
+      "path": "scripts/commercial_zone_generator.py",
+      "present": true,
+      "sha256": "8ae4def3e54c5acb25c9193e62c3344748d3d7a05feebf45c958c226ed9657ea"
+    },
+    {
+      "path": "scripts/urban_assets.py",
+      "present": true,
+      "sha256": "1b18d6e9700ee463b15de5d5fe73a5c8ed42060f64899d4e49affa1198dc91f6"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all43_16.py",
+      "present": true,
+      "sha256": "86290d50cbc85bd683bc2086f7a5acad77295b7ee7154c612ba5ecd895f75b35"
+    },
+    {
+      "path": "scripts/generate_urban_v2_parameterized.py",
+      "present": true,
+      "sha256": "d835f67e52c978246466ec170f41e05d96141f17fdf23bea56c568a3690777aa"
+    },
+    {
+      "path": "scripts/build_urban_v1_full_connect.py",
+      "present": true,
+      "sha256": "f22c0f07dee20bf2db9391752cce15191b9c11e100701c5912212b2c502b15d2"
+    },
+    {
+      "path": "scripts/scene_stream_indoor.sh",
+      "present": true,
+      "sha256": "d3fcb204e235e26656cac9b6af224afea1e621c4a4af71809aeaa1ea1ffe48ee"
+    },
+    {
+      "path": "scripts/refine_connect3_townhouse_envelope.py",
+      "present": true,
+      "sha256": "7a1909de16057f7e20a7f48cb56a6472a73cf0b3e0be30ec9b0aa1fd27243632"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all7.py",
+      "present": true,
+      "sha256": "b319fe0ac83a2a1aab48a99c5d7fa86822ce0783aaef86ba6b2814f3a246ca77"
+    },
+    {
+      "path": "scripts/test_append_all8_tree_children.py",
+      "present": true,
+      "sha256": "0b7f1060abfc08f112c783830e71f106cb20693d7b3b076e040cfc96dcf8a5da"
+    },
+    {
+      "path": "scripts/generate_urban_v3_sharedbicycle3.py",
+      "present": true,
+      "sha256": "78002da215bb5663c74493445111452e494d0ddb2ff24fb0cd71b4b60564c392"
+    },
+    {
+      "path": "scripts/run_urban_v1_full_12_camera_clearance_probe.sh",
+      "present": true,
+      "sha256": "9e91e91167805d808a9735796ff086b6c8122db0e6a2372ec3e8919d305fce76"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all43_17.py",
+      "present": true,
+      "sha256": "0bacea765abdc7e0d57a16eaf8415bdee790d5267df80d70869db8f1334d0841"
+    },
+    {
+      "path": "scripts/render_urban_v1_full_13_direct_validation.py",
+      "present": true,
+      "sha256": "ce13b6ffe4e9db3d306c7cf5e7b17b6f9312be28e8151fb59a565a70b947958e"
+    },
+    {
+      "path": "scripts/repair_robot1_pharmacy_camera.py",
+      "present": true,
+      "sha256": "7b8893d5b29d27ed52125d9a10c65caef3be26fd9d5b89744eb7571618345166"
+    },
+    {
+      "path": "scripts/generate_urban_v3_kiosk3.py",
+      "present": true,
+      "sha256": "d8bc2d5991c0f02556294a4def3eefd7febcf80b4d6d4e6fcde77957296836dd"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all26_park.py",
+      "present": true,
+      "sha256": "927a95ce3a5d64ef1f347c43ab2a9262170403d092a907027831b27e8dc827d9"
+    },
+    {
+      "path": "scripts/rebind_urban_v1_full_13_semantic_upgrade.py",
+      "present": true,
+      "sha256": "098de7bfc5a51d231eaee4bde9bcab5e0c88cee0c9ec57835c9c258744590918"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all46_2.py",
+      "present": true,
+      "sha256": "3208f085c3b4dca015e726b20e1005e15209e5c00543df74ba48393ea8484b61"
+    },
+    {
+      "path": "scripts/commercial_detail_generator_11.py",
+      "present": true,
+      "sha256": "cbe5b2b5139c3d45afde7b5f290dac9631af83955b7b59ac93c1d4b53f24fe11"
+    },
+    {
+      "path": "scripts/run_urban_v3_all45_03.sh",
+      "present": true,
+      "sha256": "eb0a592d23cc4e80ef08833570cd09370d8d51e4f2f6c1520a48fd05e7b2ca8b"
+    },
+    {
+      "path": "scripts/refine_connect2_scene.py",
+      "present": true,
+      "sha256": "19ef7f18aef79d769ff0d695ecf64d94f01be31f777c584461e420a6a2c602ec"
+    },
+    {
+      "path": "scripts/generate_urban_v3_fence2.py",
+      "present": true,
+      "sha256": "5400f61629649f03ed62bfb4fcfcd4fadba206cb939a387a2618dd14775af9cd"
+    },
+    {
+      "path": "scripts/repair_connect4_hospital_lights.py",
+      "present": true,
+      "sha256": "58cfc93b9c16bb19dec237224404f28ad96d25b09410f056d720cccc66ff25e2"
+    },
+    {
+      "path": "scripts/render_lowrise_interiors_all45_07.py",
+      "present": true,
+      "sha256": "a1908c0935c28239b4007afd028acba6155d8d938202da05f2060044659ac0f4"
+    },
+    {
+      "path": "scripts/render_urban_v1_full_11_daytime.py",
+      "present": true,
+      "sha256": "d746801d03fb7b4d2de3db4ee9e592873dd8468ee8a78f365f3ba4153ef4a259"
+    },
+    {
+      "path": "scripts/commercial_visibility_planter_generator_16.py",
+      "present": true,
+      "sha256": "6630e1bf608c3b419bd62d88e0114742e6578754fbcc63d7a7dd2f9be628083d"
+    },
+    {
+      "path": "scripts/plan_urban_v1_full_13_layer_frames.py",
+      "present": true,
+      "sha256": "118506444ba46d45df3d80c696a88db9761a1ba0deeda1fae1d5342f18992950"
+    },
+    {
+      "path": "scripts/audit_urban_v1_full_connect.py",
+      "present": true,
+      "sha256": "ab490fa083800b770284747b004ba809274547a123e8e117ba950d38d79207c2"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all18_park.py",
+      "present": true,
+      "sha256": "13741476fdb7bf0e6760136632cf880b0571409c37346378b60a9bc35da201b8"
+    },
+    {
+      "path": "scripts/test_urban_instancing.py",
+      "present": true,
+      "sha256": "4f2147c228fc442e228bcc6a4240aef4c85b1f089240da1daddfc9178873a6be"
+    },
+    {
+      "path": "scripts/run_urban_v1_full_12_base_alpha_chunks.sh",
+      "present": true,
+      "sha256": "2d72088109cac47a8d0c52619d3dfd2b3113c3d3cc47d54ca24ab8797f34d03a"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all27.py",
+      "present": true,
+      "sha256": "be43a6cafa1ccec57dec1b78522db8d442ae8b6b9815a268cee037b4527272a2"
+    },
+    {
+      "path": "scripts/finalize_urban_v1_full_07_agent4.py",
+      "present": true,
+      "sha256": "193a58e5d4bfe1888cda1247cf31b4cfc78489707150a45224b67c94444e4ded"
+    },
+    {
+      "path": "scripts/render_urban_v3_all45_02.py",
+      "present": true,
+      "sha256": "e2a98f2d3efd6c2f02812fe01fc0a922063fc46614e359a536017a3dc1f8692e"
+    },
+    {
+      "path": "scripts/run_urban_v1_full_13_layer_worker.sh",
+      "present": true,
+      "sha256": "a36f1955e7d796fc91c69f20a88d101541feedbbe6dde718f75660022e621dcc"
+    },
+    {
+      "path": "scripts/render_community_reading_park2.py",
+      "present": true,
+      "sha256": "f68314b4e05fe8dcb5bf252c87aebece1574adcd0a8bb29bf755bbf06d69ccce"
+    },
+    {
+      "path": "scripts/fix_connect3_townhouse_ground.py",
+      "present": true,
+      "sha256": "c75147eaf6bc42a0910ee0da748eeef1d995f229a6e00cd572f374272bb0ee01"
+    },
+    {
+      "path": "scripts/inspect_urban_v3_all14_vegetation.py",
+      "present": true,
+      "sha256": "c9e55eb15753366580e18edab61ff44ae0547df1750d2c6f93eddc7b456bf411"
+    },
+    {
+      "path": "scripts/render_urban_v1_full_14_direct_validation.py",
+      "present": true,
+      "sha256": "2c41d02492a59cab3358512a615e5cbf09df1b78c2eb8d7d1ac91f7e1e3e855b"
+    },
+    {
+      "path": "scripts/render_urban_v1_full_08_paper_views.py",
+      "present": true,
+      "sha256": "0e150dd0f4992ffe41a55a2f5225e5be0c9799b317dbba976ed56d2dede9ceec"
+    },
+    {
+      "path": "scripts/build_urban_v1_full_connect2.py",
+      "present": true,
+      "sha256": "09a35a01ef7490cbdfbd7b642d522f2bb64176ba23d4b4e20ada75198575b43a"
+    },
+    {
+      "path": "scripts/generate_urban_v3_fence.py",
+      "present": true,
+      "sha256": "59fbb95c20ab49a0ed40baba98931cf28d43d9eb18db71b65ec0af6dceed7807"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all44_02.py",
+      "present": true,
+      "sha256": "fc4a4d03e037265ee65b55d247e59ffd9be3d4ce28197496d4a4fe4a5acfb948"
+    },
+    {
+      "path": "scripts/run_urban_v3_fitness.sh",
+      "present": true,
+      "sha256": "1f50905d7e84e66a70e9169ad4159c9b0f95d2d4882253efcbe36ba1f2060008"
+    },
+    {
+      "path": "scripts/urban_v1_full_07_extension.py",
+      "present": true,
+      "sha256": "67bfcfa523c411769ebcb3179e630bb2d455c9972f1b5d11880d77219eb49290"
+    },
+    {
+      "path": "scripts/run_urban_v1_full_13_camera_diagnostics.sh",
+      "present": true,
+      "sha256": "0101b7d6f2b3710b2a10fa7675c394c86d6d7403038e5834e80f46b18fd71c48"
+    },
+    {
+      "path": "scripts/generate_urban_v3_hospital.py",
+      "present": true,
+      "sha256": "176d73d3062775710c0e3c98b70d7a89836f3661c8d62565feeb11e59dc416ed"
+    },
+    {
+      "path": "scripts/finalize_pharmacy2_connections.py",
+      "present": true,
+      "sha256": "8aeeaeb83ce3f58c61b03b1492febe76a7ed74102086f960622adbb85b44bdb6"
+    },
+    {
+      "path": "scripts/scene.sh",
+      "present": true,
+      "sha256": "ff62fdaa41e5067dd5432ab0ffdbbddf962d20a2bf0bdd63a2337ea53d42923f"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all43_commercial.py",
+      "present": true,
+      "sha256": "a18b1cd1b63191ebfebff8e78af7002f05e97f16288c7f5a5e86d673e4d7a5c4"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all46_1.py",
+      "present": true,
+      "sha256": "ea73975b1ce7ad1b7f2e2e10db99a7f83d6ac38493af510948294c69469db95b"
+    },
+    {
+      "path": "scripts/run_urban_v1_full_12_camera_target_probe.sh",
+      "present": true,
+      "sha256": "ec1c8ef11b6f903bfc6c23deb1beeb88b0554d907c70324dc8140b6e86eef2d2"
+    },
+    {
+      "path": "scripts/render_urban_v1_full_10_daytime.py",
+      "present": true,
+      "sha256": "8668f7643d2302569b2502970ed63deb012cac016ae11107afceaea49eddce62"
+    },
+    {
+      "path": "scripts/run_urban_v1_full_12_projection_matrix.sh",
+      "present": true,
+      "sha256": "f6312d411fcadb92a995d5b4e088931051c012a54520661fe7d253b30ec16f46"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all45_03.py",
+      "present": true,
+      "sha256": "cfcfd329b34ace6b0f744eaaa1ed0bf5c5572c60921fa7b8074b5444e1d26564"
+    },
+    {
+      "path": "scripts/generate_urban_v3_bench_trashbin.py",
+      "present": true,
+      "sha256": "bd3d435ec1e69187b7f6dec3ce111b666f48f9f8fe09e7540f8aa7db3bb963df"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all39.py",
+      "present": true,
+      "sha256": "49435e185d822a8414137ac6573255b55be1c33481375b6680513e14e992097b"
+    },
+    {
+      "path": "scripts/urban_v1_full_13_direct_specs.py",
+      "present": true,
+      "sha256": "da5d627c74778abebb0418c57ac3ad9b9847f581d34daa8f975c131578b2237c"
+    },
+    {
+      "path": "scripts/generate_urban_v1_full_02.py",
+      "present": true,
+      "sha256": "d918577b1b7074121ed0a1c0c668874e463e78c1e3282a2a1c31047983121a6c"
+    },
+    {
+      "path": "scripts/audit_urban_v1_full_13.py",
+      "present": true,
+      "sha256": "53279f56012504172084a37d77ce8e8777777ca015f9d871e711d93211117e54"
+    },
+    {
+      "path": "scripts/attach_urban_v1_full_13_dynamic2_native_wind.py",
+      "present": true,
+      "sha256": "84786ca326181e184f3ace6e809e76c3ef4679ba56dfa703448e04ea34e8671a"
+    },
+    {
+      "path": "scripts/audit_urban_v1_full_12.py",
+      "present": true,
+      "sha256": "d658bbf5edddb3e0616d4a9783b40131f21aaa99de7fed034ca5d7a9694a69c6"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all44_08.py",
+      "present": true,
+      "sha256": "eafb824b7c0ad390be469f21336b3db6754109e524a0b27e07c2654050922402"
+    },
+    {
+      "path": "scripts/render_urban_v1_full_13_dynamic_wind_tail.py",
+      "present": true,
+      "sha256": "8d1b87a418d786e61e95697e3844beed14c600bb01ff88b9b99d4ff7e1b62bc5"
+    },
+    {
+      "path": "scripts/run_robot1.py",
+      "present": true,
+      "sha256": "b616b7c20a0fc7869a249ce386b44efac0317427262e0f21102c9ab8107c5572"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all43_21.py",
+      "present": true,
+      "sha256": "e615cbd4ec4b4f7fd94d99dad575a72c80c2fe6f34b6ec351958d706aaeaa0e7"
+    },
+    {
+      "path": "scripts/render_urban_v1_full_14_zdepth_layer.py",
+      "present": true,
+      "sha256": "669d4bd3cbb32ed8bcdbf03884169667f34331390b3c0a2dab3287bd4460e52d"
+    },
+    {
+      "path": "scripts/render_urban_v1_full_08_streetscapes.py",
+      "present": true,
+      "sha256": "f69032e100c6efa1358f80aec5ce93b2e67ba97d6ecda4feb3b6ba8a018e073b"
+    },
+    {
+      "path": "scripts/run_urban_v1_full_12_pack_job.sh",
+      "present": true,
+      "sha256": "8becace323d44865516c40d045d4586a8fb427ad2ef52b7d6495d9e32e6edecc"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all43_25.py",
+      "present": true,
+      "sha256": "bec570656ddebfaf209ed96755dd0068f885332d8cbc5d55d2328e1535420a1f"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all28.py",
+      "present": true,
+      "sha256": "99bd8416d10261b6cae6121ee57745b88ab95477f3b58ec777d65c7635b5aac7"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all43_09.py",
+      "present": true,
+      "sha256": "afdef5b707b90420acdcc3bc414d677b47c0a69351413901c1e65713a59acc5d"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all43_11_object3.py",
+      "present": true,
+      "sha256": "0c73c78d3afb0e0ee7e815f8da03f7a4975c96b2da69ccd92f52532e664815b7"
+    },
+    {
+      "path": "scripts/robot1_sample_parallel.py",
+      "present": true,
+      "sha256": "c19e18ad7a3564a99c5a31c0e58f01c45558ae83d7fd7cf04d71f2d1d01bc218"
+    },
+    {
+      "path": "scripts/build_urban_v1_full_13_dynamic3.py",
+      "present": true,
+      "sha256": "73995db1661c9fcbc227f5b133fdd205064e2f9561cb9cdc92d8ac2fa5d67677"
+    },
+    {
+      "path": "scripts/generate_urban_v3_bench_trashbin2.py",
+      "present": true,
+      "sha256": "665945bd99aa42c34476f4d4f8f76ae08ec2751f84fbca834702e7da4c1134ba"
+    },
+    {
+      "path": "scripts/refine_connect2_books.py",
+      "present": true,
+      "sha256": "fdd003549f964ff71594e0434f8683e024f0cb10db70403cc9fc8340998e0785"
+    },
+    {
+      "path": "scripts/build_urban_v3_all16_native_all8_trees.py",
+      "present": true,
+      "sha256": "3996f2d45086b3742f26eadcb9c2f97c1e0a0fb5b6e36766b7e2be5c7d1b1bf3"
+    },
+    {
+      "path": "scripts/stamp_urban_v1_full_13_artifacts.py",
+      "present": true,
+      "sha256": "19014deb1769508a97e5542e68775652cadf22b2f0309f596f29efa10dbacdd3"
+    },
+    {
+      "path": "scripts/render_urban_v3_all43_24_showcase.py",
+      "present": true,
+      "sha256": "b740f4f75a030c16832ad103572a32ae1e574145f3b89b99c2b309747330bdfc"
+    },
+    {
+      "path": "scripts/probe_urban_v1_full_13_true_asset_bounds.py",
+      "present": true,
+      "sha256": "d49b5c20d32535552f9259ef6a48579298c8d7836b5c65a334132f34086afe02"
+    },
+    {
+      "path": "scripts/diagnose_dynamic2_process_limits.py",
+      "present": true,
+      "sha256": "7f2b85bcc0b4b1cdeb75e07426edcdbbf4287755ff6b3aa8fcb9403752e6297c"
+    },
+    {
+      "path": "scripts/robot1_sample_watch.py",
+      "present": true,
+      "sha256": "0911501a922aa53013f1dff8d232e0372885f76f42176529bf24ff8f75ec6497"
+    },
+    {
+      "path": "scripts/render_urban_v1_full_10.py",
+      "present": true,
+      "sha256": "a84eca08265f2e997848a2224c16cd1ba04d6f25f174509bce345e0ac786f2dd"
+    },
+    {
+      "path": "scripts/render_urban_v1_full_08_isolated.py",
+      "present": true,
+      "sha256": "c7b1bf74b312e76aa7857a0d94cfe66b05f6596df8446bb261fab39b5885de81"
+    },
+    {
+      "path": "scripts/robot1_tasks.py",
+      "present": true,
+      "sha256": "4298d7a18294b6f32cd4d07706cdf350b1020148dd1f37893c3cfee35bc354ac"
+    },
+    {
+      "path": "scripts/build_urban_v1_full_12_exact_packs.py",
+      "present": true,
+      "sha256": "c149a796ff56eb663d96fd55fffb9346e23417954a52d2b0a47b73d14b73634d"
+    },
+    {
+      "path": "scripts/run_urban_v3_all46_4.sh",
+      "present": true,
+      "sha256": "109bc6f08f2abb0165fb86ea19853baf7875f9c55beddc2d788dc616539744d3"
+    },
+    {
+      "path": "scripts/run_generate_indoors_all40.py",
+      "present": true,
+      "sha256": "cec6155b927971791eaee3f3933efc4a84be3e890a03008c11757980b90eab78"
+    },
+    {
+      "path": "scripts/render_urban_v1_full_07_agent4.py",
+      "present": true,
+      "sha256": "786345d254a4f064a1dc5908c9655547a71f15c2657b88ff039c0edeaf24f4bf"
+    },
+    {
+      "path": "scripts/generate_urban_v3_atm.py",
+      "present": true,
+      "sha256": "c2cee70124abb87f0091dcb55e5c28be925504e474c2cdc09066f2f6b1f1af64"
+    },
+    {
+      "path": "scripts/audit_connect4_scene.py",
+      "present": true,
+      "sha256": "41f7ba2b6fef8db677e3b749f103542dc420a046711ee4fa82ebf27b9394000b"
+    },
+    {
+      "path": "scripts/audit_connect3_scene.py",
+      "present": true,
+      "sha256": "61a0a2418fc89af069c8e90b59a839403909fc1799647439c1bcf9c0726f9cc6"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all39_fast3.py",
+      "present": true,
+      "sha256": "5cfa0af0a06790f47fe2bbddf6771bc727f02130c375827c236a8d49511ddb6d"
+    },
+    {
+      "path": "scripts/inspect_connect4_details.py",
+      "present": true,
+      "sha256": "2af6e791a3fec72b3895a76eaf1aadb2a9046699217cd68c32e9ddf6a8d1b9f5"
+    },
+    {
+      "path": "scripts/wait_and_render_villa_dynamic_all_gpus.sh",
+      "present": true,
+      "sha256": "f386ffea366bc827d0cd186abae304200ebf5e9d29224824012b7a677b6dcab9"
+    },
+    {
+      "path": "scripts/cache_urban_v1_full_13_direct_preflight.py",
+      "present": true,
+      "sha256": "69dc5d9ba679faf4876c4a95773d8381aaa05e59a3132ce5c649622e12553d0b"
+    },
+    {
+      "path": "scripts/finalize_urban_v1_full_13_dynamic3.py",
+      "present": true,
+      "sha256": "480a48cb925c32d7b0af1501882f4dc2285d93db77c258f503a262b13b0e9a66"
+    },
+    {
+      "path": "scripts/render_urban_v1_full_connect2.py",
+      "present": true,
+      "sha256": "d4a8253c9d4f3fb89e3ae170073a09aa7e63add2ce2e9be1017b19c5762a92cb"
+    },
+    {
+      "path": "scripts/commercial_interior_generator_06.py",
+      "present": true,
+      "sha256": "4232f296899f9d0036b282b260c62ff0af569558c8de1834b3a96aada2b16b27"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all3.py",
+      "present": true,
+      "sha256": "fb83ad98810465c37f7bea043df842a036d56e0f909239bf4a05190060231318"
+    },
+    {
+      "path": "scripts/inspect_connect3_assets.py",
+      "present": true,
+      "sha256": "775d6f55024b650694978664ea3a5181e42038308747744bf88c5f150e62c08b"
+    },
+    {
+      "path": "scripts/build_urban_v1_full_14_direct_validation_packs.py",
+      "present": true,
+      "sha256": "332845f23abf94d4578390139233d0d8fbb4ef7269c2a052633d45963d5c669e"
+    },
+    {
+      "path": "scripts/generate_urban_v1_full_astra.py",
+      "present": true,
+      "sha256": "8d62f189c5c9187d0f667765e7346ddf9877a7c0b5bd4d0ad14ba9e32161b4c0"
+    },
+    {
+      "path": "scripts/build_community_reading_park2.py",
+      "present": true,
+      "sha256": "62b5d8c7d833f18aa56ef3723450fbdee9a6fbc5a68f01197830ea8f23f5baff"
+    },
+    {
+      "path": "scripts/render_urban_v1_full_14_daytime.py",
+      "present": true,
+      "sha256": "7ac22928c56ee3ed5696a0d22e2c108076653eb05c667f1a45490ce193c64038"
+    },
+    {
+      "path": "scripts/robot1_finish.py",
+      "present": true,
+      "sha256": "4334792437a2bbe71d659108cd9919014511c011d919c228160d9d40101db8ad"
+    },
+    {
+      "path": "scripts/refresh_connect4_building.py",
+      "present": true,
+      "sha256": "ba91b1906c6da4673e4529bd9565f41302e0c8318383eae10c811a7053b65187"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all24_park.py",
+      "present": true,
+      "sha256": "13ed8284a32df7d9999defd918ea83e9d507e357b123da7fd70c5f11c77c4665"
+    },
+    {
+      "path": "scripts/build_urban_v3_all30_from_all29.py",
+      "present": true,
+      "sha256": "27f5373865aeba6313beac8e82bf03473358513e89472591a43f5bf53629d95c"
+    },
+    {
+      "path": "scripts/render_urban_v1_full_12_zdepth_layer.py",
+      "present": true,
+      "sha256": "56d10c875f19fe4a8e686c0fee2ffdb4cbcbe64faad6e56f4826c4f4a32cce42"
+    },
+    {
+      "path": "scripts/create_urban_v1_full_07_agent3_demo.py",
+      "present": true,
+      "sha256": "499ff444508ec1448d8d46bc482ada9d2c1bae9b1f4442585c998f9769977150"
+    },
+    {
+      "path": "scripts/commercial_cleanup_generator_13.py",
+      "present": true,
+      "sha256": "3e96aa7dc75f002b3021a84fe28359d564546770cea44cd1066e016f138a301f"
+    },
+    {
+      "path": "scripts/fix_interior_all36.py",
+      "present": true,
+      "sha256": "25437da39e4a37374cb2c1566f405c87d24dc43a088e216ca439b16aa4edd8b6"
+    },
+    {
+      "path": "scripts/generate_urban_v3_kiosk6.py",
+      "present": true,
+      "sha256": "a8096ec003c5b39a011685e66b9a867d193d3dd97b8686b5146144e94143fe22"
+    },
+    {
+      "path": "scripts/run_urban_v3_all46_1.sh",
+      "present": true,
+      "sha256": "21e17076b1775b8d094a98f2aeec8df3ca95d9ac63234700d026a3ac66d5bc3b"
+    },
+    {
+      "path": "scripts/run_urban_v1_full_12_zdepth_matrix.sh",
+      "present": true,
+      "sha256": "445f1e2e8c945c2a1df317ac2b6f267ef5b94eafca8df06a236e1c7d25fde856"
+    },
+    {
+      "path": "scripts/upgrade_connect2_clinical_equipment.py",
+      "present": true,
+      "sha256": "d1c3b90076549bcb9cd7bf63a386569da1a41449bac8ef74b5511aebf2a95185"
+    },
+    {
+      "path": "scripts/fix_connect3_water_ground.py",
+      "present": true,
+      "sha256": "371f3e872f02f6cf4134db99889e3757b2b28b2321e5edbcf02b83249f940813"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all13.py",
+      "present": true,
+      "sha256": "075eeb53598453112b109ea81fe3b868980bbbec8d4fa7723e7a78cd5bc66011"
+    },
+    {
+      "path": "scripts/commercial_asset_refinement_generator_10.py",
+      "present": true,
+      "sha256": "eaf4e5e070aa0609fa9d54015252d16850f1793fe57e6b6d55fd07dd7760b436"
+    },
+    {
+      "path": "scripts/inspect_urban_v3_all14_bboxes.py",
+      "present": true,
+      "sha256": "00ab922e884bf95ff7d48e2e571cebd5027bb1e9fb83ea8abd569f488aad540d"
+    },
+    {
+      "path": "scripts/finalize_urban_v1_full_05.py",
+      "present": true,
+      "sha256": "85c9bdcb08f018c827043883760b3325ae53ee6486c448213124406420ea3671"
+    },
+    {
+      "path": "scripts/build_urban_v1_full_connect3.py",
+      "present": true,
+      "sha256": "7c66b8a2bf439ee4e2f6d94080529c0498152da5533aed34c1f376952d5f8978"
+    },
+    {
+      "path": "scripts/prepare_connect3_native.py",
+      "present": true,
+      "sha256": "3e888718ead6bb30cec538cdaaa49695d1908f307ccce15919fce5d2e8991eca"
+    },
+    {
+      "path": "scripts/build_urban_v1_full_12_render_packs.py",
+      "present": true,
+      "sha256": "a5ae892f6d669d6883ad7f1171656cd20878c243684795fcea9ebb6141e78458"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all39_fast2.py",
+      "present": true,
+      "sha256": "3e657c118c06cd0417536c2ebf2420b9e9a74eb41c1eca47a75f2ceb3f824f7f"
+    },
+    {
+      "path": "scripts/inspect_urban_v3_all8_objects.py",
+      "present": true,
+      "sha256": "8fc357df540ccd590ac977664ce49ef0407e1be59fd51fcaa1cbdf7ea4310829"
+    },
+    {
+      "path": "scripts/collect_tmux_root_logs.sh",
+      "present": true,
+      "sha256": "a9779a3a3e66a89258a5be5d04fdc198009548f2c66f1c923410081987e1f114"
+    },
+    {
+      "path": "scripts/render_pharmacy2_connections.py",
+      "present": true,
+      "sha256": "1fe0fb8072f5494b2216924ecac0e9d46673c8287948757bfa36468a1e83bd7b"
+    },
+    {
+      "path": "scripts/pharmacy2_asset_factory.py",
+      "present": true,
+      "sha256": "5ff5081926a6d944c396b4ec470f4887118fa872ff395f7ccfd84b569be1233e"
+    },
+    {
+      "path": "scripts/render_urban_v3_school5_first_person.py",
+      "present": true,
+      "sha256": "3860b477c85c86cb579d4350c31147967bd315639112891cf88a45c5a075f488"
+    },
+    {
+      "path": "scripts/run_urban_v1_full_13_dynamic3.py",
+      "present": true,
+      "sha256": "5453b7c59dcb7342c6d52dfe2ced087e45b701ce52b62dfa62d3de9e2034051f"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all44_03.py",
+      "present": true,
+      "sha256": "a933caf1ec4cd4ce8460b1eb48bc4fef96bb0cd54832ca86fa9100f51c83c0a0"
+    },
+    {
+      "path": "scripts/commercial_reference_bars_generator_25.py",
+      "present": true,
+      "sha256": "80039742dfe18b64cb6bd9aeffc79c82dacc80f8afffd08d3a8fd2b2826cebbd"
+    },
+    {
+      "path": "scripts/generate_urban_v1_full_13.py",
+      "present": true,
+      "sha256": "dfc9e52733acc121e39d3325123a1d1b40ba6e96bfd3e76877f22097fcd86681"
+    },
+    {
+      "path": "scripts/validate_community_reading_park2.py",
+      "present": true,
+      "sha256": "c22f0f8189577bc26bece37e5bac22c64759982a595abc21bf8f138fe0a64836"
+    },
+    {
+      "path": "scripts/run_urban_v3_lake.sh",
+      "present": true,
+      "sha256": "0a4aa0bac9b65460562f3517fce732a18597f889fcebe5528600f6ff5a9cfdf0"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all43_07.py",
+      "present": true,
+      "sha256": "182c320b2ab1d6633581f3bcb4163e811ebc54e59108a742bcce75a3aff2769e"
+    },
+    {
+      "path": "scripts/commercial_storefront_restore_generator_14.py",
+      "present": true,
+      "sha256": "8ada8014a7b3494379c49915b8110fad92d089b6d0df575d16091a6f71502fcf"
+    },
+    {
+      "path": "scripts/prepare_connect3_river.py",
+      "present": true,
+      "sha256": "3e2aa19a7c6bb0b37cd26d3a592733182d66c52074b8a6f69976897aaf744c97"
+    },
+    {
+      "path": "scripts/audit_urban_v1_full_14.py",
+      "present": true,
+      "sha256": "0ae481b85255ea1f6d6adc39792f94ae5ddd78cca009bf1523dfd66e431f4c55"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all43_11_object2.py",
+      "present": true,
+      "sha256": "4106ab36e890ecdebd57937a09706b32e231fee0bb30eaea376a17b7f5795796"
+    },
+    {
+      "path": "scripts/prepare_connect4_service_assets.py",
+      "present": true,
+      "sha256": "bba26e2c4f7a46cfc5c6cdb42c5be880fdb769c23d14bb354d2fecb66cd70167"
+    },
+    {
+      "path": "scripts/run_urban_v1_full_connect_scene.sh",
+      "present": true,
+      "sha256": "5f4e4735ccac986593cac10b4909602a4d268bc8c28b332ad780f5bf431036e3"
+    },
+    {
+      "path": "scripts/finalize_connect4.py",
+      "present": true,
+      "sha256": "89145001d92d7056dc0d298728ab46e0823b18eb1bc426b93a5b0073aa640d38"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all44_08_grass.py",
+      "present": true,
+      "sha256": "083cb5b3fd45ae57f9826fae6e4153855b169c5b247091e2f49edaf44f11a32b"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all43_24.py",
+      "present": true,
+      "sha256": "f063c36fcb7d59ae416b1a60465aa429b27b2f787e10350f181dacfb0c25ccda"
+    },
+    {
+      "path": "scripts/robot1_asset.py",
+      "present": true,
+      "sha256": "e9d78b2a5e580813f931dc3461ef15321c1384dac2d289cbd0364f1a7a746aa5"
+    },
+    {
+      "path": "scripts/refine_connect4_site.py",
+      "present": true,
+      "sha256": "336bce2bc7c9fbc1dc67d9ac83e8e0a955245e64dbc2014a0dcc9312b6abaee9"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all43_22.py",
+      "present": true,
+      "sha256": "5cb39709daa8b947d416671266dec19d149344c1c8ffaae2bb523d0b8d83678d"
+    },
+    {
+      "path": "scripts/run_urban_v1_full_12_eevee_layer_chunks.sh",
+      "present": true,
+      "sha256": "2a649ebee05e99e5ea2f1ac83ab2d1152fc6337298fd469e63aa6eb6ebcbdda4"
+    },
+    {
+      "path": "scripts/fix_connect3_delivery_facing.py",
+      "present": true,
+      "sha256": "07c30523705e8b490455ca5139d966f539cde18ef3f8d1c56f495ab221b7367e"
+    },
+    {
+      "path": "scripts/fix_full_01_street_cameras.py",
+      "present": true,
+      "sha256": "8b0b03e609fd5997fcb0161f90286f3f215f28758510625498b503a65233686c"
+    },
+    {
+      "path": "scripts/upgrade_urban_v1_full_07_river2.py",
+      "present": true,
+      "sha256": "7b3febeafb8fae79e92e560ae6984ac58f1aad373f6efbe6fbc11efd5dec9463"
+    },
+    {
+      "path": "scripts/generate_urban_v1_full_01.py",
+      "present": true,
+      "sha256": "31e7539946ae9c4d78ab2ebe005f918073e519edc2a0d49093cb0e826d4d86c1"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all43_10.py",
+      "present": true,
+      "sha256": "a90f08e17e71a0dbedba0e0c7e960d496a46b831b401423e3fd7933f462f6bf0"
+    },
+    {
+      "path": "scripts/inspect_urban_v1_full_07_agent_route.py",
+      "present": true,
+      "sha256": "9f99c4488b90e2d432a7e6b7cf43395d6803b01b24c337397ca7e606ec223825"
+    },
+    {
+      "path": "scripts/repair_connect3_townhouse.py",
+      "present": true,
+      "sha256": "3f9ebfe4125fa5e648e7d1d4ec434ebe8d997ad6f7dbad1a38d02f2032c21423"
+    },
+    {
+      "path": "scripts/commercial_physical_interior_generator_11_object.py",
+      "present": true,
+      "sha256": "97f80287969df93451f340ab27ca430e6d8f36830cb4d2906aacad77a416f8ae"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all43_03.py",
+      "present": true,
+      "sha256": "66a5d7b2553caea5366d74d25dd6eeed6834c2c3bbfaa87012f1dd46c1d41d2f"
+    },
+    {
+      "path": "scripts/run_urban_v1_full_14_layer_worker.sh",
+      "present": true,
+      "sha256": "ecd978551b1f75d18686f55b43ecd7df751ab97cf6379fb63099c4be0b72fea8"
+    },
+    {
+      "path": "scripts/generate_urban_v1_full_03.py",
+      "present": true,
+      "sha256": "73963eae5307daea7254b1056d2026fd5d4d92fa576c5e85c8f47cbd4ba671d6"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all36.py",
+      "present": true,
+      "sha256": "344e022c3045feac21d62e61e20f0673371122020292f2c0850589ba07db1fb0"
+    },
+    {
+      "path": "scripts/finalize_urban_v1_full_04.py",
+      "present": true,
+      "sha256": "3d23ae45fe9c2fa9563ad1f2f6d5997401ff8cf4bd220c0861fc3cca99370038"
+    },
+    {
+      "path": "scripts/audit_urban_v1_full_05.py",
+      "present": true,
+      "sha256": "9c75412271c76d325e3124a2e58371f0fed73499ee2d292534964afdb45b96ef"
+    },
+    {
+      "path": "scripts/render_urban_v3_school5_showcase.py",
+      "present": true,
+      "sha256": "8175a378e63447eede295b9dee36aa5fbbea052ce9105871969e1de334c64d56"
+    },
+    {
+      "path": "scripts/run_connect3_builds.py",
+      "present": true,
+      "sha256": "f663c84298c0a68c81855706bdc1c5a2eafbd8830311782354fbcb00ee399235"
+    },
+    {
+      "path": "scripts/run_connect4.py",
+      "present": true,
+      "sha256": "25cc215daf3318e565b07853f247ed3f4cc9e49abee64a1ff78c6c7408e696dc"
+    },
+    {
+      "path": "scripts/commercial_complete_interior_generator_11_object2.py",
+      "present": true,
+      "sha256": "86f87ff152b641130cb0bde7d6f2f4467812a87fbe2f4a920ea88dd3f986ca96"
+    },
+    {
+      "path": "scripts/prepare_connect3_special.py",
+      "present": true,
+      "sha256": "96ffc0242ea1498ccd5863e2a3b9b9484b000bd69d415b7fc16f5e1ad323afff"
+    },
+    {
+      "path": "scripts/run_connect2_render_scene.sh",
+      "present": true,
+      "sha256": "842f5e5f8217bd7ec3b13c23556e5f33da455206fef613bc3e47182da3d67d9b"
+    },
+    {
+      "path": "scripts/robot1_integrity_watch.py",
+      "present": true,
+      "sha256": "f00a075e8aab250d0aca7634435c97d2aedff175a97973b97fa1abe7ccfc6e6a"
+    },
+    {
+      "path": "scripts/test_tree_standalone.py",
+      "present": true,
+      "sha256": "d375cdbea3ad1d00974336eee13fbd6de2142d585856a05d0c49dc65312c56ed"
+    },
+    {
+      "path": "scripts/run_urban_v3_fire.sh",
+      "present": true,
+      "sha256": "aa36f54786cade757b5b47c5802f324fe4320ca742f983fadb64831ba5dee253"
+    },
+    {
+      "path": "scripts/render_urban_v1_full_13_dynamic3.py",
+      "present": true,
+      "sha256": "90667d0e18f50d3127618e61c49c8c4e70762b2c7744f51b47e672bd3adf0ac9"
+    },
+    {
+      "path": "scripts/audit_urban_v1_full_08.py",
+      "present": true,
+      "sha256": "75845f1a939ba6cb4e09193a3b267345d344318e28a74d7fcab6058ecbf77b81"
+    },
+    {
+      "path": "scripts/finish_connect2_public_rooms.py",
+      "present": true,
+      "sha256": "82060bde86e370daf445e18308b697ecb2ce0aba63fb8301e330841bf76f00a3"
+    },
+    {
+      "path": "scripts/render_pharmacy2.py",
+      "present": true,
+      "sha256": "170fe897966befe713aeb070bceea337804b3862fe254cb4aad94845a72b27bb"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all41.py",
+      "present": true,
+      "sha256": "2a488329936b0187b27ec5dd6b11ace3a95499734a214ece5e577eba85b79db1"
+    },
+    {
+      "path": "scripts/prepare_connect3_water.py",
+      "present": true,
+      "sha256": "ef3a3cf826f0d6b921525d82e66bbb37fed8214643be5a23d3610bf92b8d854b"
+    },
+    {
+      "path": "scripts/connect3_plan.py",
+      "present": true,
+      "sha256": "84c12113444bcc4320466bf1518dc66c5c3334a988f22593813381c148eeab80"
+    },
+    {
+      "path": "scripts/preview_urban_v1_full_12_exr.py",
+      "present": true,
+      "sha256": "f55e53fb105cfedd25987a456a46fced7f9dadf4e806ba0b7fba3ef4f8d4c718"
+    },
+    {
+      "path": "scripts/publish_corner_kitchen2_gallery.py",
+      "present": true,
+      "sha256": "994edc90f716e39e2ae0ddf18f8665c35ab07b09a04550ae6906d6f62fc65bb2"
+    },
+    {
+      "path": "scripts/render_urban_v1_full_connect3.py",
+      "present": true,
+      "sha256": "cd1bd4df1904e14d98d7cc5bcfd0810e96daba9cfaaedabbf2f840b3888af5b5"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all9.py",
+      "present": true,
+      "sha256": "c62cfdfee70b40b034d8f78821111e6c982c35288cac663a34d346dd1aeb0896"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all43_11_object.py",
+      "present": true,
+      "sha256": "e2ff4a275e8ea07a7e94af70f02db9080aed753d2f138347e9a82b98a14cd297"
+    },
+    {
+      "path": "scripts/monitor_urban_v1_full_14_resources.sh",
+      "present": true,
+      "sha256": "4168f81d83410e9c2dcd5b0e53a2633077f69a1cb530bb896125d65443c5ce63"
+    },
+    {
+      "path": "scripts/connect4_plan.py",
+      "present": true,
+      "sha256": "121d1f36cf8d34ee87f5a626fa1442455a2d38c50c8c0eb08de8cc2309708e2f"
+    },
+    {
+      "path": "scripts/process_urban_v1_full_14_exr.py",
+      "present": true,
+      "sha256": "8e9764585e6bd442efd3962a078459ebc7d6c128aee205f066f476d3536b689a"
+    },
+    {
+      "path": "scripts/fix_connect3_river_ground.py",
+      "present": true,
+      "sha256": "49f7e8e4579ad245faab1f29819095ed822fa2a1b01d158f004b10af85e4a0b2"
+    },
+    {
+      "path": "scripts/render_urban_v3_fountain_showcase.py",
+      "present": true,
+      "sha256": "cc124cbf6d0e11f461d976b2800f49e71a0ec116f3c2061610e612eabade1717"
+    },
+    {
+      "path": "scripts/worldbridge_production_assets.py",
+      "present": true,
+      "sha256": "07c86af72f8d9a5f8bed747690299d382025310b0ca6de46a1e883c86206252f"
+    },
+    {
+      "path": "scripts/build_urban_v1_full_13_render_packs.py",
+      "present": true,
+      "sha256": "062fa1c1c6c7532617fb5816032fab77790a57c7a516e305b18841be46136c06"
+    },
+    {
+      "path": "scripts/cache_urban_v1_full_14_direct_preflight.py",
+      "present": true,
+      "sha256": "d013148d1f771e98c9e0878161a282a70c446e68bfeecc8dd6a1442d9b1c7909"
+    },
+    {
+      "path": "scripts/generate_urban_v1_full_07.py",
+      "present": true,
+      "sha256": "d9576e509be75074c3cfa8ca9ea3478d87915b9453b20e86c780b375f0ded2ee"
+    },
+    {
+      "path": "scripts/generate_urban_v3_busstop.py",
+      "present": true,
+      "sha256": "24c06ced0bdacc7c7cc11e0f3d8e5761207548981ac0900ba352f94c8516b0dc"
+    },
+    {
+      "path": "scripts/render_dynamic_cycles_allgpus.py",
+      "present": true,
+      "sha256": "da8514c798e94b99fb0b5a2439feff1991eb847c3c48539151ca69b0cf8bfb4a"
+    },
+    {
+      "path": "scripts/commercial_freshmart_generator_11_res.py",
+      "present": true,
+      "sha256": "3e2c7101cc593d285e4ef8411383e0e73e17909ed21f479d41ffdc5de50128f8"
+    },
+    {
+      "path": "scripts/finalize_connect3_delivery.py",
+      "present": true,
+      "sha256": "8446f3d59e5611e457a44677ba7e9a87cccfc9600fc13d4dd5207c8c2611f5f0"
+    },
+    {
+      "path": "scripts/generate_urban_v3_trafficlight2.py",
+      "present": true,
+      "sha256": "76182ca361f14a4220f29c358ba38cb4795979a7422fced358de831cc42191df"
+    },
+    {
+      "path": "scripts/generate_urban_v3_kiosk2.py",
+      "present": true,
+      "sha256": "0ec29cc1dd08cd7029b5d1256f071d594a2b15aa94c7fb94617a27bcfb7bf85c"
+    },
+    {
+      "path": "scripts/generate_urban_v3_kiosk.py",
+      "present": true,
+      "sha256": "b63b81918ddd17b744f68d070c58d66952732a833022927b6ea68e4d790968fa"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all19_park.py",
+      "present": true,
+      "sha256": "711d17543bfe70b437cf80938302af0d29acfbaa3713119fca807611b2a29109"
+    },
+    {
+      "path": "scripts/generate_urban_v2_full_06.py",
+      "present": true,
+      "sha256": "84877787d1b10f673c8e9f5003cfcfbd360ca1fb41e30467d15fa613aebb2404"
+    },
+    {
+      "path": "scripts/commercial_quality_generator_05.py",
+      "present": true,
+      "sha256": "0f764cc7bae9639afc57ca8eae8c1d031ea7df09bcafe94e477cfa01f485a392"
+    },
+    {
+      "path": "scripts/inspect_blend_asset.py",
+      "present": true,
+      "sha256": "0fdd61fd5dc4d911d4a3ac6e862417d3e815818e818f7090107f2d30a7ad11f9"
+    },
+    {
+      "path": "scripts/monitor_urban_v1_full_13_resources.sh",
+      "present": true,
+      "sha256": "739daa68cb4fa901bab5a49e205982e205f619ff53c30706c5cd9240ced9ef2a"
+    },
+    {
+      "path": "scripts/build_urban_v1_full_13_direct_validation_packs.py",
+      "present": true,
+      "sha256": "a1cb03ec7c10f18b0f6dc2bbb77225e732ba1da7a58d12b83e23c16298fda848"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all30.py",
+      "present": true,
+      "sha256": "cff7ffb7321633a7d65cd7edbd7443517d65a59f9c1ca090234669053e3088da"
+    },
+    {
+      "path": "scripts/check_connect2_portability.py",
+      "present": true,
+      "sha256": "40e5aa1147fa242c183c265d1d57e2ab125713abd916b33c2fc6ab7029ed0c3e"
+    },
+    {
+      "path": "scripts/render_urban_v3_all43_25_showcase.py",
+      "present": true,
+      "sha256": "527488a567d049feebed4c2934c483654f3ca6ee0d1d5e288ec53d374ee90096"
+    },
+    {
+      "path": "scripts/commercial_daylight_goods_generator_11_light.py",
+      "present": true,
+      "sha256": "a46acb27ed0bb2801b9685f9e181db675e3ee4f385957427566913cc4a7d1ced"
+    },
+    {
+      "path": "scripts/generate_urban_v1_full_05.py",
+      "present": true,
+      "sha256": "0ae2c017c5829975b0fbc18b8439e4a53720d47ca7f0850be5ba6d8955e53138"
+    },
+    {
+      "path": "scripts/run_urban_v1_full_07_agent4_render.sh",
+      "present": true,
+      "sha256": "54f266d840cf5f7048deda1318f3bde0caedf8ecbd917888b4d15d95c7244a56"
+    },
+    {
+      "path": "scripts/resume_urban_v1_full_13_dynamic2.py",
+      "present": true,
+      "sha256": "ff0202a0ce8dee6f4d06c238a2b614d6e1235a84715faaf7c0dc37b4399687e7"
+    },
+    {
+      "path": "scripts/run_urban_v3_hospital.sh",
+      "present": true,
+      "sha256": "45cd5e6bcad7ca955e3ce95eb8e03cbff81140d1903d394ec5ea4e086327c845"
+    },
+    {
+      "path": "scripts/run_urban_v1_full_12_instance_preflight.sh",
+      "present": true,
+      "sha256": "99e5e9b0abe4adb344a7d31ecd6aec975d2ceec6a46ca298ff5e739c8b2b0ad9"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all.py",
+      "present": true,
+      "sha256": "db8b04df5187c52d998addc1fa016dbd57e9d819ab00caa6ff23b60b393bc6e2"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all33.py",
+      "present": true,
+      "sha256": "f920d8dfee6b50adcec0ca6db6d45a3de84a1aace63cfd1de9eed384e733db55"
+    },
+    {
+      "path": "scripts/robot1_manifest.py",
+      "present": true,
+      "sha256": "d9d6bc89bf15c7742e2b1ff30bbaee1935ece2df7466a6a88c9e6c28b9c98e0b"
+    },
+    {
+      "path": "scripts/run_urban_v3_all46_3.sh",
+      "present": true,
+      "sha256": "109bc6f08f2abb0165fb86ea19853baf7875f9c55beddc2d788dc616539744d3"
+    },
+    {
+      "path": "scripts/build_urban_v1_full_13_procedural_pack.py",
+      "present": true,
+      "sha256": "3c1d21be3866c3d2491b4d08929d2a7b77bef8a414cd62884632d42d6aa42ebc"
+    },
+    {
+      "path": "scripts/verify_corner_kitchen2.py",
+      "present": true,
+      "sha256": "15e50b036923cd991afbe39e12b590763d79b0a4bdd7340c8c1c1673064c6a22"
+    },
+    {
+      "path": "scripts/audit_urban_v1_full_13_road_furniture.py",
+      "present": true,
+      "sha256": "8a15fa924b350e1eae889b863f8ab2f1871e9d467351275468480b167dddad3a"
+    },
+    {
+      "path": "scripts/diagnose_llm.py",
+      "present": true,
+      "sha256": "d202cdb8fea9b546dfb02aedb6adc21981779d7b562857a7aa71693148212dad"
+    },
+    {
+      "path": "scripts/repair_urban_v1_full_12_render_pack_transforms.py",
+      "present": true,
+      "sha256": "4f381927181e5c30e92eb973ae301589133990db200d6f6b0b7906c18158eeb3"
+    },
+    {
+      "path": "scripts/run_urban_v1_full_13_dynamic2.sh",
+      "present": true,
+      "sha256": "d4bff6bf808960c6e8749585348b10f88d38e46260b8c39115e30f1bdff32f99"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all44_12.py",
+      "present": true,
+      "sha256": "a342201704feb025746e30e82d7a57843dc5551d8e210ef3cb65db042c159199"
+    },
+    {
+      "path": "scripts/generate_urban_v3_sculpture.py",
+      "present": true,
+      "sha256": "1e8bfde35466660e5e736edda57f2742ef91fdc3597f251023f3112873afed32"
+    },
+    {
+      "path": "scripts/build_urban_v1_full_14_render_packs.py",
+      "present": true,
+      "sha256": "ede9c65f5b50f019759c90163cbeac93e386643eb6a63436ecbee0c4ea657f21"
+    },
+    {
+      "path": "scripts/render_dynamic_multigpu.sh",
+      "present": true,
+      "sha256": "a42f805c51d821d02cccc167b3a87ca7071573509108c44f5d2ae50f6cb634c8"
+    },
+    {
+      "path": "scripts/urban_asset_registry.py",
+      "present": true,
+      "sha256": "f0077e8a1a905c2cd861f9e908640eeaccf65536deccc83d46026f168caf25b1"
+    },
+    {
+      "path": "scripts/extract_urban_v3_all45_02_tree_lods.py",
+      "present": true,
+      "sha256": "356e7d9592393b0a9524925d2da1cdf052bd62b16056a64b63a19a8510d4d8f1"
+    },
+    {
+      "path": "scripts/generate_urban_v1_full_10.py",
+      "present": true,
+      "sha256": "c1c28a5ca2422b8251a6f07731024503891aeb12ff12092a0ca82ff0e85df422"
+    },
+    {
+      "path": "scripts/run_urban_v1_full_14_pipeline.sh",
+      "present": true,
+      "sha256": "42c503dc57da843c6133c726265ebd3199209e10d101226fe3e8df06adfd3c2f"
+    },
+    {
+      "path": "scripts/generate_bev_all6.py",
+      "present": true,
+      "sha256": "e88dcca253865ad69609f12ae8eacb06745f3fa1621cf81edd2102e490803a12"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all44_06.py",
+      "present": true,
+      "sha256": "dba51570ef8a9df65186471be72c4fee12cde3643e9da27a237637477962203f"
+    },
+    {
+      "path": "scripts/robot1_parallel_tail.py",
+      "present": true,
+      "sha256": "cfffabe78d7559328aa3046b960132e9e4af3a5b38825a5f5466b3865afa89a1"
+    },
+    {
+      "path": "scripts/verify_urban_v1_full_connect_delivery.py",
+      "present": true,
+      "sha256": "ce63e6050e13c55d64757fa2d73f16696b85b074cc960bb889080933ca0e2a53"
+    },
+    {
+      "path": "scripts/run_community_reading_park2.py",
+      "present": true,
+      "sha256": "0f54f30a019ef219d6e09bdb57d5761bfec240324cb7d43f13afceaaeba5e90f"
+    },
+    {
+      "path": "scripts/inspect_urban_v3_all8_tree_details.py",
+      "present": true,
+      "sha256": "70465b92d14939ce379d1bd705df2123f8f35969e2c8c013323d4ba39cbb939f"
+    },
+    {
+      "path": "scripts/build_urban_v1_full_14_semantic_pack.py",
+      "present": true,
+      "sha256": "efde63105b7a49114b0ae0efb6b9b181805d757609a0826bf1f658c95a1deacb"
+    },
+    {
+      "path": "scripts/summarize_urban_v1_full_13_resources.py",
+      "present": true,
+      "sha256": "dd8d45444ecf36de53f6be945b2f66979c7af405be38d7c3b48f03bb104cca4f"
+    },
+    {
+      "path": "scripts/postprocess_connect4.py",
+      "present": true,
+      "sha256": "9a6bcfe65e4b16db35530fe24e6f47f0b9a9a65e32ef6f8dcea3fbcb230f7071"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all43_19.py",
+      "present": true,
+      "sha256": "87087d5473d5bcdd91074468df4fc1920c03b0e79b95af63034d3e9c36786766"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all45.py",
+      "present": true,
+      "sha256": "a8cd3c695e9992f54135500d48891257accc9298c7f8b1ff5c2108654ac83c65"
+    },
+    {
+      "path": "scripts/upgrade_urban_v1_full_07_river5.py",
+      "present": true,
+      "sha256": "09048fbebee9295efbac2e81424eb36b41d0596d67b54fa22ef4375c62ce2b27"
+    },
+    {
+      "path": "scripts/run_urban_v3_pharmacy.sh",
+      "present": true,
+      "sha256": "271faabf47e5c0ccfb75a9aeb99b1eda194eefcea72f3aa4ccfda041e0e7c01e"
+    },
+    {
+      "path": "scripts/generate_urban_v3_trees.py",
+      "present": true,
+      "sha256": "5ea8701fe33cfe73de28b2c8351a92066d27fc450056c8a84fb57e633790b906"
+    },
+    {
+      "path": "scripts/run_connect3_render.py",
+      "present": true,
+      "sha256": "e391b19fadb55c750b9326c8b9305102a35308a93596431600f1c5ba27813d11"
+    },
+    {
+      "path": "scripts/serve_connect2_preview.py",
+      "present": true,
+      "sha256": "6f5465cfbf8d8bc11974094e24d85e8f6dfc557196869a101cf8e3ef0b70c943"
+    },
+    {
+      "path": "scripts/inspect_connect4_assets.py",
+      "present": true,
+      "sha256": "f336839963029f136a484208317065e477204e2ab28111c4852bbbbb64e90589"
+    },
+    {
+      "path": "scripts/render_urban_v1_full_13_zdepth_layer.py",
+      "present": true,
+      "sha256": "2f8b24d9806c3c6d9702001fa26c9ce5455a97bea4aa4c0de5ff14017bbf0f70"
+    },
+    {
+      "path": "scripts/build_urban_v1_full_13_semantic_pack.py",
+      "present": true,
+      "sha256": "eb3abdca95f7eb2ae8fc54d25a4391a0426c6909369989f4ab50b37a1719e049"
+    },
+    {
+      "path": "scripts/run_urban_v3_delivery.sh",
+      "present": true,
+      "sha256": "f02886788769ec137f053abd61179d3bc2c22cd380856bcf3283a1bb73e45946"
+    },
+    {
+      "path": "scripts/build_urban_v1_full_10_clean_packs.py",
+      "present": true,
+      "sha256": "c8981cb3e2e8b56d1242a03313ed0cd86ad5b177a7c9a602741ead0bd213809d"
+    },
+    {
+      "path": "scripts/generate_urban_v3_gass.py",
+      "present": true,
+      "sha256": "5a01aa25474fecc08281827ed4272d9b279ca3ce521c1374c24f0f6818d910c6"
+    },
+    {
+      "path": "scripts/generate_urban_v3_trafficlight3.py",
+      "present": true,
+      "sha256": "70123c94f2cc2f111a4eece0984bbbb1fe3fb5b31abddfc605d850804326793b"
+    },
+    {
+      "path": "scripts/certify_urban_v1_full_14_fresh_render.py",
+      "present": true,
+      "sha256": "58671464e69cadac6d610a86fde8944057d611d7e37fd5e894ea20fbd7632d25"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all37.py",
+      "present": true,
+      "sha256": "4b107b79deb6faeae93320f45b50e01bd961740bda5886977baa7df8749beda9"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all30.py",
+      "present": true,
+      "sha256": "947314fce6a9f6e10f28eb2dcd878be6199071992c5d1d49040f89a2e4cbe524"
+    },
+    {
+      "path": "scripts/generate_urban_v1_full_04.py",
+      "present": true,
+      "sha256": "50fd387c01195e9107545a2654b4d7eb9c79595686b37df958752db897cb9b22"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all40.py",
+      "present": true,
+      "sha256": "6ac504563d730362e113e7622ee21731b6969ac71485c15d5fa69cd4e361f382"
+    },
+    {
+      "path": "scripts/scene_stream.sh",
+      "present": true,
+      "sha256": "5f2e71ec78967a7f678158fa6b950faa709420b0311d25267b664eacaaf5279b"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all44_07.py",
+      "present": true,
+      "sha256": "570b816ed9d4239d209307bd02ff106be1f67e92b0e4138f09a1dbb87ec45cd0"
+    },
+    {
+      "path": "scripts/render_urban_v1_full_01.py",
+      "present": true,
+      "sha256": "00a978c0783961e225cb8ff04632620e259c8b14ec4542d6341f94999c9ad9e5"
+    },
+    {
+      "path": "scripts/audit_urban_v1_full_10.py",
+      "present": true,
+      "sha256": "ad319b59c43b4524b1fc901af27483b97994d48961c853f22edfc925091eee7b"
+    },
+    {
+      "path": "scripts/generate_urban_v3_school.py",
+      "present": true,
+      "sha256": "126907e4c607887cf764d4b9ebe5d6dd7a788c84cf9fc3307238e0fd89e3d737"
+    },
+    {
+      "path": "scripts/compare_urban_v1_full_13_direct_validation.py",
+      "present": true,
+      "sha256": "a914b7164a32628213c70db10a53aadffd4f6027fd01e733267ea9a10b8c0dd0"
+    },
+    {
+      "path": "scripts/run_urban_v3_all45_04.sh",
+      "present": true,
+      "sha256": "1d869bb29886a4392cc601c1e9652a089780851adc0bf0e4fd6eaea62cafceb6"
+    },
+    {
+      "path": "scripts/export_car_glb_all31.py",
+      "present": true,
+      "sha256": "0b7f83c42c73ce4054255711323c66c5379ecfe2a8a51442577fbbc621ec3115"
+    },
+    {
+      "path": "scripts/audit_urban_v1_full_13_dynamic3_lake.py",
+      "present": true,
+      "sha256": "b3614d52fdae02349ea6fc669c4026a77d7c03658d85f4fd9974c6e2095c481a"
+    },
+    {
+      "path": "scripts/run_urban_v1_full_13_pipeline.sh",
+      "present": true,
+      "sha256": "7ce5ee9f80a2a445e418c578bbc8a065b23e3adff4243afbf428355853250a2a"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all2.py",
+      "present": true,
+      "sha256": "6c046929bf9eec4706f00fcea2621045803f445215693fec516f63e309d0a55b"
+    },
+    {
+      "path": "scripts/scene_stream_urban.sh",
+      "present": true,
+      "sha256": "c9a33dec74efac225cb72d8f1fac602de9867aa97df89d5458832a8e0782c012"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all5.py",
+      "present": true,
+      "sha256": "80424eeb53c7b1c15d89b655887df6e83eabdb3fa0b6366fd027576ba062857e"
+    },
+    {
+      "path": "scripts/render_all31.py",
+      "present": true,
+      "sha256": "8823b844a9e31ab0fa49a0505881c15030153032b5ef3e415425cf7bfd116ef2"
+    },
+    {
+      "path": "scripts/robot1_model.py",
+      "present": true,
+      "sha256": "c7d425ee0f9cb31fdc2196d279749cde790f297557c50d8d6e31a07c74d0c938"
+    },
+    {
+      "path": "scripts/plan_urban_v1_full_14_layer_frames.py",
+      "present": true,
+      "sha256": "1ebe65cd09265605630f90b3a23c4399b180d79d98e20075c8c986f4139a8850"
+    },
+    {
+      "path": "scripts/compose_urban_v1_full_13_zdepth.py",
+      "present": true,
+      "sha256": "5d89ddc5a5dad2fdca923b1e03e6d05bc4409c5e1dff99c53c6477f288bea8a1"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all43_13.py",
+      "present": true,
+      "sha256": "0e02b75455619e35c52fa2f19767ed3e5a3d97778ac5543bf90bcaa2d8fd034b"
+    },
+    {
+      "path": "scripts/robot1_repair_corner.py",
+      "present": true,
+      "sha256": "e5828bf6fa0a3dc9635322797243a41c51378555f085e899ff4599905a323868"
+    },
+    {
+      "path": "scripts/build_urban_v1_full_13_dynamic.py",
+      "present": true,
+      "sha256": "e7574c1b6dba14d6f6dd97b0380e37dbe08e96b0e57ce279a08b0f679b27a923"
+    },
+    {
+      "path": "scripts/repair_urban_v1_full_07_agent4_camera.py",
+      "present": true,
+      "sha256": "a08b5cc57a10d2fc80de08e6f54ee35e6ca1e2771cc16da0aaac2456a9e332a1"
+    },
+    {
+      "path": "scripts/audit_urban_v1_full_11.py",
+      "present": true,
+      "sha256": "8d53ef9a52f0464dcad8ef516b58bea3d15cb8f677408a69ff32ee66714fa444"
+    },
+    {
+      "path": "scripts/build_render_corner_kitchen2.py",
+      "present": true,
+      "sha256": "4efb048525730409102f528cfd94cdd8bf2e5d47c90862dfca1bdd85f1b5c847"
+    },
+    {
+      "path": "scripts/generate_urban_v1_full_09.py",
+      "present": true,
+      "sha256": "21d57e32717b70003de84a6dc74fbacd88e3d81d8b7a4cbf7ebe1bc045a72a7f"
+    },
+    {
+      "path": "scripts/generate_urban_v3_all44_activity.py",
+      "present": true,
+      "sha256": "d3179198a7d025869bfaf21d636fc0495327070de737379bb5d53a73f2b38351"
+    },
+    {
+      "path": "scripts/preflight_urban_v1_full_14_cameras.py",
+      "present": true,
+      "sha256": "86031f254aaec99b88094de08082ecce16287fa6763d74df52a761cb63a7883a"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all43_02.py",
+      "present": true,
+      "sha256": "4c79da7bc5ad6644ca0a6b0a6e3f87bb2b9c4cd2343fcd01e9df64dd5bc4f6f9"
+    },
+    {
+      "path": "scripts/refine_urban_v3_all43_05.py",
+      "present": true,
+      "sha256": "63f1d7e63f458afb259d83172605e09d2a645f17f3a7b5b8de0e90ab1944a8d3"
+    },
+    {
+      "path": "worldbridge/urban/__init__.py",
+      "present": true,
+      "sha256": "77e20a83f876fc2bd1d8c1e02bf6572a329eeb49bf00b5205f305436b6630a2c"
+    },
+    {
+      "path": "worldbridge/urban/core.py",
+      "present": true,
+      "sha256": "cd18545ce986367a1d5344043c2072e36d994ff688b3953f998fef2e422684cc"
+    },
+    {
+      "path": "scripts/astra_city/plan.py",
+      "present": true,
+      "sha256": "9f34a58874931d5cf622830ad2c12238d2f46e0eaace75df5c6ef3110935af43"
+    },
+    {
+      "path": "scripts/astra_city/assets.py",
+      "present": true,
+      "sha256": "b72019117a258a56e3ff732efde38799fe5360745c981cff56de22191eb90295"
+    },
+    {
+      "path": "scripts/astra_city/prepare_assets.py",
+      "present": true,
+      "sha256": "8898b510c95b4682285a9ac0fd08676a90e4bd14aa54c14ea63385845ec86470"
+    },
+    {
+      "path": "scripts/astra_city/bake_materials.py",
+      "present": true,
+      "sha256": "8e8c2b1648316006052d5607094ce0f31e0e9b3824df31fbdd3d175948b7381a"
+    },
+    {
+      "path": "scripts/astra_city/render.py",
+      "present": true,
+      "sha256": "bd2355603e5cd683c01342b1cbe11fe11bf21f8770a488039959a1d7ad59e63f"
+    },
+    {
+      "path": "scripts/astra_city/test_pipeline.py",
+      "present": true,
+      "sha256": "56a5c67d188e478608997dd71af274e4c4d9c544eb9585b1cbe6039a83b28bf7"
+    },
+    {
+      "path": "scripts/astra_city/build.py",
+      "present": true,
+      "sha256": "c4a0381372d9e28eb11d709e8d9604b2a9bab647b678f0286d4c223a3a9f6234"
+    },
+    {
+      "path": "scripts/astra_city/fbx_roundtrip.py",
+      "present": true,
+      "sha256": "d5c05607978316860b2edd4f233a5f1f4107affd6fd22b9f060f0dc5a51dadfe"
+    },
+    {
+      "path": "scripts/astra_city/run_step.py",
+      "present": true,
+      "sha256": "acffbd9248fb0b2b445c0c7b5d584fc50ae955d7e287709b9c596e2b8021083b"
+    },
+    {
+      "path": "scripts/astra_city/geometry.py",
+      "present": true,
+      "sha256": "72058a7f62a69ba260480343a3e2faa50259d80aec2fd01bd13b9a27cb00fbfa"
+    },
+    {
+      "path": "scripts/astra_city/inspect_native_materials.py",
+      "present": true,
+      "sha256": "1e4df311f853b8d9de53ef70ba6e169f62341f1a5e34a176b882632e601a7998"
+    },
+    {
+      "path": "scripts/astra_city/mesh_audit.py",
+      "present": true,
+      "sha256": "dad45fcbc1eadcee270119e2fda03068bc72e25a9990bc3cc217cea07a6d5e92"
+    },
+    {
+      "path": "scripts/astra_city/__init__.py",
+      "present": true,
+      "sha256": "fb81e2f4711ffd7599e111abf1867c2ec4bcb6067d915564ba75f7763fc966bb"
+    },
+    {
+      "path": "scripts/astra_city/runtime_route.py",
+      "present": true,
+      "sha256": "c8ff7a3862944941617ff2eaa3daf62871e269eff5a6b75f24f2a7e46dc624ec"
+    },
+    {
+      "path": "scripts/astra_city/repair_native_materials.py",
+      "present": true,
+      "sha256": "fc2121b53c874023daacc04d135773035e0a0ccc9bfc8a0d193c78b4ec024782"
+    },
+    {
+      "path": "scripts/astra_city/package.py",
+      "present": true,
+      "sha256": "9d7438cd16b1622d79823c9469453ef170cca0d909085a0d48082726cea2edad"
+    },
+    {
+      "path": "scripts/astra_city/validate.py",
+      "present": true,
+      "sha256": "9959719cba1b305e9a7336b97ee65a17d07b852966861680eb20468b50b0c2ff"
+    },
+    {
+      "path": "scripts/astra_city/audit.py",
+      "present": true,
+      "sha256": "30e548dd53fc28a4fe452e1cf0aac370d68f7a2fe7dbc04da2e222ed388b36e2"
+    },
+    {
+      "path": "scripts/astra_city/asset_probe.py",
+      "present": true,
+      "sha256": "798df7dbb4929e958cd3f566181f842a28433014199f5376fdb3a977deb56b2e"
+    },
+    {
+      "path": "scripts/astra_city/export_ue.py",
+      "present": true,
+      "sha256": "eb252af8db7f3c0ea2407411a38ba28e3e5d160273aad0eda4756aaf69c53f7d"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/launch_blender.py",
+      "present": true,
+      "sha256": "3d1f3a029d53f88c2b5beccee30dfe574aaa60feac6fb21fd40a46d60755e48b"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/core/execute_tasks.py",
+      "present": true,
+      "sha256": "d673befb301deeb197da9c8077a853ab02adb1cb3aede9c1d7e44627a0fea04d"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/core/constraints/example_solver/solve.py",
+      "present": true,
+      "sha256": "bff7f0c9e4b859ae29cc1c8eef7d251a0ff77eb85180f96ecae25affbf7deb6f"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/core/nodes/node_wrangler.py",
+      "present": true,
+      "sha256": "61a76f55d026c1465362262e68dbb7dbbcff3f5fceacb154ad11d1ce5ea39a90"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/core/nodes/node_info.py",
+      "present": true,
+      "sha256": "da96313904d7874cc2db5d9a2b72206710bd3f8aca7c04a1ea1ff32f54d8f4e8"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/core/nodes/compatibility.py",
+      "present": true,
+      "sha256": "b1bb0f210bfee61084717eb45cb12280407c615f32f1bff50e7f075d21f8a294"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/core/util/blender.py",
+      "present": true,
+      "sha256": "c140b5d5ea661186f57bde768067d3d45caf28f2c3d9cbfac63cb82986a02cd5"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/assets/composition/material_assignments.py",
+      "present": true,
+      "sha256": "1fccccf714f77201da8989b8c277cdc18d3df12ebb19b89359ba4f33c812c2e3"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/assets/objects/urban_detail_factories.py",
+      "present": true,
+      "sha256": "221383d4f2c892af1ce2421a5fdbfec8f879b515e0750348884d02b31690554f"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/assets/objects/trees/urban_tree.py",
+      "present": true,
+      "sha256": "531215586b9adf8586ad5811412a6345bd5605b1875fd17ba0489599741f2087"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/assets/objects/particles/particles.py",
+      "present": true,
+      "sha256": "f2e555520f1b5164508e466203a924e8d4e59152cdc5ac22ecf56755471f642c"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/assets/objects/elements/nature_shelf_trinkets/generate.py",
+      "present": true,
+      "sha256": "0945e3a5367e1ab0e9f3d2a1e095f9f4aa389d9314391ab1c309bca8d5adbfe5"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/assets/objects/deformed_trees/fallen.py",
+      "present": true,
+      "sha256": "66bb0ab1527057e653bb4c5a6d346c169de9b4e2097f997b28475a2705c9ee36"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/assets/objects/street_furniture/street_assets.py",
+      "present": true,
+      "sha256": "4f3b39095be955874ebae3157806a12af107b1d3d5cadaf50c02c328a5009046"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/assets/objects/street_furniture/__init__.py",
+      "present": true,
+      "sha256": "197087d832b8776e91d99c77e3d825d9c3d21bede5205c9d38f2d3f6d20afbbb"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/assets/objects/vehicles/openx_vehicle.py",
+      "present": true,
+      "sha256": "838bdb3f8fd1078d296f1614598fbf4690a07488c5acbe214b6d1fbf106b9122"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/assets/objects/vehicles/__init__.py",
+      "present": true,
+      "sha256": "3e19a12a50ad16ad24592dbd1231d92ff4e684771a478643571fa1d0055bc6d8"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/assets/objects/vehicles/vehicle.py",
+      "present": true,
+      "sha256": "34c0f89d0d71044e1d39921971c2c7fc3af239cf2cdf9a56a43a7b0ff4567635"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/assets/objects/decor/__init__.py",
+      "present": true,
+      "sha256": "ba2b85687eb70bb117285e5636b9f69c1bd735fd67d7fb4163c7599ca4cc7124"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/assets/objects/decor/urban_public_space.py",
+      "present": true,
+      "sha256": "821fa0482953afb4feccebe0cd69ed429cf989a6296a0d5db153c4dc4cd26b62"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/assets/objects/decor/urban_lake.py",
+      "present": true,
+      "sha256": "6b814dd94d3e5e46dce4329cb1b273815c8840298382ad86b06eec7d11c1ae11"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/assets/objects/urban/factory_building.py",
+      "present": true,
+      "sha256": "f0e49c392cee8f3943fb3fe7681edc8ed0b5972c1fb63d3b559dad6ee19f39a6"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/assets/objects/urban/__init__.py",
+      "present": true,
+      "sha256": "6e86364bb7901b155b595b07a36e4ed26aa3b1a63b7a70f802a68ec8acc0afff"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/assets/objects/traffic/__init__.py",
+      "present": true,
+      "sha256": "46da69fc4ca92fbca654e3851ce640712240e57a1f4bdc260c7a37b79103d2b1"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/assets/objects/traffic/traffic_light.py",
+      "present": true,
+      "sha256": "c95d4c954f8a890a0527f52433bd090aaab3909e621a9bf9bb9139524f9849f1"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/assets/objects/pedestrians/pedestrian.py",
+      "present": true,
+      "sha256": "66e8ed8d902988c624525569222824187ccc65b2dba3d7721820f798c0adbfa2"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/assets/objects/pedestrians/__init__.py",
+      "present": true,
+      "sha256": "51087acc6195ada3e31e30fcfa2bc3c27901a00d0f8c7e4f0442be1e517fee4d"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/assets/objects/grassland/urban_groundcover.py",
+      "present": true,
+      "sha256": "4e23325a1b9a30b1a75274921267466ed87da46de96593e754772557f8830e21"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/assets/objects/monocot/agave.py",
+      "present": true,
+      "sha256": "7175c3157006548e168673518dbcbe7e7c18dfddf7272b9ab1e2a679bf240135"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/assets/materials/creature/beak.py",
+      "present": true,
+      "sha256": "894d70e282cea4f70209755f4b33456ef0ded2ef7323d6a7c3bca7ef49348477"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/assets/fluid/duplication_geomod.py",
+      "present": true,
+      "sha256": "c192158280f1745c00981219fe29a4c67ade770f82f4db6183c8f4ea0c50887c"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/assets/fluid/asset_cache.py",
+      "present": true,
+      "sha256": "bf0b4b5bb7b7be74078d2dc259e8523317514722363d06ed4d7093021c153ee0"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/assets/utils/urban_primitives.py",
+      "present": true,
+      "sha256": "e276a3d9dec118fca9ae7b8264fe5650e423f4b0bc17e22ec415de86aacdbf72"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/assets/utils/draw.py",
+      "present": true,
+      "sha256": "4a6687e290c0d49391019d2ce3d8d38da00f49f9553d2f0995fa030a21748590"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/tools/split_blend_assets.py",
+      "present": true,
+      "sha256": "dfcbaa9b61ff938a28d8d96e55153d152781c2f997297b848728c8f3a01be97e"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/tools/export.py",
+      "present": true,
+      "sha256": "e141234ecb86fe7ce9152e8472072bb6aa4155ad7bb683531988207e042d598f"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/tools/unity/export_blend_to_unity.py",
+      "present": true,
+      "sha256": "60b82621568a90e1c89a955ba88af8024fe6dd539ae71498605374b2b0eee81f"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/tools/unity/__init__.py",
+      "present": true,
+      "sha256": "eacf65f1f3742f87ac251fc207b1004d8a668424609c8a059d15a65500f5854a"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/tools/visualization/render_third_person_orbit.py",
+      "present": true,
+      "sha256": "7e82f083d1516aa6db5a765be03702fc7e656ace916edb6d22353fa1231bad6c"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/tools/visualization/render_villa_first_person_v5.py",
+      "present": true,
+      "sha256": "09bf53ced97d040faced2d3a75e97fee089b45fbeb0ea90db2fd95fec718f865"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/tools/visualization/render_blend_videos.sh",
+      "present": true,
+      "sha256": "bb74d83dafd56433a856416fc641ab1452b7abaaecb4a948939f76e444cca83a"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/tools/visualization/render_cpu_scene_snapshot.py",
+      "present": true,
+      "sha256": "a777cf9653d98ed3e854e10768d40fabbd33664c0e251e8bbc890e2a9cc39537"
+    },
+    {
+      "path": "extensions/infinigen/infinigen/tools/visualization/render_first_person_walkthrough.py",
+      "present": true,
+      "sha256": "b2c4dc63ba42e850e6de21c03cd64714052f2fa524039a555e52d8040c019daa"
+    },
+    {
+      "path": "scripts/modeling_history/urban_components/urban_v3_lake3/render/render_multiview.py",
+      "present": true,
+      "sha256": "b2c9714f2ba850ec17c18515709ca430862996502d7296ecc71be51769454f25"
+    },
+    {
+      "path": "scripts/modeling_history/urban_components/urban_v3_library4/renders2/render_views.py",
+      "present": true,
+      "sha256": "d38ad3ecbc2ed0dcba68cbca118f45dd130e464ecdcb43112e1cbd7ac4a5ee14"
+    },
+    {
+      "path": "scripts/modeling_history/urban_components/urban_v3_library4/renders2/make_gallery.py",
+      "present": true,
+      "sha256": "740315e5a57b58cce34e3e6b2f321ca936e254c45e7cdcba040a45f000d4557e"
+    },
+    {
+      "path": "scripts/modeling_history/urban_components/urban_v3_fitness4/backup_urban_v3_fitness3/source/generate_urban_v3_fitness.py",
+      "present": true,
+      "sha256": "5ec40a3e987751c19692b67cdb7b594cd63fe0f19a3d7ade16f495464211b87f"
+    },
+    {
+      "path": "scripts/modeling_history/urban_components/urban_v3_fitness4/backup_urban_v3_fitness3/source/urban_assets.py",
+      "present": true,
+      "sha256": "3a9a2c33620b11a79e7b1ec01264b0a41593965d3164581528825c280f0e52c2"
+    },
+    {
+      "path": "scripts/modeling_history/output_scripts/outdoor_part_demo/urban_v3_fitness4/backup_urban_v3_fitness3/source/run_urban_v3_fitness.sh",
+      "present": true,
+      "sha256": "1f50905d7e84e66a70e9169ad4159c9b0f95d2d4882253efcbe36ba1f2060008"
+    },
+    {
+      "path": "scripts/modeling_history/urban_components/urban_v3_all41/render_residential_orbit.py",
+      "present": true,
+      "sha256": "5ba68991346db1a3a799d6221064f99c25342604f047ecbb014a554fb4a82728"
+    },
+    {
+      "path": "scripts/modeling_history/urban_components/urban_v3_delivery5/modeling_scheme_backup_20260902/generate_urban_v3_delivery.py",
+      "present": true,
+      "sha256": "7e3bcfb82b87f94ec069a6c35778652a7bab0decb6f6849f55e424cff30c9dbf"
+    },
+    {
+      "path": "scripts/modeling_history/urban_components/urban_v3_delivery5/modeling_scheme_backup_20260902/realizer.py",
+      "present": true,
+      "sha256": "febef970d003147ab01db068bd0b427fe0da7ea6999e0f1e3e1172d33a9001a4"
+    },
+    {
+      "path": "scripts/modeling_history/urban_components/urban_v3_delivery5/modeling_scheme_backup_20260902/urban_assets.py",
+      "present": true,
+      "sha256": "d5e63915f68ccae7d2bea94c8f64c07b51f125c70a87201333002c2f1d9e06f3"
+    },
+    {
+      "path": "scripts/modeling_history/urban_components/urban_v3_delivery5/modeling_scheme_backup_20260902/resolver.py",
+      "present": true,
+      "sha256": "1c70a7760c5f164ef1181c3aa62a58ec6ac06d0991618b6966aacf0b43087a3b"
+    },
+    {
+      "path": "scripts/modeling_history/output_scripts/outdoor_part_demo/urban_v3_delivery5/modeling_scheme_backup_20260902/run_urban_v3_delivery.sh",
+      "present": true,
+      "sha256": "e98d2df50c7144632f7f285584029758e2979e28dec8b45162e28412644d1958"
+    },
+    {
+      "path": "scripts/modeling_history/output_scripts/indoor_outdoor_villa_demo2/run_indoor_outdoor_villa_demo2.sh",
+      "present": true,
+      "sha256": "4a8ede53d24c5e16ba4ecab4491319f61452c2e3f58bd4c4661b5a774d59abe1"
+    },
+    {
+      "path": "scripts/modeling_history/indoor_scenes/indoor_outdoor_villa_demo2/scripts/patch_connection.py",
+      "present": true,
+      "sha256": "799503307647bf97f5b4a6869adfcf2ec6c4f3c3f9a0ae3eb0883b38c8402ba7"
+    },
+    {
+      "path": "scripts/modeling_history/output_scripts/indoor_outdoor_villa_demo/render_v4_first_person.sh",
+      "present": true,
+      "sha256": "f7600529b02ab42911114005e5996f281293dc42f2a281721ad3cc79af93c59d"
+    },
+    {
+      "path": "scripts/modeling_history/output_scripts/indoor_outdoor_villa_demo/run_gpu_limited_demo.sh",
+      "present": true,
+      "sha256": "2d89821c2be98a031980e3132595e3913440e36c793afc6acfd0211a5294bdc9"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/fix_connect3_delivery_ground.py",
+      "present": true,
+      "sha256": "7f3652fcbbf27d3f9afaf602f3ad380ca8974e985bba3353dd50f08fd0250f1b"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/fix_connect3_review.py",
+      "present": true,
+      "sha256": "d8efb871fac1af140b912a8264970d8851d12b68b04d1eb3d5f1e6f6cfb816fc"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/prepare_connect3_assets.py",
+      "present": true,
+      "sha256": "e297147b08b19041d0e21ac293735c56734922498f2de0810100b7590e0125be"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/refine_connect3_lighting.py",
+      "present": true,
+      "sha256": "6dc521b2f1c5b8cd981835fd080617e8d4456b7dd3340554b9accda3ed989315"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/fix_connect3_fonts.py",
+      "present": true,
+      "sha256": "b1becca3354b08b61356149c91b13abd5b8a21492708b2fa11272c422e22a9fe"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/refine_connect3_public_realm.py",
+      "present": true,
+      "sha256": "78c0224d5c8b5c0db65ecdf8b01fb0a82f3f3030fc7775e988162a054f9a1386"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/refine_connect3_scene.py",
+      "present": true,
+      "sha256": "c295caf4189f9eaa679c7ba1b09566e3edf950a2f585d2cbdf74585c7fcc3702"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/refine_connect3_townhouse_envelope.py",
+      "present": true,
+      "sha256": "7a1909de16057f7e20a7f48cb56a6472a73cf0b3e0be30ec9b0aa1fd27243632"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/fix_connect3_townhouse_ground.py",
+      "present": true,
+      "sha256": "c75147eaf6bc42a0910ee0da748eeef1d995f229a6e00cd572f374272bb0ee01"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/audit_connect3_scene.py",
+      "present": true,
+      "sha256": "61a0a2418fc89af069c8e90b59a839403909fc1799647439c1bcf9c0726f9cc6"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/inspect_connect3_assets.py",
+      "present": true,
+      "sha256": "775d6f55024b650694978664ea3a5181e42038308747744bf88c5f150e62c08b"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/render_urban_v1_full_connect_dependency.py",
+      "present": true,
+      "sha256": "ab7a9ca20e7b9e2804a49a0b5699eb2b46b736d7e76d21d3be1af36533d859da"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/fix_connect3_water_ground.py",
+      "present": true,
+      "sha256": "371f3e872f02f6cf4134db99889e3757b2b28b2321e5edbcf02b83249f940813"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/build_urban_v1_full_connect3.py",
+      "present": true,
+      "sha256": "7c66b8a2bf439ee4e2f6d94080529c0498152da5533aed34c1f376952d5f8978"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/prepare_connect3_native.py",
+      "present": true,
+      "sha256": "3e888718ead6bb30cec538cdaaa49695d1908f307ccce15919fce5d2e8991eca"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/prepare_connect3_river.py",
+      "present": true,
+      "sha256": "3e2aa19a7c6bb0b37cd26d3a592733182d66c52074b8a6f69976897aaf744c97"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/fix_connect3_delivery_facing.py",
+      "present": true,
+      "sha256": "07c30523705e8b490455ca5139d966f539cde18ef3f8d1c56f495ab221b7367e"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/repair_connect3_townhouse.py",
+      "present": true,
+      "sha256": "3f9ebfe4125fa5e648e7d1d4ec434ebe8d997ad6f7dbad1a38d02f2032c21423"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/run_connect3_builds.py",
+      "present": true,
+      "sha256": "f663c84298c0a68c81855706bdc1c5a2eafbd8830311782354fbcb00ee399235"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/prepare_connect3_special.py",
+      "present": true,
+      "sha256": "96ffc0242ea1498ccd5863e2a3b9b9484b000bd69d415b7fc16f5e1ad323afff"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/prepare_connect3_water.py",
+      "present": true,
+      "sha256": "ef3a3cf826f0d6b921525d82e66bbb37fed8214643be5a23d3610bf92b8d854b"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/connect3_plan.py",
+      "present": true,
+      "sha256": "84c12113444bcc4320466bf1518dc66c5c3334a988f22593813381c148eeab80"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/render_urban_v1_full_connect3.py",
+      "present": true,
+      "sha256": "cd1bd4df1904e14d98d7cc5bcfd0810e96daba9cfaaedabbf2f840b3888af5b5"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/fix_connect3_river_ground.py",
+      "present": true,
+      "sha256": "49f7e8e4579ad245faab1f29819095ed822fa2a1b01d158f004b10af85e4a0b2"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/finalize_connect3_delivery.py",
+      "present": true,
+      "sha256": "8446f3d59e5611e457a44677ba7e9a87cccfc9600fc13d4dd5207c8c2611f5f0"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_connect3/reproduction_scripts/run_connect3_render.py",
+      "present": true,
+      "sha256": "e391b19fadb55c750b9326c8b9305102a35308a93596431600f1c5ba27813d11"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/plan.py",
+      "present": true,
+      "sha256": "9f34a58874931d5cf622830ad2c12238d2f46e0eaace75df5c6ef3110935af43"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/assets.py",
+      "present": true,
+      "sha256": "b72019117a258a56e3ff732efde38799fe5360745c981cff56de22191eb90295"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/prepare_assets.py",
+      "present": true,
+      "sha256": "8898b510c95b4682285a9ac0fd08676a90e4bd14aa54c14ea63385845ec86470"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/bake_materials.py",
+      "present": true,
+      "sha256": "8e8c2b1648316006052d5607094ce0f31e0e9b3824df31fbdd3d175948b7381a"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/render.py",
+      "present": true,
+      "sha256": "bd2355603e5cd683c01342b1cbe11fe11bf21f8770a488039959a1d7ad59e63f"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/test_pipeline.py",
+      "present": true,
+      "sha256": "56a5c67d188e478608997dd71af274e4c4d9c544eb9585b1cbe6039a83b28bf7"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/build.py",
+      "present": true,
+      "sha256": "c4a0381372d9e28eb11d709e8d9604b2a9bab647b678f0286d4c223a3a9f6234"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/fbx_roundtrip.py",
+      "present": true,
+      "sha256": "d5c05607978316860b2edd4f233a5f1f4107affd6fd22b9f060f0dc5a51dadfe"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/run_step.py",
+      "present": true,
+      "sha256": "acffbd9248fb0b2b445c0c7b5d584fc50ae955d7e287709b9c596e2b8021083b"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/geometry.py",
+      "present": true,
+      "sha256": "72058a7f62a69ba260480343a3e2faa50259d80aec2fd01bd13b9a27cb00fbfa"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/inspect_native_materials.py",
+      "present": true,
+      "sha256": "1e4df311f853b8d9de53ef70ba6e169f62341f1a5e34a176b882632e601a7998"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/mesh_audit.py",
+      "present": true,
+      "sha256": "dad45fcbc1eadcee270119e2fda03068bc72e25a9990bc3cc217cea07a6d5e92"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/__init__.py",
+      "present": true,
+      "sha256": "fb81e2f4711ffd7599e111abf1867c2ec4bcb6067d915564ba75f7763fc966bb"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/runtime_route.py",
+      "present": true,
+      "sha256": "c8ff7a3862944941617ff2eaa3daf62871e269eff5a6b75f24f2a7e46dc624ec"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/generate_urban_v1_full_astra.py",
+      "present": true,
+      "sha256": "8d62f189c5c9187d0f667765e7346ddf9877a7c0b5bd4d0ad14ba9e32161b4c0"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/repair_native_materials.py",
+      "present": true,
+      "sha256": "fc2121b53c874023daacc04d135773035e0a0ccc9bfc8a0d193c78b4ec024782"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/package.py",
+      "present": true,
+      "sha256": "9d7438cd16b1622d79823c9469453ef170cca0d909085a0d48082726cea2edad"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/validate.py",
+      "present": true,
+      "sha256": "9959719cba1b305e9a7336b97ee65a17d07b852966861680eb20468b50b0c2ff"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/audit.py",
+      "present": true,
+      "sha256": "30e548dd53fc28a4fe452e1cf0aac370d68f7a2fe7dbc04da2e222ed388b36e2"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/asset_probe.py",
+      "present": true,
+      "sha256": "798df7dbb4929e958cd3f566181f842a28433014199f5376fdb3a977deb56b2e"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/source_snapshot/export_ue.py",
+      "present": true,
+      "sha256": "eb252af8db7f3c0ea2407411a38ba28e3e5d160273aad0eda4756aaf69c53f7d"
+    },
+    {
+      "path": "scripts/modeling_history/urban_scenes/urban_v1_full_astra/ue5/import_city.py",
+      "present": true,
+      "sha256": "3da90ba3e70e74ef9585f99bcd8ad55db94a510f09a11d83a854231c77127a79"
+    },
+    {
+      "path": "extensions/infinigen/scripts/start_turbovnc_unity_hub.sh",
+      "present": true,
+      "sha256": "232781651d68c731b5314f352be3a49a7e0b60425b80458bb81f6a585947b2ff"
+    },
+    {
+      "path": "extensions/infinigen/scripts/generate_and_render_urban_block.sh",
+      "present": true,
+      "sha256": "1f8f52a43083d43812a363bcd98e42785b68cfc05923c5dfaff593e17322973a"
+    },
+    {
+      "path": "extensions/infinigen/scripts/render_unity_urban_block10.sh",
+      "present": true,
+      "sha256": "fa55fd9022f5f42016a606cf122d88332de9caccb76ba4d1dfb45a4af4573c70"
+    },
+    {
+      "path": "extensions/infinigen/scripts/run_indoor_multiview_batch.py",
+      "present": true,
+      "sha256": "a2cb9f3b2bc9c5be9cc54c84d09b31ec265349bbd3c33d3f9c0ebe1555bde88b"
+    },
+    {
+      "path": "extensions/infinigen/scripts/launch_unity_hub_controlled.sh",
+      "present": true,
+      "sha256": "8ca0855436b57876dfeb8a1a8930414852fc618df6edd6cc1b27a1750cc57106"
+    },
+    {
+      "path": "extensions/infinigen/scripts/stop_turbovnc.sh",
+      "present": true,
+      "sha256": "066014d2c873a3066f8cf946212890a969a3660b42b51c9ddd4c400c5cc0b2e1"
+    },
+    {
+      "path": "extensions/infinigen/scripts/wait_for_unity_license_then_render.sh",
+      "present": true,
+      "sha256": "11a29e48a861316c4af3ccbf80786d11b34c5956a82f4c7ef5794ac1c47febe6"
+    },
+    {
+      "path": "extensions/infinigen/scripts/activate_unity_personal_cli.sh",
+      "present": true,
+      "sha256": "d2f06227548b50a1c6adcd223d089467558c40624c31f0788fdd93198f70d06a"
+    },
+    {
+      "path": "extensions/infinigen/scripts/render_fountain_showcase.py",
+      "present": true,
+      "sha256": "048b5098e0afddcb99bcd67f59ef0e75d609f9d20651377fa518212ca73ecb70"
+    },
+    {
+      "path": "extensions/infinigen/scripts/activate_unity_license_controlled.sh",
+      "present": true,
+      "sha256": "a44edced52642bea6e964460348f59123906e7001cc4185a91234b017c0d7aa1"
+    },
+    {
+      "path": "extensions/infinigen/scripts/render_unity_urban_orbit.sh",
+      "present": true,
+      "sha256": "aa4181bf598601ece5677822f61bfafebf1fe5c63a0d11fbe6d40279ec30faad"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/streetlight_render.py",
+      "present": true,
+      "sha256": "9be1f1a36e990eba077893e983a0bd54c3af7242edeb0fdd06ded313ffb34a17"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/vehicle_demo_v12.py",
+      "present": true,
+      "sha256": "5b8ee27af00c86ab9815d1011727607490a12214759212a03664b10db18d0cde"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/grass_asset_render.py",
+      "present": true,
+      "sha256": "f0e2f0e0ba7bc351f3b0bd96a123d6fe300556ca9abb666cebda569f390e2d73"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/vehicle_demo_v9.py",
+      "present": true,
+      "sha256": "630a0af85a52f1ad14a9013638b0634206785c5f74a8e5d84f8ff6dc9f310371"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/vehicle_demo_v4.py",
+      "present": true,
+      "sha256": "f37109525036512a74c66c3233f9370836e362645ffb0e07bf8c3e2074b080a2"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/phonebooth_render.py",
+      "present": true,
+      "sha256": "f0e6348900558bcc7a02f6ef4268baa6ab9a19a20aa7e6619cdbe916cdf38761"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/vehicle_demo_v7.py",
+      "present": true,
+      "sha256": "489a61e4ffaa63de0d957cccd479a108109c231ec603c5e54637b14e58309a52"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/phonebooth4_render.py",
+      "present": true,
+      "sha256": "a4da799b2d8c026402fc578675496442284b4eb736d6900e3c8b104d0c00234d"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/vehicle_demo_v11.py",
+      "present": true,
+      "sha256": "0f2fba910739b16e37f1a9e12773607ffdeb841eaafc97c8a60e4f8bc7be5567"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/openx_diag.py",
+      "present": true,
+      "sha256": "f855f2f55bd644448fc9d8a74008a77c676758552d6089d3e8fca6b6fccaf8ce"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/openx_single_frame.py",
+      "present": true,
+      "sha256": "2bd73c51af7deb2eda73fbd8466c2f0f1d5f7db62e4e1abaa916b8dacf15a87b"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/vehicle_demo_v2.py",
+      "present": true,
+      "sha256": "e10f924ce0e86d8113b83466ced8ae04ef8d7ee3a56a35931af72ea02fb4a77a"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/generate_urban.py",
+      "present": true,
+      "sha256": "b3a9d835e8b20e1983d937ad6b446bb1ec90d6712b82175e152c3d1d614d17da"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/openx_vehicle_preview.py",
+      "present": true,
+      "sha256": "e8fafecf5c2393271212887186635ee50f956fe1fab4a0858685db0e77ff27ee"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/vehicle_demo_v8.py",
+      "present": true,
+      "sha256": "daecf93af1c3696d3fa87c5937761ebd65009f52211837feb9979ef2f070e335"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/curb_belt2_render.py",
+      "present": true,
+      "sha256": "70bcdacbf126807457a3f6ed4f8b47cf54384bfa4140b498803cfb44ef8209b8"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/vehicle_demo_v5.py",
+      "present": true,
+      "sha256": "18e4807360f3d6707174fa8fc9b69adb84a79ef9d19bd1ca9263bf4f2226701c"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/curb_belt4_render.py",
+      "present": true,
+      "sha256": "f482cde760f52ea698023dda911ac5438a2fb22e0868412e3b524d1a3f964a49"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/grass_lawn_render.py",
+      "present": true,
+      "sha256": "48c9ef5a7f4c94c62d33bb3d91d2c163b10918795d655440fdc75902602265cc"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/vehicle_demo_v6.py",
+      "present": true,
+      "sha256": "bc87bdd4b808e68c383e2513affa052792677dbd5591128b5c6b90d8d4973d54"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/generate_urban_v2_1.py",
+      "present": true,
+      "sha256": "d51c7a86b3422117f0bd60ee6dd7ab046ea9546f7023f3ba18d9aab5380bceef"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/phonebooth3_render.py",
+      "present": true,
+      "sha256": "7ebf874ce0b4ca0dc701cdbe0bc31e0f8b68cac676061a428f6b98551b3ec0e8"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/vehicle_demo_v10.py",
+      "present": true,
+      "sha256": "246658e4116766524e8c9d2eb594364225080485c4e80b6e08d52758c21b9e64"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/curb_belt3_render.py",
+      "present": true,
+      "sha256": "2accf5d2db94cdd4ff24e12108c0c284f6dec8bc970bc54483e5350e75da8e41"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/phonebooth2_render.py",
+      "present": true,
+      "sha256": "8f061be5d992e871b6b2e900cedd4c22a0b267a4c90bd874ceaad411c3e5b522"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/curb_belt_render.py",
+      "present": true,
+      "sha256": "7efbcab131f5262337e0e1c9cf6f75132e5677b1127c8e3102c6558fbe8b6f4e"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/vehicle_demo_v3.py",
+      "present": true,
+      "sha256": "3117a0324e6572950180d9e7501bee1a80ff34bbaf238b2788433860616a1763"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/configs_urban/generated_urban_scene.gin",
+      "present": true,
+      "sha256": "be1f1dc4808d2dccd6e88734f35c11b89d5db421da6e07be914a25eaadf2ed6f"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/configs_urban/base.gin",
+      "present": true,
+      "sha256": "026b87129f61bec4084c19de20b82f3223311733a1bff8673e837363ede915cb"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/configs_urban/base_urban.gin",
+      "present": true,
+      "sha256": "abd40c51433506bfd90d16c3051e83d0db80a5c88466602987559f1b88ca019d"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/constraints/home.py",
+      "present": true,
+      "sha256": "21a5e9573138b656a434dfc910dda601112621545670828c6f4989769fd8c402"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/configs_nature/scene_types/generated_scene.gin",
+      "present": true,
+      "sha256": "fe067b9d9f51e050fe31e5c381668983ec1c13a4562a269238fe3c05d7d7f246"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/configs_indoor/residential_batch_multiview.gin",
+      "present": true,
+      "sha256": "d808e39b19e55c8d03267092df806db45e155f8afd609b01abee06f9d5c8267f"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/configs_indoor/residential_fast.gin",
+      "present": true,
+      "sha256": "a67e30c09ae925527ae65948e2f80168b4986c518fcbe77f30652b31b608afd7"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/configs_indoor/residential_showcase_09.gin",
+      "present": true,
+      "sha256": "b2d94980922420ed52d86b81f34cbb92213cd267d579fd36a6b1f16bcaf9b023"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/configs_indoor/generated_indoor_scene.gin",
+      "present": true,
+      "sha256": "fb6b7290ea47ccb32f99c130d58bf277740f945e66d31a87f78894d84056801e"
+    },
+    {
+      "path": "extensions/infinigen/infinigen_examples/configs_indoor/residential_companion_09.gin",
+      "present": true,
+      "sha256": "e16b779ee1c715f5a7549887e63e0d6fd4210e99ce6e4e9a937d67d8a4146cdf"
+    },
+    {
+      "path": "extensions/infinigen/tools/render_indoor_multiview.py",
+      "present": true,
+      "sha256": "6ff1afedc461b21eb44ed93a3cb57892ff28bf31d2161d5b7045822c8d317df5"
+    },
+    {
+      "path": "extensions/infinigen/tools/visualization/list_urban_tree_objects.py",
+      "present": true,
+      "sha256": "56fe85ca2ce06f54085abfe01210aac916473818754bb6ad93af47feefc62e40"
+    },
+    {
+      "path": "extensions/infinigen/tools/visualization/replace_urban_trees_from_blend.py",
+      "present": true,
+      "sha256": "b55b582cd98bad797f0e41cff151bcd631e072fd44c95feafe6e64402df460cf"
+    },
+    {
+      "path": "configs/modeling/indoor_outdoor_villa_demo/villa_first_person_route_v4_human_forward.json",
+      "present": true,
+      "sha256": "804f38f64524ee490c4a64001dc88fdc932594908a7ac6ab18fdc077820a1698"
+    },
+    {
+      "path": "configs/modeling/indoor_outdoor_villa_demo/villa_first_person_route.json",
+      "present": true,
+      "sha256": "a8b07f38f1c5373797a6b848fec25a4223b4ce215982aa3be9686701e2b96d7d"
+    },
+    {
+      "path": "configs/modeling/indoor_outdoor_villa_demo/country_villa_floor_plan.json",
+      "present": true,
+      "sha256": "51af91b034c4d3c2088b395bc21476275a1a84979be33c10ecb6b3a6641069f1"
+    },
+    {
+      "path": "configs/modeling/indoor_outdoor_villa_demo2/connection_floor_plan.json",
+      "present": true,
+      "sha256": "76b00676204afe24e0576d6630a8afed03babd20bbf6b2b43bf3b092781f1aeb"
+    }
+  ]
+}
